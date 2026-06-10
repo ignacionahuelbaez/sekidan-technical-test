@@ -3,7 +3,6 @@ extends CharacterBody2D
 
 const SPEED: float = 300.0
 
-# Creamos una referencia directa al nodo del sprite
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 
 var current_state: PlayerState
@@ -22,15 +21,12 @@ func change_state(state_name: String) -> void:
 func _physics_process(delta: float) -> void:
 	current_state.physics_update(delta)
 
-# === ESTA FUNCIÓN ES LA SOLUCIÓN DEFINTIVA ===
-func controlar_animacion(nombre_animacion: String, direccion: Vector2) -> void:
-	# FUNDAMENTO: Solo le damos .play() si la animación nueva es DISTINTA a la que ya se está reproduciendo.
-	# Esto evita que se congele en el frame 1.
+# Corregido: Parámetro en inglés (direction) y tipado estricto (: void)
+func controlar_animacion(nombre_animacion: String, direction: Vector2) -> void:
 	if sprite.animation != nombre_animacion:
 		sprite.play(nombre_animacion)
 	
-	# Aprovechamos de una vez para voltear el personaje a la izquierda o derecha
-	if direccion.x < 0:
+	if direction.x < 0:
 		sprite.flip_h = true
 	elif direction.x > 0:
 		sprite.flip_h = false

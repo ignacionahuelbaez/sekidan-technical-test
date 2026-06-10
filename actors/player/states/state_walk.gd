@@ -9,8 +9,7 @@ func physics_update(_delta: float) -> void:
 	else:
 		player.velocity = direction * player.SPEED
 		
-		# FUNDAMENTO: Aquí llamamos a la función inteligente pasándole la dirección.
-		# Como la función chequea si ya está puesta "walk", no va a reiniciar la animación.
+		# Llama a "walk" en minúscula tal como está en tus SpriteFrames
 		player.controlar_animacion("walk", direction)
 		
 		player.move_and_slide()
