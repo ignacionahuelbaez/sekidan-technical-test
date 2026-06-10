@@ -10,6 +10,8 @@
 [ext_resource type="Script" uid="uid://c0ddkmu85xeqb" path="res://actors/player/states/state_hurt.gd" id="6_ic0uy"]
 [ext_resource type="Script" uid="uid://ch2tnx4730hoo" path="res://actors/player/states/state_dead.gd" id="7_k3n1d"]
 
+[sub_resource type="TileSet" id="TileSet_ioo17"]
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_26xuy"]
 atlas = ExtResource("2_gbfbk")
 region = Rect2(0, 384, 192, 192)
@@ -356,6 +358,11 @@ size = Vector2(12, 16)
 
 [node name="world" type="Node2D" unique_id=655083946]
 
+[node name="suelo" type="TileMapLayer" parent="." unique_id=361008697]
+tile_set = SubResource("TileSet_ioo17")
+
+[node name="Colisiones" type="TileMapLayer" parent="." unique_id=819055872]
+
 [node name="player" type="CharacterBody2D" parent="." unique_id=1909192518]
 motion_mode = 1
 script = ExtResource("1_f3sb7")
@@ -389,3 +396,5 @@ script = ExtResource("6_ic0uy")
 
 [node name="Dead" type="Node" parent="player/States" unique_id=142321445]
 script = ExtResource("7_k3n1d")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=752125295]
