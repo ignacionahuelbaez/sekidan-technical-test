@@ -2,14 +2,19 @@ class_name StateWalk
 extends PlayerState
 
 func physics_update(_delta: float) -> void:
-	var direction: Vector2 = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	# Si presiona la acción que configuramos en el paso 1, entra a atacar
+	if Input.is_action_just_pressed("atacar"):
+		player.change_state("Attack")
+		return
+		
+	var direccion: Vector2 = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	
-	if direction == Vector2.ZERO:
+	if direccion == Vector2.ZERO:
 		player.change_state("Idle")
 	else:
-		player.velocity = direction * player.SPEED
+		player.velocity = direccion * player.SPEED
 		
-		# Llama a "walk" en minúscula tal como está en tus SpriteFrames
-		player.controlar_animacion("walk", direction)
+		# Sincronizado: "walk" en minúscula como está en tus SpriteFrames
+		player.controlar_animacion("walk", direccion)
 		
 		player.move_and_slide()
