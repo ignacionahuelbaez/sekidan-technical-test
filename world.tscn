@@ -10,6 +10,10 @@
 [ext_resource type="Script" uid="uid://br50u3awe1tj3" path="res://actors/player/states/state_attack.gd" id="5_wse8f"]
 [ext_resource type="Script" uid="uid://c0ddkmu85xeqb" path="res://actors/player/states/state_hurt.gd" id="6_ic0uy"]
 [ext_resource type="Script" uid="uid://ch2tnx4730hoo" path="res://actors/player/states/state_dead.gd" id="7_k3n1d"]
+[ext_resource type="Script" uid="uid://df6cl12qc6u71" path="res://enemy.gd" id="11_70uel"]
+[ext_resource type="Script" uid="uid://cw3mb10bic1xa" path="res://components/health_component.gd" id="12_hiqwa"]
+[ext_resource type="Script" uid="uid://bfmpkiv6433ni" path="res://components/hurtbox_component.gd" id="13_2u3nc"]
+[ext_resource type="Script" uid="uid://dxj6i1lnitkd1" path="res://components/hitbox_component.gd" id="14_udxuc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ic0uy"]
 texture = ExtResource("1_wse8f")
@@ -925,3 +929,24 @@ script = ExtResource("7_k3n1d")
 zoom = Vector2(3, 3)
 
 [node name="Decoracion" type="TileMapLayer" parent="." unique_id=752125295]
+
+[node name="Enemy" type="CharacterBody2D" parent="." unique_id=1617173726]
+script = ExtResource("11_70uel")
+
+[node name="HealthComponent" type="Node" parent="Enemy" unique_id=161641452]
+script = ExtResource("12_hiqwa")
+metadata/_custom_type_script = "uid://cw3mb10bic1xa"
+
+[node name="HurtboxComponent" type="Area2D" parent="Enemy" unique_id=1524883653]
+script = ExtResource("13_2u3nc")
+metadata/_custom_type_script = "uid://bfmpkiv6433ni"
+
+[node name="HitboxComponent" type="Area2D" parent="Enemy" unique_id=1161580501]
+script = ExtResource("14_udxuc")
+damage = 15.0
+metadata/_custom_type_script = "uid://dxj6i1lnitkd1"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Enemy" unique_id=235760624]
+offset = Vector2(0.25, 0.25)
+
+[node name="Timer" type="Timer" parent="Enemy" unique_id=351836041]
