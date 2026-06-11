@@ -9,14 +9,14 @@ dock_closed=[]
 dock_split_2=0
 dock_split_3=0
 dock_hsplit_1=0
-dock_hsplit_2=349
-dock_hsplit_3=-220
+dock_hsplit_2=216
+dock_hsplit_3=-346
 dock_hsplit_4=0
-dock_9_selected_tab_idx=0
+dock_9_selected_tab_idx=5
 dock_3="Scene,Import"
 dock_4="FileSystem,History"
 dock_5="Inspector,Signals,Groups"
-dock_9="Output,Debugger,Audio,Animation,Shader Editor,SpriteFrames,Search Results,AnimationTree,ResourcePreloader,ShaderFile,Theme,Polygon,TileSet,TileMap,Replication,GridMap"
+dock_9="Output,Debugger,Audio,Animation,Shader Editor,TileSet,TileMap,Search Results,AnimationTree,ResourcePreloader,ShaderFile,SpriteFrames,Theme,Polygon,Replication,GridMap"
 
 [docks/FileSystem]
 
@@ -25,8 +25,8 @@ v_split_offset=0
 display_mode=0
 file_sort=0
 file_list_display_mode=1
-selected_paths=PackedStringArray("res://components/")
-uncollapsed_paths=PackedStringArray("Favorites", "res://", "res://components/", "res://actors/player/", "res://actors/player/states/")
+selected_paths=PackedStringArray("res://assets/Tilemap_Flat.png")
+uncollapsed_paths=PackedStringArray("Favorites", "res://", "res://assets/", "res://actors/player/", "res://actors/player/states/")
 
 [docks/History]
 
@@ -43,10 +43,12 @@ bottom_panel_offsets={
 "Debugger": 0,
 "Output": 0,
 "Shader Editor": 0,
-"SpriteFrames": -346
+"SpriteFrames": -346,
+"TileMap": 0,
+"TileSet": 0
 }
 selected_default_debugger_tab_idx=0
-selected_main_editor_idx=2
+selected_main_editor_idx=0
 
 [EditorWindow]
 
@@ -259,11 +261,11 @@ state={
 state={
 "bookmarks": PackedInt32Array(),
 "breakpoints": PackedInt32Array(),
-"column": 8,
+"column": 0,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 12,
-"scroll_position": 4.705882352941176,
+"row": 13,
+"scroll_position": 0.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -309,7 +311,7 @@ sections_unfolded=PackedStringArray()
 "grid_snap_active": false,
 "grid_step": Vector2(8, 8),
 "grid_visibility": 1,
-"ofs": Vector2(-108.78349, -46.750687),
+"ofs": Vector2(-2528.466, -765.9728),
 "primary_grid_step": Vector2i(8, 8),
 "show_group_gizmos": true,
 "show_guides": true,
@@ -335,7 +337,7 @@ sections_unfolded=PackedStringArray()
 "snap_rotation_step": 0.2617994,
 "snap_scale": false,
 "snap_scale_step": 0.1,
-"zoom": 3.7974994
+"zoom": 0.17985871
 }
 3D={
 "fov": 70.01,
@@ -493,13 +495,13 @@ sections_unfolded=PackedStringArray()
 Anim={
 "visible": false
 }
-selected_nodes=Array[NodePath]([NodePath("/root/@EditorNode@18069/@Panel@14/@VBoxContainer@15/DockHSplitMain/@VBoxContainer@28/DockVSplitCenter/@VSplitContainer@70/@VBoxContainer@71/@EditorMainScreen@125/MainScreen/@CanvasItemEditor@9322/@VSplitContainer@9105/@HSplitContainer@9107/@HSplitContainer@9109/@Control@9110/@SubViewportContainer@9111/@SubViewport@9112/world/player/AnimatedSprite2D")])
+selected_nodes=Array[NodePath]([NodePath("/root/@EditorNode@18069/@Panel@14/@VBoxContainer@15/DockHSplitMain/@VBoxContainer@28/DockVSplitCenter/@VSplitContainer@70/@VBoxContainer@71/@EditorMainScreen@125/MainScreen/@CanvasItemEditor@9322/@VSplitContainer@9105/@HSplitContainer@9107/@HSplitContainer@9109/@Control@9110/@SubViewportContainer@9111/@SubViewport@9112/world/suelo")])
 ===== ./.godot/editor/world.tscn-folding-76e0adcbc83681695885bae615f516ae.cfg =====
 [folding]
 
 node_unfolds=[NodePath("player/AnimatedSprite2D"), PackedStringArray("Transform")]
-resource_unfolds=["res://world.tscn::SpriteFrames_ioo17", PackedStringArray("Resource"), "res://world.tscn::RectangleShape2D_ioo17", PackedStringArray()]
-nodes_folded=[]
+resource_unfolds=["res://world.tscn::TileSet_ioo17", PackedStringArray(), "res://world.tscn::SpriteFrames_ioo17", PackedStringArray("Resource"), "res://world.tscn::RectangleShape2D_ioo17", PackedStringArray()]
+nodes_folded=[NodePath("player"), NodePath("player/States")]
 ===== ./.godot/global_script_class_cache.cfg =====
 list=[{
 "base": &"Node",
@@ -869,6 +871,8 @@ rendering_device/driver.windows="d3d12"
 [ext_resource type="Script" uid="uid://c0ddkmu85xeqb" path="res://actors/player/states/state_hurt.gd" id="6_ic0uy"]
 [ext_resource type="Script" uid="uid://ch2tnx4730hoo" path="res://actors/player/states/state_dead.gd" id="7_k3n1d"]
 
+[sub_resource type="TileSet" id="TileSet_ioo17"]
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_26xuy"]
 atlas = ExtResource("2_gbfbk")
 region = Rect2(0, 384, 192, 192)
@@ -1215,6 +1219,11 @@ size = Vector2(12, 16)
 
 [node name="world" type="Node2D" unique_id=655083946]
 
+[node name="suelo" type="TileMapLayer" parent="." unique_id=361008697]
+tile_set = SubResource("TileSet_ioo17")
+
+[node name="Colisiones" type="TileMapLayer" parent="." unique_id=819055872]
+
 [node name="player" type="CharacterBody2D" parent="." unique_id=1909192518]
 motion_mode = 1
 script = ExtResource("1_f3sb7")
@@ -1248,3 +1257,5 @@ script = ExtResource("6_ic0uy")
 
 [node name="Dead" type="Node" parent="player/States" unique_id=142321445]
 script = ExtResource("7_k3n1d")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=752125295]
