@@ -4,12 +4,15 @@ extends CharacterBody2D
 const SPEED: float = 150.0
 
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
+@onready var hitbox: HitboxComponent = $HitboxComponent
 
 var current_state: PlayerState
 var last_direction: Vector2 = Vector2.RIGHT
 
 func _ready() -> void:
 	add_to_group("player")
+	# El hitbox solo se activa durante el ataque
+	hitbox.monitoring = false
 	current_state = $States/Idle
 	current_state.player = self
 	current_state.enter()

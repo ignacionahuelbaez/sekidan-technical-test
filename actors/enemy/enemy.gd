@@ -1,5 +1,3 @@
-# Inicializa el enemigo y conecta el Blackboard de LimboAI con el jugador.
-# Todo el comportamiento de movimiento y animación lo maneja el BehaviorTree.
 class_name Enemy
 extends CharacterBody2D
 
@@ -9,10 +7,11 @@ extends CharacterBody2D
 
 func _ready() -> void:
 	add_to_group("enemy")
-	var player: Player = get_tree().get_first_node_in_group("player") as Player
-	if player:
-		bt_player.blackboard.set_var(&"player", player)
+	set_collision_mask_value(1, false)
 	health_component.health_depleted.connect(_on_death)
+
+func take_hit(damage: float) -> void:
+	health_component.take_damage(damage)
 
 func _on_death() -> void:
 	bt_player.set_active(false)

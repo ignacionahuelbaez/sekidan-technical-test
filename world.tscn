@@ -3319,6 +3319,7 @@ script = ExtResource("7_k3n1d")
 zoom = Vector2(3, 3)
 
 [node name="HitboxComponent" type="Area2D" parent="player" unique_id=531925347]
+script = ExtResource("14_udxuc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player/HitboxComponent" unique_id=1214806749]
 shape = SubResource("RectangleShape2D_wukud")
@@ -3376,7 +3377,3 @@ shape = SubResource("RectangleShape2D_bc84e")
 
 [node name="Colisiones" type="TileMapLayer" parent="." unique_id=819055872]
 tile_set = SubResource("TileSet_26xuy")
-
-[node name="HealthComponent" type="Node" parent="." unique_id=521229422]
-script = ExtResource("12_hiqwa")
-metadata/_custom_type_script = "uid://cw3mb10bic1xa"

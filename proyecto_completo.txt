@@ -71,11 +71,11 @@ sections_unfolded=PackedStringArray()
 
 dock_floating={}
 dock_closed=[]
-dock_split_2=0
+dock_split_2=185
 dock_split_3=0
 dock_hsplit_1=0
-dock_hsplit_2=280
-dock_hsplit_3=-280
+dock_hsplit_2=274
+dock_hsplit_3=-295
 dock_hsplit_4=0
 dock_split_1=0
 dock_split_4=0
@@ -85,8 +85,8 @@ dock_5_selected_tab_idx=0
 dock_3="Scene,Import"
 dock_4="FileSystem,History"
 dock_5="Inspector,Signals,Groups"
-dock_9="Output,Debugger,Audio,Animation,Shader Editor,TileSet,TileMap,Search Results,AnimationTree,ResourcePreloader,ShaderFile,SpriteFrames,Theme,Polygon,Replication,GridMap"
-dock_9_selected_tab_idx=1
+dock_9="Output,Debugger,Audio,Animation,Shader Editor,Search Results,AnimationTree,ResourcePreloader,ShaderFile,SpriteFrames,Theme,Polygon,TileSet,TileMap,Replication,GridMap"
+dock_9_selected_tab_idx=0
 
 [docks/FileSystem]
 
@@ -118,7 +118,7 @@ bottom_panel_offsets={
 "TileMap": -246,
 "TileSet": 0
 }
-selected_default_debugger_tab_idx=0
+selected_default_debugger_tab_idx=1
 selected_main_editor_idx=2
 
 [EditorWindow]
@@ -130,9 +130,9 @@ position=Vector2i(0, 23)
 [ScriptEditor]
 
 open_scripts=["res://ai/tasks/bt_attack_player.gd", "res://ai/tasks/bt_chase_player.gd", "res://ai/tasks/bt_is_player_in_attack_range.gd", "res://ai/tasks/bt_is_player_in_detection_range.gd", "res://ai/tasks/bt_patrol.gd", "res://actors/enemy/enemy.gd", "res://components/health_component.gd", "res://components/hitbox_component.gd", "res://components/hurtbox_component.gd", "res://actors/player/player.gd", "res://actors/player/states/player_state.gd", "res://actors/player/states/state_attack.gd", "res://actors/player/states/state_dead.gd", "res://actors/player/states/state_hurt.gd", "res://actors/player/states/state_idle.gd", "res://actors/player/states/state_walk.gd"]
-selected_script="res://ai/tasks/bt_chase_player.gd"
+selected_script="res://components/hurtbox_component.gd"
 open_help=["BTSequence", "CompressedTexture2D", "GDScript", "Sprite2D"]
-script_split_offset=255
+script_split_offset=315
 list_split_offset=57
 zoom_factor=0.8218343
 
@@ -242,7 +242,7 @@ create_built_in_script=false
 
 [quick_open_dialog]
 
-last_mode=0
+last_mode=1
 
 [project_settings]
 
@@ -263,11 +263,11 @@ Texture2D=PackedStringArray("uid://d2wh2iuvncv3q")
 state={
 "bookmarks": PackedInt32Array(),
 "breakpoints": PackedInt32Array(),
-"column": 23,
+"column": 40,
 "folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 0,
-"scroll_position": 0.0,
+"h_scroll_position": 33,
+"row": 43,
+"scroll_position": 32.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -277,11 +277,11 @@ state={
 state={
 "bookmarks": PackedInt32Array(),
 "breakpoints": PackedInt32Array(),
-"column": 20,
+"column": 5,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 8,
-"scroll_position": 0.0,
+"row": 17,
+"scroll_position": 6.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -295,7 +295,7 @@ state={
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
 "row": 12,
-"scroll_position": 0.0,
+"scroll_position": 1.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -309,7 +309,7 @@ state={
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
 "row": 13,
-"scroll_position": 0.0,
+"scroll_position": 2.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -322,7 +322,7 @@ state={
 "column": 29,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 8,
+"row": 9,
 "scroll_position": 0.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
@@ -333,11 +333,11 @@ state={
 state={
 "bookmarks": PackedInt32Array(),
 "breakpoints": PackedInt32Array(),
-"column": 0,
+"column": 28,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 11,
-"scroll_position": 0.0,
+"row": 18,
+"scroll_position": 7.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -364,7 +364,7 @@ state={
 "column": 19,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 7,
+"row": 8,
 "scroll_position": 0.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
@@ -375,11 +375,11 @@ state={
 state={
 "bookmarks": PackedInt32Array(),
 "breakpoints": PackedInt32Array(),
-"column": 0,
+"column": 24,
 "folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 16,
-"scroll_position": 0.0,
+"h_scroll_position": 32,
+"row": 20,
+"scroll_position": 9.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -391,8 +391,8 @@ state={
 "breakpoints": PackedInt32Array(),
 "column": 45,
 "folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 13,
+"h_scroll_position": 183,
+"row": 14,
 "scroll_position": 0.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
@@ -420,7 +420,7 @@ state={
 "column": 15,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 9,
+"row": 11,
 "scroll_position": 0.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
@@ -445,11 +445,11 @@ state={
 state={
 "bookmarks": PackedInt32Array(),
 "breakpoints": PackedInt32Array(),
-"column": 0,
+"column": 15,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 19,
-"scroll_position": 0.0,
+"row": 17,
+"scroll_position": 6.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -473,11 +473,11 @@ state={
 state={
 "bookmarks": PackedInt32Array(),
 "breakpoints": PackedInt32Array(),
-"column": 0,
+"column": 29,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 0,
-"scroll_position": 0.0,
+"row": 19,
+"scroll_position": 8.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -509,7 +509,7 @@ sections_unfolded=PackedStringArray()
 "grid_snap_active": false,
 "grid_step": Vector2(8, 8),
 "grid_visibility": 1,
-"ofs": Vector2(-1102.1091, -505.83743),
+"ofs": Vector2(-1276.597, -195.4544),
 "primary_grid_step": Vector2i(8, 8),
 "show_group_gizmos": true,
 "show_guides": true,
@@ -535,7 +535,7 @@ sections_unfolded=PackedStringArray()
 "snap_rotation_step": 0.2617994,
 "snap_scale": false,
 "snap_scale_step": 0.1,
-"zoom": 0.3855432
+"zoom": 0.35049382
 }
 3D={
 "fov": 70.01,
@@ -693,13 +693,13 @@ sections_unfolded=PackedStringArray()
 Anim={
 "visible": false
 }
-selected_nodes=Array[NodePath]([NodePath("/root/@EditorNode@18724/@Panel@14/@VBoxContainer@15/DockHSplitMain/@VBoxContainer@28/DockVSplitCenter/@VSplitContainer@70/@VBoxContainer@71/@EditorMainScreen@125/MainScreen/@CanvasItemEditor@9322/@VSplitContainer@9105/@HSplitContainer@9107/@HSplitContainer@9109/@Control@9110/@SubViewportContainer@9111/@SubViewport@9112/world/bridge")])
+selected_nodes=Array[NodePath]([NodePath("/root/@EditorNode@18724/@Panel@14/@VBoxContainer@15/DockHSplitMain/@VBoxContainer@28/DockVSplitCenter/@VSplitContainer@70/@VBoxContainer@71/@EditorMainScreen@125/MainScreen/@CanvasItemEditor@9322/@VSplitContainer@9105/@HSplitContainer@9107/@HSplitContainer@9109/@Control@9110/@SubViewportContainer@9111/@SubViewport@9112/world/player/HurtboxComponent")])
 ===== ./.godot/editor/world.tscn-folding-76e0adcbc83681695885bae615f516ae.cfg =====
 [folding]
 
-node_unfolds=[NodePath("suelo"), PackedStringArray("tile_set"), NodePath("player/AnimatedSprite2D"), PackedStringArray("Transform", "Offset"), NodePath("Enemy/HitboxComponent"), PackedStringArray("Gravity"), NodePath("Enemy/AnimatedSprite2D"), PackedStringArray("Offset", "Transform")]
-resource_unfolds=["res://world.tscn::TileSet_bc84e", PackedStringArray(), "res://world.tscn::TileSet_cbp6q", PackedStringArray(), "res://world.tscn::TileSet_wukud", PackedStringArray(), "res://world.tscn::TileSet_wjb0r", PackedStringArray(), "res://world.tscn::TileSet_il2jm", PackedStringArray(), "res://world.tscn::SpriteFrames_ioo17", PackedStringArray("Resource"), "res://world.tscn::RectangleShape2D_ioo17", PackedStringArray(), "res://world.tscn::SpriteFrames_e77ka", PackedStringArray(), "res://world.tscn::BlackboardPlan_udxuc", PackedStringArray()]
-nodes_folded=[NodePath("Enemy")]
+node_unfolds=[NodePath("suelo"), PackedStringArray("tile_set"), NodePath("player/AnimatedSprite2D"), PackedStringArray("Transform", "Offset"), NodePath("Enemy/HitboxComponent"), PackedStringArray("Gravity"), NodePath("Enemy/AnimatedSprite2D"), PackedStringArray("Offset", "Transform"), NodePath("Colisiones"), PackedStringArray("Navigation", "tile_set")]
+resource_unfolds=["res://world.tscn::TileSet_bc84e", PackedStringArray(), "res://world.tscn::TileSet_cbp6q", PackedStringArray(), "res://world.tscn::TileSet_wukud", PackedStringArray(), "res://world.tscn::TileSet_wjb0r", PackedStringArray(), "res://world.tscn::TileSet_il2jm", PackedStringArray(), "res://world.tscn::SpriteFrames_ioo17", PackedStringArray("Resource"), "res://world.tscn::RectangleShape2D_ioo17", PackedStringArray(), "res://world.tscn::RectangleShape2D_wukud", PackedStringArray(), "res://world.tscn::RectangleShape2D_il2jm", PackedStringArray(), "res://world.tscn::RectangleShape2D_cbp6q", PackedStringArray(), "res://world.tscn::RectangleShape2D_26xuy", PackedStringArray(), "res://world.tscn::SpriteFrames_e77ka", PackedStringArray(), "res://world.tscn::BlackboardPlan_udxuc", PackedStringArray(), "res://world.tscn::RectangleShape2D_bc84e", PackedStringArray(), "res://world.tscn::TileSet_26xuy", PackedStringArray("Rendering")]
+nodes_folded=[NodePath("player/States"), NodePath("player/HitboxComponent"), NodePath("Enemy")]
 ===== ./.godot/editor/world_camera_world.tscn-editstate-e311380c96155eb91e3d6080f207d969.cfg =====
 [editor_states]
 
@@ -907,9 +907,17 @@ list=[{
 "class": &"BTAttackPlayer",
 "icon": "",
 "is_abstract": false,
-"is_tool": false,
+"is_tool": true,
 "language": &"GDScript",
 "path": "res://ai/tasks/bt_attack_player.gd"
+}, {
+"base": &"BTAction",
+"class": &"BTChasePlayer",
+"icon": "",
+"is_abstract": false,
+"is_tool": true,
+"language": &"GDScript",
+"path": "res://ai/tasks/bt_chase_player.gd"
 }, {
 "base": &"BTCondition",
 "class": &"BTIsPlayerInAttackRange",
@@ -1060,61 +1068,26 @@ groups=[&"player"]
 
 groups=[&"player"]
 ===== ./actors/enemy/enemy.gd =====
-extends CharacterBody2D
+# Inicializa el enemigo y conecta el Blackboard de LimboAI con el jugador.
+# Todo el comportamiento de movimiento y animación lo maneja el BehaviorTree.
 class_name Enemy
+extends CharacterBody2D
 
-@export var speed: float = 80.0
-@export var min_attack_distance: float = 30.0
-
-@onready var player: CharacterBody2D = get_tree().get_first_node_in_group("player")
-@onready var animated_sprite = $AnimatedSprite2D
-@onready var health_component = $HealthComponent
-@onready var bt_player = $BTPlayer
+@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+@onready var health_component: HealthComponent = $HealthComponent
+@onready var bt_player: BTPlayer = $BTPlayer
 
 func _ready() -> void:
 	add_to_group("enemy")
-	
-	# IMPORTANTE: Desactivamos colisión física con el jugador (Capa 1).
-	# Esto evita que el motor físico empuje al enemigo marcha atrás (el bug de la huida).
-	set_collision_mask_value(1, false)
-	
-	# Inicialización oficial de LimboAI en Godot 4
-	if bt_player:
-		bt_player.blackboard.set_var("enemy", self)
-		bt_player.blackboard.set_var("player", player)
-		bt_player.set_active(true) # Corrección del .enabled que tiraba error
-		
-	if health_component and health_component.has_signal("health_depleted"):
-		health_component.connect("health_depleted", Callable(self, "_on_death"))
-
-func _physics_process(_delta: float) -> void:
-	if not player:
-		return
-		
-	var distance = global_position.distance_to(player.global_position)
-	var direction = (player.global_position - global_position).normalized()
-	
-	if distance > min_attack_distance:
-		velocity = direction * speed
-		move_and_slide()
-		
-		if animated_sprite and animated_sprite.animation != "walk":
-			animated_sprite.play("walk")
-			
-		if velocity.x != 0 and animated_sprite:
-			animated_sprite.flip_h = velocity.x < 0
-	else:
-		# Si está en rango de ataque, frena y ejecuta comportamiento
-		velocity = Vector2.ZERO
-		if animated_sprite and animated_sprite.animation != "idle":
-			animated_sprite.play("idle")
+	var player: Player = get_tree().get_first_node_in_group("player") as Player
+	if player:
+		bt_player.blackboard.set_var(&"player", player)
+	health_component.health_depleted.connect(_on_death)
 
 func _on_death() -> void:
-	if bt_player:
-		bt_player.set_active(false)
+	bt_player.set_active(false)
 	set_physics_process(false)
-	if animated_sprite:
-		animated_sprite.play("dead")
+	animated_sprite.play("dead")
 ===== ./actors/enemy/enemy_bt.tres =====
 [gd_resource type="BehaviorTree" format=3 uid="uid://bmndwsqukjyf5"]
 
@@ -1160,72 +1133,53 @@ children = [SubResource("BTSequence_78x7y"), SubResource("BTSequence_8abap"), Su
 blackboard_plan = SubResource("BlackboardPlan_kfecl")
 root_task = SubResource("BTSelector_6adme")
 ===== ./actors/player/player.gd =====
-extends CharacterBody2D
 class_name Player
+extends CharacterBody2D
 
-@export var speed: float = 150.0
+const SPEED: float = 150.0
 
-@onready var animated_sprite = $AnimatedSprite2D
-@onready var health_component = $HealthComponent
-@onready var hitbox_component = $HitboxComponent
+@onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 
-var is_attacking: bool = false
+var current_state: PlayerState
+var last_direction: Vector2 = Vector2.RIGHT
 
 func _ready() -> void:
 	add_to_group("player")
-	# Validación segura para que no crashee si te falta el componente de vida
-	if health_component and health_component.has_signal("health_depleted"):
-		health_component.connect("health_depleted", Callable(self, "_on_death"))
+	current_state = $States/Idle
+	current_state.player = self
+	current_state.enter()
 
-func _physics_process(_delta: float) -> void:
-	if is_attacking:
-		return
+func change_state(state_name: String) -> void:
+	current_state.exit()
+	current_state = $States.get_node(state_name)
+	current_state.player = self
+	current_state.enter()
 
-	# Movimiento en 4 direcciones nativo de Godot 4
-	var direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
-	velocity = direction * speed
-	move_and_slide()
+func _physics_process(delta: float) -> void:
+	current_state.physics_update(delta)
 
-	# Usamos ui_accept (Espacio/Enter) para atacar por defecto y evitar errores de InputMap
-	if Input.is_action_just_pressed("ui_accept"):
-		_perform_attack()
-	else:
-		_update_animations()
+func play_animation(anim_name: String, direction: Vector2) -> void:
+	if direction != Vector2.ZERO:
+		last_direction = direction
+	if sprite.animation != anim_name:
+		sprite.play(anim_name)
+	if direction.x < 0:
+		sprite.flip_h = true
+	elif direction.x > 0:
+		sprite.flip_h = false
 
-func _update_animations() -> void:
-	if not animated_sprite:
-		return
-		
-	if velocity.length() > 0:
-		animated_sprite.play("walk")
-		if velocity.x != 0:
-			animated_sprite.flip_h = velocity.x < 0
-	else:
-		animated_sprite.play("idle")
-
-func _perform_attack() -> void:
-	if not animated_sprite:
-		return
-		
-	is_attacking = true
+# Elige la animación de ataque según la última dirección del jugador.
+func ejecutar_ataque_direccional() -> void:
 	velocity = Vector2.ZERO
-	animated_sprite.play("attack")
-	
-	# Activa el área de daño si tenés el componente
-	if hitbox_component:
-		hitbox_component.set_deferred("monitoring", true)
-
-	await animated_sprite.animation_finished
-	
-	if hitbox_component:
-		hitbox_component.set_deferred("monitoring", false)
-	is_attacking = false
-
-func _on_death() -> void:
-	set_physics_process(false)
-	if animated_sprite:
-		animated_sprite.play("dead")
+	if last_direction.y < -0.1:
+		play_animation("attack_up", Vector2.ZERO)
+	elif last_direction.y > 0.1:
+		play_animation("attack_down", Vector2.ZERO)
+	else:
+		play_animation("attack", Vector2.ZERO)
 ===== ./actors/player/states/player_state.gd =====
+# Clase base para todos los estados del jugador.
+# Cada estado hereda de esta clase e implementa los métodos que necesita.
 class_name PlayerState
 extends Node
 
@@ -1237,10 +1191,10 @@ func enter() -> void:
 func exit() -> void:
 	pass
 
-func update(delta: float) -> void:
+func update(_delta: float) -> void:
 	pass
 
-func physics_update(delta: float) -> void:
+func physics_update(_delta: float) -> void:
 	pass
 ===== ./actors/player/states/state_attack.gd =====
 class_name StateAttack
@@ -1249,6 +1203,7 @@ extends PlayerState
 func enter() -> void:
 	player.ejecutar_ataque_direccional()
 
+# Vuelve a Idle cuando la animación de ataque termina.
 func physics_update(_delta: float) -> void:
 	if not player.sprite.is_playing():
 		player.change_state("Idle")
@@ -1258,23 +1213,27 @@ extends PlayerState
 
 func enter() -> void:
 	player.velocity = Vector2.ZERO
-	player.play_animation("idle", Vector2.ZERO)
+	player.play_animation("dead", Vector2.ZERO)
 	player.set_physics_process(false)
 ===== ./actors/player/states/state_hurt.gd =====
 class_name StateHurt
 extends PlayerState
 
+const HURT_DURATION: float = 0.3
+const HURT_COLOR: Color = Color(2.0, 0.5, 0.5, 1.0)
+const NORMAL_COLOR: Color = Color(1.0, 1.0, 1.0, 1.0)
+
 func enter() -> void:
 	player.velocity = Vector2.ZERO
 	player.play_animation("idle", Vector2.ZERO)
-	player.sprite.modulate = Color(2.0, 0.5, 0.5, 1.0)
-	get_tree().create_timer(0.3).timeout.connect(_on_hurt_finished)
+	player.sprite.modulate = HURT_COLOR
+	get_tree().create_timer(HURT_DURATION).timeout.connect(_on_hurt_finished)
 
 func physics_update(_delta: float) -> void:
 	pass
 
 func _on_hurt_finished() -> void:
-	player.sprite.modulate = Color(1.0, 1.0, 1.0, 1.0)
+	player.sprite.modulate = NORMAL_COLOR
 	player.change_state("Idle")
 ===== ./actors/player/states/state_idle.gd =====
 class_name StateIdle
@@ -1306,6 +1265,8 @@ func physics_update(_delta: float) -> void:
 		player.play_animation("walk", direction)
 		player.move_and_slide()
 ===== ./ai/tasks/bt_attack_player.gd =====
+# Detiene al enemigo y reproduce la animación de ataque.
+@tool
 class_name BTAttackPlayer
 extends BTAction
 
@@ -1317,26 +1278,23 @@ func _tick(_delta: float) -> Status:
 	animated_sprite.play("attack")
 	return SUCCESS
 ===== ./ai/tasks/bt_chase_player.gd =====
+# Mueve al enemigo hacia el jugador mientras esté en rango de detección.
+@tool
+class_name BTChasePlayer
 extends BTAction
 
+const SPEED: float = 80.0
+
 func _tick(_delta: float) -> Status:
-	# Obtener referencias desde la Blackboard de LimboAI
-	var enemy: Enemy = blackboard.get_var("enemy")
-	var player: CharacterBody2D = blackboard.get_var("player")
-	
-	if not enemy or not player:
+	var player: Node2D = blackboard.get_var(&"player", null) as Node2D
+	var animated_sprite: AnimatedSprite2D = agent.get_node("AnimatedSprite2D") as AnimatedSprite2D
+	if not is_instance_valid(player):
 		return FAILURE
-		
-	# Calculamos distancia
-	var distance = enemy.global_position.distance_to(player.global_position)
-	
-	# Si está muy cerca, pasa el control al estado de ataque de LimboAI
-	if distance <= 30.0:
-		enemy.velocity = Vector2.ZERO
-		return SUCCESS
-		
-	# Movemos usando el método seguro del enemigo
-	enemy.move_towards_position(player.global_position)
+	var direction: Vector2 = (player.global_position - agent.global_position).normalized()
+	(agent as CharacterBody2D).velocity = direction * SPEED
+	(agent as CharacterBody2D).move_and_slide()
+	animated_sprite.play("walk")
+	animated_sprite.flip_h = direction.x < 0
 	return RUNNING
 ===== ./ai/tasks/bt_is_player_in_attack_range.gd =====
 @tool
@@ -1387,6 +1345,7 @@ func _tick(delta: float) -> Status:
 		_distance_traveled = 0.0
 	return RUNNING
 ===== ./components/health_component.gd =====
+# Componente reutilizable de vida. No asume nada sobre su nodo padre.
 class_name HealthComponent
 extends Node
 
@@ -1394,16 +1353,21 @@ signal health_changed(new_health: float)
 signal health_depleted
 
 @export var max_health: float = 100.0
-@onready var current_health: float = max_health
+
+var current_health: float
+
+func _ready() -> void:
+	current_health = max_health
 
 func take_damage(amount: float) -> void:
-	if current_health <= 0:
+	if current_health <= 0.0:
 		return
 	current_health = clamp(current_health - amount, 0.0, max_health)
 	health_changed.emit(current_health)
-	if current_health <= 0:
+	if current_health <= 0.0:
 		health_depleted.emit()
 ===== ./components/hitbox_component.gd =====
+# Área que inflige daño al entrar en contacto con un HurtboxComponent.
 class_name HitboxComponent
 extends Area2D
 
@@ -1413,6 +1377,7 @@ func _ready() -> void:
 	monitoring = true
 	monitorable = true
 ===== ./components/hurtbox_component.gd =====
+# Área que recibe daño de los HitboxComponents. Requiere un HealthComponent asignado.
 class_name HurtboxComponent
 extends Area2D
 
@@ -21769,6 +21734,14 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ioo17"]
 size = Vector2(12, 16)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wukud"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_il2jm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cbp6q"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_26xuy"]
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_e77ka"]
 atlas = ExtResource("15_hiqwa")
 region = Rect2(0, 384, 192, 192)
@@ -22016,6 +21989,11 @@ animations = [{
 
 [sub_resource type="BlackboardPlan" id="BlackboardPlan_udxuc"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bc84e"]
+
+[sub_resource type="TileSet" id="TileSet_26xuy"]
+physics_layer_0/collision_layer = 1
+
 [node name="world" type="Node2D" unique_id=655083946]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1902920739]
@@ -22055,7 +22033,7 @@ script = ExtResource("1_f3sb7")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player" unique_id=407095699]
 scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_ioo17")
-animation = &"walk"
+animation = &"dead"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player" unique_id=2091782850]
@@ -22084,9 +22062,20 @@ zoom = Vector2(3, 3)
 
 [node name="HitboxComponent" type="Area2D" parent="player" unique_id=531925347]
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player/HitboxComponent" unique_id=1214806749]
+shape = SubResource("RectangleShape2D_wukud")
+
 [node name="HealthComponent" type="Node" parent="player" unique_id=1957515972]
 script = ExtResource("12_hiqwa")
 metadata/_custom_type_script = "uid://cw3mb10bic1xa"
+
+[node name="HurtboxComponent" type="Area2D" parent="player" unique_id=1539671520 node_paths=PackedStringArray("health_component")]
+script = ExtResource("13_2u3nc")
+health_component = NodePath("../HealthComponent")
+metadata/_custom_type_script = "uid://bfmpkiv6433ni"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player/HurtboxComponent" unique_id=2012760740]
+shape = SubResource("RectangleShape2D_il2jm")
 
 [node name="Enemy" type="CharacterBody2D" parent="." unique_id=1617173726]
 script = ExtResource("11_2u3nc")
@@ -22095,14 +22084,21 @@ script = ExtResource("11_2u3nc")
 script = ExtResource("12_hiqwa")
 metadata/_custom_type_script = "uid://cw3mb10bic1xa"
 
-[node name="HurtboxComponent" type="Area2D" parent="Enemy" unique_id=1524883653]
+[node name="HurtboxComponent" type="Area2D" parent="Enemy" unique_id=1524883653 node_paths=PackedStringArray("health_component")]
 script = ExtResource("13_2u3nc")
+health_component = NodePath("../HealthComponent")
 metadata/_custom_type_script = "uid://bfmpkiv6433ni"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/HurtboxComponent" unique_id=667732663]
+shape = SubResource("RectangleShape2D_cbp6q")
 
 [node name="HitboxComponent" type="Area2D" parent="Enemy" unique_id=1161580501]
 script = ExtResource("14_udxuc")
 damage = 15.0
 metadata/_custom_type_script = "uid://dxj6i1lnitkd1"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/HitboxComponent" unique_id=2086793877]
+shape = SubResource("RectangleShape2D_26xuy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Enemy" unique_id=235760624]
 position = Vector2(74, -72)
@@ -22118,8 +22114,10 @@ behavior_tree = ExtResource("16_2u3nc")
 blackboard_plan = SubResource("BlackboardPlan_udxuc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy" unique_id=1025036745]
+shape = SubResource("RectangleShape2D_bc84e")
 
 [node name="Colisiones" type="TileMapLayer" parent="." unique_id=819055872]
+tile_set = SubResource("TileSet_26xuy")
 
 [node name="HealthComponent" type="Node" parent="." unique_id=521229422]
 script = ExtResource("12_hiqwa")
