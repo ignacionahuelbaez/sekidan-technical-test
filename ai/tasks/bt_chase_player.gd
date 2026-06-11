@@ -1,17 +1,21 @@
-@tool
-class_name BTChasePlayer
 extends BTAction
 
-const SPEED: float = 80.0
-
 func _tick(_delta: float) -> Status:
-	var player: Node2D = blackboard.get_var(&"player", null) as Node2D
-	var animated_sprite: AnimatedSprite2D = agent.get_node("AnimatedSprite2D") as AnimatedSprite2D
-	if not is_instance_valid(player):
+	# Obtener referencias desde la Blackboard de LimboAI
+	var enemy: Enemy = blackboard.get_var("enemy")
+	var player: CharacterBody2D = blackboard.get_var("player")
+	
+	if not enemy or not player:
 		return FAILURE
-	var direction: Vector2 = (player.global_position - agent.global_position).normalized()
-	(agent as CharacterBody2D).velocity = direction * SPEED
-	(agent as CharacterBody2D).move_and_slide()
-	animated_sprite.play("walk")
-	animated_sprite.flip_h = direction.x < 0
+		
+	# Calculamos distancia
+	var distance = enemy.global_position.distance_to(player.global_position)
+	
+	# Si está muy cerca, pasa el control al estado de ataque de LimboAI
+	if distance <= 30.0:
+		enemy.velocity = Vector2.ZERO
+		return SUCCESS
+		
+	# Movemos usando el método seguro del enemigo
+dd	enemy.move_towards_position(player.global_position)
 	return RUNNING
