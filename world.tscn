@@ -1127,7 +1127,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_eewsi")
 }],
-"loop": true,
+"loop": false,
 "name": &"walk",
 "speed": 10.0
 }]
@@ -1140,7 +1140,7 @@ tile_set = SubResource("TileSet_ioo17")
 
 [node name="Colisiones" type="TileMapLayer" parent="." unique_id=819055872]
 
-[node name="player" type="CharacterBody2D" parent="." unique_id=1909192518]
+[node name="player" type="CharacterBody2D" parent="." unique_id=1909192518 groups=["player"]]
 motion_mode = 1
 script = ExtResource("1_f3sb7")
 
@@ -1193,11 +1193,14 @@ damage = 15.0
 metadata/_custom_type_script = "uid://dxj6i1lnitkd1"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Enemy" unique_id=235760624]
+position = Vector2(74, -72)
 scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_e77ka")
-animation = &"attack"
+animation = &"walk"
 autoplay = "ilde"
 
 [node name="Timer" type="Timer" parent="Enemy" unique_id=351836041]
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="Enemy" unique_id=1076607406]
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=882290306]

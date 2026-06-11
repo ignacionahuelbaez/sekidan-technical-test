@@ -2,8 +2,8 @@ class_name Enemy
 extends CharacterBody2D
 
 @export var speed: float = 120.0
-@export var detection_range: float = 180.0
-@export var attack_range: float = 28.0
+@export var detection_range: float = 200.0
+@export var attack_range: float = 32.0
 @export var attack_damage: float = 15.0
 @export var max_health: float = 60.0
 
@@ -11,26 +11,20 @@ extends CharacterBody2D
 @onready var hurtbox: HurtboxComponent = $HurtboxComponent
 @onready var hitbox: HitboxComponent = $HitboxComponent
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
-@onready var navigation_agent: NavigationAgent2D = $NavigationAgent2D
 @onready var attack_timer: Timer = $Timer
 
 var player: Player = null
 var is_attacking: bool = false
 
 func _ready() -> void:
-	if not health_compon:
-		push_error("Enemy: No se encontró HealthComponent")
-		return
-	
-	health_compon.max_health = max_health
-	health_compon.current_health = max_health
-	health_compon.health_depleted.connect(_on_health_depleted)
-	
-	if hurtbox:
-		hurtbox.health_component = health_compon
+	if health_compon:
+		health_compon.max_health = max_health
+		health_compon.current_health = max_health
+		health_compon.health_depleted.connect(_on_health_depleted)
 	
 	if hitbox:
 		hitbox.damage = attack_damage
+		hitbox.monitoring = false
 	
 	player = get_tree().get_first_node_in_group("player")
 	if not player:
@@ -43,28 +37,27 @@ func _ready() -> void:
 
 
 func _physics_process(_delta: float) -> void:
-	if not health_compon or health_compon.current_health <= 0 or player == null:
-		velocity = Vector2.ZERO
-		if animated_sprite:
-			animated_sprite.play("idle")
+	if not player or (health_compon and health_compon.current_health <= 0):
+		_idle()
 		return
-
-	var distance_to_player: float = global_position.distance_to(player.global_position)
 	
-	if distance_to_player <= attack_range and not is_attacking:
+	var distance: float = global_position.distance_to(player.global_position)
+	
+	if distance <= attack_range and not is_attacking:
 		_start_attack()
-	elif distance_to_player <= detection_range:
+	elif distance <= detection_range:
 		_chase_player()
 	else:
 		_idle()
 
 
 func _chase_player() -> void:
-	navigation_agent.target_position = player.global_position
-	var next_path_position: Vector2 = navigation_agent.get_next_path_position()
-	var direction: Vector2 = (next_path_position - global_position).normalized()
-	
+	var direction = (player.global_position - global_position).normalized()
 	velocity = direction * speed
+	
+	# Debug
+	print("Persiguiendo | Distancia: ", global_position.distance_to(player.global_position), " | Vel: ", velocity.length())
+	
 	move_and_slide()
 	_update_animation(direction, "walk")
 
@@ -78,28 +71,41 @@ func _idle() -> void:
 func _start_attack() -> void:
 	is_attacking = true
 	velocity = Vector2.ZERO
+	
 	if animated_sprite:
 		animated_sprite.play("attack")
 	
+	# Timing del daño
 	if hitbox:
+		hitbox.monitoring = false
+	
+	await get_tree().create_timer(0.4).timeout
+	
+	if hitbox and is_attacking:
 		hitbox.monitoring = true
 	
+	await get_tree().create_timer(0.25).timeout
+	if hitbox:
+		hitbox.monitoring = false
+	
+	if animated_sprite:
+		await animated_sprite.animation_finished
+	
+	_end_attack()
+
+
+func _end_attack() -> void:
+	is_attacking = false
 	if attack_timer:
 		attack_timer.start()
 
 
-func _on_attack_timer_timeout() -> void:
-	is_attacking = false
-	if hitbox:
-		hitbox.monitoring = false
-
-
-func _update_animation(direction: Vector2, anim_name: String) -> void:
+func _update_animation(direction: Vector2, anim: String) -> void:
 	if animated_sprite:
-		animated_sprite.play(anim_name)
+		animated_sprite.play(anim)
 		if direction.x < 0:
 			animated_sprite.flip_h = true
-		elif direction.x > 0:
+		else:
 			animated_sprite.flip_h = false
 
 
@@ -109,3 +115,7 @@ func _on_health_depleted() -> void:
 		animated_sprite.play("dead")
 	await get_tree().create_timer(1.5).timeout
 	queue_free()
+
+
+func _on_attack_timer_timeout() -> void:
+	pass
