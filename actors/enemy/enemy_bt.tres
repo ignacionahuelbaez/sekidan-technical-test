@@ -1,0 +1,43 @@
+[gd_resource type="BehaviorTree" format=3 uid="uid://bmndwsqukjyf5"]
+
+[ext_resource type="Script" uid="uid://38a1hfcgu7ra" path="res://ai/tasks/bt_is_player_in_attack_range.gd" id="1_n7e10"]
+[ext_resource type="Script" uid="uid://dpsjhwqqygtmw" path="res://ai/tasks/bt_attack_player.gd" id="2_qluyy"]
+[ext_resource type="Script" uid="uid://3jdh6vg3yo8e" path="res://ai/tasks/bt_is_player_in_detection_range.gd" id="3_5ek5j"]
+[ext_resource type="Script" uid="uid://cj3ramqs3sxcd" path="res://ai/tasks/bt_chase_player.gd" id="4_o4i6e"]
+[ext_resource type="Script" uid="uid://ct3l476b5y1y6" path="res://ai/tasks/bt_patrol.gd" id="5_xahx2"]
+
+[sub_resource type="BlackboardPlan" id="BlackboardPlan_kfecl"]
+
+[sub_resource type="BTCondition" id="BTCondition_a4iud"]
+script = ExtResource("1_n7e10")
+
+[sub_resource type="BTAction" id="BTAction_umkmd"]
+script = ExtResource("2_qluyy")
+
+[sub_resource type="BTSequence" id="BTSequence_78x7y"]
+custom_name = "Atacar"
+children = [SubResource("BTCondition_a4iud"), SubResource("BTAction_umkmd")]
+
+[sub_resource type="BTCondition" id="BTCondition_2o110"]
+script = ExtResource("3_5ek5j")
+
+[sub_resource type="BTAction" id="BTAction_6dv2v"]
+script = ExtResource("4_o4i6e")
+
+[sub_resource type="BTSequence" id="BTSequence_8abap"]
+custom_name = "Perseguir"
+children = [SubResource("BTCondition_2o110"), SubResource("BTAction_6dv2v")]
+
+[sub_resource type="BTAction" id="BTAction_wt0mv"]
+script = ExtResource("5_xahx2")
+
+[sub_resource type="BTSequence" id="BTSequence_v2u1e"]
+custom_name = "Patrullar"
+children = [SubResource("BTAction_wt0mv")]
+
+[sub_resource type="BTSelector" id="BTSelector_6adme"]
+children = [SubResource("BTSequence_78x7y"), SubResource("BTSequence_8abap"), SubResource("BTSequence_v2u1e")]
+
+[resource]
+blackboard_plan = SubResource("BlackboardPlan_kfecl")
+root_task = SubResource("BTSelector_6adme")

@@ -15,6 +15,7 @@
 [ext_resource type="Script" uid="uid://bfmpkiv6433ni" path="res://components/hurtbox_component.gd" id="13_2u3nc"]
 [ext_resource type="Script" uid="uid://dxj6i1lnitkd1" path="res://components/hitbox_component.gd" id="14_udxuc"]
 [ext_resource type="Texture2D" uid="uid://br3w4r2pueq3i" path="res://assets/Torch_Red.png" id="15_hiqwa"]
+[ext_resource type="BehaviorTree" uid="uid://bmndwsqukjyf5" path="res://actors/enemy/enemy_bt.tres" id="16_2u3nc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ic0uy"]
 texture = ExtResource("1_wse8f")
@@ -1132,6 +1133,8 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="BlackboardPlan" id="BlackboardPlan_udxuc"]
+
 [node name="world" type="Node2D" unique_id=655083946]
 
 [node name="suelo" type="TileMapLayer" parent="." unique_id=361008697]
@@ -1200,3 +1203,7 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="Timer" type="Timer" parent="Enemy" unique_id=351836041]
+
+[node name="BTPlayer" type="BTPlayer" parent="Enemy" unique_id=810953631]
+behavior_tree = ExtResource("16_2u3nc")
+blackboard_plan = SubResource("BlackboardPlan_udxuc")
