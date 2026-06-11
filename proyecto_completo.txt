@@ -34,6 +34,34 @@ sections_unfolded=PackedStringArray()
 [folding]
 
 sections_unfolded=PackedStringArray()
+===== ./.godot/editor/bt_attack_player.gd-folding-5685199b8ec36d33cdd63ee7650c6e65.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/bt_attack_player.gd-folding-ee43f5ccc7ae57c4c7fe348f193e7f0d.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/bt_chase_player.gd-folding-a05338eaba6a86d5d81c27482eda63ad.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/bt_is_player_in_attack_range.gd-folding-3e196f7350dda9fb985df3e0ac348aff.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/bt_is_player_in_detection_range.gd-folding-1c2b7b0caf48fce547a1cb962f92c9aa.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/bt_is_player_in_detection_range.gd-folding-3d173b0ceded8ab70bbacf310f45d37f.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/bt_patrol.gd-folding-b4c9d08ff594e3d1ca7ff8feadaed7a6.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
 ===== ./.godot/editor/camera_2d.gd-folding-39052f56b5c90500d7d6e1c68a418bbc.cfg =====
 [folding]
 
@@ -49,8 +77,8 @@ dock_closed=[]
 dock_split_2=0
 dock_split_3=0
 dock_hsplit_1=0
-dock_hsplit_2=216
-dock_hsplit_3=-353
+dock_hsplit_2=228
+dock_hsplit_3=-338
 dock_hsplit_4=0
 dock_9_selected_tab_idx=1
 dock_3="Scene,Import"
@@ -65,8 +93,8 @@ v_split_offset=0
 display_mode=0
 file_sort=0
 file_list_display_mode=1
-selected_paths=PackedStringArray("res://actors/enemy/")
-uncollapsed_paths=PackedStringArray("Favorites", "res://", "res://world/", "res://addons/addons/", "res://addons/addons/limboai/", "res://actors/", "res://actors/player/states/")
+selected_paths=PackedStringArray("res://ai/tasks/")
+uncollapsed_paths=PackedStringArray("Favorites", "res://", "res://world/", "res://actors/player/states/")
 
 [docks/History]
 
@@ -87,8 +115,8 @@ bottom_panel_offsets={
 "TileMap": 0,
 "TileSet": 0
 }
-selected_default_debugger_tab_idx=10
-selected_main_editor_idx=5
+selected_default_debugger_tab_idx=0
+selected_main_editor_idx=2
 
 [EditorWindow]
 
@@ -98,9 +126,9 @@ position=Vector2i(0, 23)
 
 [ScriptEditor]
 
-open_scripts=["res://enemy.gd", "res://components/health_component.gd", "res://components/hitbox_component.gd", "res://components/hurtbox_component.gd", "res://actors/player/player.gd", "res://actors/player/states/player_state.gd", "res://actors/player/states/state_attack.gd", "res://actors/player/states/state_dead.gd", "res://actors/player/states/state_hurt.gd", "res://actors/player/states/state_idle.gd", "res://actors/player/states/state_walk.gd"]
-selected_script="res://enemy.gd"
-open_help=["CompressedTexture2D", "GDScript", "Sprite2D"]
+open_scripts=["res://ai/tasks/bt_attack_player.gd", "res://ai/tasks/bt_chase_player.gd", "res://ai/tasks/bt_is_player_in_attack_range.gd", "res://ai/tasks/bt_is_player_in_detection_range.gd", "res://ai/tasks/bt_patrol.gd", "res://enemy.gd", "res://components/health_component.gd", "res://components/hitbox_component.gd", "res://components/hurtbox_component.gd", "res://actors/player/player.gd", "res://actors/player/states/player_state.gd", "res://actors/player/states/state_attack.gd", "res://actors/player/states/state_dead.gd", "res://actors/player/states/state_hurt.gd", "res://actors/player/states/state_idle.gd", "res://actors/player/states/state_walk.gd"]
+selected_script="res://ai/tasks/bt_is_player_in_attack_range.gd"
+open_help=["BTSequence", "CompressedTexture2D", "GDScript", "Sprite2D"]
 script_split_offset=255
 list_split_offset=57
 zoom_factor=0.57142854
@@ -129,7 +157,7 @@ show_search=true
 
 [LimboAI]
 
-bteditor_open_bts=[]
+bteditor_open_bts=["res://actors/enemy/enemy_bt.tres"]
 bteditor_hsplit=320
 debugger_update_interval_msec=0.0
 task_palette_collapsed_sections=[]
@@ -141,6 +169,10 @@ task_palette_excluded_categories=[]
 
 sections_unfolded=PackedStringArray()
 ===== ./.godot/editor/enemy.gd-folding-330a1fc7dbbe1bf2c9ebea044ae04277.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/enemy_bt.tres-folding-f61e8f0af8641addd4f48055837a141b.cfg =====
 [folding]
 
 sections_unfolded=PackedStringArray()
@@ -193,7 +225,7 @@ project_settings=Rect2(137, 77, 1092, 614)
 [recent_files]
 
 scenes=["res://world.tscn", "res://world/world_camera_world.tscn"]
-scripts=["res://enemy.gd", "Sprite2D", "CompressedTexture2D", "res://camera_2d.gd", "res://components/hurtbox_component.gd", "res://components/hitbox_component.gd", "res://components/health_component.gd.gd", "res://actors/player/states/state_dead.gd", "res://actors/player/states/state_hurt.gd", "res://actors/player/states/state_attack.gd"]
+scripts=["Sprite2D", "GDScript", "CompressedTexture2D", "BTSequence", "res://ai/tasks/bt_patrol.gd", "res://ai/tasks/bt_chase_player.gd", "res://ai/bt_attack_player.gd", "res://ai/bt_is_player_in_detection_range.gd", "res://ai/tasks/bt_is_player_in_attack_range.gd", "res://enemy.gd"]
 
 [script_setup]
 
@@ -215,6 +247,7 @@ picker_shape=3
 [selected_history]
 
 PackedScene=PackedStringArray("uid://cw5xjm18x47gc")
+BehaviorTree=PackedStringArray("uid://bmndwsqukjyf5")
 ===== ./.godot/editor/script_editor_cache.cfg =====
 [res://actors/player/player.gd]
 
@@ -365,6 +398,76 @@ state={
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
 "row": 11,
+"scroll_position": 11.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://ai/tasks/bt_is_player_in_attack_range.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 0,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 7,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://ai/tasks/bt_attack_player.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 15,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 9,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://ai/tasks/bt_is_player_in_detection_range.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 55,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 11,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://ai/tasks/bt_chase_player.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 15,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 16,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://ai/tasks/bt_patrol.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 15,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 20,
 "scroll_position": 0.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
@@ -581,12 +684,12 @@ sections_unfolded=PackedStringArray()
 Anim={
 "visible": false
 }
-selected_nodes=Array[NodePath]([])
+selected_nodes=Array[NodePath]([NodePath("/root/@EditorNode@18724/@Panel@14/@VBoxContainer@15/DockHSplitMain/@VBoxContainer@28/DockVSplitCenter/@VSplitContainer@70/@VBoxContainer@71/@EditorMainScreen@125/MainScreen/@CanvasItemEditor@9322/@VSplitContainer@9105/@HSplitContainer@9107/@HSplitContainer@9109/@Control@9110/@SubViewportContainer@9111/@SubViewport@9112/world/Enemy/BTPlayer")])
 ===== ./.godot/editor/world.tscn-folding-76e0adcbc83681695885bae615f516ae.cfg =====
 [folding]
 
 node_unfolds=[NodePath("suelo"), PackedStringArray("tile_set"), NodePath("player/AnimatedSprite2D"), PackedStringArray("Transform", "Offset"), NodePath("Enemy/HitboxComponent"), PackedStringArray("Gravity"), NodePath("Enemy/AnimatedSprite2D"), PackedStringArray("Offset", "Transform")]
-resource_unfolds=["res://world.tscn::TileSet_ioo17", PackedStringArray(), "res://world.tscn::SpriteFrames_ioo17", PackedStringArray("Resource"), "res://world.tscn::RectangleShape2D_ioo17", PackedStringArray(), "res://world.tscn::SpriteFrames_e77ka", PackedStringArray()]
+resource_unfolds=["res://world.tscn::TileSet_ioo17", PackedStringArray(), "res://world.tscn::SpriteFrames_ioo17", PackedStringArray("Resource"), "res://world.tscn::RectangleShape2D_ioo17", PackedStringArray(), "res://world.tscn::SpriteFrames_e77ka", PackedStringArray(), "res://world.tscn::BlackboardPlan_udxuc", PackedStringArray()]
 nodes_folded=[NodePath("player"), NodePath("player/States")]
 ===== ./.godot/editor/world_camera_world.tscn-editstate-e311380c96155eb91e3d6080f207d969.cfg =====
 [editor_states]
@@ -788,10 +891,49 @@ node_unfolds=[NodePath("suelo"), PackedStringArray("tile_set"), NodePath("player
 resource_unfolds=["res://world/world_camera_world.tscn::TileSet_ioo17", PackedStringArray(), "res://world/world_camera_world.tscn::SpriteFrames_ioo17", PackedStringArray("Resource"), "res://world/world_camera_world.tscn::RectangleShape2D_ioo17", PackedStringArray()]
 nodes_folded=[NodePath("player/States")]
 ===== ./.godot/extension_list.cfg =====
-res://addons/addons/limboai/bin/limboai.gdextension
 res://addons/limboai/bin/limboai.gdextension
 ===== ./.godot/global_script_class_cache.cfg =====
 list=[{
+"base": &"BTAction",
+"class": &"BTAttackPlayer",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://ai/tasks/bt_attack_player.gd"
+}, {
+"base": &"BTAction",
+"class": &"BTChasePlayer",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://ai/tasks/bt_chase_player.gd"
+}, {
+"base": &"BTCondition",
+"class": &"BTIsPlayerInAttackRange",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://ai/tasks/bt_is_player_in_attack_range.gd"
+}, {
+"base": &"BTCondition",
+"class": &"BTIsPlayerInDetectionRange",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://ai/tasks/bt_is_player_in_detection_range.gd"
+}, {
+"base": &"BTAction",
+"class": &"BTPatrol",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://ai/tasks/bt_patrol.gd"
+}, {
 "base": &"CharacterBody2D",
 "class": &"Enemy",
 "icon": "",
@@ -916,6 +1058,50 @@ groups=[&"player"]
 [res://world.tscn]
 
 groups=[&"player"]
+===== ./actors/enemy/enemy_bt.tres =====
+[gd_resource type="BehaviorTree" format=3 uid="uid://bmndwsqukjyf5"]
+
+[ext_resource type="Script" uid="uid://38a1hfcgu7ra" path="res://ai/tasks/bt_is_player_in_attack_range.gd" id="1_n7e10"]
+[ext_resource type="Script" uid="uid://dpsjhwqqygtmw" path="res://ai/tasks/bt_attack_player.gd" id="2_qluyy"]
+[ext_resource type="Script" uid="uid://3jdh6vg3yo8e" path="res://ai/tasks/bt_is_player_in_detection_range.gd" id="3_5ek5j"]
+[ext_resource type="Script" uid="uid://cj3ramqs3sxcd" path="res://ai/tasks/bt_chase_player.gd" id="4_o4i6e"]
+[ext_resource type="Script" uid="uid://ct3l476b5y1y6" path="res://ai/tasks/bt_patrol.gd" id="5_xahx2"]
+
+[sub_resource type="BlackboardPlan" id="BlackboardPlan_kfecl"]
+
+[sub_resource type="BTCondition" id="BTCondition_a4iud"]
+script = ExtResource("1_n7e10")
+
+[sub_resource type="BTAction" id="BTAction_umkmd"]
+script = ExtResource("2_qluyy")
+
+[sub_resource type="BTSequence" id="BTSequence_78x7y"]
+custom_name = "Atacar"
+children = [SubResource("BTCondition_a4iud"), SubResource("BTAction_umkmd")]
+
+[sub_resource type="BTCondition" id="BTCondition_2o110"]
+script = ExtResource("3_5ek5j")
+
+[sub_resource type="BTAction" id="BTAction_6dv2v"]
+script = ExtResource("4_o4i6e")
+
+[sub_resource type="BTSequence" id="BTSequence_8abap"]
+custom_name = "Perseguir"
+children = [SubResource("BTCondition_2o110"), SubResource("BTAction_6dv2v")]
+
+[sub_resource type="BTAction" id="BTAction_wt0mv"]
+script = ExtResource("5_xahx2")
+
+[sub_resource type="BTSequence" id="BTSequence_v2u1e"]
+custom_name = "Patrullar"
+children = [SubResource("BTAction_wt0mv")]
+
+[sub_resource type="BTSelector" id="BTSelector_6adme"]
+children = [SubResource("BTSequence_78x7y"), SubResource("BTSequence_8abap"), SubResource("BTSequence_v2u1e")]
+
+[resource]
+blackboard_plan = SubResource("BlackboardPlan_kfecl")
+root_task = SubResource("BTSelector_6adme")
 ===== ./actors/player/player.gd =====
 class_name Player
 extends CharacterBody2D
@@ -1038,6 +1224,83 @@ func physics_update(_delta: float) -> void:
 		player.velocity = direction * player.SPEED
 		player.play_animation("walk", direction)
 		player.move_and_slide()
+===== ./ai/tasks/bt_attack_player.gd =====
+class_name BTAttackPlayer
+extends BTAction
+
+func _tick(_delta: float) -> Status:
+	var enemy: CharacterBody2D = agent as CharacterBody2D
+	var animated_sprite: AnimatedSprite2D = enemy.get_node("AnimatedSprite2D") as AnimatedSprite2D
+	enemy.velocity = Vector2.ZERO
+	enemy.move_and_slide()
+	animated_sprite.play("attack")
+	return SUCCESS
+===== ./ai/tasks/bt_chase_player.gd =====
+class_name BTChasePlayer
+extends BTAction
+
+const SPEED: float = 80.0
+
+func _tick(_delta: float) -> Status:
+	var enemy: CharacterBody2D = agent as CharacterBody2D
+	var player: Node2D = scene_root.get_first_node_in_group("player") as Node2D
+	var animated_sprite: AnimatedSprite2D = enemy.get_node("AnimatedSprite2D") as AnimatedSprite2D
+	if not player:
+		return FAILURE
+	var direction: Vector2 = (player.global_position - enemy.global_position).normalized()
+	enemy.velocity = direction * SPEED
+	enemy.move_and_slide()
+	animated_sprite.play("walk")
+	animated_sprite.flip_h = direction.x < 0
+	return RUNNING
+===== ./ai/tasks/bt_is_player_in_attack_range.gd =====
+class_name BTIsPlayerInAttackRange
+extends BTCondition
+
+const ATTACK_RANGE: float = 40.0
+
+func _tick(_delta: float) -> Status:
+	var enemy: CharacterBody2D = agent as CharacterBody2D
+	var player: Node2D = scene_root.get_first_node_in_group("player") as Node2D
+	if not player:
+		return FAILURE
+	var dist: float = enemy.global_position.distance_to(player.global_position)
+	return SUCCESS if dist <= ATTACK_RANGE else FAILURE
+===== ./ai/tasks/bt_is_player_in_detection_range.gd =====
+class_name BTIsPlayerInDetectionRange
+extends BTCondition
+
+const DETECTION_RANGE: float = 200.0
+
+func _tick(_delta: float) -> Status:
+	var enemy: CharacterBody2D = agent as CharacterBody2D
+	var player: Node2D = scene_root.get_first_node_in_group("player") as Node2D
+	if not player:
+		return FAILURE
+	var dist: float = enemy.global_position.distance_to(player.global_position)
+	return SUCCESS if dist <= DETECTION_RANGE else FAILURE
+===== ./ai/tasks/bt_patrol.gd =====
+class_name BTPatrol
+extends BTAction
+
+const SPEED: float = 50.0
+const PATROL_DISTANCE: float = 100.0
+
+var _direction: Vector2 = Vector2.RIGHT
+var _distance_traveled: float = 0.0
+
+func _tick(delta: float) -> Status:
+	var enemy: CharacterBody2D = agent as CharacterBody2D
+	var animated_sprite: AnimatedSprite2D = enemy.get_node("AnimatedSprite2D") as AnimatedSprite2D
+	enemy.velocity = _direction * SPEED
+	enemy.move_and_slide()
+	animated_sprite.play("walk")
+	animated_sprite.flip_h = _direction.x < 0
+	_distance_traveled += SPEED * delta
+	if _distance_traveled >= PATROL_DISTANCE:
+		_direction = -_direction
+		_distance_traveled = 0.0
+	return RUNNING
 ===== ./components/health_component.gd =====
 class_name HealthComponent
 extends Node
@@ -18481,6 +18744,7 @@ script = ExtResource("11_0l2tg")
 [ext_resource type="Script" uid="uid://bfmpkiv6433ni" path="res://components/hurtbox_component.gd" id="13_2u3nc"]
 [ext_resource type="Script" uid="uid://dxj6i1lnitkd1" path="res://components/hitbox_component.gd" id="14_udxuc"]
 [ext_resource type="Texture2D" uid="uid://br3w4r2pueq3i" path="res://assets/Torch_Red.png" id="15_hiqwa"]
+[ext_resource type="BehaviorTree" uid="uid://bmndwsqukjyf5" path="res://actors/enemy/enemy_bt.tres" id="16_2u3nc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ic0uy"]
 texture = ExtResource("1_wse8f")
@@ -19598,6 +19862,8 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="BlackboardPlan" id="BlackboardPlan_udxuc"]
+
 [node name="world" type="Node2D" unique_id=655083946]
 
 [node name="suelo" type="TileMapLayer" parent="." unique_id=361008697]
@@ -19666,3 +19932,7 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="Timer" type="Timer" parent="Enemy" unique_id=351836041]
+
+[node name="BTPlayer" type="BTPlayer" parent="Enemy" unique_id=810953631]
+behavior_tree = ExtResource("16_2u3nc")
+blackboard_plan = SubResource("BlackboardPlan_udxuc")

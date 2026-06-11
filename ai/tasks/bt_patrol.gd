@@ -1,3 +1,4 @@
+@tool
 class_name BTPatrol
 extends BTAction
 
@@ -8,10 +9,9 @@ var _direction: Vector2 = Vector2.RIGHT
 var _distance_traveled: float = 0.0
 
 func _tick(delta: float) -> Status:
-	var enemy: CharacterBody2D = agent as CharacterBody2D
-	var animated_sprite: AnimatedSprite2D = enemy.get_node("AnimatedSprite2D") as AnimatedSprite2D
-	enemy.velocity = _direction * SPEED
-	enemy.move_and_slide()
+	var animated_sprite: AnimatedSprite2D = agent.get_node("AnimatedSprite2D") as AnimatedSprite2D
+	(agent as CharacterBody2D).velocity = _direction * SPEED
+	(agent as CharacterBody2D).move_and_slide()
 	animated_sprite.play("walk")
 	animated_sprite.flip_h = _direction.x < 0
 	_distance_traveled += SPEED * delta
