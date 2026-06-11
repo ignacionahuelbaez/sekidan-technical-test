@@ -15,9 +15,7 @@ func _ready() -> void:
 func _physics_process(_delta: float) -> void:
 	if not player:
 		return
-
 	var dist: float = global_position.distance_to(player.global_position)
-
 	if dist <= ATTACK_RANGE:
 		_idle()
 	elif dist <= DETECTION_RANGE:
@@ -34,4 +32,5 @@ func _chase() -> void:
 
 func _idle() -> void:
 	velocity = Vector2.ZERO
+	move_and_slide()
 	animated_sprite.play("idle")

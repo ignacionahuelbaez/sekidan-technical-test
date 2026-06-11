@@ -7,7 +7,7 @@ sections_unfolded=PackedStringArray()
 
 dock_3_selected_tab_idx=0
 dock_4_selected_tab_idx=0
-dock_5_selected_tab_idx=0
+dock_5_selected_tab_idx=2
 dock_floating={}
 dock_closed=[]
 dock_split_2=0
@@ -20,7 +20,7 @@ dock_9_selected_tab_idx=0
 dock_3="Scene,Import"
 dock_4="FileSystem,History"
 dock_5="Inspector,Signals,Groups"
-dock_9="Output,Debugger,Audio,Animation,Shader Editor,SpriteFrames,Search Results,AnimationTree,ResourcePreloader,ShaderFile,Theme,Polygon,TileSet,TileMap,Replication,GridMap"
+dock_9="Output,Debugger,Audio,Animation,Shader Editor,Search Results,AnimationTree,ResourcePreloader,ShaderFile,SpriteFrames,Theme,Polygon,TileSet,TileMap,Replication,GridMap"
 
 [docks/FileSystem]
 
@@ -297,11 +297,11 @@ state={
 state={
 "bookmarks": PackedInt32Array(),
 "breakpoints": PackedInt32Array(),
-"column": 30,
+"column": 29,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 18,
-"scroll_position": 3.75,
+"row": 36,
+"scroll_position": 20.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -333,7 +333,7 @@ sections_unfolded=PackedStringArray()
 "grid_snap_active": false,
 "grid_step": Vector2(8, 8),
 "grid_visibility": 1,
-"ofs": Vector2(-250.62732, -173.69722),
+"ofs": Vector2(-337, -217),
 "primary_grid_step": Vector2i(8, 8),
 "show_group_gizmos": true,
 "show_guides": true,
@@ -359,7 +359,7 @@ sections_unfolded=PackedStringArray()
 "snap_rotation_step": 0.2617994,
 "snap_scale": false,
 "snap_scale_step": 0.1,
-"zoom": 1.3310001
+"zoom": 1.0
 }
 3D={
 "fov": 70.01,
@@ -981,25 +981,43 @@ func _on_area_entered(area: Area2D) -> void:
 		var hitbox: HitboxComponent = area as HitboxComponent
 		health_component.take_damage(hitbox.damage)
 ===== ./enemy.gd =====
-extends CharacterBody2D
 class_name Enemy
+extends CharacterBody2D
 
-@export var speed: float = 100.0
-@onready var player = get_tree().get_first_node_in_group("player")
-@onready var animated_sprite = $AnimatedSprite2D
+const SPEED: float = 80.0
+const DETECTION_RANGE: float = 200.0
+const ATTACK_RANGE: float = 40.0
 
-func _physics_process(delta: float) -> void:
-	if not player: return
-	
-	var dir = (player.global_position - global_position).normalized()
-	var dist = global_position.distance_to(player.global_position)
-	
-	if dist > 40:
-		position += dir * speed * delta
-		animated_sprite.play("walk")
-		animated_sprite.flip_h = dir.x < 0
+@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+
+var player: Player
+
+func _ready() -> void:
+	player = get_tree().get_first_node_in_group("player")
+
+func _physics_process(_delta: float) -> void:
+	if not player:
+		return
+
+	var dist: float = global_position.distance_to(player.global_position)
+
+	if dist <= ATTACK_RANGE:
+		_idle()
+	elif dist <= DETECTION_RANGE:
+		_chase()
 	else:
-		animated_sprite.play("idle")
+		_idle()
+
+func _chase() -> void:
+	var direction: Vector2 = (player.global_position - global_position).normalized()
+	velocity = direction * SPEED
+	move_and_slide()
+	animated_sprite.play("walk")
+	animated_sprite.flip_h = direction.x < 0
+
+func _idle() -> void:
+	velocity = Vector2.ZERO
+	animated_sprite.play("idle")
 ===== ./project.godot =====
 ; Engine configuration file.
 ; It's best edited using the editor UI and not directly,
@@ -3195,7 +3213,7 @@ metadata/_custom_type_script = "uid://dxj6i1lnitkd1"
 position = Vector2(74, -72)
 scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_e77ka")
-animation = &"ilde"
+animation = &"walk"
 autoplay = "ilde"
 
 [node name="Timer" type="Timer" parent="Enemy" unique_id=351836041]

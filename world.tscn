@@ -1105,7 +1105,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_r5m4j")
 }],
 "loop": true,
-"name": &"ilde",
+"name": &"idle",
 "speed": 10.0
 }, {
 "frames": [{
@@ -1196,12 +1196,7 @@ metadata/_custom_type_script = "uid://dxj6i1lnitkd1"
 position = Vector2(74, -72)
 scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_e77ka")
-animation = &"walk"
-autoplay = "ilde"
+animation = &"idle"
+autoplay = "idle"
 
 [node name="Timer" type="Timer" parent="Enemy" unique_id=351836041]
-
-[node name="NavigationAgent2D" type="NavigationAgent2D" parent="Enemy" unique_id=1076607406]
-
-[node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=882290306]
-enabled = false
