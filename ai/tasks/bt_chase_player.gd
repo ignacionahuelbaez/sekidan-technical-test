@@ -17,5 +17,5 @@ func _tick(_delta: float) -> Status:
 		return SUCCESS
 		
 	# Movemos usando el método seguro del enemigo
-dd	enemy.move_towards_position(player.global_position)
+	enemy.move_towards_position(player.global_position)
 	return RUNNING
