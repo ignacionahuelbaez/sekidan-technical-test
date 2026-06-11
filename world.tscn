@@ -1196,7 +1196,7 @@ metadata/_custom_type_script = "uid://dxj6i1lnitkd1"
 position = Vector2(74, -72)
 scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_e77ka")
-animation = &"ilde"
+animation = &"walk"
 autoplay = "ilde"
 
 [node name="Timer" type="Timer" parent="Enemy" unique_id=351836041]

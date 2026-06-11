@@ -13,8 +13,8 @@ dock_closed=[]
 dock_split_2=0
 dock_split_3=0
 dock_hsplit_1=0
-dock_hsplit_2=296
-dock_hsplit_3=-440
+dock_hsplit_2=253
+dock_hsplit_3=-316
 dock_hsplit_4=0
 dock_9_selected_tab_idx=0
 dock_3="Scene,Import"
@@ -297,11 +297,11 @@ state={
 state={
 "bookmarks": PackedInt32Array(),
 "breakpoints": PackedInt32Array(),
-"column": 25,
+"column": 30,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 34,
-"scroll_position": 20.625,
+"row": 18,
+"scroll_position": 3.75,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -521,7 +521,7 @@ selected_nodes=Array[NodePath]([NodePath("/root/@EditorNode@18069/@Panel@14/@VBo
 ===== ./.godot/editor/world.tscn-folding-76e0adcbc83681695885bae615f516ae.cfg =====
 [folding]
 
-node_unfolds=[NodePath("suelo"), PackedStringArray("tile_set"), NodePath("player/AnimatedSprite2D"), PackedStringArray("Transform", "Offset"), NodePath("Enemy/HitboxComponent"), PackedStringArray("Gravity"), NodePath("Enemy/AnimatedSprite2D"), PackedStringArray("Offset", "Transform")]
+node_unfolds=[NodePath("suelo"), PackedStringArray("tile_set"), NodePath("player/AnimatedSprite2D"), PackedStringArray("Transform", "Offset"), NodePath("Enemy/HitboxComponent"), PackedStringArray("Gravity"), NodePath("Enemy/AnimatedSprite2D"), PackedStringArray("Offset", "Transform"), NodePath("Enemy/NavigationAgent2D"), PackedStringArray("Pathfinding", "Process", "Process/Thread Group", "Physics Interpolation", "Auto Translate", "Editor Description")]
 resource_unfolds=["res://world.tscn::TileSet_ioo17", PackedStringArray(), "res://world.tscn::SpriteFrames_ioo17", PackedStringArray("Resource"), "res://world.tscn::RectangleShape2D_ioo17", PackedStringArray(), "res://world.tscn::SpriteFrames_e77ka", PackedStringArray()]
 nodes_folded=[NodePath("player"), NodePath("player/States")]
 ===== ./.godot/editor/world_camera_world.tscn-editstate-e311380c96155eb91e3d6080f207d969.cfg =====
@@ -985,39 +985,21 @@ extends CharacterBody2D
 class_name Enemy
 
 @export var speed: float = 100.0
-@export var min_attack_distance: float = 30.0
-
-@onready var player: CharacterBody2D = get_tree().get_first_node_in_group("player")
+@onready var player = get_tree().get_first_node_in_group("player")
 @onready var animated_sprite = $AnimatedSprite2D
 
-func _ready() -> void:
-	add_to_group("enemy")
-
-func _physics_process(_delta: float) -> void:
-	if not player:
-		return
-		
-	var distance_to_player = global_position.distance_to(player.global_position)
+func _physics_process(delta: float) -> void:
+	if not player: return
 	
-	# 1. Lógica de movimiento: 
-	# Usamos vector directo para asegurar que siempre apunte al jugador
-	if distance_to_player > min_attack_distance:
-		var direction = (player.global_position - global_position).normalized()
-		velocity = direction * speed
-		move_and_slide()
-		
-		# 2. Control de animación: Solo reproducir si no está ya reproduciéndose
-		if animated_sprite.animation != "walk":
-			animated_sprite.play("walk")
-			
-		# Orientación horizontal
-		if velocity.x != 0:
-			animated_sprite.flip_h = velocity.x < 0
+	var dir = (player.global_position - global_position).normalized()
+	var dist = global_position.distance_to(player.global_position)
+	
+	if dist > 40:
+		position += dir * speed * delta
+		animated_sprite.play("walk")
+		animated_sprite.flip_h = dir.x < 0
 	else:
-		# En rango de ataque
-		velocity = Vector2.ZERO
-		if animated_sprite.animation != "idle":
-			animated_sprite.play("idle")
+		animated_sprite.play("idle")
 ===== ./project.godot =====
 ; Engine configuration file.
 ; It's best edited using the editor UI and not directly,
@@ -3144,7 +3126,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_eewsi")
 }],
-"loop": false,
+"loop": true,
 "name": &"walk",
 "speed": 10.0
 }]
@@ -3213,7 +3195,7 @@ metadata/_custom_type_script = "uid://dxj6i1lnitkd1"
 position = Vector2(74, -72)
 scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_e77ka")
-animation = &"walk"
+animation = &"ilde"
 autoplay = "ilde"
 
 [node name="Timer" type="Timer" parent="Enemy" unique_id=351836041]
@@ -3221,3 +3203,4 @@ autoplay = "ilde"
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="Enemy" unique_id=1076607406]
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=882290306]
+enabled = false
