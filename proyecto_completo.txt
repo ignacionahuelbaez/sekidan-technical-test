@@ -82,11 +82,11 @@ dock_split_4=0
 dock_3_selected_tab_idx=0
 dock_4_selected_tab_idx=0
 dock_5_selected_tab_idx=0
+dock_9_selected_tab_idx=0
 dock_3="Scene,Import"
 dock_4="FileSystem,History"
 dock_5="Inspector,Signals,Groups"
 dock_9="Output,Debugger,Audio,Animation,Shader Editor,Search Results,AnimationTree,ResourcePreloader,ShaderFile,SpriteFrames,Theme,Polygon,TileSet,TileMap,Replication,GridMap"
-dock_9_selected_tab_idx=0
 
 [docks/FileSystem]
 
@@ -130,11 +130,11 @@ position=Vector2i(0, 23)
 [ScriptEditor]
 
 open_scripts=["res://ai/tasks/bt_attack_player.gd", "res://ai/tasks/bt_chase_player.gd", "res://ai/tasks/bt_is_player_in_attack_range.gd", "res://ai/tasks/bt_is_player_in_detection_range.gd", "res://ai/tasks/bt_patrol.gd", "res://actors/enemy/enemy.gd", "res://components/health_component.gd", "res://components/hitbox_component.gd", "res://components/hurtbox_component.gd", "res://actors/player/player.gd", "res://actors/player/states/player_state.gd", "res://actors/player/states/state_attack.gd", "res://actors/player/states/state_dead.gd", "res://actors/player/states/state_hurt.gd", "res://actors/player/states/state_idle.gd", "res://actors/player/states/state_walk.gd"]
-selected_script="res://components/hurtbox_component.gd"
-open_help=["BTSequence", "CompressedTexture2D", "GDScript", "Sprite2D"]
+selected_script=""
+open_help=["@GlobalScope", "BTSequence", "CompressedTexture2D", "GDScript", "Sprite2D"]
 script_split_offset=315
 list_split_offset=57
-zoom_factor=0.8218343
+zoom_factor=0.61637574
 
 [GameView]
 
@@ -257,6 +257,7 @@ picker_shape=3
 PackedScene=PackedStringArray("uid://cw5xjm18x47gc")
 BehaviorTree=PackedStringArray("uid://bmndwsqukjyf5")
 Texture2D=PackedStringArray("uid://d2wh2iuvncv3q")
+Script=PackedStringArray("uid://dxj6i1lnitkd1")
 ===== ./.godot/editor/script_editor_cache.cfg =====
 [res://actors/player/player.gd]
 
@@ -265,9 +266,9 @@ state={
 "breakpoints": PackedInt32Array(),
 "column": 40,
 "folded_lines": PackedInt32Array(),
-"h_scroll_position": 33,
-"row": 43,
-"scroll_position": 32.0,
+"h_scroll_position": 0,
+"row": 46,
+"scroll_position": 31.705882352941174,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -322,8 +323,8 @@ state={
 "column": 29,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 9,
-"scroll_position": 0.0,
+"row": 22,
+"scroll_position": 8.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -391,7 +392,7 @@ state={
 "breakpoints": PackedInt32Array(),
 "column": 45,
 "folded_lines": PackedInt32Array(),
-"h_scroll_position": 183,
+"h_scroll_position": 171,
 "row": 14,
 "scroll_position": 0.0,
 "selection": false,
@@ -403,10 +404,10 @@ state={
 state={
 "bookmarks": PackedInt32Array(),
 "breakpoints": PackedInt32Array(),
-"column": 0,
+"column": 105,
 "folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 7,
+"h_scroll_position": 290,
+"row": 10,
 "scroll_position": 0.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
@@ -420,8 +421,8 @@ state={
 "column": 15,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 11,
-"scroll_position": 0.0,
+"row": 16,
+"scroll_position": 2.7058823529411757,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -431,10 +432,10 @@ state={
 state={
 "bookmarks": PackedInt32Array(),
 "breakpoints": PackedInt32Array(),
-"column": 5,
+"column": 108,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 0,
+"row": 10,
 "scroll_position": 0.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
@@ -445,11 +446,11 @@ state={
 state={
 "bookmarks": PackedInt32Array(),
 "breakpoints": PackedInt32Array(),
-"column": 15,
+"column": 0,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 17,
-"scroll_position": 6.0,
+"row": 10,
+"scroll_position": 3.7058823529411757,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -476,8 +477,8 @@ state={
 "column": 29,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 19,
-"scroll_position": 8.0,
+"row": 24,
+"scroll_position": 9.705882352941176,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -693,7 +694,7 @@ sections_unfolded=PackedStringArray()
 Anim={
 "visible": false
 }
-selected_nodes=Array[NodePath]([NodePath("/root/@EditorNode@18724/@Panel@14/@VBoxContainer@15/DockHSplitMain/@VBoxContainer@28/DockVSplitCenter/@VSplitContainer@70/@VBoxContainer@71/@EditorMainScreen@125/MainScreen/@CanvasItemEditor@9322/@VSplitContainer@9105/@HSplitContainer@9107/@HSplitContainer@9109/@Control@9110/@SubViewportContainer@9111/@SubViewport@9112/world/player/HurtboxComponent")])
+selected_nodes=Array[NodePath]([NodePath("/root/@EditorNode@18724/@Panel@14/@VBoxContainer@15/DockHSplitMain/@VBoxContainer@28/DockVSplitCenter/@VSplitContainer@70/@VBoxContainer@71/@EditorMainScreen@125/MainScreen/@CanvasItemEditor@9322/@VSplitContainer@9105/@HSplitContainer@9107/@HSplitContainer@9109/@Control@9110/@SubViewportContainer@9111/@SubViewport@9112/world/player/HitboxComponent")])
 ===== ./.godot/editor/world.tscn-folding-76e0adcbc83681695885bae615f516ae.cfg =====
 [folding]
 
@@ -1068,8 +1069,6 @@ groups=[&"player"]
 
 groups=[&"player"]
 ===== ./actors/enemy/enemy.gd =====
-# Inicializa el enemigo y conecta el Blackboard de LimboAI con el jugador.
-# Todo el comportamiento de movimiento y animación lo maneja el BehaviorTree.
 class_name Enemy
 extends CharacterBody2D
 
@@ -1079,10 +1078,11 @@ extends CharacterBody2D
 
 func _ready() -> void:
 	add_to_group("enemy")
-	var player: Player = get_tree().get_first_node_in_group("player") as Player
-	if player:
-		bt_player.blackboard.set_var(&"player", player)
+	set_collision_mask_value(1, false)
 	health_component.health_depleted.connect(_on_death)
+
+func take_hit(damage: float) -> void:
+	health_component.take_damage(damage)
 
 func _on_death() -> void:
 	bt_player.set_active(false)
@@ -1139,12 +1139,15 @@ extends CharacterBody2D
 const SPEED: float = 150.0
 
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
+@onready var hitbox: HitboxComponent = $HitboxComponent
 
 var current_state: PlayerState
 var last_direction: Vector2 = Vector2.RIGHT
 
 func _ready() -> void:
 	add_to_group("player")
+	# El hitbox solo se activa durante el ataque
+	hitbox.monitoring = false
 	current_state = $States/Idle
 	current_state.player = self
 	current_state.enter()
@@ -1200,10 +1203,20 @@ func physics_update(_delta: float) -> void:
 class_name StateAttack
 extends PlayerState
 
+const ATTACK_RANGE: float = 60.0
+
 func enter() -> void:
 	player.ejecutar_ataque_direccional()
+	_deal_damage_to_nearby_enemies()
 
-# Vuelve a Idle cuando la animación de ataque termina.
+func _deal_damage_to_nearby_enemies() -> void:
+	for e: Node in player.get_tree().get_nodes_in_group("enemy"):
+		var enemy: Enemy = e as Enemy
+		if not enemy:
+			continue
+		if player.global_position.distance_to(enemy.global_position) <= ATTACK_RANGE:
+			enemy.take_hit(10.0)
+
 func physics_update(_delta: float) -> void:
 	if not player.sprite.is_playing():
 		player.change_state("Idle")
@@ -1265,7 +1278,7 @@ func physics_update(_delta: float) -> void:
 		player.play_animation("walk", direction)
 		player.move_and_slide()
 ===== ./ai/tasks/bt_attack_player.gd =====
-# Detiene al enemigo y reproduce la animación de ataque.
+# Detiene al enemigo y ejecuta la animación de ataque completa.
 @tool
 class_name BTAttackPlayer
 extends BTAction
@@ -1275,10 +1288,14 @@ func _tick(_delta: float) -> Status:
 	var animated_sprite: AnimatedSprite2D = enemy.get_node("AnimatedSprite2D") as AnimatedSprite2D
 	enemy.velocity = Vector2.ZERO
 	enemy.move_and_slide()
-	animated_sprite.play("attack")
-	return SUCCESS
+	# Reproduce ataque solo si no está ya reproduciéndose
+	if animated_sprite.animation != "attack":
+		animated_sprite.play("attack")
+	# Espera a que termine la animación antes de retornar SUCCESS
+	if not animated_sprite.is_playing():
+		return SUCCESS
+	return RUNNING
 ===== ./ai/tasks/bt_chase_player.gd =====
-# Mueve al enemigo hacia el jugador mientras esté en rango de detección.
 @tool
 class_name BTChasePlayer
 extends BTAction
@@ -1286,7 +1303,7 @@ extends BTAction
 const SPEED: float = 80.0
 
 func _tick(_delta: float) -> Status:
-	var player: Node2D = blackboard.get_var(&"player", null) as Node2D
+	var player: Node2D = agent.get_tree().get_first_node_in_group("player") as Node2D
 	var animated_sprite: AnimatedSprite2D = agent.get_node("AnimatedSprite2D") as AnimatedSprite2D
 	if not is_instance_valid(player):
 		return FAILURE
@@ -1304,11 +1321,10 @@ extends BTCondition
 const ATTACK_RANGE: float = 40.0
 
 func _tick(_delta: float) -> Status:
-	var player: Node2D = blackboard.get_var(&"player", null) as Node2D
+	var player: Node2D = agent.get_tree().get_first_node_in_group("player") as Node2D
 	if not is_instance_valid(player):
 		return FAILURE
-	var dist: float = agent.global_position.distance_to(player.global_position)
-	return SUCCESS if dist <= ATTACK_RANGE else FAILURE
+	return SUCCESS if agent.global_position.distance_to(player.global_position) <= ATTACK_RANGE else FAILURE
 ===== ./ai/tasks/bt_is_player_in_detection_range.gd =====
 @tool
 class_name BTIsPlayerInDetectionRange
@@ -1317,11 +1333,10 @@ extends BTCondition
 const DETECTION_RANGE: float = 200.0
 
 func _tick(_delta: float) -> Status:
-	var player: Node2D = blackboard.get_var(&"player", null) as Node2D
+	var player: Node2D = agent.get_tree().get_first_node_in_group("player") as Node2D
 	if not is_instance_valid(player):
 		return FAILURE
-	var dist: float = agent.global_position.distance_to(player.global_position)
-	return SUCCESS if dist <= DETECTION_RANGE else FAILURE
+	return SUCCESS if agent.global_position.distance_to(player.global_position) <= DETECTION_RANGE else FAILURE
 ===== ./ai/tasks/bt_patrol.gd =====
 @tool
 class_name BTPatrol
@@ -22061,6 +22076,7 @@ script = ExtResource("7_k3n1d")
 zoom = Vector2(3, 3)
 
 [node name="HitboxComponent" type="Area2D" parent="player" unique_id=531925347]
+script = ExtResource("14_udxuc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player/HitboxComponent" unique_id=1214806749]
 shape = SubResource("RectangleShape2D_wukud")
@@ -22118,7 +22134,3 @@ shape = SubResource("RectangleShape2D_bc84e")
 
 [node name="Colisiones" type="TileMapLayer" parent="." unique_id=819055872]
 tile_set = SubResource("TileSet_26xuy")
-
-[node name="HealthComponent" type="Node" parent="." unique_id=521229422]
-script = ExtResource("12_hiqwa")
-metadata/_custom_type_script = "uid://cw3mb10bic1xa"
