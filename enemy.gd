@@ -7,19 +7,22 @@ extends CharacterBody2D
 @export var attack_damage: float = 15.0
 @export var max_health: float = 60.0
 
-@onready var health_compon: HealthComponent = $HealthCompon
-@onready var hurtbox: HurtboxComponent = $Hurtbox
-@onready var hitbox: HitboxComponent = $Hitbox
-@onready var animated_sprite: AnimatedSprite2D = $AnimatedSp
-@onready var navigation_agent: NavigationAgent2D = $NavigationAgent
+# === REFERENCIAS CORREGIDAS SEGÚN TU ESCENA ===
+@onready var health_compon: HealthComponent = $HealthComponent
+@onready var hurtbox: HurtboxComponent = $HurtboxComponent
+@onready var hitbox: HitboxComponent = $HitboxComponent
+@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var attack_timer: Timer = $Timer
+
+# NavigationAgent2D (lo añadiremos después)
+@onready var navigation_agent: NavigationAgent2D = null
 
 var player: Player = null
 var is_attacking: bool = false
 
 func _ready() -> void:
 	if not health_compon:
-		push_error("Enemy: No se encontró nodo HealthCompon")
+		push_error("Enemy: No se encontró HealthComponent")
 		return
 	
 	health_compon.max_health = max_health
@@ -32,14 +35,20 @@ func _ready() -> void:
 	if hitbox:
 		hitbox.damage = attack_damage
 	
+	# Buscar jugador
 	player = get_tree().get_first_node_in_group("player")
 	if not player:
 		push_warning("Enemy: No se encontró jugador en grupo 'player'")
 	
+	# Timer
 	if attack_timer:
 		attack_timer.wait_time = 1.2
 		attack_timer.one_shot = true
 		attack_timer.timeout.connect(_on_attack_timer_timeout)
+	
+	# NavigationAgent (si existe)
+	if has_node("NavigationAgent2D"):
+		navigation_agent = $NavigationAgent2D
 
 
 func _physics_process(_delta: float) -> void:
@@ -53,7 +62,7 @@ func _physics_process(_delta: float) -> void:
 	
 	if distance_to_player <= attack_range and not is_attacking:
 		_start_attack()
-	elif distance_to_player <= detection_range:
+	elif distance_to_player <= detection_range and navigation_agent:
 		_chase_player()
 	else:
 		_idle()

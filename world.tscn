@@ -950,3 +950,5 @@ metadata/_custom_type_script = "uid://dxj6i1lnitkd1"
 offset = Vector2(0.25, 0.25)
 
 [node name="Timer" type="Timer" parent="Enemy" unique_id=351836041]
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="Enemy" unique_id=1076607406]
