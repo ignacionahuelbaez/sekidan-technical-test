@@ -3352,6 +3352,9 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bc84e"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_cbp6q"]
+radius = 235.0206
+
 [sub_resource type="TileSet" id="TileSet_26xuy"]
 physics_layer_0/collision_layer = 1
 
@@ -3478,6 +3481,11 @@ blackboard_plan = SubResource("BlackboardPlan_udxuc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy" unique_id=1025036745]
 shape = SubResource("RectangleShape2D_bc84e")
+
+[node name="DetectionArea" type="Area2D" parent="Enemy" unique_id=247554717]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/DetectionArea" unique_id=1943790608]
+shape = SubResource("CircleShape2D_cbp6q")
 
 [node name="Colisiones" type="TileMapLayer" parent="." unique_id=819055872]
 tile_set = SubResource("TileSet_26xuy")
