@@ -2992,6 +2992,14 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ioo17"]
 size = Vector2(12, 16)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wukud"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_il2jm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cbp6q"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_26xuy"]
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_e77ka"]
 atlas = ExtResource("15_hiqwa")
 region = Rect2(0, 384, 192, 192)
@@ -3239,6 +3247,11 @@ animations = [{
 
 [sub_resource type="BlackboardPlan" id="BlackboardPlan_udxuc"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bc84e"]
+
+[sub_resource type="TileSet" id="TileSet_26xuy"]
+physics_layer_0/collision_layer = 1
+
 [node name="world" type="Node2D" unique_id=655083946]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1902920739]
@@ -3278,7 +3291,7 @@ script = ExtResource("1_f3sb7")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player" unique_id=407095699]
 scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_ioo17")
-animation = &"walk"
+animation = &"dead"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player" unique_id=2091782850]
@@ -3307,9 +3320,20 @@ zoom = Vector2(3, 3)
 
 [node name="HitboxComponent" type="Area2D" parent="player" unique_id=531925347]
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player/HitboxComponent" unique_id=1214806749]
+shape = SubResource("RectangleShape2D_wukud")
+
 [node name="HealthComponent" type="Node" parent="player" unique_id=1957515972]
 script = ExtResource("12_hiqwa")
 metadata/_custom_type_script = "uid://cw3mb10bic1xa"
+
+[node name="HurtboxComponent" type="Area2D" parent="player" unique_id=1539671520 node_paths=PackedStringArray("health_component")]
+script = ExtResource("13_2u3nc")
+health_component = NodePath("../HealthComponent")
+metadata/_custom_type_script = "uid://bfmpkiv6433ni"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player/HurtboxComponent" unique_id=2012760740]
+shape = SubResource("RectangleShape2D_il2jm")
 
 [node name="Enemy" type="CharacterBody2D" parent="." unique_id=1617173726]
 script = ExtResource("11_2u3nc")
@@ -3318,14 +3342,21 @@ script = ExtResource("11_2u3nc")
 script = ExtResource("12_hiqwa")
 metadata/_custom_type_script = "uid://cw3mb10bic1xa"
 
-[node name="HurtboxComponent" type="Area2D" parent="Enemy" unique_id=1524883653]
+[node name="HurtboxComponent" type="Area2D" parent="Enemy" unique_id=1524883653 node_paths=PackedStringArray("health_component")]
 script = ExtResource("13_2u3nc")
+health_component = NodePath("../HealthComponent")
 metadata/_custom_type_script = "uid://bfmpkiv6433ni"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/HurtboxComponent" unique_id=667732663]
+shape = SubResource("RectangleShape2D_cbp6q")
 
 [node name="HitboxComponent" type="Area2D" parent="Enemy" unique_id=1161580501]
 script = ExtResource("14_udxuc")
 damage = 15.0
 metadata/_custom_type_script = "uid://dxj6i1lnitkd1"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/HitboxComponent" unique_id=2086793877]
+shape = SubResource("RectangleShape2D_26xuy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Enemy" unique_id=235760624]
 position = Vector2(74, -72)
@@ -3341,8 +3372,10 @@ behavior_tree = ExtResource("16_2u3nc")
 blackboard_plan = SubResource("BlackboardPlan_udxuc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy" unique_id=1025036745]
+shape = SubResource("RectangleShape2D_bc84e")
 
 [node name="Colisiones" type="TileMapLayer" parent="." unique_id=819055872]
+tile_set = SubResource("TileSet_26xuy")
 
 [node name="HealthComponent" type="Node" parent="." unique_id=521229422]
 script = ExtResource("12_hiqwa")

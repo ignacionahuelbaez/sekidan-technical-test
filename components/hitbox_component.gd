@@ -1,3 +1,4 @@
+# Área que inflige daño al entrar en contacto con un HurtboxComponent.
 class_name HitboxComponent
 extends Area2D
 

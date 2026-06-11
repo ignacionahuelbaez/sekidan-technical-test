@@ -1,3 +1,5 @@
+# Detiene al enemigo y reproduce la animación de ataque.
+@tool
 class_name BTAttackPlayer
 extends BTAction
 

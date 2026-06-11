@@ -1,65 +1,44 @@
-extends CharacterBody2D
 class_name Player
+extends CharacterBody2D
 
-@export var speed: float = 150.0
+const SPEED: float = 150.0
 
-@onready var animated_sprite = $AnimatedSprite2D
-@onready var health_component = $HealthComponent
-@onready var hitbox_component = $HitboxComponent
+@onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 
-var is_attacking: bool = false
+var current_state: PlayerState
+var last_direction: Vector2 = Vector2.RIGHT
 
 func _ready() -> void:
 	add_to_group("player")
-	# Validación segura para que no crashee si te falta el componente de vida
-	if health_component and health_component.has_signal("health_depleted"):
-		health_component.connect("health_depleted", Callable(self, "_on_death"))
+	current_state = $States/Idle
+	current_state.player = self
+	current_state.enter()
 
-func _physics_process(_delta: float) -> void:
-	if is_attacking:
-		return
+func change_state(state_name: String) -> void:
+	current_state.exit()
+	current_state = $States.get_node(state_name)
+	current_state.player = self
+	current_state.enter()
 
-	# Movimiento en 4 direcciones nativo de Godot 4
-	var direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
-	velocity = direction * speed
-	move_and_slide()
+func _physics_process(delta: float) -> void:
+	current_state.physics_update(delta)
 
-	# Usamos ui_accept (Espacio/Enter) para atacar por defecto y evitar errores de InputMap
-	if Input.is_action_just_pressed("ui_accept"):
-		_perform_attack()
-	else:
-		_update_animations()
+func play_animation(anim_name: String, direction: Vector2) -> void:
+	if direction != Vector2.ZERO:
+		last_direction = direction
+	if sprite.animation != anim_name:
+		sprite.play(anim_name)
+	if direction.x < 0:
+		sprite.flip_h = true
+	elif direction.x > 0:
+		sprite.flip_h = false
 
-func _update_animations() -> void:
-	if not animated_sprite:
-		return
-		
-	if velocity.length() > 0:
-		animated_sprite.play("walk")
-		if velocity.x != 0:
-			animated_sprite.flip_h = velocity.x < 0
-	else:
-		animated_sprite.play("idle")
-
-func _perform_attack() -> void:
-	if not animated_sprite:
-		return
-		
-	is_attacking = true
+# Elige la animación de ataque según la última dirección del jugador.
+func ejecutar_ataque_direccional() -> void:
 	velocity = Vector2.ZERO
-	animated_sprite.play("attack")
-	
-	# Activa el área de daño si tenés el componente
-	if hitbox_component:
-		hitbox_component.set_deferred("monitoring", true)
-
-	await animated_sprite.animation_finished
-	
-	if hitbox_component:
-		hitbox_component.set_deferred("monitoring", false)
-	is_attacking = false
-
-func _on_death() -> void:
-	set_physics_process(false)
-	if animated_sprite:
-		animated_sprite.play("dead")
+	if last_direction.y < -0.1:
+		play_animation("attack_up", Vector2.ZERO)
+	elif last_direction.y > 0.1:
+		play_animation("attack_down", Vector2.ZERO)
+	else:
+		play_animation("attack", Vector2.ZERO)

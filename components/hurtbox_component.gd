@@ -1,3 +1,4 @@
+# Área que recibe daño de los HitboxComponents. Requiere un HealthComponent asignado.
 class_name HurtboxComponent
 extends Area2D
 
