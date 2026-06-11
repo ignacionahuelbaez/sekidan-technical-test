@@ -71,7 +71,7 @@ sections_unfolded=PackedStringArray()
 
 dock_floating={}
 dock_closed=[]
-dock_split_2=185
+dock_split_2=105
 dock_split_3=0
 dock_hsplit_1=0
 dock_hsplit_2=274
@@ -86,7 +86,7 @@ dock_9_selected_tab_idx=0
 dock_3="Scene,Import"
 dock_4="FileSystem,History"
 dock_5="Inspector,Signals,Groups"
-dock_9="Output,Debugger,Audio,Animation,Shader Editor,Search Results,AnimationTree,ResourcePreloader,ShaderFile,SpriteFrames,Theme,Polygon,TileSet,TileMap,Replication,GridMap"
+dock_9="Output,Debugger,Audio,Animation,Shader Editor,SpriteFrames,Search Results,AnimationTree,ResourcePreloader,ShaderFile,Theme,Polygon,TileSet,TileMap,Replication,GridMap"
 
 [docks/FileSystem]
 
@@ -95,7 +95,7 @@ v_split_offset=0
 display_mode=0
 file_sort=0
 file_list_display_mode=1
-selected_paths=PackedStringArray("res://assets/Bridge_All.png")
+selected_paths=PackedStringArray("res://assets/Dead.png")
 uncollapsed_paths=PackedStringArray("Favorites", "res://", "res://assets/")
 
 [docks/History]
@@ -130,7 +130,7 @@ position=Vector2i(0, 23)
 [ScriptEditor]
 
 open_scripts=["res://ai/tasks/bt_attack_player.gd", "res://ai/tasks/bt_chase_player.gd", "res://ai/tasks/bt_is_player_in_attack_range.gd", "res://ai/tasks/bt_is_player_in_detection_range.gd", "res://ai/tasks/bt_patrol.gd", "res://actors/enemy/enemy.gd", "res://components/health_component.gd", "res://components/hitbox_component.gd", "res://components/hurtbox_component.gd", "res://actors/player/player.gd", "res://actors/player/states/player_state.gd", "res://actors/player/states/state_attack.gd", "res://actors/player/states/state_dead.gd", "res://actors/player/states/state_hurt.gd", "res://actors/player/states/state_idle.gd", "res://actors/player/states/state_walk.gd"]
-selected_script=""
+selected_script="res://actors/player/states/state_dead.gd"
 open_help=["@GlobalScope", "BTSequence", "CompressedTexture2D", "GDScript", "Sprite2D"]
 script_split_offset=315
 list_split_offset=57
@@ -233,7 +233,7 @@ editor_settings=Rect2(233, 77, 900, 614)
 [recent_files]
 
 scenes=["res://world.tscn", "res://world/world_camera_world.tscn"]
-scripts=["Sprite2D", "GDScript", "CompressedTexture2D", "BTSequence", "res://actors/enemy/enemy.gd", "res://ai/tasks/bt_patrol.gd", "res://ai/tasks/bt_chase_player.gd", "res://ai/bt_attack_player.gd", "res://ai/bt_is_player_in_detection_range.gd", "res://ai/tasks/bt_is_player_in_attack_range.gd"]
+scripts=["@GlobalScope", "Sprite2D", "GDScript", "CompressedTexture2D", "BTSequence", "res://actors/enemy/enemy.gd", "res://ai/tasks/bt_patrol.gd", "res://ai/tasks/bt_chase_player.gd", "res://ai/bt_attack_player.gd", "res://ai/bt_is_player_in_detection_range.gd"]
 
 [script_setup]
 
@@ -323,8 +323,8 @@ state={
 "column": 29,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 22,
-"scroll_position": 8.0,
+"row": 19,
+"scroll_position": 10.176470588235293,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -446,11 +446,11 @@ state={
 state={
 "bookmarks": PackedInt32Array(),
 "breakpoints": PackedInt32Array(),
-"column": 0,
+"column": 15,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 10,
-"scroll_position": 3.7058823529411757,
+"row": 16,
+"scroll_position": 1.7058823529411757,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -474,11 +474,11 @@ state={
 state={
 "bookmarks": PackedInt32Array(),
 "breakpoints": PackedInt32Array(),
-"column": 29,
+"column": 0,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 24,
-"scroll_position": 9.705882352941176,
+"row": 18,
+"scroll_position": 4.705882352941176,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -694,13 +694,13 @@ sections_unfolded=PackedStringArray()
 Anim={
 "visible": false
 }
-selected_nodes=Array[NodePath]([NodePath("/root/@EditorNode@18724/@Panel@14/@VBoxContainer@15/DockHSplitMain/@VBoxContainer@28/DockVSplitCenter/@VSplitContainer@70/@VBoxContainer@71/@EditorMainScreen@125/MainScreen/@CanvasItemEditor@9322/@VSplitContainer@9105/@HSplitContainer@9107/@HSplitContainer@9109/@Control@9110/@SubViewportContainer@9111/@SubViewport@9112/world/player/HitboxComponent")])
+selected_nodes=Array[NodePath]([NodePath("/root/@EditorNode@18724/@Panel@14/@VBoxContainer@15/DockHSplitMain/@VBoxContainer@28/DockVSplitCenter/@VSplitContainer@70/@VBoxContainer@71/@EditorMainScreen@125/MainScreen/@CanvasItemEditor@9322/@VSplitContainer@9105/@HSplitContainer@9107/@HSplitContainer@9109/@Control@9110/@SubViewportContainer@9111/@SubViewport@9112/world/Enemy/AnimatedSprite2D")])
 ===== ./.godot/editor/world.tscn-folding-76e0adcbc83681695885bae615f516ae.cfg =====
 [folding]
 
-node_unfolds=[NodePath("suelo"), PackedStringArray("tile_set"), NodePath("player/AnimatedSprite2D"), PackedStringArray("Transform", "Offset"), NodePath("Enemy/HitboxComponent"), PackedStringArray("Gravity"), NodePath("Enemy/AnimatedSprite2D"), PackedStringArray("Offset", "Transform"), NodePath("Colisiones"), PackedStringArray("Navigation", "tile_set")]
+node_unfolds=[NodePath("suelo"), PackedStringArray("tile_set"), NodePath("player/AnimatedSprite2D"), PackedStringArray("Transform", "Offset"), NodePath("player/HitboxComponent"), PackedStringArray("Collision"), NodePath("Enemy/HurtboxComponent"), PackedStringArray("Collision"), NodePath("Enemy/HitboxComponent"), PackedStringArray("Gravity"), NodePath("Enemy/AnimatedSprite2D"), PackedStringArray("Offset", "Transform"), NodePath("Colisiones"), PackedStringArray("Navigation", "tile_set")]
 resource_unfolds=["res://world.tscn::TileSet_bc84e", PackedStringArray(), "res://world.tscn::TileSet_cbp6q", PackedStringArray(), "res://world.tscn::TileSet_wukud", PackedStringArray(), "res://world.tscn::TileSet_wjb0r", PackedStringArray(), "res://world.tscn::TileSet_il2jm", PackedStringArray(), "res://world.tscn::SpriteFrames_ioo17", PackedStringArray("Resource"), "res://world.tscn::RectangleShape2D_ioo17", PackedStringArray(), "res://world.tscn::RectangleShape2D_wukud", PackedStringArray(), "res://world.tscn::RectangleShape2D_il2jm", PackedStringArray(), "res://world.tscn::RectangleShape2D_cbp6q", PackedStringArray(), "res://world.tscn::RectangleShape2D_26xuy", PackedStringArray(), "res://world.tscn::SpriteFrames_e77ka", PackedStringArray(), "res://world.tscn::BlackboardPlan_udxuc", PackedStringArray(), "res://world.tscn::RectangleShape2D_bc84e", PackedStringArray(), "res://world.tscn::TileSet_26xuy", PackedStringArray("Rendering")]
-nodes_folded=[NodePath("player/States"), NodePath("player/HitboxComponent"), NodePath("Enemy")]
+nodes_folded=[NodePath("player"), NodePath("player/States"), NodePath("player/HitboxComponent")]
 ===== ./.godot/editor/world_camera_world.tscn-editstate-e311380c96155eb91e3d6080f207d969.cfg =====
 [editor_states]
 
@@ -21829,6 +21829,62 @@ region = Rect2(768, 768, 192, 192)
 atlas = ExtResource("15_hiqwa")
 region = Rect2(960, 768, 192, 192)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_71tr8"]
+atlas = ExtResource("3_ioo17")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ngeen"]
+atlas = ExtResource("3_ioo17")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t55hq"]
+atlas = ExtResource("3_ioo17")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jtjyu"]
+atlas = ExtResource("3_ioo17")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vv6ac"]
+atlas = ExtResource("3_ioo17")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v27xk"]
+atlas = ExtResource("3_ioo17")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vf1x1"]
+atlas = ExtResource("3_ioo17")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vsnf8"]
+atlas = ExtResource("3_ioo17")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_afx2c"]
+atlas = ExtResource("3_ioo17")
+region = Rect2(128, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xkj61"]
+atlas = ExtResource("3_ioo17")
+region = Rect2(256, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ednsc"]
+atlas = ExtResource("3_ioo17")
+region = Rect2(384, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_su0yx"]
+atlas = ExtResource("3_ioo17")
+region = Rect2(512, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3o3pd"]
+atlas = ExtResource("3_ioo17")
+region = Rect2(640, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1hr04"]
+atlas = ExtResource("3_ioo17")
+region = Rect2(768, 128, 128, 128)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_k3lar"]
 atlas = ExtResource("15_hiqwa")
 region = Rect2(0, 0, 192, 192)
@@ -21951,6 +22007,53 @@ animations = [{
 "loop": false,
 "name": &"attack_up",
 "speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_71tr8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ngeen")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t55hq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jtjyu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vv6ac")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v27xk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vf1x1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vsnf8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_afx2c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xkj61")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ednsc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_su0yx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3o3pd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1hr04")
+}],
+"loop": false,
+"name": &"dead",
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -22120,7 +22223,7 @@ shape = SubResource("RectangleShape2D_26xuy")
 position = Vector2(74, -72)
 scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_e77ka")
-animation = &"idle"
+animation = &"dead"
 autoplay = "idle"
 
 [node name="Timer" type="Timer" parent="Enemy" unique_id=351836041]
