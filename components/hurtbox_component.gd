@@ -1,15 +1,17 @@
-# Área que recibe daño de los HitboxComponents. Requiere un HealthComponent asignado.
-class_name HurtboxComponent
 extends Area2D
+class_name HurtboxComponent
 
-@export var health_component: HealthComponent
+@onready var health_component: HealthComponent = $"../HealthComponent"
 
 func _ready() -> void:
-	monitorable = true
-	monitoring = true
 	area_entered.connect(_on_area_entered)
 
 func _on_area_entered(area: Area2D) -> void:
+	# 1. Validamos que lo que entró sea una HitboxComponent
 	if area is HitboxComponent:
-		var hitbox: HitboxComponent = area as HitboxComponent
-		health_component.take_damage(hitbox.damage)
+		# 2. ¡Clave! Si la hitbox del jugador está desactivada o no está atacando, no hacemos nada
+		if area.monitoring == false or area.monitorable == false:
+			return
+			
+		if health_component:
+			health_component.take_damage(area.damage)

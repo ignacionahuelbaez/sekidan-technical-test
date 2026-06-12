@@ -1,21 +1,26 @@
-# Componente reutilizable de vida. No asume nada sobre su nodo padre.
-class_name HealthComponent
 extends Node
+class_name HealthComponent
 
-signal health_changed(new_health: float)
-signal health_depleted
+signal health_changed(current_health: int)
+signal death
 
-@export var max_health: float = 100.0
-
-var current_health: float
+@export var max_health: int = 100
+var current_health: int
 
 func _ready() -> void:
 	current_health = max_health
 
-func take_damage(amount: float) -> void:
-	if current_health <= 0.0:
+func take_damage(amount: int) -> void:
+	if current_health <= 0:
 		return
-	current_health = clamp(current_health - amount, 0.0, max_health)
+		
+	# CORRECCIÓN: Restamos el daño a la vida actual para que vaya bajando progresivamente
+	current_health -= amount
+	
+	# Emitimos cuánta vida le queda (para el flash rojo)
 	health_changed.emit(current_health)
-	if current_health <= 0.0:
-		health_depleted.emit()
+	
+	# Si llegó a cero o menos, se muere
+	if current_health <= 0:
+		current_health = 0
+		death.emit()

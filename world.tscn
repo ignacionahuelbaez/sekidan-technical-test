@@ -12,7 +12,7 @@
 [ext_resource type="Script" uid="uid://xkbmhs1kyakl" path="res://actors/player/states/state_walk.gd" id="4_ioo17"]
 [ext_resource type="Script" uid="uid://br50u3awe1tj3" path="res://actors/player/states/state_attack.gd" id="5_wse8f"]
 [ext_resource type="Script" uid="uid://c0ddkmu85xeqb" path="res://actors/player/states/state_hurt.gd" id="6_ic0uy"]
-[ext_resource type="Script" uid="uid://ch2tnx4730hoo" path="res://actors/player/states/state_dead.gd" id="7_k3n1d"]
+[ext_resource type="Script" uid="uid://ch2tnx4730hoo" path="res://actors/player/states/dead.gd" id="7_k3n1d"]
 [ext_resource type="Script" uid="uid://sf0s5e3nvh4q" path="res://actors/enemy/enemy.gd" id="11_2u3nc"]
 [ext_resource type="Script" uid="uid://cw3mb10bic1xa" path="res://components/health_component.gd" id="12_hiqwa"]
 [ext_resource type="Script" uid="uid://bfmpkiv6433ni" path="res://components/hurtbox_component.gd" id="13_2u3nc"]
@@ -3298,6 +3298,11 @@ animations = [{
 "name": &"dead",
 "speed": 10.0
 }, {
+"frames": [],
+"loop": true,
+"name": &"hurt",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_k3lar")
@@ -3421,7 +3426,7 @@ script = ExtResource("5_wse8f")
 [node name="Hurt" type="Node" parent="player/States" unique_id=2134117001]
 script = ExtResource("6_ic0uy")
 
-[node name="Dead" type="Node" parent="player/States" unique_id=142321445]
+[node name="dead" type="Node" parent="player/States" unique_id=142321445]
 script = ExtResource("7_k3n1d")
 
 [node name="Camera2D" type="Camera2D" parent="player" unique_id=79617]
@@ -3437,9 +3442,8 @@ shape = SubResource("RectangleShape2D_wukud")
 script = ExtResource("12_hiqwa")
 metadata/_custom_type_script = "uid://cw3mb10bic1xa"
 
-[node name="HurtboxComponent" type="Area2D" parent="player" unique_id=1539671520 node_paths=PackedStringArray("health_component")]
+[node name="HurtboxComponent" type="Area2D" parent="player" unique_id=1539671520]
 script = ExtResource("13_2u3nc")
-health_component = NodePath("../HealthComponent")
 metadata/_custom_type_script = "uid://bfmpkiv6433ni"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player/HurtboxComponent" unique_id=2012760740]
@@ -3453,9 +3457,8 @@ script = ExtResource("11_2u3nc")
 script = ExtResource("12_hiqwa")
 metadata/_custom_type_script = "uid://cw3mb10bic1xa"
 
-[node name="HurtboxComponent" type="Area2D" parent="Enemy" unique_id=1524883653 node_paths=PackedStringArray("health_component")]
+[node name="HurtboxComponent" type="Area2D" parent="Enemy" unique_id=1524883653]
 script = ExtResource("13_2u3nc")
-health_component = NodePath("../HealthComponent")
 metadata/_custom_type_script = "uid://bfmpkiv6433ni"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/HurtboxComponent" unique_id=667732663]
@@ -3472,7 +3475,7 @@ shape = SubResource("RectangleShape2D_26xuy")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Enemy" unique_id=235760624]
 scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_e77ka")
-animation = &"idle"
+animation = &"dead"
 autoplay = "idle"
 
 [node name="Timer" type="Timer" parent="Enemy" unique_id=351836041]

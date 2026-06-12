@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://4p3cjrp0cgr8"]
 
-[ext_resource type="Script" uid="uid://ubo1gw0ch7e7" path="res://camera_2d.gd" id="1_wr4rf"]
+[ext_resource type="Script" path="res://camera_2d.gd" id="1_wr4rf"]
 [ext_resource type="Texture2D" uid="uid://dfflfst3xa1n2" path="res://assets/Tilemap_Flat.png" id="2_pi774"]
 [ext_resource type="Script" uid="uid://ckujj764mji4t" path="res://actors/player/player.gd" id="3_5ckl1"]
 [ext_resource type="Texture2D" uid="uid://edeaft2r3ios" path="res://assets/Warrior_Blue.png" id="4_xepvh"]
@@ -10,7 +10,7 @@
 [ext_resource type="Script" uid="uid://xkbmhs1kyakl" path="res://actors/player/states/state_walk.gd" id="8_64k4g"]
 [ext_resource type="Script" uid="uid://br50u3awe1tj3" path="res://actors/player/states/state_attack.gd" id="9_4j6cr"]
 [ext_resource type="Script" uid="uid://c0ddkmu85xeqb" path="res://actors/player/states/state_hurt.gd" id="10_7shyn"]
-[ext_resource type="Script" uid="uid://ch2tnx4730hoo" path="res://actors/player/states/state_dead.gd" id="11_0l2tg"]
+[ext_resource type="Script" uid="uid://ch2tnx4730hoo" path="res://actors/player/states/dead.gd" id="11_0l2tg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ic0uy"]
 texture = ExtResource("2_pi774")
