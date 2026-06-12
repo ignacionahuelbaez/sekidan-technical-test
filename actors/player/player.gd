@@ -1,38 +1,31 @@
 extends CharacterBody2D
 class_name Player
 
-#region VARIABLES Y EXPORTS
 const SPEED: float = 150.0
-#endregion
 
-#region REFERENCIAS A NODOS
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var hitbox: HitboxComponent = $HitboxComponent
+@onready var hitbox_shape: CollisionShape2D = $HitboxComponent/CollisionShape2D
 
 var current_state: PlayerState
 var last_direction: Vector2 = Vector2.RIGHT
-#endregion
 
-#region CICLOS DE VIDA
 func _ready() -> void:
 	add_to_group("player")
-	
-	# Aseguramos que la espada empiece apagada para no hacer daño al chocar
-	if hitbox:
-		hitbox.monitoring = false
-	
-	# Inicializamos tu máquina de estados original
+
+	# La forma de colisión del hitbox arranca apagada.
+	# Esto evita que inflija daño solo por estar cerca de un enemigo.
+	if hitbox_shape:
+		hitbox_shape.disabled = true
+
 	current_state = $States/Idle
 	current_state.player = self
 	current_state.enter()
 
 func _physics_process(delta: float) -> void:
-	# Le devolvemos el control a la máquina de estados para que puedas moverte
 	if current_state:
 		current_state.physics_update(delta)
-#endregion
 
-#region MÉTODOS DE CONTROL Y MÁQUINA DE ESTADOS
 func change_state(state_name: String) -> void:
 	if current_state:
 		current_state.exit()
@@ -45,7 +38,7 @@ func play_animation(anim_name: String, direction: Vector2) -> void:
 		last_direction = direction
 	if sprite.animation != anim_name:
 		sprite.play(anim_name)
-	
+
 	if direction.x < 0:
 		sprite.flip_h = true
 	elif direction.x > 0:
@@ -60,4 +53,3 @@ func ejecutar_ataque_direccional() -> void:
 		play_animation("attack_down", Vector2.ZERO)
 	else:
 		play_animation("attack", Vector2.ZERO)
-#endregion

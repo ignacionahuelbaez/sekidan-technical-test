@@ -1,4 +1,7 @@
-===== ./actors/enemy/enemy.gd =====
+
+==================================================
+FILE: ./actors/enemy/enemy.gd
+==================================================
 extends CharacterBody2D
 class_name Enemy
 
@@ -84,7 +87,10 @@ func _on_death() -> void:
 	if animated_sprite and animated_sprite.sprite_frames.has_animation("dead"):
 		animated_sprite.play("dead")
 #endregion
-===== ./actors/enemy/enemy_bt.tres =====
+
+==================================================
+FILE: ./actors/enemy/enemy_bt.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://bmndwsqukjyf5"]
 
 [ext_resource type="Script" uid="uid://38a1hfcgu7ra" path="res://ai/tasks/bt_is_player_in_attack_range.gd" id="1_n7e10"]
@@ -128,7 +134,10 @@ children = [SubResource("BTSequence_78x7y"), SubResource("BTSequence_8abap"), Su
 [resource]
 blackboard_plan = SubResource("BlackboardPlan_kfecl")
 root_task = SubResource("BTSelector_6adme")
-===== ./actors/player/player.gd =====
+
+==================================================
+FILE: ./actors/player/player.gd
+==================================================
 extends CharacterBody2D
 class_name Player
 
@@ -192,7 +201,10 @@ func ejecutar_ataque_direccional() -> void:
 	else:
 		play_animation("attack", Vector2.ZERO)
 #endregion
-===== ./actors/player/states/dead.gd =====
+
+==================================================
+FILE: ./actors/player/states/dead.gd
+==================================================
 class_name StateDead
 extends PlayerState
 
@@ -200,7 +212,10 @@ func enter() -> void:
 	player.velocity = Vector2.ZERO
 	player.play_animation("dead", Vector2.ZERO)
 	player.set_physics_process(false)
-===== ./actors/player/states/player_state.gd =====
+
+==================================================
+FILE: ./actors/player/states/player_state.gd
+==================================================
 # Clase base para todos los estados del jugador.
 # Cada estado hereda de esta clase e implementa los métodos que necesita.
 class_name PlayerState
@@ -219,7 +234,10 @@ func update(_delta: float) -> void:
 
 func physics_update(_delta: float) -> void:
 	pass	
-===== ./actors/player/states/state_attack.gd =====
+
+==================================================
+FILE: ./actors/player/states/state_attack.gd
+==================================================
 extends PlayerState # O la clase que uses como base para tus estados
 
 #region REFERENCIAS
@@ -250,7 +268,10 @@ func exit() -> void:
 		player.hitbox.monitoring = false
 		# Si usas collision shape, podrías necesitar:
 		# player.hitbox.get_node("CollisionShape2D").disabled = true
-===== ./actors/player/states/state_hurt.gd =====
+
+==================================================
+FILE: ./actors/player/states/state_hurt.gd
+==================================================
 class_name StateHurt
 extends PlayerState
 
@@ -270,7 +291,10 @@ func physics_update(_delta: float) -> void:
 func _on_hurt_finished() -> void:
 	player.sprite.modulate = NORMAL_COLOR
 	player.change_state("Idle")
-===== ./actors/player/states/state_idle.gd =====
+
+==================================================
+FILE: ./actors/player/states/state_idle.gd
+==================================================
 class_name StateIdle
 extends PlayerState
 
@@ -284,7 +308,10 @@ func physics_update(_delta: float) -> void:
 	var direction: Vector2 = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	if direction != Vector2.ZERO:
 		player.change_state("Walk")
-===== ./actors/player/states/state_walk.gd =====
+
+==================================================
+FILE: ./actors/player/states/state_walk.gd
+==================================================
 class_name StateWalk
 extends PlayerState
 
@@ -299,7 +326,171 @@ func physics_update(_delta: float) -> void:
 		player.velocity = direction * player.SPEED
 		player.play_animation("walk", direction)
 		player.move_and_slide()
-===== ./ai/tasks/bt_attack_player.gd =====
+
+==================================================
+FILE: ./addons/limboai/README.md
+==================================================
+<p align="center">
+  <img src="doc/images/logo.svg" width="400" alt="LimboAI logo">
+</p>
+
+# LimboAI - Behavior Trees & State Machines for Godot 4
+
+<!--
+[![🔗 All builds](https://github.com/limbonaut/limboai/actions/workflows/all_builds.yml/badge.svg)](https://github.com/limbonaut/limboai/actions/workflows/all_builds.yml)
+-->
+[![🔎 Unit Tests](https://github.com/limbonaut/limboai/actions/workflows/test_builds.yml/badge.svg)](https://github.com/limbonaut/limboai/actions/workflows/test_builds.yml)
+[![Documentation Status](https://readthedocs.org/projects/limboai/badge/?version=latest)](https://limboai.readthedocs.io/en/latest/?badge=latest)
+[![GitHub License](https://img.shields.io/github/license/limbonaut/limboai)](https://github.com/limbonaut/limboai/blob/master/LICENSE.md)
+[![Discord](https://img.shields.io/discord/1185664967379267774?logo=discord&link=https%3A%2F%2Fdiscord.gg%2FN5MGC95GpP)](https://discord.gg/N5MGC95GpP)
+[![Mastodon Follow](https://img.shields.io/mastodon/follow/109346796150895359?domain=https%3A%2F%2Fmastodon.gamedev.place)](https://mastodon.gamedev.place/@limbo)
+
+>**Supported Godot Engine:**  **4.6**
+> *(see below for older versions)*
+
+
+**LimboAI** is an open-source C++ plugin for **Godot Engine 4** providing a combination of
+**Behavior Trees** and **State Machines**, which can be used together to create complex AI behaviors.
+It comes with a behavior tree editor, built-in documentation, visual debugger, extensive demo project with a tutorial, and more!
+While it is implemented in C++, it fully supports GDScript for [creating your own tasks](https://limboai.readthedocs.io/en/stable/behavior-trees/custom-tasks.html) and [states](https://limboai.readthedocs.io/en/stable/hierarchical-state-machines/create-hsm.html).
+
+If you enjoy using LimboAI, please **consider supporting** my efforts with a donation on Ko-fi 😊 Your contribution will help me continue developing and improving it.
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y2TCNH0)
+
+![Textured screenshot](doc/images/behavior-tree-editor-debugger.png)
+
+Behavior Trees are powerful hierarchical structures used to model and control the behavior of agents in a game (e.g., characters, enemies). They are designed to make it easier to create rich and highly modular behaviors for your games. To learn more about behavior trees, check out [Introduction to Behavior Trees](https://limboai.readthedocs.io/en/stable/behavior-trees/introduction.html) and our demo project, which includes a tutorial.
+
+## Demonstration
+
+![Charger from Demo](doc/images/demo_charger.gif)
+
+> [!NOTE]
+> **Demo project** lives in the `demo` folder, and is available separately in [**Releases**](https://github.com/limbonaut/limboai/releases).
+> Run `demo/scenes/showcase.tscn` to get started.
+> It also includes a tutorial that introduces behavior trees through illustrative examples.
+
+### Videos
+
+> YouTube videos produced by various creators
+
+<a href="https://www.youtube.com/watch?v=cGqO7SVKqkM"><img src="https://img.youtube.com/vi/cGqO7SVKqkM/0.jpg" width=272></a>
+<a href="https://www.youtube.com/watch?v=E_FIy2dTkNc"><img src="https://img.youtube.com/vi/E_FIy2dTkNc/0.jpg" width=272></a>
+<a href="https://www.youtube.com/watch?v=45DaBV9FgOQ"><img src="https://img.youtube.com/vi/45DaBV9FgOQ/0.jpg" width=272></a>
+<a href="https://www.youtube.com/watch?v=vZHzMO90IwQ"><img src="https://img.youtube.com/vi/vZHzMO90IwQ/0.jpg" width=272></a>
+<a href="https://www.youtube.com/watch?v=gAk3xl5fBsM"><img src="https://img.youtube.com/vi/gAk3xl5fBsM/0.jpg" width=272></a>
+<a href="https://www.youtube.com/watch?v=aP0Aacdxmno"><img src="https://img.youtube.com/vi/aP0Aacdxmno/0.jpg" width=272></a>
+
+## Supported Godot versions
+
+| Plugin Version           | GDExtension/AssetLib   | Module    |
+|--------------------------|------------------------|-----------|
+| `1.7.x` releases         | Godot 4.6 or higher    | Godot 4.6 |
+| `1.6.x` releases         | Godot 4.4, 4.5, 4.6    | Godot 4.6 |
+| `1.5.x` releases         | Godot 4.4, 4.5         | Godot 4.5 |
+| `1.4.x` releases         | Godot 4.4, 4.5         | Godot 4.4 |
+| `1.2.0`-`1.3.x` releases | Godot 4.3              | Godot 4.3 |
+| `1.1.x` releases         | Godot 4.2              | Godot 4.2 |
+
+## Features
+
+- **Behavior Trees (BT):**
+    - Easily create, edit, and save `BehaviorTree` resources in the editor.
+    - Execute `BehaviorTree` resources using the `BTPlayer` node.
+    - Create complex behaviors by combining and nesting tasks in a hierarchy.
+    - Control execution flow using composite, decorator, and condition tasks.
+    - [Create custom tasks](https://limboai.readthedocs.io/en/stable/behavior-trees/custom-tasks.html) by extending core classes: `BTAction`, `BTCondition`, `BTDecorator`, and `BTComposite`.
+    - Built-in class documentation.
+    - Blackboard system: Share data seamlessly between tasks using the `Blackboard`.
+      - Blackboard plans: Define variables in the BehaviorTree resource and override their values in the BTPlayer node.
+      - Plan editor: Manage variables, their data types and property hints.
+      - Blackboard scopes: Prevent name conflicts and enable advanced techniques like [sharing data between several agents](https://limboai.readthedocs.io/en/stable/behavior-trees/using-blackboard.html#sharing-data-between-several-agents).
+      - Blackboard parameters: [Export a BB parameter](https://limboai.readthedocs.io/en/stable/behavior-trees/using-blackboard.html#task-parameters), for which user can provide a value or bind it to a blackboard variable (can be used in custom tasks).
+      - Inspector support for specifying blackboard variables (custom editor for exported `StringName` properties ending with "_var").
+    - Use the `BTSubtree` task to execute a tree from a different resource file, promoting organization and reusability.
+    - Visual Debugger: Inspect the execution of any BT in a running scene to identify and troubleshoot issues.
+    - Visualize BT in-game using `BehaviorTreeView` node (for custom in-game tools).
+    - Monitor tree performance with custom performance monitors.
+
+- **Hierarchical State Machines (HSM):**
+    - Extend the `LimboState` class to implement state logic.
+    - `LimboHSM` node serves as a state machine that manages `LimboState` instances and transitions.
+    - `LimboHSM` is a state itself and can be nested within other `LimboHSM` instances.
+    - [Event-based](https://limboai.readthedocs.io/en/stable/hierarchical-state-machines/create-hsm.html#events-and-transitions): Transitions are associated with events and are triggered by the state machine when the relevant event is dispatched, allowing for better decoupling of transitions from state logic.
+    - Combine state machines with behavior trees using `BTState` for advanced reactive AI.
+    - Delegation Option: Using the vanilla `LimboState`, [delegate the implementation](https://limboai.readthedocs.io/en/stable/hierarchical-state-machines/create-hsm.html#single-file-state-machine-setup) to your callback functions, making it perfect for rapid prototyping and game jams.
+    - Note: State machine setup and initialization require code; there is no GUI editor.
+
+- **Tested:** Behavior tree tasks and HSM are covered by unit tests.
+
+- **GDExtension:** LimboAI can be [used as extension](https://limboai.readthedocs.io/en/stable/getting-started/getting-limboai.html#get-gdextension-version). Custom engine builds are not necessary.
+
+- **Demo + Tutorial:** Check out our extensive demo project, which includes an introduction to behavior trees using examples.
+
+## First steps
+
+Follow the [Getting started](https://limboai.readthedocs.io/en/stable/getting-started/getting-limboai.html) guide to learn how to get started with LimboAI and the demo project.
+
+## Getting LimboAI
+
+LimboAI can be used as either a C++ module or as a GDExtension shared library. GDExtension version is more convenient to use but somewhat limited in features. Whichever you choose to use, your project will stay compatible with both and you can switch from one to the other any time. See [Using GDExtension](https://limboai.readthedocs.io/en/stable/getting-started/getting-limboai.html#get-gdextension-version).
+
+### Precompiled builds
+
+- For the most recent builds, navigate to **Actions** → [**All Builds**](https://github.com/limbonaut/limboai/actions/workflows/all_builds.yml), select a build from the list, and scroll down until you find the **Artifacts** section.
+- For release builds, check [**Releases**](https://github.com/limbonaut/limboai/releases).
+
+### Compiling from source
+
+- Download the Godot Engine source code and put this module source into the `modules/limboai` directory.
+- Consult the Godot Engine documentation for instructions on [how to build from source code](https://docs.godotengine.org/en/stable/engine_details/development/compiling/index.html).
+- If you plan to export a game utilizing the LimboAI module, you'll also need to build export templates.
+- To execute unit tests, compile the engine with `tests=yes` and run it with `--test --tc="*[LimboAI]*"`.
+
+#### For GDExtension
+
+- You'll need SCons build tool and a C++ compiler. See also [Compiling](https://docs.godotengine.org/en/stable/contributing/development/compiling/index.html).
+- Run `scons target=editor` to build the plugin library for your current platform.
+  - SCons will automatically clone the godot-cpp/ repository if it doesn't already exist in the `limboai/godot-cpp` directory.
+  - By default, built targets are placed in the demo project: `demo/addons/limboai/bin/`
+- Check `scons -h` for other options and targets.
+
+## Using the plugin
+
+- Online Documentation: [stable](https://limboai.readthedocs.io/en/stable/index.html), [latest](https://limboai.readthedocs.io/en/latest/index.html)
+- [Getting started](https://limboai.readthedocs.io/en/stable/getting-started/getting-limboai.html)
+- [Introduction to Behavior Trees](https://limboai.readthedocs.io/en/stable/behavior-trees/introduction.html)
+- [Creating custom tasks in GDScript](https://limboai.readthedocs.io/en/stable/behavior-trees/custom-tasks.html)
+- [Sharing data using Blackboard](https://limboai.readthedocs.io/en/stable/behavior-trees/using-blackboard.html)
+- [Accessing nodes in the scene tree](https://limboai.readthedocs.io/en/stable/behavior-trees/accessing-nodes.html)
+- [State machines](https://limboai.readthedocs.io/en/stable/hierarchical-state-machines/create-hsm.html)
+- [Using GDExtension](https://limboai.readthedocs.io/en/stable/getting-started/getting-limboai.html#get-gdextension-version)
+- [Using LimboAI with C#](https://limboai.readthedocs.io/en/stable/getting-started/c-sharp.html)
+- [Class reference](https://limboai.readthedocs.io/en/stable/classes/featured-classes.html)
+
+## Contributing
+
+Contributions are welcome! Please open issues for bug reports, feature requests, or code changes.
+For detailed guidelines on contributing to code or documentation, check out our [Contributing](https://limboai.readthedocs.io/en/latest/getting-started/contributing.html) page.
+
+If you have an idea for a behavior tree task or a feature that could be useful in a variety of projects, open an issue to discuss it.
+
+## Social
+
+Need help? We have a Discord server: https://discord.gg/N5MGC95GpP
+
+I write about LimboAI development on Mastodon: https://mastodon.gamedev.place/@limbo.
+
+## License
+
+Use of this source code is governed by an MIT-style license that can be found in the LICENSE file or at https://opensource.org/licenses/MIT
+
+LimboAI logo and demo project art assets are licensed under the Creative Commons Attribution 4.0 International license that can be found at https://creativecommons.org/licenses/by/4.0/
+
+==================================================
+FILE: ./ai/tasks/bt_attack_player.gd
+==================================================
 # Detiene al enemigo y ejecuta la animación de ataque completa.
 @tool
 class_name BTAttackPlayer
@@ -317,7 +508,10 @@ func _tick(_delta: float) -> Status:
 	if not animated_sprite.is_playing():
 		return SUCCESS
 	return RUNNING
-===== ./ai/tasks/bt_chase_player.gd =====
+
+==================================================
+FILE: ./ai/tasks/bt_chase_player.gd
+==================================================
 @tool
 class_name BTChasePlayer
 extends BTAction
@@ -335,7 +529,10 @@ func _tick(_delta: float) -> Status:
 	animated_sprite.play("walk")
 	animated_sprite.flip_h = direction.x < 0
 	return RUNNING
-===== ./ai/tasks/bt_is_player_in_attack_range.gd =====
+
+==================================================
+FILE: ./ai/tasks/bt_is_player_in_attack_range.gd
+==================================================
 @tool
 class_name BTIsPlayerInAttackRange
 extends BTCondition
@@ -347,7 +544,10 @@ func _tick(_delta: float) -> Status:
 	if not is_instance_valid(player):
 		return FAILURE
 	return SUCCESS if agent.global_position.distance_to(player.global_position) <= ATTACK_RANGE else FAILURE
-===== ./ai/tasks/bt_is_player_in_detection_range.gd =====
+
+==================================================
+FILE: ./ai/tasks/bt_is_player_in_detection_range.gd
+==================================================
 @tool
 class_name BTIsPlayerInDetectionRange
 extends BTCondition
@@ -359,7 +559,10 @@ func _tick(_delta: float) -> Status:
 	if not is_instance_valid(player):
 		return FAILURE
 	return SUCCESS if agent.global_position.distance_to(player.global_position) <= DETECTION_RANGE else FAILURE
-===== ./ai/tasks/bt_patrol.gd =====
+
+==================================================
+FILE: ./ai/tasks/bt_patrol.gd
+==================================================
 @tool
 class_name BTPatrol
 extends BTAction
@@ -381,7 +584,10 @@ func _tick(delta: float) -> Status:
 		_direction = -_direction
 		_distance_traveled = 0.0
 	return RUNNING
-===== ./components/health_component.gd =====
+
+==================================================
+FILE: ./components/health_component.gd
+==================================================
 extends Node
 class_name HealthComponent
 
@@ -408,7 +614,10 @@ func take_damage(amount: int) -> void:
 	if current_health <= 0:
 		current_health = 0
 		death.emit()
-===== ./components/hitbox_component.gd =====
+
+==================================================
+FILE: ./components/hitbox_component.gd
+==================================================
 # Área que inflige daño al entrar en contacto con un HurtboxComponent.
 class_name HitboxComponent
 extends Area2D
@@ -418,7 +627,10 @@ extends Area2D
 func _ready() -> void:
 	monitoring = true
 	monitorable = true
-===== ./components/hurtbox_component.gd =====
+
+==================================================
+FILE: ./components/hurtbox_component.gd
+==================================================
 extends Area2D
 class_name HurtboxComponent
 
@@ -433,7 +645,10 @@ func _on_area_entered(area: Area2D) -> void:
 	if area is HitboxComponent:
 		if health_component:
 			health_component.take_damage(area.damage)
-===== ./demo/agents/01_agent_melee_simple.tscn =====
+
+==================================================
+FILE: ./demo/agents/01_agent_melee_simple.tscn
+==================================================
 [gd_scene format=3 uid="uid://1dnm7tuik8xo"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_l180o"]
@@ -478,7 +693,10 @@ max_health = 3.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=1399725832]
 behavior_tree = ExtResource("3_tb7cx")
 blackboard_plan = SubResource("BlackboardPlan_s08ac")
-===== ./demo/agents/02_agent_charger.tscn =====
+
+==================================================
+FILE: ./demo/agents/02_agent_charger.tscn
+==================================================
 [gd_scene format=3 uid="uid://g1pnvanyxcpa"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_n83hi"]
@@ -516,7 +734,10 @@ max_health = 8.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="4" unique_id=1733921525]
 behavior_tree = ExtResource("3_nacc3")
 blackboard_plan = SubResource("BlackboardPlan_pmyhf")
-===== ./demo/agents/03_agent_imp.tscn =====
+
+==================================================
+FILE: ./demo/agents/03_agent_imp.tscn
+==================================================
 [gd_scene format=3 uid="uid://730bthc0ywhd"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_13xup"]
@@ -551,7 +772,10 @@ max_health = 4.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=137535558]
 behavior_tree = ExtResource("3_furh3")
 blackboard_plan = SubResource("BlackboardPlan_aog23")
-===== ./demo/agents/04_agent_skirmisher.tscn =====
+
+==================================================
+FILE: ./demo/agents/04_agent_skirmisher.tscn
+==================================================
 [gd_scene format=3 uid="uid://co6yeafaljbq0"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_2ir76"]
@@ -586,7 +810,10 @@ max_health = 7.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="4" unique_id=1268324578]
 behavior_tree = ExtResource("3_bhfkv")
 blackboard_plan = SubResource("BlackboardPlan_vjbry")
-===== ./demo/agents/05_agent_ranged.tscn =====
+
+==================================================
+FILE: ./demo/agents/05_agent_ranged.tscn
+==================================================
 [gd_scene format=3 uid="uid://ci3x5esepbu5v"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_oa4xm"]
@@ -621,7 +848,10 @@ max_health = 6.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="4" unique_id=1201627788]
 behavior_tree = ExtResource("3_f7r5w")
 blackboard_plan = SubResource("BlackboardPlan_2kwy7")
-===== ./demo/agents/06_agent_melee_combo.tscn =====
+
+==================================================
+FILE: ./demo/agents/06_agent_melee_combo.tscn
+==================================================
 [gd_scene format=3 uid="uid://blxmw2w1h2s0s"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_dny3b"]
@@ -656,7 +886,10 @@ max_health = 6.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="4" unique_id=1594372294]
 behavior_tree = ExtResource("3_l805q")
 blackboard_plan = SubResource("BlackboardPlan_67ric")
-===== ./demo/agents/07_agent_melee_nuanced.tscn =====
+
+==================================================
+FILE: ./demo/agents/07_agent_melee_nuanced.tscn
+==================================================
 [gd_scene format=3 uid="uid://2e4ohaqjaawb"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_afx5l"]
@@ -691,7 +924,10 @@ max_health = 6.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="4" unique_id=1879939663]
 behavior_tree = ExtResource("3_b8kcf")
 blackboard_plan = SubResource("BlackboardPlan_tnf02")
-===== ./demo/agents/08_agent_demon.tscn =====
+
+==================================================
+FILE: ./demo/agents/08_agent_demon.tscn
+==================================================
 [gd_scene format=3 uid="uid://dbmcufef0cc4b"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_115kp"]
@@ -726,7 +962,10 @@ max_health = 8.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=394684464]
 behavior_tree = ExtResource("3_ebd57")
 blackboard_plan = SubResource("BlackboardPlan_5sr4g")
-===== ./demo/agents/09_agent_summoner.tscn =====
+
+==================================================
+FILE: ./demo/agents/09_agent_summoner.tscn
+==================================================
 [gd_scene format=3 uid="uid://bycvi2fb0f7ue"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_neifu"]
@@ -761,7 +1000,10 @@ max_health = 8.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=1626195106]
 behavior_tree = ExtResource("3_bunpq")
 blackboard_plan = SubResource("BlackboardPlan_bqv3d")
-===== ./demo/agents/agent_base.tscn =====
+
+==================================================
+FILE: ./demo/agents/agent_base.tscn
+==================================================
 [gd_scene format=3 uid="uid://ooigbfhfy4wa"]
 
 [ext_resource type="Texture2D" uid="uid://dlo1ine6p5di4" path="res://demo/assets/agent_bobby.png" id="1_1u51b"]
@@ -5289,7 +5531,10 @@ script = ExtResource("4_qwtrf")
 callback_mode_method = 1
 libraries/ = SubResource("AnimationLibrary_ws2ti")
 autoplay = &"idle"
-===== ./demo/agents/fireball/fireball.gd =====
+
+==================================================
+FILE: ./demo/agents/fireball/fireball.gd
+==================================================
 #*
 #* fireball.gd
 #* =============================================================================
@@ -5346,7 +5591,10 @@ func _die() -> void:
 
 func _on_hitbox_area_entered(_area: Area2D) -> void:
 	_die()
-===== ./demo/agents/fireball/fireball.tscn =====
+
+==================================================
+FILE: ./demo/agents/fireball/fireball.tscn
+==================================================
 [gd_scene format=3 uid="uid://wdauoepicegb"]
 
 [ext_resource type="Script" uid="uid://cw0jj6rj3e4dp" path="res://demo/agents/fireball/fireball.gd" id="1_ituf4"]
@@ -5514,7 +5762,10 @@ libraries/ = SubResource("AnimationLibrary_cphpk")
 autoplay = &"default"
 
 [connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]
-===== ./demo/agents/ninja_star/ninja_star.gd =====
+
+==================================================
+FILE: ./demo/agents/ninja_star/ninja_star.gd
+==================================================
 #*
 #* ninja_star.gd
 #* =============================================================================
@@ -5568,7 +5819,10 @@ func _die() -> void:
 
 func _on_hitbox_area_entered(_area: Area2D) -> void:
 	_die()
-===== ./demo/agents/ninja_star/ninja_star.tscn =====
+
+==================================================
+FILE: ./demo/agents/ninja_star/ninja_star.tscn
+==================================================
 [gd_scene format=3 uid="uid://bj5n72nomeaci"]
 
 [ext_resource type="Script" uid="uid://ea3wq7unbfaw" path="res://demo/agents/ninja_star/ninja_star.gd" id="1_pja57"]
@@ -5649,7 +5903,10 @@ local_coords = true
 process_material = SubResource("ParticleProcessMaterial_gilhy")
 
 [connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]
-===== ./demo/agents/player/player.gd =====
+
+==================================================
+FILE: ./demo/agents/player/player.gd
+==================================================
 #*
 #* player.gd
 #* =============================================================================
@@ -5753,7 +6010,10 @@ func _can_dodge() -> bool:
 		get_tree().create_timer(dodge_cooldown).timeout.connect(func(): can_dodge = true)
 		return true
 	return false
-===== ./demo/agents/player/player.tscn =====
+
+==================================================
+FILE: ./demo/agents/player/player.tscn
+==================================================
 [gd_scene format=3 uid="uid://d07ag5dcje13i"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_mswd4"]
@@ -5807,7 +6067,10 @@ script = ExtResource("6_7o4a6")
 animation_player = NodePath("../../AnimationPlayer")
 animation = &"dodge"
 hurtbox_collision = NodePath("../../Root/Hurtbox/HurtboxCollisionShape2D")
-===== ./demo/agents/player/states/attack_state.gd =====
+
+==================================================
+FILE: ./demo/agents/player/states/attack_state.gd
+==================================================
 #*
 #* attack_state.gd
 #* =============================================================================
@@ -5868,7 +6131,10 @@ func _exit() -> void:
 		_can_enter = false
 		await get_tree().create_timer(combo_cooldown).timeout
 		_can_enter = true
-===== ./demo/agents/player/states/dodge_state.gd =====
+
+==================================================
+FILE: ./demo/agents/player/states/dodge_state.gd
+==================================================
 #*
 #* dodge_state.gd
 #* =============================================================================
@@ -5917,7 +6183,10 @@ func _update(p_delta: float) -> void:
 	agent.move(desired_velocity)
 	if elapsed_time > duration:
 		get_root().dispatch(EVENT_FINISHED)
-===== ./demo/agents/player/states/idle_state.gd =====
+
+==================================================
+FILE: ./demo/agents/player/states/idle_state.gd
+==================================================
 #*
 #* idle_state.gd
 #* =============================================================================
@@ -5945,7 +6214,10 @@ func _update(_delta: float) -> void:
 	var vertical_move: float = Input.get_axis(&"move_up", &"move_down")
 	if horizontal_move != 0.0 or vertical_move != 0.0:
 		get_root().dispatch(EVENT_FINISHED)
-===== ./demo/agents/player/states/move_state.gd =====
+
+==================================================
+FILE: ./demo/agents/player/states/move_state.gd
+==================================================
 #*
 #* move_state.gd
 #* =============================================================================
@@ -5983,7 +6255,10 @@ func _update(_delta: float) -> void:
 
 	if horizontal_move == 0.0 and vertical_move == 0.0:
 		get_root().dispatch(EVENT_FINISHED)
-===== ./demo/agents/scripts/agent_base.gd =====
+
+==================================================
+FILE: ./demo/agents/scripts/agent_base.gd
+==================================================
 #*
 #* agent_base.gd
 #* =============================================================================
@@ -6145,7 +6420,10 @@ func die() -> void:
 
 func get_health() -> Health:
 	return health
-===== ./demo/agents/scripts/health.gd =====
+
+==================================================
+FILE: ./demo/agents/scripts/health.gd
+==================================================
 #*
 #* health.gd
 #* =============================================================================
@@ -6192,7 +6470,10 @@ func take_damage(amount: float, knockback: Vector2) -> void:
 ## Returns current health.
 func get_current() -> float:
 	return _current
-===== ./demo/agents/scripts/hitbox.gd =====
+
+==================================================
+FILE: ./demo/agents/scripts/hitbox.gd
+==================================================
 #*
 #* hitbox.gd
 #* =============================================================================
@@ -6232,7 +6513,10 @@ func get_knockback() -> Vector2:
 	if knockback_enabled:
 		knockback = Vector2.RIGHT.rotated(global_rotation) * knockback_strength
 	return knockback
-===== ./demo/agents/scripts/hurtbox.gd =====
+
+==================================================
+FILE: ./demo/agents/scripts/hurtbox.gd
+==================================================
 #*
 #* hurtbox.gd
 #* =============================================================================
@@ -6255,7 +6539,10 @@ var last_attack_vector: Vector2
 func take_damage(amount: float, knockback: Vector2, source: Hitbox) -> void:
 	last_attack_vector = owner.global_position - source.owner.global_position
 	health.take_damage(amount, knockback)
-===== ./demo/agents/tutorial/tutorial_01_welcome.tscn =====
+
+==================================================
+FILE: ./demo/agents/tutorial/tutorial_01_welcome.tscn
+==================================================
 [gd_scene format=3 uid="uid://dk67yawiu33jv"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_2vrmp"]
@@ -6287,7 +6574,10 @@ texture = ExtResource("2_3h4dj")
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=1816968691]
 behavior_tree = ExtResource("3_ilmgw")
 blackboard_plan = SubResource("BlackboardPlan_52mdk")
-===== ./demo/agents/tutorial/tutorial_02_introduction.tscn =====
+
+==================================================
+FILE: ./demo/agents/tutorial/tutorial_02_introduction.tscn
+==================================================
 [gd_scene format=3 uid="uid://cw3yth564nhrw"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_lia2k"]
@@ -6319,7 +6609,10 @@ texture = ExtResource("2_4x2l4")
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=1228007443]
 behavior_tree = ExtResource("3_3esuy")
 blackboard_plan = SubResource("BlackboardPlan_52mdk")
-===== ./demo/agents/tutorial/tutorial_03_types.tscn =====
+
+==================================================
+FILE: ./demo/agents/tutorial/tutorial_03_types.tscn
+==================================================
 [gd_scene format=3 uid="uid://bx4iabilsv3rs"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_p8nwq"]
@@ -6351,7 +6644,10 @@ texture = ExtResource("2_hnwhw")
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=2103835125]
 behavior_tree = ExtResource("3_a31ka")
 blackboard_plan = SubResource("BlackboardPlan_52mdk")
-===== ./demo/agents/tutorial/tutorial_04_sequence.tscn =====
+
+==================================================
+FILE: ./demo/agents/tutorial/tutorial_04_sequence.tscn
+==================================================
 [gd_scene format=3 uid="uid://bhtm8gnk5hsus"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_oibr1"]
@@ -6383,7 +6679,10 @@ texture = ExtResource("2_j52yc")
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=176951390]
 behavior_tree = ExtResource("3_feewj")
 blackboard_plan = SubResource("BlackboardPlan_52mdk")
-===== ./demo/agents/tutorial/tutorial_05_selector.tscn =====
+
+==================================================
+FILE: ./demo/agents/tutorial/tutorial_05_selector.tscn
+==================================================
 [gd_scene format=3 uid="uid://5nqbasyipupf"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_62fs7"]
@@ -6415,7 +6714,10 @@ texture = ExtResource("2_gdg2c")
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=989842198]
 behavior_tree = ExtResource("3_pm5ep")
 blackboard_plan = SubResource("BlackboardPlan_52mdk")
-===== ./demo/agents/tutorial/tutorial_06_decorators.tscn =====
+
+==================================================
+FILE: ./demo/agents/tutorial/tutorial_06_decorators.tscn
+==================================================
 [gd_scene format=3 uid="uid://ehc00upu3co"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_mbrnd"]
@@ -6447,7 +6749,10 @@ texture = ExtResource("2_ttkri")
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=1652167388]
 behavior_tree = ExtResource("3_tpgll")
 blackboard_plan = SubResource("BlackboardPlan_52mdk")
-===== ./demo/agents/tutorial/tutorial_07_more_decorators.tscn =====
+
+==================================================
+FILE: ./demo/agents/tutorial/tutorial_07_more_decorators.tscn
+==================================================
 [gd_scene format=3 uid="uid://brq6c843j1eeo"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_k4qfc"]
@@ -6479,7 +6784,10 @@ texture = ExtResource("2_q4r1n")
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=1128113897]
 behavior_tree = ExtResource("3_ta3g6")
 blackboard_plan = SubResource("BlackboardPlan_52mdk")
-===== ./demo/agents/tutorial/tutorial_08_final_touch.tscn =====
+
+==================================================
+FILE: ./demo/agents/tutorial/tutorial_08_final_touch.tscn
+==================================================
 [gd_scene format=3 uid="uid://b8yj40s43bw8h"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_bjdsc"]
@@ -6511,7 +6819,10 @@ texture = ExtResource("2_onjfd")
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=1465699266]
 behavior_tree = ExtResource("3_c5qx4")
 blackboard_plan = SubResource("BlackboardPlan_52mdk")
-===== ./demo/ai/tasks/arrive_pos.gd =====
+
+==================================================
+FILE: ./demo/ai/tasks/arrive_pos.gd
+==================================================
 #*
 #* arrive_pos.gd
 #* =============================================================================
@@ -6581,7 +6892,10 @@ func _tick(_delta: float) -> Status:
 	agent.move(desired_velocity)
 	agent.update_facing()
 	return RUNNING
-===== ./demo/ai/tasks/back_away.gd =====
+
+==================================================
+FILE: ./demo/ai/tasks/back_away.gd
+==================================================
 #*
 #* back_away.gd
 #* =============================================================================
@@ -6621,7 +6935,10 @@ func _tick(_delta: float) -> Status:
 	agent.move(_desired_velocity)
 	agent.face_dir(-signf(_dir.x))
 	return RUNNING
-===== ./demo/ai/tasks/face_target.gd =====
+
+==================================================
+FILE: ./demo/ai/tasks/face_target.gd
+==================================================
 #*
 #* face_target.gd
 #* =============================================================================
@@ -6654,7 +6971,10 @@ func _tick(_delta: float) -> Status:
 	agent.velocity = Vector2.ZERO
 	agent.face_dir(dir)
 	return SUCCESS
-===== ./demo/ai/tasks/get_first_in_group.gd =====
+
+==================================================
+FILE: ./demo/ai/tasks/get_first_in_group.gd
+==================================================
 #*
 #* get_first_in_group.gd
 #* =============================================================================
@@ -6689,7 +7009,10 @@ func _tick(_delta: float) -> Status:
 		return FAILURE
 	blackboard.set_var(output_var, nodes[0])
 	return SUCCESS
-===== ./demo/ai/tasks/in_range.gd =====
+
+==================================================
+FILE: ./demo/ai/tasks/in_range.gd
+==================================================
 #*
 #* in_range.gd
 #* =============================================================================
@@ -6744,7 +7067,10 @@ func _tick(_delta: float) -> Status:
 		return SUCCESS
 	else:
 		return FAILURE
-===== ./demo/ai/tasks/is_aligned_with_target.gd =====
+
+==================================================
+FILE: ./demo/ai/tasks/is_aligned_with_target.gd
+==================================================
 #*
 #* is_aligned_with_target.gd
 #* =============================================================================
@@ -6780,7 +7106,10 @@ func _tick(_delta: float) -> Status:
 	if y_diff < tolerance:
 		return SUCCESS
 	return FAILURE
-===== ./demo/ai/tasks/move_forward.gd =====
+
+==================================================
+FILE: ./demo/ai/tasks/move_forward.gd
+==================================================
 #*
 #* move_forward.gd
 #* =============================================================================
@@ -6820,7 +7149,10 @@ func _tick(_delta: float) -> Status:
 	if elapsed_time > duration:
 		return SUCCESS
 	return RUNNING
-===== ./demo/ai/tasks/pursue.gd =====
+
+==================================================
+FILE: ./demo/ai/tasks/pursue.gd
+==================================================
 #*
 #* pursue.gd
 #* =============================================================================
@@ -6900,7 +7232,10 @@ func _select_new_waypoint(desired_position: Vector2) -> void:
 	var distance_vector: Vector2 = desired_position - agent.global_position
 	var angle_variation: float = randf_range(-0.2, 0.2)
 	_waypoint = agent.global_position + distance_vector.limit_length(150.0).rotated(angle_variation)
-===== ./demo/ai/tasks/select_flanking_pos.gd =====
+
+==================================================
+FILE: ./demo/ai/tasks/select_flanking_pos.gd
+==================================================
 #*
 #* select_flanking_pos.gd
 #* =============================================================================
@@ -6975,7 +7310,10 @@ func _tick(_delta: float) -> Status:
 		flank_pos = target.global_position - offset
 	blackboard.set_var(position_var, flank_pos)
 	return SUCCESS
-===== ./demo/ai/tasks/select_random_nearby_pos.gd =====
+
+==================================================
+FILE: ./demo/ai/tasks/select_random_nearby_pos.gd
+==================================================
 @tool
 extends BTAction
 ## Selects a random position nearby within the specified range and stores it on the blackboard. [br]
@@ -7010,7 +7348,10 @@ func _tick(_delta: float) -> Status:
 		is_good_position = agent.is_good_position(pos)
 	blackboard.set_var(position_var, pos)
 	return SUCCESS
-===== ./demo/ai/trees/01_agent_melee_simple.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/01_agent_melee_simple.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://bpdm5jnegi38"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_2jpsu"]
@@ -7119,7 +7460,10 @@ description = "Welcome to the [b]LimboAI[/b] demo project! This demo project con
 - On this screen, you can inspect the AI behavior tree in action for each agent in the game."
 blackboard_plan = SubResource("BlackboardPlan_46tbn")
 root_task = SubResource("BTSequence_pxl2k")
-===== ./demo/ai/trees/02_agent_charger.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/02_agent_charger.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://ylife72ym5et"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_657p6"]
@@ -7233,7 +7577,10 @@ children = [SubResource("BTSequence_l3v31"), SubResource("BTSequence_p6pgg"), Su
 description = "A [dec]Decorator[/dec] is a type of task that typically has only one child. Decorators are commonly used to alter the behavior or status of their child task. In this behavior tree, the [dec]TimeLimit[/dec] decorator sets a maximum time for the [act]Arrive[/act] action to complete its work. If the child task exceeds this time limit without finishing, it will be aborted, and the TimeLimit decorator will return [FAILURE]."
 blackboard_plan = SubResource("BlackboardPlan_qd806")
 root_task = SubResource("BTSequence_pjuov")
-===== ./demo/ai/trees/03_agent_imp.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/03_agent_imp.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://c2bxoo68ywb27"]
 
 [ext_resource type="Script" uid="uid://bicxffqmm7ek" path="res://demo/ai/tasks/select_random_nearby_pos.gd" id="1_cdtqu"]
@@ -7343,7 +7690,10 @@ children = [SubResource("BTProbability_ifsry"), SubResource("BTSequence_pxl2k")]
 description = "Here, the [dec]Probability[/dec] decorator allows the execution of its branch in 50% of cases. This introduces a slight variation to the behavior each time the [comp]Chaotic walk[/comp] sequence is considered by the [comp]Selector[/comp]. This sequence can be selected several times in a row as long as the Probability decorator permits it. The [comp]Engage player[/comp] sequence is only executed if Probability returns [FAILURE]."
 blackboard_plan = SubResource("BlackboardPlan_46tbn")
 root_task = SubResource("BTSelector_y3llm")
-===== ./demo/ai/trees/04_agent_skirmisher.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/04_agent_skirmisher.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://qqmjvbeibatn"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_2883n"]
@@ -7522,7 +7872,10 @@ In our example, if the target is not within the specified range, the [con]InRang
 "
 blackboard_plan = SubResource("BlackboardPlan_46tbn")
 root_task = SubResource("BTSelector_2jnau")
-===== ./demo/ai/trees/05_agent_ranged.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/05_agent_ranged.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://cqluon1y1hnn5"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_4xk1i"]
@@ -7692,7 +8045,10 @@ description = "Here, the [dec]Probability[/dec] decorator permits the execution 
 The [dec]Repeat[/dec] decorator is handy for doing something multiple times within a behavior tree. In our example, it's used to make the [comp]Throw ninja star[/comp] sequence perform three times in a row."
 blackboard_plan = SubResource("BlackboardPlan_46tbn")
 root_task = SubResource("BTSequence_pxl2k")
-===== ./demo/ai/trees/06_agent_melee_combo.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/06_agent_melee_combo.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://cpncl1db8j12f"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_sf4l8"]
@@ -7842,7 +8198,10 @@ children = [SubResource("BTSequence_yhjh1"), SubResource("BTSequence_1xfnq"), Su
 description = "In some scenarios, you might need to execute multiple tasks at the same time until specific conditions are fulfilled. To achieve this, the [comp]Parallel[/comp] composite is an invaluable tool. This composite task allows its children to be executed simultaneously during each tick until a specified number of successes or failures is reached. In this example, it will execute both the [act]PlayAnimation[/act] and [act]MoveForward[/act] actions each tick until both actions have finished with a [SUCCESS] status."
 blackboard_plan = SubResource("BlackboardPlan_46tbn")
 root_task = SubResource("BTSequence_pxl2k")
-===== ./demo/ai/trees/07_agent_melee_nuanced.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/07_agent_melee_nuanced.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://c2u6sljqkim0n"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_08fik"]
@@ -8046,7 +8405,10 @@ description = "[comp]ProbabilitySelector[/comp] chooses a child task to execute 
 "
 blackboard_plan = SubResource("BlackboardPlan_46tbn")
 root_task = SubResource("BTSequence_pxl2k")
-===== ./demo/ai/trees/08_agent_demon.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/08_agent_demon.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://cpcnbi81jqge4"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_ce4la"]
@@ -8229,7 +8591,10 @@ children = [SubResource("BTCooldown_oms7a"), SubResource("BTSequence_eikr4"), Su
 description = "Here, we use the [con]InRange[/con] condition task together with [comp]Sequence[/comp] and [comp]Selector[/comp] to create a reactive behavior for this agent. When the player comes close, this agent will attempt to hit them with a melee attack and move away afterward for a better ranged position."
 blackboard_plan = SubResource("BlackboardPlan_8ay3j")
 root_task = SubResource("BTSelector_feba6")
-===== ./demo/ai/trees/09_agent_summoner.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/09_agent_summoner.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://cpxk7jnqpwwlc"]
 
 [ext_resource type="Script" uid="uid://bicxffqmm7ek" path="res://demo/ai/tasks/select_random_nearby_pos.gd" id="1_sgn0p"]
@@ -8377,7 +8742,10 @@ description = "[con]CheckAgentProperty[/con] examines the agent’s property val
 You can also check or share a [dec]Cooldown[/dec] in different parts of the behavior tree if you provide a blackboard variable for the [dec]Cooldown[/dec] decorator to use. [con]CheckVar[/con] is responsible here for examining the cooldown variable named \"summon_cooldown\"."
 blackboard_plan = SubResource("BlackboardPlan_58oq1")
 root_task = SubResource("BTSelector_gp6q5")
-===== ./demo/ai/trees/tutorial/tutorial_01_welcome.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/tutorial/tutorial_01_welcome.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://b1mfh8yad7rmw"]
 
 [sub_resource type="BlackboardPlan" id="BlackboardPlan_ewfwq"]
@@ -8407,7 +8775,10 @@ Press ➡ button in the top-right corner to proceed.
 Press ⬅ button any time you want to go back to a previous chapter."
 blackboard_plan = SubResource("BlackboardPlan_ewfwq")
 root_task = SubResource("BTSequence_4bq32")
-===== ./demo/ai/trees/tutorial/tutorial_02_introduction.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/tutorial/tutorial_02_introduction.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://b1i0xo0o676va"]
 
 [sub_resource type="BlackboardPlan" id="BlackboardPlan_ewfwq"]
@@ -8453,7 +8824,10 @@ description = "Behavior trees are designed to simplify the creation of responsiv
 A behavior tree is usually processed each frame (physics frame by default). It is traversed from top to bottom, with the control tasks determining the control flow. Each task has a [color=cyan]_tick[/color] method, which performs the task's work and returns a status indicating its progress: [SUCCESS], [FAILURE], or [RUNNING]. [SUCCESS] and [FAILURE] indicate the outcome of finished work, while [RUNNING] status is returned when a task requires more than one tick to complete its job. These statuses determine how the tree progresses, with the [RUNNING] status usually meaning that the tree will continue execution during the next frame."
 blackboard_plan = SubResource("BlackboardPlan_ewfwq")
 root_task = SubResource("BTSequence_rbfdh")
-===== ./demo/ai/trees/tutorial/tutorial_03_types.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/tutorial/tutorial_03_types.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://cb0ybf24ahnc3"]
 
 [ext_resource type="Script" uid="uid://bicxffqmm7ek" path="res://demo/ai/tasks/select_random_nearby_pos.gd" id="1_as4cg"]
@@ -8540,7 +8914,10 @@ Let's take a look into actions first. [act]Actions[/act] are responsible for mos
 Next, we'll explore the core composite tasks, such as [comp]Sequence[/comp] and [comp]Selector[/comp]. These are among the most crucial composites that you should know about."
 blackboard_plan = SubResource("BlackboardPlan_ewfwq")
 root_task = SubResource("BTSelector_tdpek")
-===== ./demo/ai/trees/tutorial/tutorial_04_sequence.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/tutorial/tutorial_04_sequence.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://dln8ywvtqedt7"]
 
 [ext_resource type="Script" uid="uid://bicxffqmm7ek" path="res://demo/ai/tasks/select_random_nearby_pos.gd" id="1_gk66j"]
@@ -8596,7 +8973,10 @@ In our example, you can observe a simple [comp]Sequence[/comp] in action. Notice
 "
 blackboard_plan = SubResource("BlackboardPlan_ewfwq")
 root_task = SubResource("BTSequence_vx4uy")
-===== ./demo/ai/trees/tutorial/tutorial_05_selector.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/tutorial/tutorial_05_selector.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://bf4r652fv5kwi"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_3ed74"]
@@ -8693,7 +9073,10 @@ To understand the [comp]Selector[/comp], it helps to see it as the opposite of t
 In our example, the [con]InRange[/con] condition checks how far Junior is from the target. When Junior is farther than 200 pixels from the target, he'll attempt to approach it. If he is closer than 200 pixels from the target, he would try to walk away. Thanks to the Selector, only one of these behaviors will be performed at a time, based on the result of the [con]InRange[/con] check. Junior seems to have a dilemma — unable to decide whether to stay or go."
 blackboard_plan = SubResource("BlackboardPlan_ewfwq")
 root_task = SubResource("BTSelector_ddhoo")
-===== ./demo/ai/trees/tutorial/tutorial_06_decorators.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/tutorial/tutorial_06_decorators.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://beiki511huxb8"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_3xoj7"]
@@ -8815,7 +9198,10 @@ In our example, we utilize the [dec]RunLimit[/dec] decorator to restrict its chi
 Now, let's examine another decorator we use here - the [dec]Cooldown[/dec]. This decorator executes its child task only if the specified duration time has passed since the previous execution of the child task. The first time the attack sequence results in [SUCCESS], it triggers the cooldown, preventing the [comp]Sequence[/comp] from being executed for the next 5 seconds. During this period, the Cooldown returns [FAILURE] until the specified duration time elapses. It's important to note that it only counts executions that finished with [SUCCESS]. This means that [con]InRange[/con] can be utilized here without triggering the Cooldown!"
 blackboard_plan = SubResource("BlackboardPlan_ewfwq")
 root_task = SubResource("BTSelector_ddhoo")
-===== ./demo/ai/trees/tutorial/tutorial_07_more_decorators.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/tutorial/tutorial_07_more_decorators.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://tep50j4d6kgp"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_f605f"]
@@ -8947,7 +9333,10 @@ Another useful decorator is [dec]AlwaysSucceed[/dec], which converts any [FAILUR
 We also add a second attack, so that Junior feels more badass now. We've got a little hit-and-run behavior going on here!"
 blackboard_plan = SubResource("BlackboardPlan_ewfwq")
 root_task = SubResource("BTSelector_ddhoo")
-===== ./demo/ai/trees/tutorial/tutorial_08_final_touch.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/tutorial/tutorial_08_final_touch.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://dp0cglcytwcj5"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_o5ahw"]
@@ -9132,7 +9521,10 @@ description = "And for the final touch, we've added throwing ninja stars to our 
 This concludes our tutorial. Hopefully, this little endeavor has been useful to you. You can learn more by reading the [b]Online Documentation[/b], which covers topics like creating your own tasks. Also, check out the [b]Showcase[/b], which presents behaviors of agents made for this little demo. Simply click \"End Tutorial\" to return to the [b]Showcase[/b]."
 blackboard_plan = SubResource("BlackboardPlan_ewfwq")
 root_task = SubResource("BTSelector_ddhoo")
-===== ./demo/props/dummy.gd =====
+
+==================================================
+FILE: ./demo/props/dummy.gd
+==================================================
 extends CharacterBody2D
 
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
@@ -9148,7 +9540,10 @@ func _on_health_damaged(_amount: float, _knockback: Vector2) -> void:
 
 func get_facing() -> float:
 	return signf(root.scale.x)
-===== ./demo/props/dummy.tscn =====
+
+==================================================
+FILE: ./demo/props/dummy.tscn
+==================================================
 [gd_scene format=3 uid="uid://c5fhe3tulhlco"]
 
 [ext_resource type="Script" uid="uid://mapy7metn1kt" path="res://demo/props/dummy.gd" id="1_kqftw"]
@@ -9552,7 +9947,10 @@ script = ExtResource("5_8qcls")
 max_health = 10000000.0
 
 [connection signal="damaged" from="Health" to="." method="_on_health_damaged"]
-===== ./demo/props/gong.gd =====
+
+==================================================
+FILE: ./demo/props/gong.gd
+==================================================
 extends StaticBody2D
 
 signal gong_struck
@@ -9568,7 +9966,10 @@ func _on_health_damaged(_amount: float, _knockback: Vector2) -> void:
 	animation_player.play(&"struck")
 	gong_struck.emit()
 	enabled = false
-===== ./demo/props/gong.tscn =====
+
+==================================================
+FILE: ./demo/props/gong.tscn
+==================================================
 [gd_scene format=3 uid="uid://bpd1wmw2f7bvg"]
 
 [ext_resource type="Script" uid="uid://d3cmj6skb7k07" path="res://demo/props/gong.gd" id="1_77c1i"]
@@ -10497,7 +10898,10 @@ script = ExtResource("6_6a3q1")
 max_health = 100000000000.0
 
 [connection signal="damaged" from="Health" to="." method="_on_health_damaged"]
-===== ./demo/scenes/base/arena.tscn =====
+
+==================================================
+FILE: ./demo/scenes/base/arena.tscn
+==================================================
 [gd_scene format=3 uid="uid://bsig1usigbbuy"]
 
 [ext_resource type="Texture2D" uid="uid://65b6yuobhxf8" path="res://demo/assets/env_clouds.png" id="1_1blat"]
@@ -15638,7 +16042,10 @@ texture = ExtResource("2_kesm7")
 offset = Vector2(0, -42)
 region_enabled = true
 region_rect = Rect2(996.053, 4.65938, 177.044, 92.8809)
-===== ./demo/scenes/base/clouds.tscn =====
+
+==================================================
+FILE: ./demo/scenes/base/clouds.tscn
+==================================================
 [gd_scene format=3 uid="uid://dt2jlrqffpyw"]
 
 [ext_resource type="Texture2D" uid="uid://65b6yuobhxf8" path="res://demo/assets/env_clouds.png" id="1_eigiy"]
@@ -15895,7 +16302,10 @@ position = Vector2(3270.25, 2207)
 texture = ExtResource("1_eigiy")
 region_enabled = true
 region_rect = Rect2(10, 189, 644, 165)
-===== ./demo/scenes/base/code_edit.gd =====
+
+==================================================
+FILE: ./demo/scenes/base/code_edit.gd
+==================================================
 #*
 #* code_edit.gd
 #* =============================================================================
@@ -16036,7 +16446,10 @@ func set_source_code(source_code: String) -> void:
 
 	text = "" # Workaround
 	text = source_code
-===== ./demo/scenes/base/toggle_fullscreen.gd =====
+
+==================================================
+FILE: ./demo/scenes/base/toggle_fullscreen.gd
+==================================================
 extends Button
 
 
@@ -16055,7 +16468,10 @@ func _toggle_fullscreen() -> void:
 		get_window().mode = Window.MODE_FULLSCREEN
 	else:
 		get_window().mode = Window.MODE_MAXIMIZED
-===== ./demo/scenes/game.gd =====
+
+==================================================
+FILE: ./demo/scenes/game.gd
+==================================================
 extends Node2D
 
 const Simple := preload("res://demo/agents/01_agent_melee_simple.tscn")
@@ -16140,7 +16556,10 @@ func _on_player_death() -> void:
 
 func _on_switch_to_showcase_pressed() -> void:
 	get_tree().change_scene_to_file("res://demo/scenes/showcase.tscn")
-===== ./demo/scenes/game.tscn =====
+
+==================================================
+FILE: ./demo/scenes/game.tscn
+==================================================
 [gd_scene format=3 uid="uid://clyhgbpfpmtw7"]
 
 [ext_resource type="Script" uid="uid://bwhv180m71qs4" path="res://demo/scenes/game.gd" id="1_qw71e"]
@@ -16337,7 +16756,10 @@ position = Vector2(1859, 3)
 
 [connection signal="pressed" from="UI Layer/Control/Toolbar/HBoxContainer/Switch to Showcase" to="." method="_on_switch_to_showcase_pressed"]
 [connection signal="gong_struck" from="Gong" to="." method="_on_gong_gong_struck"]
-===== ./demo/scenes/showcase.gd =====
+
+==================================================
+FILE: ./demo/scenes/showcase.gd
+==================================================
 #*
 #* showcase.gd
 #* =============================================================================
@@ -16494,7 +16916,10 @@ func _on_behavior_tree_view_task_selected(_type_name: String, p_script_path: Str
 		var sc: Script = load(p_script_path)
 		code_edit.set_source_code(sc.source_code)
 		code_popup.popup.call_deferred()
-===== ./demo/scenes/showcase.tscn =====
+
+==================================================
+FILE: ./demo/scenes/showcase.tscn
+==================================================
 [gd_scene format=3 uid="uid://b3ae14mc2ty3y"]
 
 [ext_resource type="Script" uid="uid://qpj1dk7ugnja" path="res://demo/scenes/showcase.gd" id="1_l12ql"]
@@ -16784,7 +17209,10 @@ position = Vector2(1106, 423)
 [connection signal="pressed" from="UI Layer/Control/Toolbar/HBoxContainer/BeginTutorial" to="." method="_on_tutorial_pressed"]
 [connection signal="task_selected" from="UI Layer/Control/BehaviorInspector/VBoxContainer/BehaviorTreeView" to="." method="_on_behavior_tree_view_task_selected"]
 [connection signal="button_down" from="UI Layer/Control/PanelContainer/Control/Header/MinimizeDescription" to="." method="_on_minimize_description_button_down"]
-===== ./project.godot =====
+
+==================================================
+FILE: ./project.godot
+==================================================
 ; Engine configuration file.
 ; It's best edited using the editor UI and not directly,
 ; since the parameters that go here are not all obvious.
@@ -16850,7 +17278,16 @@ atacar={
 
 textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
-===== ./world/world_camera_world.tscn =====
+
+==================================================
+FILE: ./README.md
+==================================================
+# sekidan-godot-test
+
+
+==================================================
+FILE: ./world/world_camera_world.tscn
+==================================================
 [gd_scene format=4 uid="uid://4p3cjrp0cgr8"]
 
 [ext_resource type="Script" path="res://camera_2d.gd" id="1_wr4rf"]
@@ -17780,7 +18217,10 @@ script = ExtResource("10_7shyn")
 script = ExtResource("11_0l2tg")
 
 [node name="Decoracion" type="TileMapLayer" parent="." unique_id=752125295]
-===== ./world.tscn =====
+
+==================================================
+FILE: ./world.tscn
+==================================================
 [gd_scene format=4 uid="uid://cw5xjm18x47gc"]
 
 [ext_resource type="Script" uid="uid://ckujj764mji4t" path="res://actors/player/player.gd" id="1_f3sb7"]
@@ -21188,7 +21628,7 @@ script = ExtResource("1_f3sb7")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player" unique_id=407095699]
 scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_ioo17")
-animation = &"dead"
+animation = &"idle"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player" unique_id=2091782850]
@@ -21216,6 +21656,7 @@ script = ExtResource("7_k3n1d")
 zoom = Vector2(1.25, 1.25)
 
 [node name="HitboxComponent" type="Area2D" parent="player" unique_id=531925347]
+monitoring = false
 script = ExtResource("14_udxuc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player/HitboxComponent" unique_id=1214806749]

@@ -3433,7 +3433,6 @@ script = ExtResource("7_k3n1d")
 zoom = Vector2(1.25, 1.25)
 
 [node name="HitboxComponent" type="Area2D" parent="player" unique_id=531925347]
-monitoring = false
 script = ExtResource("14_udxuc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player/HitboxComponent" unique_id=1214806749]
