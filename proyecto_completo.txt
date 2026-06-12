@@ -66,6 +66,10 @@ sections_unfolded=PackedStringArray()
 [folding]
 
 sections_unfolded=PackedStringArray()
+===== ./.godot/editor/dead.gd-folding-468e536b1df7e7d95456e1333e192bb0.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
 ===== ./.godot/editor/editor_layout.cfg =====
 [docks]
 
@@ -74,8 +78,8 @@ dock_closed=[]
 dock_split_2=75
 dock_split_3=0
 dock_hsplit_1=0
-dock_hsplit_2=216
-dock_hsplit_3=-286
+dock_hsplit_2=0
+dock_hsplit_3=0
 dock_hsplit_4=0
 dock_split_1=0
 dock_split_4=0
@@ -86,7 +90,6 @@ dock_3="Scene,Import"
 dock_4="FileSystem,History"
 dock_5="Inspector,Signals,Groups"
 dock_9="Output,Debugger,Audio,Animation,Shader Editor,Search Results,AnimationTree,ResourcePreloader,ShaderFile,SpriteFrames,Theme,Polygon,TileSet,TileMap,Replication,GridMap"
-dock_9_selected_tab_idx=0
 
 [docks/FileSystem]
 
@@ -119,7 +122,7 @@ bottom_panel_offsets={
 "TileSet": -246
 }
 selected_default_debugger_tab_idx=0
-selected_main_editor_idx=0
+selected_main_editor_idx=2
 
 [EditorWindow]
 
@@ -130,8 +133,8 @@ position=Vector2i(0, 23)
 [ScriptEditor]
 
 open_scripts=["res://ai/tasks/bt_attack_player.gd", "res://ai/tasks/bt_chase_player.gd", "res://ai/tasks/bt_is_player_in_attack_range.gd", "res://ai/tasks/bt_is_player_in_detection_range.gd", "res://ai/tasks/bt_patrol.gd", "res://actors/player/states/dead.gd", "res://actors/enemy/enemy.gd", "res://components/health_component.gd", "res://components/hitbox_component.gd", "res://components/hurtbox_component.gd", "res://actors/player/player.gd", "res://actors/player/states/player_state.gd", "res://actors/player/states/state_attack.gd", "res://actors/player/states/state_hurt.gd", "res://actors/player/states/state_idle.gd", "res://actors/player/states/state_walk.gd"]
-selected_script="res://actors/player/states/state_attack.gd"
-open_help=["@GlobalScope", "BTSequence", "CompressedTexture2D", "GDScript", "Sprite2D"]
+selected_script=""
+open_help=["@GlobalScope", "BTSequence", "CompressedTexture2D", "float", "GDScript", "Sprite2D"]
 script_split_offset=366
 list_split_offset=172
 zoom_factor=0.61637574
@@ -270,9 +273,9 @@ state={
 "breakpoints": PackedInt32Array(),
 "column": 40,
 "folded_lines": PackedInt32Array(),
-"h_scroll_position": 44,
+"h_scroll_position": 0,
 "row": 54,
-"scroll_position": 39.705882352941174,
+"scroll_position": 26.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -328,7 +331,7 @@ state={
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
 "row": 42,
-"scroll_position": 27.294117647058822,
+"scroll_position": 28.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -338,11 +341,11 @@ state={
 state={
 "bookmarks": PackedInt32Array(),
 "breakpoints": PackedInt32Array(),
-"column": 28,
+"column": 0,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 18,
-"scroll_position": 7.0,
+"row": 28,
+"scroll_position": 10.176470588235293,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -380,11 +383,11 @@ state={
 state={
 "bookmarks": PackedInt32Array(),
 "breakpoints": PackedInt32Array(),
-"column": 44,
+"column": 43,
 "folded_lines": PackedInt32Array(),
-"h_scroll_position": 68,
-"row": 13,
-"scroll_position": 0.0,
+"h_scroll_position": 0,
+"row": 24,
+"scroll_position": 9.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -394,12 +397,16 @@ state={
 state={
 "bookmarks": PackedInt32Array(),
 "breakpoints": PackedInt32Array(),
-"column": 105,
+"column": 0,
 "folded_lines": PackedInt32Array(),
-"h_scroll_position": 290,
-"row": 10,
+"h_scroll_position": 0,
+"row": 11,
 "scroll_position": 0.0,
-"selection": false,
+"selection": true,
+"selection_from_column": 0,
+"selection_from_line": 0,
+"selection_to_column": 0,
+"selection_to_line": 11,
 "syntax_highlighter": "GDScript"
 }
 
@@ -408,10 +415,10 @@ state={
 state={
 "bookmarks": PackedInt32Array(),
 "breakpoints": PackedInt32Array(),
-"column": 15,
+"column": 68,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 16,
+"row": 89,
 "scroll_position": 0.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
@@ -424,7 +431,7 @@ state={
 "breakpoints": PackedInt32Array(),
 "column": 108,
 "folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
+"h_scroll_position": 291,
 "row": 10,
 "scroll_position": 0.0,
 "selection": false,
@@ -440,7 +447,7 @@ state={
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
 "row": 16,
-"scroll_position": 2.7058823529411757,
+"scroll_position": 2.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -464,7 +471,7 @@ state={
 state={
 "bookmarks": PackedInt32Array(),
 "breakpoints": PackedInt32Array(),
-"column": 10,
+"column": 30,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
 "row": 84,
@@ -478,11 +485,11 @@ state={
 state={
 "bookmarks": PackedInt32Array(),
 "breakpoints": PackedInt32Array(),
-"column": 34,
+"column": 5,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 6,
-"scroll_position": 0.0,
+"row": 35,
+"scroll_position": 20.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -1086,9 +1093,10 @@ var is_hurting: bool = false
 #region REFERENCIAS A NODOS (Árbol de Godot)
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var health_component: HealthComponent = $HealthComponent
-@onready var bt_player: BTPlayer = $BTPlayer # Nodo de IA LimboAI
+@onready var bt_player: BTPlayer = $BTPlayer
+@onready var hitbox_component: HitboxComponent = $HitboxComponent
 
-# Colisiones que se desactivan al morir para liberar el camino
+# Colisiones que se desactivan al morir
 @onready var body_collision: CollisionShape2D = $CollisionShape2D
 @onready var hurtbox_collision: CollisionShape2D = $HurtboxComponent/CollisionShape2D
 @onready var hitbox_collision: CollisionShape2D = $HitboxComponent/CollisionShape2D
@@ -1096,13 +1104,16 @@ var is_hurting: bool = false
 
 #region CICLOS DE VIDA
 func _ready() -> void:
-	# Conexión segura de las señales del HealthComponent
 	if health_component:
 		health_component.health_changed.connect(_on_health_changed)
 		health_component.death.connect(_on_death)
 
+	# Asegurar que el hitbox empiece desactivado
+	if hitbox_component:
+		hitbox_component.monitoring = false
+		hitbox_component.monitorable = true
+
 func _physics_process(_delta: float) -> void:
-	# Si está muerto, congelamos todo por completo y NO dejamos que la IA haga nada
 	if is_dead:
 		velocity = Vector2.ZERO
 		if animated_sprite and animated_sprite.animation != "dead":
@@ -1112,52 +1123,48 @@ func _physics_process(_delta: float) -> void:
 	if is_hurting:
 		velocity = Vector2.ZERO
 		return
-		
+
 	move_and_slide()
 #endregion
 
-#region REACCIÓN A DAÑO (Flash de Color por Código)
+#region REACCIÓN A DAÑO (Flash de Color)
 func _on_health_changed(current_health: int) -> void:
 	if is_dead or current_health <= 0:
 		return
-		
+
 	is_hurting = true
-	
+
 	if animated_sprite:
-		# Pintamos el sprite de un color rojo intenso brillante
 		animated_sprite.modulate = Color(5.0, 0.3, 0.3, 1.0)
-		
-		# Hacemos un Tween rápido de 0.1 segundos para que regrese a su color original
+
 		var tween = create_tween()
 		tween.tween_property(animated_sprite, "modulate", Color.WHITE, 0.1)
-		
-		# Al finalizar el flash de daño, permitimos que el enemigo vuelva a moverse
-		tween.finished.connect(func(): is_hurting = false)
-#endregion
 
-#region SISTEMA DE MUERTE (Desactivar Cráneo Obstáculo)
+		tween.finished.connect(func(): is_hurting = false)
+
+#region SISTEMA DE MUERTE
 func _on_death() -> void:
 	if is_dead:
 		return
 	is_dead = true
-	
-	# Desactivamos por completo el árbol de comportamiento de LimboAI
+
 	if bt_player:
 		bt_player.set_active(false)
-	
-	# Desactivamos de forma diferida todas las colisiones físicas y de combate
-	# Esto asegura que deje de interactuar con el jugador y sea transitable inmediatamente
+
+	# Desactivar colisiones
 	if body_collision:
 		body_collision.set_deferred("disabled", true)
 	if hurtbox_collision:
 		hurtbox_collision.set_deferred("disabled", true)
 	if hitbox_collision:
 		hitbox_collision.set_deferred("disabled", true)
-		
-	# Forzamos la reproducción inicial de la animación "dead"
+
+	# Desactivar monitoreo del hitbox
+	if hitbox_component:
+		hitbox_component.monitoring = false
+
 	if animated_sprite and animated_sprite.sprite_frames.has_animation("dead"):
 		animated_sprite.play("dead")
-#endregion
 ===== ./actors/enemy/enemy_bt.tres =====
 [gd_resource type="BehaviorTree" format=3 uid="uid://bmndwsqukjyf5"]
 
@@ -1211,36 +1218,64 @@ const SPEED: float = 150.0
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var hitbox: HitboxComponent = $HitboxComponent
 @onready var hitbox_shape: CollisionShape2D = $HitboxComponent/CollisionShape2D
+@onready var health_component: HealthComponent = $HealthComponent
 
 var current_state: PlayerState
 var last_direction: Vector2 = Vector2.RIGHT
 
+
 func _ready() -> void:
 	add_to_group("player")
 
-	# La forma de colisión del hitbox arranca apagada.
-	# Esto evita que inflija daño solo por estar cerca de un enemigo.
+	# La forma de colisión del hitbox arranca apagada
 	if hitbox_shape:
 		hitbox_shape.disabled = true
 
+	# Estado inicial
 	current_state = $States/Idle
 	current_state.player = self
 	current_state.enter()
+
+	# Conectar señales del componente de salud
+	if health_component:
+		health_component.health_changed.connect(_on_health_changed)
+		health_component.death.connect(_on_death)
+
 
 func _physics_process(delta: float) -> void:
 	if current_state:
 		current_state.physics_update(delta)
 
+
 func change_state(state_name: String) -> void:
+	# Validar transiciones prohibidas
+	if current_state is StateDead:
+		# Si ya está muerto, no cambiar a ningún otro estado
+		return
+	if current_state is StateHurt and state_name == "Attack":
+		# No puede atacar mientras está herido
+		return
+	if current_state is StateAttack and state_name == "Hurt":
+		# No interrumpir ataque con daño (opcional, se puede permitir)
+		return
+
 	if current_state:
 		current_state.exit()
-	current_state = $States.get_node(state_name)
+
+	var new_state_node = $States.get_node(state_name)
+	if not new_state_node:
+		push_error("Estado no encontrado: ", state_name)
+		return
+
+	current_state = new_state_node
 	current_state.player = self
 	current_state.enter()
+
 
 func play_animation(anim_name: String, direction: Vector2) -> void:
 	if direction != Vector2.ZERO:
 		last_direction = direction
+
 	if sprite.animation != anim_name:
 		sprite.play(anim_name)
 
@@ -1249,7 +1284,7 @@ func play_animation(anim_name: String, direction: Vector2) -> void:
 	elif direction.x > 0:
 		sprite.flip_h = false
 
-# Elige la animación de ataque según la última dirección
+
 func ejecutar_ataque_direccional() -> void:
 	velocity = Vector2.ZERO
 	if last_direction.y < -0.1:
@@ -1258,14 +1293,66 @@ func ejecutar_ataque_direccional() -> void:
 		play_animation("attack_down", Vector2.ZERO)
 	else:
 		play_animation("attack", Vector2.ZERO)
+
+
+# ============================================================
+# REACCIÓN AL DAÑO Y MUERTE
+# ============================================================
+
+func _on_health_changed(current_health: int) -> void:
+	# Si ya está muerto, ignorar
+	if current_state is StateDead:
+		return
+
+	# Si la vida es mayor a 0, entrar en estado Hurt
+	if current_health > 0:
+		# No interrumpir el ataque si ya está atacando
+		if not (current_state is StateAttack):
+			change_state("Hurt")
+	# Nota: la muerte se maneja en _on_death
+
+
+func _on_death() -> void:
+	if current_state is StateDead:
+		return
+	change_state("dead")  # El nodo se llama "dead" (minúscula)
 ===== ./actors/player/states/dead.gd =====
 class_name StateDead
 extends PlayerState
 
+
 func enter() -> void:
+	# Detener cualquier movimiento
 	player.velocity = Vector2.ZERO
+
+	# Reproducir animación de muerte (debe existir "dead" en SpriteFrames)
 	player.play_animation("dead", Vector2.ZERO)
+
+	# Desactivar el procesamiento de entrada y físicas
 	player.set_physics_process(false)
+	player.set_process_input(false)
+
+	# Opcional: desactivar colisiones para que no interfiera con otros objetos
+	player.set_collision_layer_value(1, false)   # Capa de jugador
+	player.set_collision_mask_value(1, false)    # Máscara de colisión
+
+	# Desactivar hitbox y hurtbox para que no pueda ser dañado ni dañar
+	if player.hitbox_shape:
+		player.hitbox_shape.set_deferred("disabled", true)
+
+	var hurtbox_shape = player.get_node("HurtboxComponent/CollisionShape2D")
+	if hurtbox_shape:
+		hurtbox_shape.set_deferred("disabled", true)
+
+
+func physics_update(_delta: float) -> void:
+	# No hacer nada, el jugador está muerto
+	player.velocity = Vector2.ZERO
+
+
+func exit() -> void:
+	# No debería salir del estado Dead, pero por seguridad:
+	pass
 ===== ./actors/player/states/player_state.gd =====
 # Clase base para todos los estados del jugador.
 # Cada estado hereda de esta clase e implementa los métodos que necesita.
@@ -1334,21 +1421,40 @@ class_name StateHurt
 extends PlayerState
 
 const HURT_DURATION: float = 0.3
-const HURT_COLOR: Color = Color(2.0, 0.5, 0.5, 1.0)
-const NORMAL_COLOR: Color = Color(1.0, 1.0, 1.0, 1.0)
+const HURT_COLOR: Color = Color(2.0, 1.0, 1.0, 1.0)  # Rojo intenso
+const NORMAL_COLOR: Color = Color.WHITE
+
+var _tween: Tween
+
 
 func enter() -> void:
 	player.velocity = Vector2.ZERO
 	player.play_animation("idle", Vector2.ZERO)
+
+	# Efecto de flash rojo con Tween (más jugoso que Timer)
+	if _tween and _tween.is_valid():
+		_tween.kill()
+	_tween = create_tween()
 	player.sprite.modulate = HURT_COLOR
-	get_tree().create_timer(HURT_DURATION).timeout.connect(_on_hurt_finished)
+	_tween.tween_property(player.sprite, "modulate", NORMAL_COLOR, HURT_DURATION)
+
+	# Esperar a que termine el flash y luego volver a Idle
+	await _tween.finished
+	# Verificar que aún siga en estado Hurt antes de cambiar
+	if player.current_state == self:
+		player.change_state("Idle")
+
 
 func physics_update(_delta: float) -> void:
-	pass
+	# Congelado durante el hurt, no recibe input de movimiento
+	player.velocity = Vector2.ZERO
 
-func _on_hurt_finished() -> void:
+
+func exit() -> void:
+	# Asegurar que el color vuelva a la normalidad si se sale antes
+	if _tween and _tween.is_valid():
+		_tween.kill()
 	player.sprite.modulate = NORMAL_COLOR
-	player.change_state("Idle")
 ===== ./actors/player/states/state_idle.gd =====
 class_name StateIdle
 extends PlayerState
@@ -1379,23 +1485,96 @@ func physics_update(_delta: float) -> void:
 		player.play_animation("walk", direction)
 		player.move_and_slide()
 ===== ./ai/tasks/bt_attack_player.gd =====
-# Detiene al enemigo y ejecuta la animación de ataque completa.
 @tool
 class_name BTAttackPlayer
 extends BTAction
 
-func _tick(_delta: float) -> Status:
-	var enemy: CharacterBody2D = agent as CharacterBody2D
-	var animated_sprite: AnimatedSprite2D = enemy.get_node("AnimatedSprite2D") as AnimatedSprite2D
-	enemy.velocity = Vector2.ZERO
-	enemy.move_and_slide()
-	# Reproduce ataque solo si no está ya reproduciéndose
-	if animated_sprite.animation != "attack":
-		animated_sprite.play("attack")
-	# Espera a que termine la animación antes de retornar SUCCESS
-	if not animated_sprite.is_playing():
+# Duración del ataque en segundos (ajustar según animación)
+const ATTACK_DURATION: float = 0.4
+# Momento en que el hitbox se activa (porcentaje de la duración)
+const HITBOX_ACTIVATE_TIME: float = 0.2
+# Duración que el hitbox permanece activo
+const HITBOX_DURATION: float = 0.15
+
+var _elapsed: float = 0.0
+var _hitbox_activated: bool = false
+var _hitbox: HitboxComponent = null
+var _animated_sprite: AnimatedSprite2D = null
+var _enemy: CharacterBody2D = null
+var _deactivation_timer: SceneTreeTimer = null
+
+
+func _enter() -> void:
+	_elapsed = 0.0
+	_hitbox_activated = false
+	_enemy = agent as CharacterBody2D
+	if not _enemy:
+		return
+
+	_animated_sprite = _enemy.get_node("AnimatedSprite2D") as AnimatedSprite2D
+	_hitbox = _enemy.get_node("HitboxComponent") as HitboxComponent
+
+	if _animated_sprite:
+		_animated_sprite.play("attack")
+		_animated_sprite.sprite_frames.set_animation_loop("attack", false)
+
+	# Detener movimiento del enemigo durante el ataque
+	_enemy.velocity = Vector2.ZERO
+	_enemy.move_and_slide()
+
+	# Cancelar cualquier timer pendiente de una ejecución anterior
+	if _deactivation_timer:
+		if _deactivation_timer.timeout.is_connected(_deactivate_hitbox):
+			_deactivation_timer.timeout.disconnect(_deactivate_hitbox)
+		_deactivation_timer = null
+
+
+func _tick(delta: float) -> Status:
+	if not _enemy or not _animated_sprite:
+		return FAILURE
+
+	_elapsed += delta
+
+	# Activar hitbox en el momento justo del ataque
+	if not _hitbox_activated and _elapsed >= HITBOX_ACTIVATE_TIME:
+		_hitbox_activated = true
+		if _hitbox:
+			_hitbox.monitoring = true
+			_hitbox.monitorable = true
+			# Programar desactivación después de un breve tiempo
+			var tree = _enemy.get_tree()
+			if tree:
+				_deactivation_timer = tree.create_timer(HITBOX_DURATION)
+				_deactivation_timer.timeout.connect(_deactivate_hitbox)
+
+	# Esperar a que termine la animación
+	if not _animated_sprite.is_playing():
 		return SUCCESS
+
 	return RUNNING
+
+
+func _deactivate_hitbox() -> void:
+	if _hitbox:
+		_hitbox.monitoring = false
+	if _deactivation_timer:
+		# Desconectar para evitar llamadas residuales
+		if _deactivation_timer.timeout.is_connected(_deactivate_hitbox):
+			_deactivation_timer.timeout.disconnect(_deactivate_hitbox)
+		_deactivation_timer = null
+
+
+func _exit() -> void:
+	# Limpieza final
+	if _hitbox:
+		_hitbox.monitoring = false
+	if _deactivation_timer:
+		if _deactivation_timer.timeout.is_connected(_deactivate_hitbox):
+			_deactivation_timer.timeout.disconnect(_deactivate_hitbox)
+		_deactivation_timer = null
+	if _animated_sprite:
+		_animated_sprite.stop()
+		_animated_sprite.sprite_frames.set_animation_loop("attack", false)
 ===== ./ai/tasks/bt_chase_player.gd =====
 @tool
 class_name BTChasePlayer
@@ -1503,15 +1682,26 @@ class_name HurtboxComponent
 
 @onready var health_component: HealthComponent = $"../HealthComponent"
 
+
 func _ready() -> void:
-	# Conectamos la señal para detectar cuando entra un ataque
 	area_entered.connect(_on_area_entered)
 
+
 func _on_area_entered(area: Area2D) -> void:
-	# Si lo que entró es una Hitbox, le mandamos el daño al componente de vida
-	if area is HitboxComponent:
-		if health_component:
-			health_component.take_damage(area.damage)
+	# Verificar que el área sea una HitboxComponent
+	if not (area is HitboxComponent):
+		return
+
+	# IMPORTANTE: evitar auto-daño. El hitbox no debe dañar al mismo dueño.
+	# El dueño del hurtbox es el personaje (player o enemigo).
+	# El dueño del hitbox es el atacante.
+	var hitbox_owner = area.owner
+	if hitbox_owner == owner:
+		# El hitbox pertenece al mismo personaje -> ignorar
+		return
+
+	if health_component:
+		health_component.take_damage(area.damage)
 ===== ./demo/agents/01_agent_melee_simple.tscn =====
 [gd_scene format=3 uid="uid://1dnm7tuik8xo"]
 

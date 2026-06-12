@@ -14,8 +14,10 @@
 [ext_resource type="Script" uid="uid://c0ddkmu85xeqb" path="res://actors/player/states/state_hurt.gd" id="6_ic0uy"]
 [ext_resource type="Script" uid="uid://ch2tnx4730hoo" path="res://actors/player/states/dead.gd" id="7_k3n1d"]
 [ext_resource type="Script" uid="uid://sf0s5e3nvh4q" path="res://actors/enemy/enemy.gd" id="11_2u3nc"]
+[ext_resource type="Script" uid="uid://dsrtbia3ah72d" path="res://attack_trail.gd" id="11_bc84e"]
 [ext_resource type="Script" uid="uid://cw3mb10bic1xa" path="res://components/health_component.gd" id="12_hiqwa"]
 [ext_resource type="Script" uid="uid://bfmpkiv6433ni" path="res://components/hurtbox_component.gd" id="13_2u3nc"]
+[ext_resource type="Script" uid="uid://ubo1gw0ch7e7" path="res://camera_2d.gd" id="14_26xuy"]
 [ext_resource type="Script" uid="uid://dxj6i1lnitkd1" path="res://components/hitbox_component.gd" id="14_udxuc"]
 [ext_resource type="Texture2D" uid="uid://br3w4r2pueq3i" path="res://assets/Torch_Red.png" id="15_hiqwa"]
 [ext_resource type="BehaviorTree" uid="uid://bmndwsqukjyf5" path="res://actors/enemy/enemy_bt.tres" id="16_2u3nc"]
@@ -2992,10 +2994,23 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ioo17"]
 size = Vector2(11.768738, 33.19052)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_il2jm"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wukud"]
 size = Vector2(139, 20)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_il2jm"]
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_bc84e"]
+lifetime_randomness = 0.15
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(10, 5, 1)
+direction = Vector3(1, -1, 0)
+initial_velocity_min = 20.0
+initial_velocity_max = 60.0
+gravity = Vector3(0, 98, 0)
+scale_min = 0.29999998
+scale_max = 0.79999995
+color = Color(1, 0.8784314, 0.4, 1)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cbp6q"]
 radius = 235.0206
@@ -3421,6 +3436,34 @@ autoplay = "idle"
 position = Vector2(-0.1156311, 8.595261)
 shape = SubResource("RectangleShape2D_ioo17")
 
+[node name="HealthComponent" type="Node" parent="player" unique_id=1957515972]
+script = ExtResource("12_hiqwa")
+metadata/_custom_type_script = "uid://cw3mb10bic1xa"
+
+[node name="HurtboxComponent" type="Area2D" parent="player" unique_id=1539671520]
+script = ExtResource("13_2u3nc")
+metadata/_custom_type_script = "uid://bfmpkiv6433ni"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player/HurtboxComponent" unique_id=2012760740]
+shape = SubResource("RectangleShape2D_il2jm")
+
+[node name="HitboxComponent" type="Area2D" parent="player" unique_id=531925347]
+script = ExtResource("14_udxuc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player/HitboxComponent" unique_id=1214806749]
+position = Vector2(0.2687378, 0)
+shape = SubResource("RectangleShape2D_wukud")
+
+[node name="AttackTrail" type="GPUParticles2D" parent="player/HitboxComponent" unique_id=852543012]
+emitting = false
+amount = 16
+lifetime = 0.15000000000000002
+one_shot = true
+explosiveness = 0.8
+trail_lifetime = 0.15000000000000002
+process_material = SubResource("ParticleProcessMaterial_bc84e")
+script = ExtResource("11_bc84e")
+
 [node name="States" type="Node" parent="player" unique_id=927391369]
 script = ExtResource("2_pkg7o")
 
@@ -3436,29 +3479,12 @@ script = ExtResource("5_wse8f")
 [node name="Hurt" type="Node" parent="player/States" unique_id=2134117001]
 script = ExtResource("6_ic0uy")
 
-[node name="dead" type="Node" parent="player/States" unique_id=142321445]
+[node name="Dead" type="Node" parent="player/States" unique_id=142321445]
 script = ExtResource("7_k3n1d")
 
 [node name="Camera2D" type="Camera2D" parent="player" unique_id=79617]
 zoom = Vector2(1.25, 1.25)
-
-[node name="HitboxComponent" type="Area2D" parent="player" unique_id=531925347]
-script = ExtResource("14_udxuc")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="player/HitboxComponent" unique_id=1214806749]
-position = Vector2(0.2687378, 0)
-shape = SubResource("RectangleShape2D_wukud")
-
-[node name="HealthComponent" type="Node" parent="player" unique_id=1957515972]
-script = ExtResource("12_hiqwa")
-metadata/_custom_type_script = "uid://cw3mb10bic1xa"
-
-[node name="HurtboxComponent" type="Area2D" parent="player" unique_id=1539671520]
-script = ExtResource("13_2u3nc")
-metadata/_custom_type_script = "uid://bfmpkiv6433ni"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="player/HurtboxComponent" unique_id=2012760740]
-shape = SubResource("RectangleShape2D_il2jm")
+script = ExtResource("14_26xuy")
 
 [node name="Enemy" type="CharacterBody2D" parent="." unique_id=1617173726]
 position = Vector2(-616.40643, -68.057846)
