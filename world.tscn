@@ -3405,7 +3405,7 @@ script = ExtResource("1_f3sb7")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player" unique_id=407095699]
 scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_ioo17")
-animation = &"idle"
+animation = &"dead"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player" unique_id=2091782850]
