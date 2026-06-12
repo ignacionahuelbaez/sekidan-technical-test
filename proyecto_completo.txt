@@ -1,7 +1,1078 @@
+===== ./.godot/editor/01_agent_melee_simple.tres-folding-e0ddfd3e9fd883f90209f481d84b6cf4.cfg =====
+[folding]
 
-==================================================
-FILE: ./actors/enemy/enemy.gd
-==================================================
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/02_agent_charger.tres-folding-b4f5c218b21cce3875d1a64b63761e4e.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/03_agent_imp.tres-folding-374aafde95dd6540cdf807a28cea664c.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/04_agent_skirmisher.tres-folding-d25cb3c8d1ead02e9576853af2c751ac.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/05_agent_ranged.tres-folding-f4d7a67624824978bcdf9485db113761.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/06_agent_melee_combo.tres-folding-824d200cfaff07176f44b98c79e6c759.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/07_agent_melee_nuanced.tres-folding-032c9435cb4d3d5116f377205bb0d49c.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/08_agent_demon.tres-folding-99b5b1af6a5208c13fd1cb5bd27e11ad.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/09_agent_summoner.tres-folding-22d16967927a59b03c295e33f67151ca.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/bt_attack_player.gd-folding-5685199b8ec36d33cdd63ee7650c6e65.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/bt_attack_player.gd-folding-ee43f5ccc7ae57c4c7fe348f193e7f0d.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/bt_chase_player.gd-folding-a05338eaba6a86d5d81c27482eda63ad.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/bt_is_player_in_attack_range.gd-folding-3e196f7350dda9fb985df3e0ac348aff.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/bt_is_player_in_detection_range.gd-folding-1c2b7b0caf48fce547a1cb962f92c9aa.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/bt_is_player_in_detection_range.gd-folding-3d173b0ceded8ab70bbacf310f45d37f.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/bt_patrol.gd-folding-b4c9d08ff594e3d1ca7ff8feadaed7a6.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/camera_2d.gd-folding-39052f56b5c90500d7d6e1c68a418bbc.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/editor_layout.cfg =====
+[docks]
+
+dock_floating={}
+dock_closed=[]
+dock_split_2=75
+dock_split_3=0
+dock_hsplit_1=0
+dock_hsplit_2=216
+dock_hsplit_3=-286
+dock_hsplit_4=0
+dock_split_1=0
+dock_split_4=0
+dock_3_selected_tab_idx=0
+dock_4_selected_tab_idx=0
+dock_5_selected_tab_idx=0
+dock_3="Scene,Import"
+dock_4="FileSystem,History"
+dock_5="Inspector,Signals,Groups"
+dock_9="Output,Debugger,Audio,Animation,Shader Editor,Search Results,AnimationTree,ResourcePreloader,ShaderFile,SpriteFrames,Theme,Polygon,TileSet,TileMap,Replication,GridMap"
+dock_9_selected_tab_idx=0
+
+[docks/FileSystem]
+
+h_split_offset=240
+v_split_offset=0
+display_mode=0
+file_sort=0
+file_list_display_mode=1
+selected_paths=PackedStringArray("res://actors/player/states/dead.gd")
+uncollapsed_paths=PackedStringArray("Favorites", "res://", "res://assets/", "res://actors/", "res://actors/player/", "res://actors/player/states/")
+
+[docks/History]
+
+include_scene=true
+include_global=true
+
+[EditorNode]
+
+open_scenes=PackedStringArray("res://world.tscn")
+current_scene="res://world.tscn"
+bottom_panel_offsets={
+"Animation": 0,
+"Audio": -450,
+"Debugger": -286,
+"FileSystem": 0,
+"Output": -270,
+"Shader Editor": 0,
+"SpriteFrames": -346,
+"TileMap": -246,
+"TileSet": -246
+}
+selected_default_debugger_tab_idx=0
+selected_main_editor_idx=0
+
+[EditorWindow]
+
+screen=0
+mode="maximized"
+position=Vector2i(0, 23)
+
+[ScriptEditor]
+
+open_scripts=["res://ai/tasks/bt_attack_player.gd", "res://ai/tasks/bt_chase_player.gd", "res://ai/tasks/bt_is_player_in_attack_range.gd", "res://ai/tasks/bt_is_player_in_detection_range.gd", "res://ai/tasks/bt_patrol.gd", "res://actors/player/states/dead.gd", "res://actors/enemy/enemy.gd", "res://components/health_component.gd", "res://components/hitbox_component.gd", "res://components/hurtbox_component.gd", "res://actors/player/player.gd", "res://actors/player/states/player_state.gd", "res://actors/player/states/state_attack.gd", "res://actors/player/states/state_hurt.gd", "res://actors/player/states/state_idle.gd", "res://actors/player/states/state_walk.gd"]
+selected_script="res://actors/player/states/state_attack.gd"
+open_help=["@GlobalScope", "BTSequence", "CompressedTexture2D", "GDScript", "Sprite2D"]
+script_split_offset=366
+list_split_offset=172
+zoom_factor=0.61637574
+
+[GameView]
+
+floating_window_rect=Rect2i(0, 0, 0, 0)
+floating_window_screen=-1
+
+[ShaderEditor]
+
+open_shaders=[]
+split_offset=200
+selected_shader=""
+text_shader_zoom_factor=1.0
+
+[editor_log]
+
+log_filter_0=false
+log_filter_2=false
+log_filter_1=true
+log_filter_3=true
+log_filter_4=true
+collapse=false
+show_search=true
+
+[LimboAI]
+
+bteditor_open_bts=["res://actors/enemy/enemy_bt.tres"]
+bteditor_hsplit=320
+debugger_update_interval_msec=0.0
+task_palette_collapsed_sections=[]
+task_palette_type_filter=0
+task_palette_category_filter=0
+task_palette_excluded_categories=[]
+===== ./.godot/editor/editor_script_doc_cache.res-folding-a7de57390d6e786984ca20c70a831128.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/enemy.gd-folding-330a1fc7dbbe1bf2c9ebea044ae04277.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/enemy.gd-folding-c2b91af855b245b7be2f6c516102bfa0.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/enemy_bt.tres-folding-f61e8f0af8641addd4f48055837a141b.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/health_component.gd-folding-ba322cbcf0235eacd9510545dee3eeed.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/health_component.gd.gd-folding-fd593691962c9808ef94d6bc1be6619d.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/hitbox_component.gd-folding-076c6a6ce040d17aa5ecd5d6fc9720d2.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/hurtbox_component.gd-folding-f7a994ae4b3a396d7c465d2ee6f0c6df.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/junction_bold.otf-4db2200a8b1a6423bafe2a4e7c7abbde.fontdata-folding-79b209da806865ee79fdeb830379d83a.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/knewave_regular.ttf-955953b059f713782c7b07e66ab341ec.fontdata-folding-c14df330dbe0e3999dd0a8c114722fb5.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/player.gd-folding-cc2eaac76e686d02696a581348609283.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/player_state.gd-folding-140ce63fa85e2d802470c87d96795871.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/project_metadata.cfg =====
+[game_view]
+
+select_mode=0
+
+[editor_metadata]
+
+executable_path="C:/Users/ignac/OneDrive/Escritorio/apps de proyecto/Godot_v4.6.3-stable_win64.exe/Godot_v4.6.3-stable_win64.exe"
+
+[dialog_bounds]
+
+create_new_node=Rect2(233, 77, 900, 614)
+project_settings=Rect2(137, 77, 1092, 614)
+editor_settings=Rect2(233, 77, 900, 614)
+
+[recent_files]
+
+scenes=["res://world.tscn", "res://world/world_camera_world.tscn"]
+scripts=["Sprite2D", "GDScript", "CompressedTexture2D", "BTSequence", "@GlobalScope", "res://actors/enemy/enemy.gd", "res://ai/tasks/bt_patrol.gd", "res://ai/tasks/bt_chase_player.gd", "res://ai/bt_attack_player.gd", "res://ai/bt_is_player_in_detection_range.gd"]
+
+[script_setup]
+
+last_selected_language="GDScript"
+create_built_in_script=false
+
+[quick_open_dialog]
+
+last_mode=1
+
+[project_settings]
+
+show_builtin_actions=true
+
+[color_picker]
+
+picker_shape=3
+
+[debug_options]
+
+run_debug_collisions=true
+===== ./.godot/editor/quick_open_dialog_cache.cfg =====
+[selected_history]
+
+PackedScene=PackedStringArray("uid://cw5xjm18x47gc")
+BehaviorTree=PackedStringArray("uid://bmndwsqukjyf5")
+Texture2D=PackedStringArray("uid://d2wh2iuvncv3q")
+Script=PackedStringArray("uid://dxj6i1lnitkd1")
+===== ./.godot/editor/script_editor_cache.cfg =====
+[res://actors/player/player.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 40,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 44,
+"row": 54,
+"scroll_position": 39.705882352941174,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://actors/player/states/player_state.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 6,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 17,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://actors/player/states/state_idle.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 29,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 12,
+"scroll_position": 1.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://actors/player/states/state_walk.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 25,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 13,
+"scroll_position": 2.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://actors/player/states/state_attack.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 52,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 42,
+"scroll_position": 27.294117647058822,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://actors/player/states/state_hurt.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 28,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 18,
+"scroll_position": 7.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://components/hitbox_component.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 19,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 8,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://components/health_component.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 14,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 25,
+"scroll_position": 10.705882352941176,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://components/hurtbox_component.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 44,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 68,
+"row": 13,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://ai/tasks/bt_is_player_in_attack_range.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 105,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 290,
+"row": 10,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://ai/tasks/bt_attack_player.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 15,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 16,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://ai/tasks/bt_is_player_in_detection_range.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 108,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 10,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://ai/tasks/bt_chase_player.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 15,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 16,
+"scroll_position": 2.7058823529411757,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://ai/tasks/bt_patrol.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 5,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 0,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://actors/enemy/enemy.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 10,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 84,
+"scroll_position": 70.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://actors/player/states/dead.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 34,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 6,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+===== ./.godot/editor/state_attack.gd-folding-6f0d5a18f6d4bdfe45e5b5e4f028d7ac.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/state_dead.gd-folding-ae29045062280b98a843078f008ada30.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/state_hurt.gd-folding-b3b786bcdedf6384287182c3f1a6f700.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/state_idle.gd-folding-40be20ce23a54bd0565d47e96f6f72ce.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/state_walk.gd-folding-1c4f34ed66cd0506d52bc933082bb0df.cfg =====
+[folding]
+
+sections_unfolded=PackedStringArray()
+===== ./.godot/editor/world.tscn-editstate-76e0adcbc83681695885bae615f516ae.cfg =====
+[editor_states]
+
+2D={
+"grid_offset": Vector2(0, 0),
+"grid_snap_active": false,
+"grid_step": Vector2(8, 8),
+"grid_visibility": 1,
+"ofs": Vector2(-678.62213, -101.88816),
+"primary_grid_step": Vector2i(8, 8),
+"show_group_gizmos": true,
+"show_guides": true,
+"show_helpers": false,
+"show_lock_gizmos": true,
+"show_origin": true,
+"show_position_gizmos": true,
+"show_rulers": true,
+"show_transformation_gizmos": true,
+"show_viewport": true,
+"show_zoom_control": true,
+"smart_snap_active": false,
+"snap_guides": true,
+"snap_node_anchors": true,
+"snap_node_center": true,
+"snap_node_parent": true,
+"snap_node_sides": true,
+"snap_other_nodes": true,
+"snap_pixel": true,
+"snap_relative": false,
+"snap_rotation": false,
+"snap_rotation_offset": 0.0,
+"snap_rotation_step": 0.2617994,
+"snap_scale": false,
+"snap_scale_step": 0.1,
+"zoom": 5.5599194
+}
+3D={
+"fov": 70.01,
+"gizmos_status": {
+"AudioListener3D": 0,
+"AudioStreamPlayer3D": 0,
+"CPUParticles3D": 0,
+"CSGShape3D": 0,
+"Camera3D": 0,
+"ChainIK3D": 0,
+"CollisionObject3D": 0,
+"CollisionPolygon3D": 0,
+"CollisionShape3D": 0,
+"Decal": 0,
+"FogVolume": 0,
+"GPUParticles3D": 0,
+"GPUParticlesCollision3D": 0,
+"Joint3D": 0,
+"Light3D": 0,
+"LightmapGI": 0,
+"LightmapProbe": 0,
+"Marker3D": 0,
+"MeshInstance3DCustomAABB": 0,
+"NavigationLink3D": 0,
+"NavigationObstacle3D": 0,
+"NavigationRegion3D": 0,
+"OccluderInstance3D": 0,
+"Particles3DEmissionShape": 0,
+"Path3D": 0,
+"PhysicalBone3D": 0,
+"RayCast3D": 0,
+"ReflectionProbe": 0,
+"ShapeCast3D": 0,
+"Skeleton3D": 0,
+"SoftBody3D": 0,
+"SpringArm3D": 0,
+"SpringBoneCollision3D": 0,
+"SpringBoneSimulator3D": 0,
+"TwoBoneIK3D": 0,
+"VehicleWheel3D": 0,
+"VisibleOnScreenNotifier3D": 0,
+"VoxelGI": 0
+},
+"local_coords": false,
+"preview_sun_env": {
+"environ_ao_enabled": false,
+"environ_enabled": true,
+"environ_energy": 1.0,
+"environ_gi_enabled": false,
+"environ_glow_enabled": true,
+"environ_ground_color": Color(0.2, 0.169, 0.133, 1),
+"environ_sky_color": Color(0.385, 0.454, 0.55, 1),
+"environ_tonemap_enabled": true,
+"sun_color": Color(1, 1, 1, 1),
+"sun_enabled": true,
+"sun_energy": 1.0,
+"sun_rotation": Vector2(-1.0471976, 2.6179938),
+"sun_shadow_max_distance": 100.0
+},
+"rotate_snap": 15.0,
+"scale_snap": 10.0,
+"show_grid": true,
+"show_origin": true,
+"snap_enabled": false,
+"translate_snap": 1.0,
+"viewport_mode": 1,
+"viewports": [{
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": true,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}],
+"zfar": 4000.01,
+"znear": 0.05
+}
+Anim={
+"visible": false
+}
+selected_nodes=Array[NodePath]([NodePath("/root/@EditorNode@18724/@Panel@14/@VBoxContainer@15/DockHSplitMain/@VBoxContainer@28/DockVSplitCenter/@VSplitContainer@70/@VBoxContainer@71/@EditorMainScreen@125/MainScreen/@CanvasItemEditor@9322/@VSplitContainer@9105/@HSplitContainer@9107/@HSplitContainer@9109/@Control@9110/@SubViewportContainer@9111/@SubViewport@9112/world/Enemy/HurtboxComponent")])
+===== ./.godot/editor/world.tscn-folding-76e0adcbc83681695885bae615f516ae.cfg =====
+[folding]
+
+node_unfolds=[NodePath("map/suelo"), PackedStringArray("tile_set", "Transform"), NodePath("map/cesped_suelo"), PackedStringArray("Transform"), NodePath("player"), PackedStringArray("Transform"), NodePath("player/AnimatedSprite2D"), PackedStringArray("Transform", "Offset"), NodePath("player/CollisionShape2D"), PackedStringArray("Visibility"), NodePath("player/HitboxComponent"), PackedStringArray("Collision"), NodePath("player/HitboxComponent/CollisionShape2D"), PackedStringArray("Visibility"), NodePath("Enemy"), PackedStringArray("Transform"), NodePath("Enemy/DetectionArea"), PackedStringArray("Collision"), NodePath("Enemy/HitboxComponent"), PackedStringArray("Gravity"), NodePath("Enemy/AnimatedSprite2D"), PackedStringArray("Offset", "Transform"), NodePath("Enemy/HurtboxComponent"), PackedStringArray("Collision"), NodePath("Enemy/HurtboxComponent/CollisionShape2D"), PackedStringArray("Transform"), NodePath("Colisiones_map"), PackedStringArray("Navigation", "tile_set", "Physics")]
+resource_unfolds=["res://world.tscn::TileSet_bc84e", PackedStringArray(), "res://world.tscn::TileSet_cbp6q", PackedStringArray(), "res://world.tscn::TileSet_wukud", PackedStringArray(), "res://world.tscn::TileSet_wjb0r", PackedStringArray(), "res://world.tscn::TileSet_il2jm", PackedStringArray(), "res://world.tscn::SpriteFrames_ioo17", PackedStringArray("Resource"), "res://world.tscn::RectangleShape2D_ioo17", PackedStringArray(), "res://world.tscn::RectangleShape2D_wukud", PackedStringArray(), "res://world.tscn::RectangleShape2D_il2jm", PackedStringArray(), "res://world.tscn::CircleShape2D_cbp6q", PackedStringArray(), "res://world.tscn::RectangleShape2D_26xuy", PackedStringArray(), "res://world.tscn::SpriteFrames_e77ka", PackedStringArray(), "res://world.tscn::BlackboardPlan_udxuc", PackedStringArray(), "res://world.tscn::RectangleShape2D_bc84e", PackedStringArray(), "res://world.tscn::RectangleShape2D_cbp6q", PackedStringArray(), "res://world.tscn::TileSet_mc2jv", PackedStringArray("physics_layer__array")]
+nodes_folded=[NodePath("player"), NodePath("player/States"), NodePath("Enemy/DetectionArea"), NodePath("Enemy/HitboxComponent")]
+===== ./.godot/editor/world_camera_world.tscn-editstate-e311380c96155eb91e3d6080f207d969.cfg =====
+[editor_states]
+
+2D={
+"grid_offset": Vector2(0, 0),
+"grid_snap_active": false,
+"grid_step": Vector2(8, 8),
+"grid_visibility": 1,
+"ofs": Vector2(-745.96234, -235.19824),
+"primary_grid_step": Vector2i(8, 8),
+"show_group_gizmos": true,
+"show_guides": true,
+"show_helpers": false,
+"show_lock_gizmos": true,
+"show_origin": true,
+"show_position_gizmos": true,
+"show_rulers": true,
+"show_transformation_gizmos": true,
+"show_viewport": true,
+"show_zoom_control": true,
+"smart_snap_active": false,
+"snap_guides": true,
+"snap_node_anchors": true,
+"snap_node_center": true,
+"snap_node_parent": true,
+"snap_node_sides": true,
+"snap_other_nodes": true,
+"snap_pixel": true,
+"snap_relative": false,
+"snap_rotation": false,
+"snap_rotation_offset": 0.0,
+"snap_rotation_step": 0.2617994,
+"snap_scale": false,
+"snap_scale_step": 0.1,
+"zoom": 0.56447387
+}
+3D={
+"fov": 70.01,
+"gizmos_status": {
+"AudioListener3D": 0,
+"AudioStreamPlayer3D": 0,
+"CPUParticles3D": 0,
+"CSGShape3D": 0,
+"Camera3D": 0,
+"ChainIK3D": 0,
+"CollisionObject3D": 0,
+"CollisionPolygon3D": 0,
+"CollisionShape3D": 0,
+"Decal": 0,
+"FogVolume": 0,
+"GPUParticles3D": 0,
+"GPUParticlesCollision3D": 0,
+"Joint3D": 0,
+"Light3D": 0,
+"LightmapGI": 0,
+"LightmapProbe": 0,
+"Marker3D": 0,
+"MeshInstance3DCustomAABB": 0,
+"NavigationLink3D": 0,
+"NavigationObstacle3D": 0,
+"NavigationRegion3D": 0,
+"OccluderInstance3D": 0,
+"Particles3DEmissionShape": 0,
+"Path3D": 0,
+"PhysicalBone3D": 0,
+"RayCast3D": 0,
+"ReflectionProbe": 0,
+"ShapeCast3D": 0,
+"Skeleton3D": 0,
+"SoftBody3D": 0,
+"SpringArm3D": 0,
+"SpringBoneCollision3D": 0,
+"SpringBoneSimulator3D": 0,
+"TwoBoneIK3D": 0,
+"VehicleWheel3D": 0,
+"VisibleOnScreenNotifier3D": 0,
+"VoxelGI": 0
+},
+"local_coords": false,
+"preview_sun_env": {
+"environ_ao_enabled": false,
+"environ_enabled": true,
+"environ_energy": 1.0,
+"environ_gi_enabled": false,
+"environ_glow_enabled": true,
+"environ_ground_color": Color(0.2, 0.169, 0.133, 1),
+"environ_sky_color": Color(0.385, 0.454, 0.55, 1),
+"environ_tonemap_enabled": true,
+"sun_color": Color(1, 1, 1, 1),
+"sun_enabled": true,
+"sun_energy": 1.0,
+"sun_rotation": Vector2(-1.0471976, 2.6179938),
+"sun_shadow_max_distance": 100.0
+},
+"rotate_snap": 15.0,
+"scale_snap": 10.0,
+"show_grid": true,
+"show_origin": true,
+"snap_enabled": false,
+"translate_snap": 1.0,
+"viewport_mode": 1,
+"viewports": [{
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": true,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}],
+"zfar": 4000.01,
+"znear": 0.05
+}
+Anim={
+"visible": false
+}
+selected_nodes=Array[NodePath]([NodePath("/root/@EditorNode@18069/@Panel@14/@VBoxContainer@15/DockHSplitMain/@VBoxContainer@28/DockVSplitCenter/@VSplitContainer@70/@VBoxContainer@71/@EditorMainScreen@125/MainScreen/@CanvasItemEditor@9322/@VSplitContainer@9105/@HSplitContainer@9107/@HSplitContainer@9109/@Control@9110/@SubViewportContainer@9111/@SubViewport@9112/world/player/CollisionShape2D")])
+===== ./.godot/editor/world_camera_world.tscn-folding-e311380c96155eb91e3d6080f207d969.cfg =====
+[folding]
+
+node_unfolds=[NodePath("suelo"), PackedStringArray("tile_set"), NodePath("player/AnimatedSprite2D"), PackedStringArray("Transform")]
+resource_unfolds=["res://world/world_camera_world.tscn::TileSet_ioo17", PackedStringArray(), "res://world/world_camera_world.tscn::SpriteFrames_ioo17", PackedStringArray("Resource"), "res://world/world_camera_world.tscn::RectangleShape2D_ioo17", PackedStringArray()]
+nodes_folded=[NodePath("player/States")]
+===== ./.godot/extension_list.cfg =====
+res://addons/limboai/bin/limboai.gdextension
+===== ./.godot/global_script_class_cache.cfg =====
+list=[{
+"base": &"BTAction",
+"class": &"BTAttackPlayer",
+"icon": "",
+"is_abstract": false,
+"is_tool": true,
+"language": &"GDScript",
+"path": "res://ai/tasks/bt_attack_player.gd"
+}, {
+"base": &"BTAction",
+"class": &"BTChasePlayer",
+"icon": "",
+"is_abstract": false,
+"is_tool": true,
+"language": &"GDScript",
+"path": "res://ai/tasks/bt_chase_player.gd"
+}, {
+"base": &"BTCondition",
+"class": &"BTIsPlayerInAttackRange",
+"icon": "",
+"is_abstract": false,
+"is_tool": true,
+"language": &"GDScript",
+"path": "res://ai/tasks/bt_is_player_in_attack_range.gd"
+}, {
+"base": &"BTCondition",
+"class": &"BTIsPlayerInDetectionRange",
+"icon": "",
+"is_abstract": false,
+"is_tool": true,
+"language": &"GDScript",
+"path": "res://ai/tasks/bt_is_player_in_detection_range.gd"
+}, {
+"base": &"BTAction",
+"class": &"BTPatrol",
+"icon": "",
+"is_abstract": false,
+"is_tool": true,
+"language": &"GDScript",
+"path": "res://ai/tasks/bt_patrol.gd"
+}, {
+"base": &"CharacterBody2D",
+"class": &"Enemy",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://actors/enemy/enemy.gd"
+}, {
+"base": &"Node",
+"class": &"Health",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://demo/agents/scripts/health.gd"
+}, {
+"base": &"Node",
+"class": &"HealthComponent",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://components/health_component.gd"
+}, {
+"base": &"Area2D",
+"class": &"Hitbox",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://demo/agents/scripts/hitbox.gd"
+}, {
+"base": &"Area2D",
+"class": &"HitboxComponent",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://components/hitbox_component.gd"
+}, {
+"base": &"Area2D",
+"class": &"Hurtbox",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://demo/agents/scripts/hurtbox.gd"
+}, {
+"base": &"Area2D",
+"class": &"HurtboxComponent",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://components/hurtbox_component.gd"
+}, {
+"base": &"CharacterBody2D",
+"class": &"Player",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://actors/player/player.gd"
+}, {
+"base": &"Node",
+"class": &"PlayerState",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://actors/player/states/player_state.gd"
+}, {
+"base": &"PlayerState",
+"class": &"StateAttack",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://actors/player/states/state_attack.gd"
+}, {
+"base": &"PlayerState",
+"class": &"StateDead",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://actors/player/states/dead.gd"
+}, {
+"base": &"PlayerState",
+"class": &"StateHurt",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://actors/player/states/state_hurt.gd"
+}, {
+"base": &"PlayerState",
+"class": &"StateIdle",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://actors/player/states/state_idle.gd"
+}, {
+"base": &"PlayerState",
+"class": &"StateWalk",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://actors/player/states/state_walk.gd"
+}]
+===== ./.godot/scene_groups_cache.cfg =====
+[res://demo/agents/player/player.tscn]
+
+groups=[&"player"]
+
+[res://demo/props/dummy.tscn]
+
+groups=[&"player"]
+
+[res://world.tscn]
+
+groups=[&"player"]
+===== ./actors/enemy/enemy.gd =====
 extends CharacterBody2D
 class_name Enemy
 
@@ -87,10 +1158,7 @@ func _on_death() -> void:
 	if animated_sprite and animated_sprite.sprite_frames.has_animation("dead"):
 		animated_sprite.play("dead")
 #endregion
-
-==================================================
-FILE: ./actors/enemy/enemy_bt.tres
-==================================================
+===== ./actors/enemy/enemy_bt.tres =====
 [gd_resource type="BehaviorTree" format=3 uid="uid://bmndwsqukjyf5"]
 
 [ext_resource type="Script" uid="uid://38a1hfcgu7ra" path="res://ai/tasks/bt_is_player_in_attack_range.gd" id="1_n7e10"]
@@ -134,10 +1202,7 @@ children = [SubResource("BTSequence_78x7y"), SubResource("BTSequence_8abap"), Su
 [resource]
 blackboard_plan = SubResource("BlackboardPlan_kfecl")
 root_task = SubResource("BTSelector_6adme")
-
-==================================================
-FILE: ./actors/player/player.gd
-==================================================
+===== ./actors/player/player.gd =====
 extends CharacterBody2D
 class_name Player
 
@@ -193,10 +1258,7 @@ func ejecutar_ataque_direccional() -> void:
 		play_animation("attack_down", Vector2.ZERO)
 	else:
 		play_animation("attack", Vector2.ZERO)
-
-==================================================
-FILE: ./actors/player/states/dead.gd
-==================================================
+===== ./actors/player/states/dead.gd =====
 class_name StateDead
 extends PlayerState
 
@@ -204,10 +1266,7 @@ func enter() -> void:
 	player.velocity = Vector2.ZERO
 	player.play_animation("dead", Vector2.ZERO)
 	player.set_physics_process(false)
-
-==================================================
-FILE: ./actors/player/states/player_state.gd
-==================================================
+===== ./actors/player/states/player_state.gd =====
 # Clase base para todos los estados del jugador.
 # Cada estado hereda de esta clase e implementa los métodos que necesita.
 class_name PlayerState
@@ -226,10 +1285,7 @@ func update(_delta: float) -> void:
 
 func physics_update(_delta: float) -> void:
 	pass	
-
-==================================================
-FILE: ./actors/player/states/state_attack.gd
-==================================================
+===== ./actors/player/states/state_attack.gd =====
 class_name StateAttack
 extends PlayerState
 
@@ -273,10 +1329,7 @@ func _on_frame_changed() -> void:
 		player.hitbox_shape.set_deferred("disabled", false)
 	elif current_frame >= _window_end_frame and not player.hitbox_shape.disabled:
 		player.hitbox_shape.set_deferred("disabled", true)
-
-==================================================
-FILE: ./actors/player/states/state_hurt.gd
-==================================================
+===== ./actors/player/states/state_hurt.gd =====
 class_name StateHurt
 extends PlayerState
 
@@ -296,10 +1349,7 @@ func physics_update(_delta: float) -> void:
 func _on_hurt_finished() -> void:
 	player.sprite.modulate = NORMAL_COLOR
 	player.change_state("Idle")
-
-==================================================
-FILE: ./actors/player/states/state_idle.gd
-==================================================
+===== ./actors/player/states/state_idle.gd =====
 class_name StateIdle
 extends PlayerState
 
@@ -313,10 +1363,7 @@ func physics_update(_delta: float) -> void:
 	var direction: Vector2 = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	if direction != Vector2.ZERO:
 		player.change_state("Walk")
-
-==================================================
-FILE: ./actors/player/states/state_walk.gd
-==================================================
+===== ./actors/player/states/state_walk.gd =====
 class_name StateWalk
 extends PlayerState
 
@@ -331,10 +1378,7 @@ func physics_update(_delta: float) -> void:
 		player.velocity = direction * player.SPEED
 		player.play_animation("walk", direction)
 		player.move_and_slide()
-
-==================================================
-FILE: ./ai/tasks/bt_attack_player.gd
-==================================================
+===== ./ai/tasks/bt_attack_player.gd =====
 # Detiene al enemigo y ejecuta la animación de ataque completa.
 @tool
 class_name BTAttackPlayer
@@ -352,10 +1396,7 @@ func _tick(_delta: float) -> Status:
 	if not animated_sprite.is_playing():
 		return SUCCESS
 	return RUNNING
-
-==================================================
-FILE: ./ai/tasks/bt_chase_player.gd
-==================================================
+===== ./ai/tasks/bt_chase_player.gd =====
 @tool
 class_name BTChasePlayer
 extends BTAction
@@ -373,10 +1414,7 @@ func _tick(_delta: float) -> Status:
 	animated_sprite.play("walk")
 	animated_sprite.flip_h = direction.x < 0
 	return RUNNING
-
-==================================================
-FILE: ./ai/tasks/bt_is_player_in_attack_range.gd
-==================================================
+===== ./ai/tasks/bt_is_player_in_attack_range.gd =====
 @tool
 class_name BTIsPlayerInAttackRange
 extends BTCondition
@@ -388,10 +1426,7 @@ func _tick(_delta: float) -> Status:
 	if not is_instance_valid(player):
 		return FAILURE
 	return SUCCESS if agent.global_position.distance_to(player.global_position) <= ATTACK_RANGE else FAILURE
-
-==================================================
-FILE: ./ai/tasks/bt_is_player_in_detection_range.gd
-==================================================
+===== ./ai/tasks/bt_is_player_in_detection_range.gd =====
 @tool
 class_name BTIsPlayerInDetectionRange
 extends BTCondition
@@ -403,10 +1438,7 @@ func _tick(_delta: float) -> Status:
 	if not is_instance_valid(player):
 		return FAILURE
 	return SUCCESS if agent.global_position.distance_to(player.global_position) <= DETECTION_RANGE else FAILURE
-
-==================================================
-FILE: ./ai/tasks/bt_patrol.gd
-==================================================
+===== ./ai/tasks/bt_patrol.gd =====
 @tool
 class_name BTPatrol
 extends BTAction
@@ -428,10 +1460,7 @@ func _tick(delta: float) -> Status:
 		_direction = -_direction
 		_distance_traveled = 0.0
 	return RUNNING
-
-==================================================
-FILE: ./components/health_component.gd
-==================================================
+===== ./components/health_component.gd =====
 extends Node
 class_name HealthComponent
 
@@ -458,10 +1487,7 @@ func take_damage(amount: int) -> void:
 	if current_health <= 0:
 		current_health = 0
 		death.emit()
-
-==================================================
-FILE: ./components/hitbox_component.gd
-==================================================
+===== ./components/hitbox_component.gd =====
 # Área que inflige daño al entrar en contacto con un HurtboxComponent.
 class_name HitboxComponent
 extends Area2D
@@ -471,10 +1497,7 @@ extends Area2D
 func _ready() -> void:
 	monitoring = true
 	monitorable = true
-
-==================================================
-FILE: ./components/hurtbox_component.gd
-==================================================
+===== ./components/hurtbox_component.gd =====
 extends Area2D
 class_name HurtboxComponent
 
@@ -489,10 +1512,7 @@ func _on_area_entered(area: Area2D) -> void:
 	if area is HitboxComponent:
 		if health_component:
 			health_component.take_damage(area.damage)
-
-==================================================
-FILE: ./demo/agents/01_agent_melee_simple.tscn
-==================================================
+===== ./demo/agents/01_agent_melee_simple.tscn =====
 [gd_scene format=3 uid="uid://1dnm7tuik8xo"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_l180o"]
@@ -537,10 +1557,7 @@ max_health = 3.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=1399725832]
 behavior_tree = ExtResource("3_tb7cx")
 blackboard_plan = SubResource("BlackboardPlan_s08ac")
-
-==================================================
-FILE: ./demo/agents/02_agent_charger.tscn
-==================================================
+===== ./demo/agents/02_agent_charger.tscn =====
 [gd_scene format=3 uid="uid://g1pnvanyxcpa"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_n83hi"]
@@ -578,10 +1595,7 @@ max_health = 8.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="4" unique_id=1733921525]
 behavior_tree = ExtResource("3_nacc3")
 blackboard_plan = SubResource("BlackboardPlan_pmyhf")
-
-==================================================
-FILE: ./demo/agents/03_agent_imp.tscn
-==================================================
+===== ./demo/agents/03_agent_imp.tscn =====
 [gd_scene format=3 uid="uid://730bthc0ywhd"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_13xup"]
@@ -616,10 +1630,7 @@ max_health = 4.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=137535558]
 behavior_tree = ExtResource("3_furh3")
 blackboard_plan = SubResource("BlackboardPlan_aog23")
-
-==================================================
-FILE: ./demo/agents/04_agent_skirmisher.tscn
-==================================================
+===== ./demo/agents/04_agent_skirmisher.tscn =====
 [gd_scene format=3 uid="uid://co6yeafaljbq0"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_2ir76"]
@@ -654,10 +1665,7 @@ max_health = 7.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="4" unique_id=1268324578]
 behavior_tree = ExtResource("3_bhfkv")
 blackboard_plan = SubResource("BlackboardPlan_vjbry")
-
-==================================================
-FILE: ./demo/agents/05_agent_ranged.tscn
-==================================================
+===== ./demo/agents/05_agent_ranged.tscn =====
 [gd_scene format=3 uid="uid://ci3x5esepbu5v"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_oa4xm"]
@@ -692,10 +1700,7 @@ max_health = 6.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="4" unique_id=1201627788]
 behavior_tree = ExtResource("3_f7r5w")
 blackboard_plan = SubResource("BlackboardPlan_2kwy7")
-
-==================================================
-FILE: ./demo/agents/06_agent_melee_combo.tscn
-==================================================
+===== ./demo/agents/06_agent_melee_combo.tscn =====
 [gd_scene format=3 uid="uid://blxmw2w1h2s0s"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_dny3b"]
@@ -730,10 +1735,7 @@ max_health = 6.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="4" unique_id=1594372294]
 behavior_tree = ExtResource("3_l805q")
 blackboard_plan = SubResource("BlackboardPlan_67ric")
-
-==================================================
-FILE: ./demo/agents/07_agent_melee_nuanced.tscn
-==================================================
+===== ./demo/agents/07_agent_melee_nuanced.tscn =====
 [gd_scene format=3 uid="uid://2e4ohaqjaawb"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_afx5l"]
@@ -768,10 +1770,7 @@ max_health = 6.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="4" unique_id=1879939663]
 behavior_tree = ExtResource("3_b8kcf")
 blackboard_plan = SubResource("BlackboardPlan_tnf02")
-
-==================================================
-FILE: ./demo/agents/08_agent_demon.tscn
-==================================================
+===== ./demo/agents/08_agent_demon.tscn =====
 [gd_scene format=3 uid="uid://dbmcufef0cc4b"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_115kp"]
@@ -806,10 +1805,7 @@ max_health = 8.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=394684464]
 behavior_tree = ExtResource("3_ebd57")
 blackboard_plan = SubResource("BlackboardPlan_5sr4g")
-
-==================================================
-FILE: ./demo/agents/09_agent_summoner.tscn
-==================================================
+===== ./demo/agents/09_agent_summoner.tscn =====
 [gd_scene format=3 uid="uid://bycvi2fb0f7ue"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_neifu"]
@@ -844,10 +1840,7 @@ max_health = 8.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=1626195106]
 behavior_tree = ExtResource("3_bunpq")
 blackboard_plan = SubResource("BlackboardPlan_bqv3d")
-
-==================================================
-FILE: ./demo/agents/agent_base.tscn
-==================================================
+===== ./demo/agents/agent_base.tscn =====
 [gd_scene format=3 uid="uid://ooigbfhfy4wa"]
 
 [ext_resource type="Texture2D" uid="uid://dlo1ine6p5di4" path="res://demo/assets/agent_bobby.png" id="1_1u51b"]
@@ -5375,10 +6368,7 @@ script = ExtResource("4_qwtrf")
 callback_mode_method = 1
 libraries/ = SubResource("AnimationLibrary_ws2ti")
 autoplay = &"idle"
-
-==================================================
-FILE: ./demo/agents/fireball/fireball.gd
-==================================================
+===== ./demo/agents/fireball/fireball.gd =====
 #*
 #* fireball.gd
 #* =============================================================================
@@ -5435,10 +6425,7 @@ func _die() -> void:
 
 func _on_hitbox_area_entered(_area: Area2D) -> void:
 	_die()
-
-==================================================
-FILE: ./demo/agents/fireball/fireball.tscn
-==================================================
+===== ./demo/agents/fireball/fireball.tscn =====
 [gd_scene format=3 uid="uid://wdauoepicegb"]
 
 [ext_resource type="Script" uid="uid://cw0jj6rj3e4dp" path="res://demo/agents/fireball/fireball.gd" id="1_ituf4"]
@@ -5606,10 +6593,7 @@ libraries/ = SubResource("AnimationLibrary_cphpk")
 autoplay = &"default"
 
 [connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]
-
-==================================================
-FILE: ./demo/agents/ninja_star/ninja_star.gd
-==================================================
+===== ./demo/agents/ninja_star/ninja_star.gd =====
 #*
 #* ninja_star.gd
 #* =============================================================================
@@ -5663,10 +6647,7 @@ func _die() -> void:
 
 func _on_hitbox_area_entered(_area: Area2D) -> void:
 	_die()
-
-==================================================
-FILE: ./demo/agents/ninja_star/ninja_star.tscn
-==================================================
+===== ./demo/agents/ninja_star/ninja_star.tscn =====
 [gd_scene format=3 uid="uid://bj5n72nomeaci"]
 
 [ext_resource type="Script" uid="uid://ea3wq7unbfaw" path="res://demo/agents/ninja_star/ninja_star.gd" id="1_pja57"]
@@ -5747,10 +6728,7 @@ local_coords = true
 process_material = SubResource("ParticleProcessMaterial_gilhy")
 
 [connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]
-
-==================================================
-FILE: ./demo/agents/player/player.gd
-==================================================
+===== ./demo/agents/player/player.gd =====
 #*
 #* player.gd
 #* =============================================================================
@@ -5854,10 +6832,7 @@ func _can_dodge() -> bool:
 		get_tree().create_timer(dodge_cooldown).timeout.connect(func(): can_dodge = true)
 		return true
 	return false
-
-==================================================
-FILE: ./demo/agents/player/player.tscn
-==================================================
+===== ./demo/agents/player/player.tscn =====
 [gd_scene format=3 uid="uid://d07ag5dcje13i"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_mswd4"]
@@ -5911,10 +6886,7 @@ script = ExtResource("6_7o4a6")
 animation_player = NodePath("../../AnimationPlayer")
 animation = &"dodge"
 hurtbox_collision = NodePath("../../Root/Hurtbox/HurtboxCollisionShape2D")
-
-==================================================
-FILE: ./demo/agents/player/states/attack_state.gd
-==================================================
+===== ./demo/agents/player/states/attack_state.gd =====
 #*
 #* attack_state.gd
 #* =============================================================================
@@ -5975,10 +6947,7 @@ func _exit() -> void:
 		_can_enter = false
 		await get_tree().create_timer(combo_cooldown).timeout
 		_can_enter = true
-
-==================================================
-FILE: ./demo/agents/player/states/dodge_state.gd
-==================================================
+===== ./demo/agents/player/states/dodge_state.gd =====
 #*
 #* dodge_state.gd
 #* =============================================================================
@@ -6027,10 +6996,7 @@ func _update(p_delta: float) -> void:
 	agent.move(desired_velocity)
 	if elapsed_time > duration:
 		get_root().dispatch(EVENT_FINISHED)
-
-==================================================
-FILE: ./demo/agents/player/states/idle_state.gd
-==================================================
+===== ./demo/agents/player/states/idle_state.gd =====
 #*
 #* idle_state.gd
 #* =============================================================================
@@ -6058,10 +7024,7 @@ func _update(_delta: float) -> void:
 	var vertical_move: float = Input.get_axis(&"move_up", &"move_down")
 	if horizontal_move != 0.0 or vertical_move != 0.0:
 		get_root().dispatch(EVENT_FINISHED)
-
-==================================================
-FILE: ./demo/agents/player/states/move_state.gd
-==================================================
+===== ./demo/agents/player/states/move_state.gd =====
 #*
 #* move_state.gd
 #* =============================================================================
@@ -6099,10 +7062,7 @@ func _update(_delta: float) -> void:
 
 	if horizontal_move == 0.0 and vertical_move == 0.0:
 		get_root().dispatch(EVENT_FINISHED)
-
-==================================================
-FILE: ./demo/agents/scripts/agent_base.gd
-==================================================
+===== ./demo/agents/scripts/agent_base.gd =====
 #*
 #* agent_base.gd
 #* =============================================================================
@@ -6264,10 +7224,7 @@ func die() -> void:
 
 func get_health() -> Health:
 	return health
-
-==================================================
-FILE: ./demo/agents/scripts/health.gd
-==================================================
+===== ./demo/agents/scripts/health.gd =====
 #*
 #* health.gd
 #* =============================================================================
@@ -6314,10 +7271,7 @@ func take_damage(amount: float, knockback: Vector2) -> void:
 ## Returns current health.
 func get_current() -> float:
 	return _current
-
-==================================================
-FILE: ./demo/agents/scripts/hitbox.gd
-==================================================
+===== ./demo/agents/scripts/hitbox.gd =====
 #*
 #* hitbox.gd
 #* =============================================================================
@@ -6357,10 +7311,7 @@ func get_knockback() -> Vector2:
 	if knockback_enabled:
 		knockback = Vector2.RIGHT.rotated(global_rotation) * knockback_strength
 	return knockback
-
-==================================================
-FILE: ./demo/agents/scripts/hurtbox.gd
-==================================================
+===== ./demo/agents/scripts/hurtbox.gd =====
 #*
 #* hurtbox.gd
 #* =============================================================================
@@ -6383,10 +7334,7 @@ var last_attack_vector: Vector2
 func take_damage(amount: float, knockback: Vector2, source: Hitbox) -> void:
 	last_attack_vector = owner.global_position - source.owner.global_position
 	health.take_damage(amount, knockback)
-
-==================================================
-FILE: ./demo/agents/tutorial/tutorial_01_welcome.tscn
-==================================================
+===== ./demo/agents/tutorial/tutorial_01_welcome.tscn =====
 [gd_scene format=3 uid="uid://dk67yawiu33jv"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_2vrmp"]
@@ -6418,10 +7366,7 @@ texture = ExtResource("2_3h4dj")
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=1816968691]
 behavior_tree = ExtResource("3_ilmgw")
 blackboard_plan = SubResource("BlackboardPlan_52mdk")
-
-==================================================
-FILE: ./demo/agents/tutorial/tutorial_02_introduction.tscn
-==================================================
+===== ./demo/agents/tutorial/tutorial_02_introduction.tscn =====
 [gd_scene format=3 uid="uid://cw3yth564nhrw"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_lia2k"]
@@ -6453,10 +7398,7 @@ texture = ExtResource("2_4x2l4")
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=1228007443]
 behavior_tree = ExtResource("3_3esuy")
 blackboard_plan = SubResource("BlackboardPlan_52mdk")
-
-==================================================
-FILE: ./demo/agents/tutorial/tutorial_03_types.tscn
-==================================================
+===== ./demo/agents/tutorial/tutorial_03_types.tscn =====
 [gd_scene format=3 uid="uid://bx4iabilsv3rs"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_p8nwq"]
@@ -6488,10 +7430,7 @@ texture = ExtResource("2_hnwhw")
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=2103835125]
 behavior_tree = ExtResource("3_a31ka")
 blackboard_plan = SubResource("BlackboardPlan_52mdk")
-
-==================================================
-FILE: ./demo/agents/tutorial/tutorial_04_sequence.tscn
-==================================================
+===== ./demo/agents/tutorial/tutorial_04_sequence.tscn =====
 [gd_scene format=3 uid="uid://bhtm8gnk5hsus"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_oibr1"]
@@ -6523,10 +7462,7 @@ texture = ExtResource("2_j52yc")
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=176951390]
 behavior_tree = ExtResource("3_feewj")
 blackboard_plan = SubResource("BlackboardPlan_52mdk")
-
-==================================================
-FILE: ./demo/agents/tutorial/tutorial_05_selector.tscn
-==================================================
+===== ./demo/agents/tutorial/tutorial_05_selector.tscn =====
 [gd_scene format=3 uid="uid://5nqbasyipupf"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_62fs7"]
@@ -6558,10 +7494,7 @@ texture = ExtResource("2_gdg2c")
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=989842198]
 behavior_tree = ExtResource("3_pm5ep")
 blackboard_plan = SubResource("BlackboardPlan_52mdk")
-
-==================================================
-FILE: ./demo/agents/tutorial/tutorial_06_decorators.tscn
-==================================================
+===== ./demo/agents/tutorial/tutorial_06_decorators.tscn =====
 [gd_scene format=3 uid="uid://ehc00upu3co"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_mbrnd"]
@@ -6593,10 +7526,7 @@ texture = ExtResource("2_ttkri")
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=1652167388]
 behavior_tree = ExtResource("3_tpgll")
 blackboard_plan = SubResource("BlackboardPlan_52mdk")
-
-==================================================
-FILE: ./demo/agents/tutorial/tutorial_07_more_decorators.tscn
-==================================================
+===== ./demo/agents/tutorial/tutorial_07_more_decorators.tscn =====
 [gd_scene format=3 uid="uid://brq6c843j1eeo"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_k4qfc"]
@@ -6628,10 +7558,7 @@ texture = ExtResource("2_q4r1n")
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=1128113897]
 behavior_tree = ExtResource("3_ta3g6")
 blackboard_plan = SubResource("BlackboardPlan_52mdk")
-
-==================================================
-FILE: ./demo/agents/tutorial/tutorial_08_final_touch.tscn
-==================================================
+===== ./demo/agents/tutorial/tutorial_08_final_touch.tscn =====
 [gd_scene format=3 uid="uid://b8yj40s43bw8h"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_bjdsc"]
@@ -6663,10 +7590,7 @@ texture = ExtResource("2_onjfd")
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=1465699266]
 behavior_tree = ExtResource("3_c5qx4")
 blackboard_plan = SubResource("BlackboardPlan_52mdk")
-
-==================================================
-FILE: ./demo/ai/tasks/arrive_pos.gd
-==================================================
+===== ./demo/ai/tasks/arrive_pos.gd =====
 #*
 #* arrive_pos.gd
 #* =============================================================================
@@ -6736,10 +7660,7 @@ func _tick(_delta: float) -> Status:
 	agent.move(desired_velocity)
 	agent.update_facing()
 	return RUNNING
-
-==================================================
-FILE: ./demo/ai/tasks/back_away.gd
-==================================================
+===== ./demo/ai/tasks/back_away.gd =====
 #*
 #* back_away.gd
 #* =============================================================================
@@ -6779,10 +7700,7 @@ func _tick(_delta: float) -> Status:
 	agent.move(_desired_velocity)
 	agent.face_dir(-signf(_dir.x))
 	return RUNNING
-
-==================================================
-FILE: ./demo/ai/tasks/face_target.gd
-==================================================
+===== ./demo/ai/tasks/face_target.gd =====
 #*
 #* face_target.gd
 #* =============================================================================
@@ -6815,10 +7733,7 @@ func _tick(_delta: float) -> Status:
 	agent.velocity = Vector2.ZERO
 	agent.face_dir(dir)
 	return SUCCESS
-
-==================================================
-FILE: ./demo/ai/tasks/get_first_in_group.gd
-==================================================
+===== ./demo/ai/tasks/get_first_in_group.gd =====
 #*
 #* get_first_in_group.gd
 #* =============================================================================
@@ -6853,10 +7768,7 @@ func _tick(_delta: float) -> Status:
 		return FAILURE
 	blackboard.set_var(output_var, nodes[0])
 	return SUCCESS
-
-==================================================
-FILE: ./demo/ai/tasks/in_range.gd
-==================================================
+===== ./demo/ai/tasks/in_range.gd =====
 #*
 #* in_range.gd
 #* =============================================================================
@@ -6911,10 +7823,7 @@ func _tick(_delta: float) -> Status:
 		return SUCCESS
 	else:
 		return FAILURE
-
-==================================================
-FILE: ./demo/ai/tasks/is_aligned_with_target.gd
-==================================================
+===== ./demo/ai/tasks/is_aligned_with_target.gd =====
 #*
 #* is_aligned_with_target.gd
 #* =============================================================================
@@ -6950,10 +7859,7 @@ func _tick(_delta: float) -> Status:
 	if y_diff < tolerance:
 		return SUCCESS
 	return FAILURE
-
-==================================================
-FILE: ./demo/ai/tasks/move_forward.gd
-==================================================
+===== ./demo/ai/tasks/move_forward.gd =====
 #*
 #* move_forward.gd
 #* =============================================================================
@@ -6993,10 +7899,7 @@ func _tick(_delta: float) -> Status:
 	if elapsed_time > duration:
 		return SUCCESS
 	return RUNNING
-
-==================================================
-FILE: ./demo/ai/tasks/pursue.gd
-==================================================
+===== ./demo/ai/tasks/pursue.gd =====
 #*
 #* pursue.gd
 #* =============================================================================
@@ -7076,10 +7979,7 @@ func _select_new_waypoint(desired_position: Vector2) -> void:
 	var distance_vector: Vector2 = desired_position - agent.global_position
 	var angle_variation: float = randf_range(-0.2, 0.2)
 	_waypoint = agent.global_position + distance_vector.limit_length(150.0).rotated(angle_variation)
-
-==================================================
-FILE: ./demo/ai/tasks/select_flanking_pos.gd
-==================================================
+===== ./demo/ai/tasks/select_flanking_pos.gd =====
 #*
 #* select_flanking_pos.gd
 #* =============================================================================
@@ -7154,10 +8054,7 @@ func _tick(_delta: float) -> Status:
 		flank_pos = target.global_position - offset
 	blackboard.set_var(position_var, flank_pos)
 	return SUCCESS
-
-==================================================
-FILE: ./demo/ai/tasks/select_random_nearby_pos.gd
-==================================================
+===== ./demo/ai/tasks/select_random_nearby_pos.gd =====
 @tool
 extends BTAction
 ## Selects a random position nearby within the specified range and stores it on the blackboard. [br]
@@ -7192,10 +8089,7 @@ func _tick(_delta: float) -> Status:
 		is_good_position = agent.is_good_position(pos)
 	blackboard.set_var(position_var, pos)
 	return SUCCESS
-
-==================================================
-FILE: ./demo/ai/trees/01_agent_melee_simple.tres
-==================================================
+===== ./demo/ai/trees/01_agent_melee_simple.tres =====
 [gd_resource type="BehaviorTree" format=3 uid="uid://bpdm5jnegi38"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_2jpsu"]
@@ -7304,10 +8198,7 @@ description = "Welcome to the [b]LimboAI[/b] demo project! This demo project con
 - On this screen, you can inspect the AI behavior tree in action for each agent in the game."
 blackboard_plan = SubResource("BlackboardPlan_46tbn")
 root_task = SubResource("BTSequence_pxl2k")
-
-==================================================
-FILE: ./demo/ai/trees/02_agent_charger.tres
-==================================================
+===== ./demo/ai/trees/02_agent_charger.tres =====
 [gd_resource type="BehaviorTree" format=3 uid="uid://ylife72ym5et"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_657p6"]
@@ -7421,10 +8312,7 @@ children = [SubResource("BTSequence_l3v31"), SubResource("BTSequence_p6pgg"), Su
 description = "A [dec]Decorator[/dec] is a type of task that typically has only one child. Decorators are commonly used to alter the behavior or status of their child task. In this behavior tree, the [dec]TimeLimit[/dec] decorator sets a maximum time for the [act]Arrive[/act] action to complete its work. If the child task exceeds this time limit without finishing, it will be aborted, and the TimeLimit decorator will return [FAILURE]."
 blackboard_plan = SubResource("BlackboardPlan_qd806")
 root_task = SubResource("BTSequence_pjuov")
-
-==================================================
-FILE: ./demo/ai/trees/03_agent_imp.tres
-==================================================
+===== ./demo/ai/trees/03_agent_imp.tres =====
 [gd_resource type="BehaviorTree" format=3 uid="uid://c2bxoo68ywb27"]
 
 [ext_resource type="Script" uid="uid://bicxffqmm7ek" path="res://demo/ai/tasks/select_random_nearby_pos.gd" id="1_cdtqu"]
@@ -7534,10 +8422,7 @@ children = [SubResource("BTProbability_ifsry"), SubResource("BTSequence_pxl2k")]
 description = "Here, the [dec]Probability[/dec] decorator allows the execution of its branch in 50% of cases. This introduces a slight variation to the behavior each time the [comp]Chaotic walk[/comp] sequence is considered by the [comp]Selector[/comp]. This sequence can be selected several times in a row as long as the Probability decorator permits it. The [comp]Engage player[/comp] sequence is only executed if Probability returns [FAILURE]."
 blackboard_plan = SubResource("BlackboardPlan_46tbn")
 root_task = SubResource("BTSelector_y3llm")
-
-==================================================
-FILE: ./demo/ai/trees/04_agent_skirmisher.tres
-==================================================
+===== ./demo/ai/trees/04_agent_skirmisher.tres =====
 [gd_resource type="BehaviorTree" format=3 uid="uid://qqmjvbeibatn"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_2883n"]
@@ -7716,10 +8601,7 @@ In our example, if the target is not within the specified range, the [con]InRang
 "
 blackboard_plan = SubResource("BlackboardPlan_46tbn")
 root_task = SubResource("BTSelector_2jnau")
-
-==================================================
-FILE: ./demo/ai/trees/05_agent_ranged.tres
-==================================================
+===== ./demo/ai/trees/05_agent_ranged.tres =====
 [gd_resource type="BehaviorTree" format=3 uid="uid://cqluon1y1hnn5"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_4xk1i"]
@@ -7889,10 +8771,7 @@ description = "Here, the [dec]Probability[/dec] decorator permits the execution 
 The [dec]Repeat[/dec] decorator is handy for doing something multiple times within a behavior tree. In our example, it's used to make the [comp]Throw ninja star[/comp] sequence perform three times in a row."
 blackboard_plan = SubResource("BlackboardPlan_46tbn")
 root_task = SubResource("BTSequence_pxl2k")
-
-==================================================
-FILE: ./demo/ai/trees/06_agent_melee_combo.tres
-==================================================
+===== ./demo/ai/trees/06_agent_melee_combo.tres =====
 [gd_resource type="BehaviorTree" format=3 uid="uid://cpncl1db8j12f"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_sf4l8"]
@@ -8042,10 +8921,7 @@ children = [SubResource("BTSequence_yhjh1"), SubResource("BTSequence_1xfnq"), Su
 description = "In some scenarios, you might need to execute multiple tasks at the same time until specific conditions are fulfilled. To achieve this, the [comp]Parallel[/comp] composite is an invaluable tool. This composite task allows its children to be executed simultaneously during each tick until a specified number of successes or failures is reached. In this example, it will execute both the [act]PlayAnimation[/act] and [act]MoveForward[/act] actions each tick until both actions have finished with a [SUCCESS] status."
 blackboard_plan = SubResource("BlackboardPlan_46tbn")
 root_task = SubResource("BTSequence_pxl2k")
-
-==================================================
-FILE: ./demo/ai/trees/07_agent_melee_nuanced.tres
-==================================================
+===== ./demo/ai/trees/07_agent_melee_nuanced.tres =====
 [gd_resource type="BehaviorTree" format=3 uid="uid://c2u6sljqkim0n"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_08fik"]
@@ -8249,10 +9125,7 @@ description = "[comp]ProbabilitySelector[/comp] chooses a child task to execute 
 "
 blackboard_plan = SubResource("BlackboardPlan_46tbn")
 root_task = SubResource("BTSequence_pxl2k")
-
-==================================================
-FILE: ./demo/ai/trees/08_agent_demon.tres
-==================================================
+===== ./demo/ai/trees/08_agent_demon.tres =====
 [gd_resource type="BehaviorTree" format=3 uid="uid://cpcnbi81jqge4"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_ce4la"]
@@ -8435,10 +9308,7 @@ children = [SubResource("BTCooldown_oms7a"), SubResource("BTSequence_eikr4"), Su
 description = "Here, we use the [con]InRange[/con] condition task together with [comp]Sequence[/comp] and [comp]Selector[/comp] to create a reactive behavior for this agent. When the player comes close, this agent will attempt to hit them with a melee attack and move away afterward for a better ranged position."
 blackboard_plan = SubResource("BlackboardPlan_8ay3j")
 root_task = SubResource("BTSelector_feba6")
-
-==================================================
-FILE: ./demo/ai/trees/09_agent_summoner.tres
-==================================================
+===== ./demo/ai/trees/09_agent_summoner.tres =====
 [gd_resource type="BehaviorTree" format=3 uid="uid://cpxk7jnqpwwlc"]
 
 [ext_resource type="Script" uid="uid://bicxffqmm7ek" path="res://demo/ai/tasks/select_random_nearby_pos.gd" id="1_sgn0p"]
@@ -8586,10 +9456,7 @@ description = "[con]CheckAgentProperty[/con] examines the agent’s property val
 You can also check or share a [dec]Cooldown[/dec] in different parts of the behavior tree if you provide a blackboard variable for the [dec]Cooldown[/dec] decorator to use. [con]CheckVar[/con] is responsible here for examining the cooldown variable named \"summon_cooldown\"."
 blackboard_plan = SubResource("BlackboardPlan_58oq1")
 root_task = SubResource("BTSelector_gp6q5")
-
-==================================================
-FILE: ./demo/ai/trees/tutorial/tutorial_01_welcome.tres
-==================================================
+===== ./demo/ai/trees/tutorial/tutorial_01_welcome.tres =====
 [gd_resource type="BehaviorTree" format=3 uid="uid://b1mfh8yad7rmw"]
 
 [sub_resource type="BlackboardPlan" id="BlackboardPlan_ewfwq"]
@@ -8619,10 +9486,7 @@ Press ➡ button in the top-right corner to proceed.
 Press ⬅ button any time you want to go back to a previous chapter."
 blackboard_plan = SubResource("BlackboardPlan_ewfwq")
 root_task = SubResource("BTSequence_4bq32")
-
-==================================================
-FILE: ./demo/ai/trees/tutorial/tutorial_02_introduction.tres
-==================================================
+===== ./demo/ai/trees/tutorial/tutorial_02_introduction.tres =====
 [gd_resource type="BehaviorTree" format=3 uid="uid://b1i0xo0o676va"]
 
 [sub_resource type="BlackboardPlan" id="BlackboardPlan_ewfwq"]
@@ -8668,10 +9532,7 @@ description = "Behavior trees are designed to simplify the creation of responsiv
 A behavior tree is usually processed each frame (physics frame by default). It is traversed from top to bottom, with the control tasks determining the control flow. Each task has a [color=cyan]_tick[/color] method, which performs the task's work and returns a status indicating its progress: [SUCCESS], [FAILURE], or [RUNNING]. [SUCCESS] and [FAILURE] indicate the outcome of finished work, while [RUNNING] status is returned when a task requires more than one tick to complete its job. These statuses determine how the tree progresses, with the [RUNNING] status usually meaning that the tree will continue execution during the next frame."
 blackboard_plan = SubResource("BlackboardPlan_ewfwq")
 root_task = SubResource("BTSequence_rbfdh")
-
-==================================================
-FILE: ./demo/ai/trees/tutorial/tutorial_03_types.tres
-==================================================
+===== ./demo/ai/trees/tutorial/tutorial_03_types.tres =====
 [gd_resource type="BehaviorTree" format=3 uid="uid://cb0ybf24ahnc3"]
 
 [ext_resource type="Script" uid="uid://bicxffqmm7ek" path="res://demo/ai/tasks/select_random_nearby_pos.gd" id="1_as4cg"]
@@ -8758,10 +9619,7 @@ Let's take a look into actions first. [act]Actions[/act] are responsible for mos
 Next, we'll explore the core composite tasks, such as [comp]Sequence[/comp] and [comp]Selector[/comp]. These are among the most crucial composites that you should know about."
 blackboard_plan = SubResource("BlackboardPlan_ewfwq")
 root_task = SubResource("BTSelector_tdpek")
-
-==================================================
-FILE: ./demo/ai/trees/tutorial/tutorial_04_sequence.tres
-==================================================
+===== ./demo/ai/trees/tutorial/tutorial_04_sequence.tres =====
 [gd_resource type="BehaviorTree" format=3 uid="uid://dln8ywvtqedt7"]
 
 [ext_resource type="Script" uid="uid://bicxffqmm7ek" path="res://demo/ai/tasks/select_random_nearby_pos.gd" id="1_gk66j"]
@@ -8817,10 +9675,7 @@ In our example, you can observe a simple [comp]Sequence[/comp] in action. Notice
 "
 blackboard_plan = SubResource("BlackboardPlan_ewfwq")
 root_task = SubResource("BTSequence_vx4uy")
-
-==================================================
-FILE: ./demo/ai/trees/tutorial/tutorial_05_selector.tres
-==================================================
+===== ./demo/ai/trees/tutorial/tutorial_05_selector.tres =====
 [gd_resource type="BehaviorTree" format=3 uid="uid://bf4r652fv5kwi"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_3ed74"]
@@ -8917,10 +9772,7 @@ To understand the [comp]Selector[/comp], it helps to see it as the opposite of t
 In our example, the [con]InRange[/con] condition checks how far Junior is from the target. When Junior is farther than 200 pixels from the target, he'll attempt to approach it. If he is closer than 200 pixels from the target, he would try to walk away. Thanks to the Selector, only one of these behaviors will be performed at a time, based on the result of the [con]InRange[/con] check. Junior seems to have a dilemma — unable to decide whether to stay or go."
 blackboard_plan = SubResource("BlackboardPlan_ewfwq")
 root_task = SubResource("BTSelector_ddhoo")
-
-==================================================
-FILE: ./demo/ai/trees/tutorial/tutorial_06_decorators.tres
-==================================================
+===== ./demo/ai/trees/tutorial/tutorial_06_decorators.tres =====
 [gd_resource type="BehaviorTree" format=3 uid="uid://beiki511huxb8"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_3xoj7"]
@@ -9042,10 +9894,7 @@ In our example, we utilize the [dec]RunLimit[/dec] decorator to restrict its chi
 Now, let's examine another decorator we use here - the [dec]Cooldown[/dec]. This decorator executes its child task only if the specified duration time has passed since the previous execution of the child task. The first time the attack sequence results in [SUCCESS], it triggers the cooldown, preventing the [comp]Sequence[/comp] from being executed for the next 5 seconds. During this period, the Cooldown returns [FAILURE] until the specified duration time elapses. It's important to note that it only counts executions that finished with [SUCCESS]. This means that [con]InRange[/con] can be utilized here without triggering the Cooldown!"
 blackboard_plan = SubResource("BlackboardPlan_ewfwq")
 root_task = SubResource("BTSelector_ddhoo")
-
-==================================================
-FILE: ./demo/ai/trees/tutorial/tutorial_07_more_decorators.tres
-==================================================
+===== ./demo/ai/trees/tutorial/tutorial_07_more_decorators.tres =====
 [gd_resource type="BehaviorTree" format=3 uid="uid://tep50j4d6kgp"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_f605f"]
@@ -9177,10 +10026,7 @@ Another useful decorator is [dec]AlwaysSucceed[/dec], which converts any [FAILUR
 We also add a second attack, so that Junior feels more badass now. We've got a little hit-and-run behavior going on here!"
 blackboard_plan = SubResource("BlackboardPlan_ewfwq")
 root_task = SubResource("BTSelector_ddhoo")
-
-==================================================
-FILE: ./demo/ai/trees/tutorial/tutorial_08_final_touch.tres
-==================================================
+===== ./demo/ai/trees/tutorial/tutorial_08_final_touch.tres =====
 [gd_resource type="BehaviorTree" format=3 uid="uid://dp0cglcytwcj5"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_o5ahw"]
@@ -9365,10 +10211,7 @@ description = "And for the final touch, we've added throwing ninja stars to our 
 This concludes our tutorial. Hopefully, this little endeavor has been useful to you. You can learn more by reading the [b]Online Documentation[/b], which covers topics like creating your own tasks. Also, check out the [b]Showcase[/b], which presents behaviors of agents made for this little demo. Simply click \"End Tutorial\" to return to the [b]Showcase[/b]."
 blackboard_plan = SubResource("BlackboardPlan_ewfwq")
 root_task = SubResource("BTSelector_ddhoo")
-
-==================================================
-FILE: ./demo/props/dummy.gd
-==================================================
+===== ./demo/props/dummy.gd =====
 extends CharacterBody2D
 
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
@@ -9384,10 +10227,7 @@ func _on_health_damaged(_amount: float, _knockback: Vector2) -> void:
 
 func get_facing() -> float:
 	return signf(root.scale.x)
-
-==================================================
-FILE: ./demo/props/dummy.tscn
-==================================================
+===== ./demo/props/dummy.tscn =====
 [gd_scene format=3 uid="uid://c5fhe3tulhlco"]
 
 [ext_resource type="Script" uid="uid://mapy7metn1kt" path="res://demo/props/dummy.gd" id="1_kqftw"]
@@ -9791,10 +10631,7 @@ script = ExtResource("5_8qcls")
 max_health = 10000000.0
 
 [connection signal="damaged" from="Health" to="." method="_on_health_damaged"]
-
-==================================================
-FILE: ./demo/props/gong.gd
-==================================================
+===== ./demo/props/gong.gd =====
 extends StaticBody2D
 
 signal gong_struck
@@ -9810,10 +10647,7 @@ func _on_health_damaged(_amount: float, _knockback: Vector2) -> void:
 	animation_player.play(&"struck")
 	gong_struck.emit()
 	enabled = false
-
-==================================================
-FILE: ./demo/props/gong.tscn
-==================================================
+===== ./demo/props/gong.tscn =====
 [gd_scene format=3 uid="uid://bpd1wmw2f7bvg"]
 
 [ext_resource type="Script" uid="uid://d3cmj6skb7k07" path="res://demo/props/gong.gd" id="1_77c1i"]
@@ -10742,10 +11576,7 @@ script = ExtResource("6_6a3q1")
 max_health = 100000000000.0
 
 [connection signal="damaged" from="Health" to="." method="_on_health_damaged"]
-
-==================================================
-FILE: ./demo/scenes/base/arena.tscn
-==================================================
+===== ./demo/scenes/base/arena.tscn =====
 [gd_scene format=3 uid="uid://bsig1usigbbuy"]
 
 [ext_resource type="Texture2D" uid="uid://65b6yuobhxf8" path="res://demo/assets/env_clouds.png" id="1_1blat"]
@@ -15886,10 +16717,7 @@ texture = ExtResource("2_kesm7")
 offset = Vector2(0, -42)
 region_enabled = true
 region_rect = Rect2(996.053, 4.65938, 177.044, 92.8809)
-
-==================================================
-FILE: ./demo/scenes/base/clouds.tscn
-==================================================
+===== ./demo/scenes/base/clouds.tscn =====
 [gd_scene format=3 uid="uid://dt2jlrqffpyw"]
 
 [ext_resource type="Texture2D" uid="uid://65b6yuobhxf8" path="res://demo/assets/env_clouds.png" id="1_eigiy"]
@@ -16146,10 +16974,7 @@ position = Vector2(3270.25, 2207)
 texture = ExtResource("1_eigiy")
 region_enabled = true
 region_rect = Rect2(10, 189, 644, 165)
-
-==================================================
-FILE: ./demo/scenes/base/code_edit.gd
-==================================================
+===== ./demo/scenes/base/code_edit.gd =====
 #*
 #* code_edit.gd
 #* =============================================================================
@@ -16290,10 +17115,7 @@ func set_source_code(source_code: String) -> void:
 
 	text = "" # Workaround
 	text = source_code
-
-==================================================
-FILE: ./demo/scenes/base/toggle_fullscreen.gd
-==================================================
+===== ./demo/scenes/base/toggle_fullscreen.gd =====
 extends Button
 
 
@@ -16312,10 +17134,7 @@ func _toggle_fullscreen() -> void:
 		get_window().mode = Window.MODE_FULLSCREEN
 	else:
 		get_window().mode = Window.MODE_MAXIMIZED
-
-==================================================
-FILE: ./demo/scenes/game.gd
-==================================================
+===== ./demo/scenes/game.gd =====
 extends Node2D
 
 const Simple := preload("res://demo/agents/01_agent_melee_simple.tscn")
@@ -16400,10 +17219,7 @@ func _on_player_death() -> void:
 
 func _on_switch_to_showcase_pressed() -> void:
 	get_tree().change_scene_to_file("res://demo/scenes/showcase.tscn")
-
-==================================================
-FILE: ./demo/scenes/game.tscn
-==================================================
+===== ./demo/scenes/game.tscn =====
 [gd_scene format=3 uid="uid://clyhgbpfpmtw7"]
 
 [ext_resource type="Script" uid="uid://bwhv180m71qs4" path="res://demo/scenes/game.gd" id="1_qw71e"]
@@ -16600,10 +17416,7 @@ position = Vector2(1859, 3)
 
 [connection signal="pressed" from="UI Layer/Control/Toolbar/HBoxContainer/Switch to Showcase" to="." method="_on_switch_to_showcase_pressed"]
 [connection signal="gong_struck" from="Gong" to="." method="_on_gong_gong_struck"]
-
-==================================================
-FILE: ./demo/scenes/showcase.gd
-==================================================
+===== ./demo/scenes/showcase.gd =====
 #*
 #* showcase.gd
 #* =============================================================================
@@ -16760,10 +17573,7 @@ func _on_behavior_tree_view_task_selected(_type_name: String, p_script_path: Str
 		var sc: Script = load(p_script_path)
 		code_edit.set_source_code(sc.source_code)
 		code_popup.popup.call_deferred()
-
-==================================================
-FILE: ./demo/scenes/showcase.tscn
-==================================================
+===== ./demo/scenes/showcase.tscn =====
 [gd_scene format=3 uid="uid://b3ae14mc2ty3y"]
 
 [ext_resource type="Script" uid="uid://qpj1dk7ugnja" path="res://demo/scenes/showcase.gd" id="1_l12ql"]
@@ -17053,10 +17863,7 @@ position = Vector2(1106, 423)
 [connection signal="pressed" from="UI Layer/Control/Toolbar/HBoxContainer/BeginTutorial" to="." method="_on_tutorial_pressed"]
 [connection signal="task_selected" from="UI Layer/Control/BehaviorInspector/VBoxContainer/BehaviorTreeView" to="." method="_on_behavior_tree_view_task_selected"]
 [connection signal="button_down" from="UI Layer/Control/PanelContainer/Control/Header/MinimizeDescription" to="." method="_on_minimize_description_button_down"]
-
-==================================================
-FILE: ./project.godot
-==================================================
+===== ./project.godot =====
 ; Engine configuration file.
 ; It's best edited using the editor UI and not directly,
 ; since the parameters that go here are not all obvious.
@@ -17122,10 +17929,7 @@ atacar={
 
 textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
-
-==================================================
-FILE: ./world/world_camera_world.tscn
-==================================================
+===== ./world/world_camera_world.tscn =====
 [gd_scene format=4 uid="uid://4p3cjrp0cgr8"]
 
 [ext_resource type="Script" path="res://camera_2d.gd" id="1_wr4rf"]
@@ -18055,10 +18859,7 @@ script = ExtResource("10_7shyn")
 script = ExtResource("11_0l2tg")
 
 [node name="Decoracion" type="TileMapLayer" parent="." unique_id=752125295]
-
-==================================================
-FILE: ./world.tscn
-==================================================
+===== ./world.tscn =====
 [gd_scene format=4 uid="uid://cw5xjm18x47gc"]
 
 [ext_resource type="Script" uid="uid://ckujj764mji4t" path="res://actors/player/player.gd" id="1_f3sb7"]
@@ -21054,13 +21855,15 @@ animations = [{
 size = Vector2(11.768738, 33.19052)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wukud"]
+size = Vector2(139, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_il2jm"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_cbp6q"]
-size = Vector2(20, 37.057846)
+[sub_resource type="CircleShape2D" id="CircleShape2D_cbp6q"]
+radius = 235.0206
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_26xuy"]
+size = Vector2(76.99997, 20)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e77ka"]
 atlas = ExtResource("15_hiqwa")
@@ -21419,8 +22222,8 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bc84e"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_cbp6q"]
-radius = 235.0206
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cbp6q"]
+size = Vector2(46.000004, 57)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wjb0r"]
 texture = ExtResource("1_wse8f")
@@ -21505,6 +22308,7 @@ zoom = Vector2(1.25, 1.25)
 script = ExtResource("14_udxuc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player/HitboxComponent" unique_id=1214806749]
+position = Vector2(0.2687378, 0)
 shape = SubResource("RectangleShape2D_wukud")
 
 [node name="HealthComponent" type="Node" parent="player" unique_id=1957515972]
@@ -21522,17 +22326,13 @@ shape = SubResource("RectangleShape2D_il2jm")
 position = Vector2(-616.40643, -68.057846)
 script = ExtResource("11_2u3nc")
 
-[node name="HealthComponent" type="Node" parent="Enemy" unique_id=161641452]
-script = ExtResource("12_hiqwa")
-metadata/_custom_type_script = "uid://cw3mb10bic1xa"
+[node name="DetectionArea" type="Area2D" parent="Enemy" unique_id=247554717]
+collision_layer = 0
+collision_mask = 0
 
-[node name="HurtboxComponent" type="Area2D" parent="Enemy" unique_id=1524883653]
-script = ExtResource("13_2u3nc")
-metadata/_custom_type_script = "uid://bfmpkiv6433ni"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/HurtboxComponent" unique_id=667732663]
-position = Vector2(0, 8.528923)
-shape = SubResource("RectangleShape2D_cbp6q")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/DetectionArea" unique_id=1943790608]
+position = Vector2(0.4064331, 0.05784607)
+shape = SubResource("CircleShape2D_cbp6q")
 
 [node name="HitboxComponent" type="Area2D" parent="Enemy" unique_id=1161580501]
 script = ExtResource("14_udxuc")
@@ -21540,7 +22340,12 @@ damage = 15.0
 metadata/_custom_type_script = "uid://dxj6i1lnitkd1"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/HitboxComponent" unique_id=2086793877]
+position = Vector2(-0.093566895, 0)
 shape = SubResource("RectangleShape2D_26xuy")
+
+[node name="HealthComponent" type="Node" parent="Enemy" unique_id=161641452]
+script = ExtResource("12_hiqwa")
+metadata/_custom_type_script = "uid://cw3mb10bic1xa"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Enemy" unique_id=235760624]
 scale = Vector2(0.75, 0.75)
@@ -21557,13 +22362,15 @@ blackboard_plan = SubResource("BlackboardPlan_udxuc")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy" unique_id=1025036745]
 shape = SubResource("RectangleShape2D_bc84e")
 
-[node name="DetectionArea" type="Area2D" parent="Enemy" unique_id=247554717]
-collision_layer = 0
-collision_mask = 0
+[node name="HurtboxComponent" type="Area2D" parent="Enemy" unique_id=1524883653]
+script = ExtResource("13_2u3nc")
+metadata/_custom_type_script = "uid://bfmpkiv6433ni"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/DetectionArea" unique_id=1943790608]
-shape = SubResource("CircleShape2D_cbp6q")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/HurtboxComponent" unique_id=667732663]
+position = Vector2(0.4064331, 0.55784607)
+shape = SubResource("RectangleShape2D_cbp6q")
 
 [node name="Colisiones_map" type="TileMapLayer" parent="." unique_id=819055872]
+visible = false
 tile_map_data = PackedByteArray("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AAANANn/AAAXAAEAAADp/yQAAAAXAAEAAADq/yQAAAAXAAEAAADr/yQAAAAXAAEAAADs/yQAAAAXAAEAAADt/yQAAAAXAAEAAADu/yQAAAAXAAEAAADv/yQAAAAXAAEAAADw/yQAAAAXAAEAAAAOANz/AAAXAAEAAAAPANz/AAAXAAEAAAAQANz/AAAXAAEAAAARANz/AAAXAAEAAAASANz/AAAXAAEAAAATANz/AAAXAAEAAAAAAO//AAAXAAEAAAABAO//AAAXAAEAAAACAO//AAAXAAEAAAADAO//AAAXAAEAAAAEAO//AAAXAAEAAAAFAO//AAAXAAEAAAAGAO//AAAXAAEAAAAHAO//AAAXAAEAAAAIAO//AAAXAAEAAAAJAO//AAAXAAEAAAAKAO//AAAXAAEAAAC8//b/AAAXAAEAAAC9//X/AAAXAAEAAAC+//X/AAAXAAEAAAC///X/AAAXAAEAAADA//X/AAAXAAEAAADB//X/AAAXAAEAAADC//X/AAAXAAEAAADD//X/AAAXAAEAAADE//X/AAAXAAEAAADF//X/AAAXAAEAAADG//X/AAAXAAEAAADH//X/AAAXAAEAAADI//X/AAAXAAEAAADJ//b/AAAXAAEAAADK//n/AAAXAAEAAADm//n/AAAXAAEAAADl//n/AAAXAAEAAADk//n/AAAXAAEAAADj//n/AAAXAAEAAADi//n/AAAXAAEAAADh//n/AAAXAAEAAADg//n/AAAXAAEAAADf//n/AAAXAAEAAADe//n/AAAXAAEAAADd//n/AAAXAAEAAADc//n/AAAXAAEAAADb//n/AAAXAAEAAADa//n/AAAXAAEAAADZ//n/AAAXAAEAAADY//n/AAAXAAEAAADX//n/AAAXAAEAAADW//n/AAAXAAEAAADV//n/AAAXAAEAAADU//n/AAAXAAEAAADT//n/AAAXAAEAAADS//n/AAAXAAEAAADR//n/AAAXAAEAAADQ//n/AAAXAAEAAADP//n/AAAXAAEAAADO//n/AAAXAAEAAADN//n/AAAXAAEAAADM//n/AAAXAAEAAADL//n/AAAXAAEAAADI/wMAAAAXAAEAAADH/wMAAAAXAAEAAADG/wMAAAAXAAEAAADF/wMAAAAXAAEAAADE/wMAAAAXAAEAAADD/wMAAAAXAAEAAADC/wMAAAAXAAEAAADB/wMAAAAXAAEAAADA/wMAAAAXAAEAAAC//wMAAAAXAAEAAAC+/wMAAAAXAAEAAAC9/wMAAAAXAAEAAADn/x8AAAAXAAEAAADm/x8AAAAXAAEAAADl/x8AAAAXAAEAAADk/x8AAAAXAAEAAADj/x8AAAAXAAEAAADi/x8AAAAXAAEAAADh/x8AAAAXAAEAAADg/x8AAAAXAAEAAADf/x8AAAAXAAEAAADe/x8AAAAXAAEAAADc/x0AAAAXAAEAAADd/x4AAAAXAAEAAADb/x0AAAAXAAEAAADa/x0AAAAXAAEAAADZ/x0AAAAXAAEAAADY/x0AAAAXAAEAAADX/x0AAAAXAAEAAADW/x0AAAAXAAEAAADV/x0AAAAXAAEAAADU/x0AAAAXAAEAAADT/x0AAAAXAAEAAADS/x0AAAAXAAEAAADR/x4AAAAXAAEAAADR/x8AAAAXAAEAAADR/yAAAAAXAAEAAADR/yEAAAAXAAEAAADR/yIAAAAXAAEAAADR/yMAAAAXAAEAAADR/yQAAAAXAAEAAADR/yUAAAAXAAEAAADR/yYAAAAXAAEAAADR/ycAAAAXAAEAAADR/ygAAAAXAAEAAADR/ykAAAAXAAEAAADR/yoAAAAXAAEAAADR/ysAAAAXAAEAAADS/ywAAAAXAAEAAADT/ywAAAAXAAEAAADU/ywAAAAXAAEAAADV/ywAAAAXAAEAAADW/ywAAAAXAAEAAADX/ywAAAAXAAEAAADY/ywAAAAXAAEAAADZ/ywAAAAXAAEAAADa/ywAAAAXAAEAAADb/ywAAAAXAAEAAADc/ywAAAAXAAEAAADd/ywAAAAXAAEAAADe/ysAAAAXAAEAAADe/yoAAAAXAAEAAADe/ykAAAAXAAEAAADe/ygAAAAXAAEAAADe/ycAAAAXAAEAAADe/yYAAAAXAAEAAADe/yQAAAAXAAEAAADe/yUAAAAXAAEAAADf/yQAAAAXAAEAAADg/yQAAAAXAAEAAADh/yQAAAAXAAEAAADi/yQAAAAXAAEAAADj/yQAAAAXAAEAAADk/yQAAAAXAAEAAADl/yQAAAAXAAEAAADm/yQAAAAXAAEAAADn/yQAAAAXAAEAAADo/yQAAAAXAAEAAADx/yQAAAAXAAEAAADx/yMAAAAXAAEAAADx/yIAAAAXAAEAAADx/yEAAAAXAAEAAADx/yAAAAAXAAEAAADy/yAAAAAXAAEAAADz/yAAAAAXAAEAAAD0/yAAAAAXAAEAAAD1/yAAAAAXAAEAAAD1/x8AAAAXAAEAAAD1/x4AAAAXAAEAAAD1/x0AAAAXAAEAAAD1/xwAAAAXAAEAAAD1/xsAAAAXAAEAAAD2/xoAAAAXAAEAAAD2/xkAAAAXAAEAAAD2/xgAAAAXAAEAAAD2/xcAAAAXAAEAAAD2/xYAAAAXAAEAAAD2/xUAAAAXAAEAAAD2/xQAAAAXAAEAAAD2/xMAAAAXAAEAAAD2/xIAAAAXAAEAAAD2/xEAAAAXAAEAAAD2/xAAAAAXAAEAAAD2/w8AAAAXAAEAAAD3/w8AAAAXAAEAAAD4/w8AAAAXAAEAAAD5/w8AAAAXAAEAAAD6/w8AAAAXAAEAAAD7/w8AAAAXAAEAAAD8/w8AAAAXAAEAAAD8/w4AAAAXAAEAAAD9/w4AAAAXAAEAAAD+/w4AAAAXAAEAAAD//w4AAAAXAAEAAAAAAA4AAAAXAAEAAAABAA4AAAAXAAEAAAACAA4AAAAXAAEAAAADAA8AAAAXAAEAAAAEAA8AAAAXAAEAAAAFAA8AAAAXAAEAAAAGAA8AAAAXAAEAAAAHAA8AAAAXAAEAAAAIAA8AAAAXAAEAAAAJAA4AAAAXAAEAAAAKAA4AAAAXAAEAAAALAA4AAAAXAAEAAAAMAA4AAAAXAAEAAAANAA4AAAAXAAEAAAAOAA4AAAAXAAEAAAAPAA4AAAAXAAEAAAAQAA4AAAAXAAEAAAARAA4AAAAXAAEAAAASAA8AAAAXAAEAAAATAA8AAAAXAAEAAAAUAA8AAAAXAAEAAAAVAA8AAAAXAAEAAAAVABAAAAAXAAEAAAAVABEAAAAXAAEAAAAVABIAAAAXAAEAAAAVABMAAAAXAAEAAAAVABQAAAAXAAEAAAAVABUAAAAXAAEAAAAVABYAAAAXAAEAAAAVABcAAAAXAAEAAAAVABgAAAAXAAEAAAAVABkAAAAXAAEAAAAVABoAAAAXAAEAAAAVABsAAAAXAAEAAAAUABwAAAAXAAEAAAAUAB0AAAAXAAEAAAAUAB4AAAAXAAEAAAAUAB8AAAAXAAEAAAAVACAAAAAXAAEAAAAWACAAAAAXAAEAAAAXACAAAAAXAAEAAAAYACAAAAAXAAEAAAAZACAAAAAXAAEAAAAaACAAAAAXAAEAAAAbACAAAAAXAAEAAAAcACAAAAAXAAEAAAAdACAAAAAXAAEAAAAeACAAAAAXAAEAAAAfACAAAAAXAAEAAAAaABsAAAAXAAEAAAAaABoAAAAXAAEAAAAaABkAAAAXAAEAAAAaABgAAAAXAAEAAAAaABcAAAAXAAEAAAAaABYAAAAXAAEAAAAaABUAAAAXAAEAAAAaABQAAAAXAAEAAAAaABMAAAAXAAEAAAAaABIAAAAXAAEAAAAaABEAAAAXAAEAAAAaABAAAAAXAAEAAAAaAA8AAAAXAAEAAAAbAA8AAAAXAAEAAAAcAA8AAAAXAAEAAAAdAA8AAAAXAAEAAAAeAA4AAAAXAAEAAAAeAA0AAAAXAAEAAAAeAAwAAAAXAAEAAAAfAAwAAAAXAAEAAAAgAAwAAAAXAAEAAAAhAAsAAAAXAAEAAAAhAAoAAAAXAAEAAAAhAAkAAAAXAAEAAAAhAAgAAAAXAAEAAAAiAAgAAAAXAAEAAAAjAAgAAAAXAAEAAAAjAAcAAAAXAAEAAAAjAAYAAAAXAAEAAAAjAAUAAAAXAAEAAAAjAAQAAAAXAAEAAAAjAAMAAAAXAAEAAAAjAAIAAAAXAAEAAAAbABsAAAAXAAEAAAAcABsAAAAXAAEAAAAdABsAAAAXAAEAAAAeABsAAAAXAAEAAAAfABsAAAAXAAEAAAAgABsAAAAXAAEAAAAuABsAAAAXAAEAAAAuABwAAAAXAAEAAAAuAB0AAAAXAAEAAAAuAB4AAAAXAAEAAAAuAB8AAAAXAAEAAAAuACAAAAAXAAEAAAAuACEAAAAXAAEAAAAuACIAAAAXAAEAAAAuACMAAAAXAAEAAAAuACQAAAAXAAEAAAAuACUAAAAXAAEAAAAuACYAAAAXAAEAAAAuACcAAAAXAAEAAAAtACcAAAAXAAEAAAAsACcAAAAXAAEAAAArACcAAAAXAAEAAAAqACcAAAAXAAEAAAApACcAAAAXAAEAAAAoACcAAAAXAAEAAAAnACcAAAAXAAEAAAAmACcAAAAXAAEAAAAlACcAAAAXAAEAAAAkACcAAAAXAAEAAAAjACcAAAAXAAEAAAAiACcAAAAXAAEAAAAhACcAAAAXAAEAAAAhACYAAAAXAAEAAAAhACUAAAAXAAEAAAAhACQAAAAXAAEAAAAhACMAAAAXAAEAAAAhACIAAAAXAAEAAAAgACIAAAAXAAEAAAAfACEAAAAXAAEAAAAuABoAAAAXAAEAAAAtABkAAAAXAAEAAAAsABkAAAAXAAEAAAArABkAAAAXAAEAAAAqABkAAAAXAAEAAAApABkAAAAXAAEAAAAoABkAAAAXAAEAAAAnABkAAAAXAAEAAAAmABkAAAAXAAEAAAAlABkAAAAXAAEAAAAkABkAAAAXAAEAAAAjABkAAAAXAAEAAAAiABkAAAAXAAEAAAAhABkAAAAXAAEAAAAhABoAAAAXAAEAAAAiAAAAAAAXAAEAAAAhAAAAAAAXAAEAAAAgAAAAAAAXAAEAAAAjAAEAAAAXAAEAAAAgAP//AAAXAAEAAAAgAP7/AAAXAAEAAAAgAP3/AAAXAAEAAAAeAPz/AAAXAAEAAAAfAPz/AAAXAAEAAAAdAPz/AAAXAAEAAAAdAPv/AAAXAAEAAAAdAPr/AAAXAAEAAAAeAPr/AAAXAAEAAAAfAPr/AAAXAAEAAAAfAPn/AAAXAAEAAAAfAPj/AAAXAAEAAAAfAPf/AAAXAAEAAAAgAPb/AAAXAAEAAAAiAPT/AAAXAAEAAAAkAPP/AAAXAAEAAAAjAPP/AAAXAAEAAAAhAPX/AAAXAAEAAAAlAPP/AAAXAAEAAAAmAPT/AAAXAAEAAAAnAPT/AAAXAAEAAAAoAPT/AAAXAAEAAAApAPT/AAAXAAEAAAAqAPT/AAAXAAEAAAArAPT/AAAXAAEAAAAsAPT/AAAXAAEAAAAtAPT/AAAXAAEAAAAuAPP/AAAXAAEAAAAuAPL/AAAXAAEAAAAxAPL/AAAXAAEAAAAyAPL/AAAXAAEAAAAvAPL/AAAXAAEAAAAwAPL/AAAXAAEAAAAzAPL/AAAXAAEAAAAzAPH/AAAXAAEAAAAzAPD/AAAXAAEAAAAzAO//AAAXAAEAAAAzAO7/AAAXAAEAAAA0AO7/AAAXAAEAAAA1AO7/AAAXAAEAAAA2AO7/AAAXAAEAAAA3AO7/AAAXAAEAAAA4AO7/AAAXAAEAAAA5AO7/AAAXAAEAAAA6AO7/AAAXAAEAAAA7AO7/AAAXAAEAAAA8AO7/AAAXAAEAAAA9AO//AAAXAAEAAAA+AO//AAAXAAEAAAA/AO//AAAXAAEAAABAAO//AAAXAAEAAABBAO//AAAXAAEAAABCAO//AAAXAAEAAABDAO//AAAXAAEAAABEAO7/AAAXAAEAAABEAO3/AAAXAAEAAABEAOz/AAAXAAEAAABEAOv/AAAXAAEAAABEAOr/AAAXAAEAAABDAOn/AAAXAAEAAABDAOf/AAAXAAEAAABDAOj/AAAXAAEAAAA+AOf/AAAXAAEAAAA8AOn/AAAXAAEAAAA7AOn/AAAXAAEAAAA6AOn/AAAXAAEAAAA5AOn/AAAXAAEAAAA4AOn/AAAXAAEAAAA3AOn/AAAXAAEAAAA2AOn/AAAXAAEAAAA1AOn/AAAXAAEAAAA0AOn/AAAXAAEAAAAzAOn/AAAXAAEAAAA+AOj/AAAXAAEAAAA+AOn/AAAXAAEAAAA9AOn/AAAXAAEAAAA9AOf/AAAXAAEAAAA8AOf/AAAXAAEAAAA7AOf/AAAXAAEAAAA6AOb/AAAXAAEAAAA6AOX/AAAXAAEAAAA6AOT/AAAXAAEAAAA6AOP/AAAXAAEAAAA6AOL/AAAXAAEAAAA6AOH/AAAXAAEAAAA6AOD/AAAXAAEAAAA6AN//AAAXAAEAAAA6AN7/AAAXAAEAAAA6AN3/AAAXAAEAAAA6ANz/AAAXAAEAAAA6ANv/AAAXAAEAAAA6ANr/AAAXAAEAAAA7ANj/AAAXAAEAAAA8ANj/AAAXAAEAAAA9ANj/AAAXAAEAAAA+ANj/AAAXAAEAAAA/ANj/AAAXAAEAAABAANj/AAAXAAEAAABBANj/AAAXAAEAAABCANj/AAAXAAEAAABDANj/AAAXAAEAAABEANj/AAAXAAEAAABFANj/AAAXAAEAAAA6ANn/AAAXAAEAAABGANj/AAAXAAEAAABHANr/AAAXAAEAAABHANn/AAAXAAEAAABHANv/AAAXAAEAAABHANz/AAAXAAEAAABHAN3/AAAXAAEAAABHAN7/AAAXAAEAAABHAN//AAAXAAEAAABHAOH/AAAXAAEAAABHAOL/AAAXAAEAAABHAOP/AAAXAAEAAABHAOD/AAAXAAEAAABHAOT/AAAXAAEAAABHAOX/AAAXAAEAAABHAOb/AAAXAAEAAABEAOf/AAAXAAEAAABFAOf/AAAXAAEAAABGAOf/AAAXAAEAAAAzAOj/AAAXAAEAAAAzAOf/AAAXAAEAAAAxAOb/AAAXAAEAAAAyAOb/AAAXAAEAAAAwAOX/AAAXAAEA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")
 tile_set = SubResource("TileSet_mc2jv")
