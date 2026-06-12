@@ -2,7 +2,7 @@ extends CharacterBody2D
 class_name Player
 
 #region VARIABLES Y EXPORTS
-const SPEED: float = 150.0 # Mantenemos tu constante SPEED en mayúsculas como la buscan tus estados
+const SPEED: float = 150.0
 #endregion
 
 #region REFERENCIAS A NODOS
@@ -17,17 +17,17 @@ var last_direction: Vector2 = Vector2.RIGHT
 func _ready() -> void:
 	add_to_group("player")
 	
-	# ¡FUNDAMENTAL! Nos aseguramos de que la espada empiece APAGADA por defecto al iniciar el juego
+	# Aseguramos que la espada empiece apagada para no hacer daño al chocar
 	if hitbox:
 		hitbox.monitoring = false
 	
-	# Inicialización de tu máquina de estados original
+	# Inicializamos tu máquina de estados original
 	current_state = $States/Idle
 	current_state.player = self
 	current_state.enter()
 
 func _physics_process(delta: float) -> void:
-	# Volvemos a darle el control a los estados para que te puedas mover, caminar y atacar
+	# Le devolvemos el control a la máquina de estados para que puedas moverte
 	if current_state:
 		current_state.physics_update(delta)
 #endregion
@@ -51,7 +51,7 @@ func play_animation(anim_name: String, direction: Vector2) -> void:
 	elif direction.x > 0:
 		sprite.flip_h = false
 
-# Elige la animación de ataque según la última dirección del jugador.
+# Elige la animación de ataque según la última dirección
 func ejecutar_ataque_direccional() -> void:
 	velocity = Vector2.ZERO
 	if last_direction.y < -0.1:

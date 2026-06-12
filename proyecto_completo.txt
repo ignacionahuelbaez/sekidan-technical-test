@@ -1,1073 +1,3 @@
-===== ./.godot/editor/01_agent_melee_simple.tres-folding-e0ddfd3e9fd883f90209f481d84b6cf4.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/02_agent_charger.tres-folding-b4f5c218b21cce3875d1a64b63761e4e.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/03_agent_imp.tres-folding-374aafde95dd6540cdf807a28cea664c.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/04_agent_skirmisher.tres-folding-d25cb3c8d1ead02e9576853af2c751ac.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/05_agent_ranged.tres-folding-f4d7a67624824978bcdf9485db113761.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/06_agent_melee_combo.tres-folding-824d200cfaff07176f44b98c79e6c759.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/07_agent_melee_nuanced.tres-folding-032c9435cb4d3d5116f377205bb0d49c.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/08_agent_demon.tres-folding-99b5b1af6a5208c13fd1cb5bd27e11ad.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/09_agent_summoner.tres-folding-22d16967927a59b03c295e33f67151ca.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/bt_attack_player.gd-folding-5685199b8ec36d33cdd63ee7650c6e65.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/bt_attack_player.gd-folding-ee43f5ccc7ae57c4c7fe348f193e7f0d.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/bt_chase_player.gd-folding-a05338eaba6a86d5d81c27482eda63ad.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/bt_is_player_in_attack_range.gd-folding-3e196f7350dda9fb985df3e0ac348aff.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/bt_is_player_in_detection_range.gd-folding-1c2b7b0caf48fce547a1cb962f92c9aa.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/bt_is_player_in_detection_range.gd-folding-3d173b0ceded8ab70bbacf310f45d37f.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/bt_patrol.gd-folding-b4c9d08ff594e3d1ca7ff8feadaed7a6.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/camera_2d.gd-folding-39052f56b5c90500d7d6e1c68a418bbc.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/editor_layout.cfg =====
-[docks]
-
-dock_floating={}
-dock_closed=[]
-dock_split_2=128
-dock_split_3=0
-dock_hsplit_1=0
-dock_hsplit_2=349
-dock_hsplit_3=-220
-dock_hsplit_4=0
-dock_split_1=0
-dock_split_4=0
-dock_3_selected_tab_idx=0
-dock_4_selected_tab_idx=0
-dock_5_selected_tab_idx=0
-dock_9_selected_tab_idx=0
-dock_3="Scene,Import"
-dock_4="FileSystem,History"
-dock_5="Inspector,Signals,Groups"
-dock_9="Output,Debugger,Audio,Animation,Shader Editor,SpriteFrames,Search Results,AnimationTree,ResourcePreloader,ShaderFile,Theme,Polygon,TileSet,TileMap,Replication,GridMap"
-
-[docks/FileSystem]
-
-h_split_offset=240
-v_split_offset=0
-display_mode=0
-file_sort=0
-file_list_display_mode=1
-selected_paths=PackedStringArray("res://actors/player/states/dead.gd")
-uncollapsed_paths=PackedStringArray("Favorites", "res://", "res://assets/", "res://actors/", "res://actors/player/", "res://actors/player/states/")
-
-[docks/History]
-
-include_scene=true
-include_global=true
-
-[EditorNode]
-
-open_scenes=PackedStringArray("res://world.tscn")
-current_scene="res://world.tscn"
-bottom_panel_offsets={
-"Animation": 0,
-"Audio": -450,
-"Debugger": -286,
-"FileSystem": 0,
-"Output": -270,
-"Shader Editor": 0,
-"SpriteFrames": -346,
-"TileMap": -246,
-"TileSet": 0
-}
-selected_default_debugger_tab_idx=1
-selected_main_editor_idx=2
-
-[EditorWindow]
-
-screen=0
-mode="maximized"
-position=Vector2i(0, 23)
-
-[ScriptEditor]
-
-open_scripts=["res://ai/tasks/bt_attack_player.gd", "res://ai/tasks/bt_chase_player.gd", "res://ai/tasks/bt_is_player_in_attack_range.gd", "res://ai/tasks/bt_is_player_in_detection_range.gd", "res://ai/tasks/bt_patrol.gd", "res://actors/enemy/enemy.gd", "res://components/health_component.gd", "res://components/hitbox_component.gd", "res://components/hurtbox_component.gd", "res://actors/player/player.gd", "res://actors/player/states/player_state.gd", "res://actors/player/states/state_attack.gd", "res://actors/player/states/dead.gd", "res://actors/player/states/state_hurt.gd", "res://actors/player/states/state_idle.gd", "res://actors/player/states/state_walk.gd"]
-selected_script="res://actors/enemy/enemy.gd"
-open_help=["@GlobalScope", "BTSequence", "CompressedTexture2D", "GDScript", "Sprite2D"]
-script_split_offset=370
-list_split_offset=172
-zoom_factor=0.61637574
-
-[GameView]
-
-floating_window_rect=Rect2i(0, 0, 0, 0)
-floating_window_screen=-1
-
-[ShaderEditor]
-
-open_shaders=[]
-split_offset=200
-selected_shader=""
-text_shader_zoom_factor=1.0
-
-[editor_log]
-
-log_filter_0=false
-log_filter_2=false
-log_filter_1=true
-log_filter_3=true
-log_filter_4=true
-collapse=false
-show_search=true
-
-[LimboAI]
-
-bteditor_open_bts=["res://actors/enemy/enemy_bt.tres"]
-bteditor_hsplit=320
-debugger_update_interval_msec=0.0
-task_palette_collapsed_sections=[]
-task_palette_type_filter=0
-task_palette_category_filter=0
-task_palette_excluded_categories=[]
-===== ./.godot/editor/editor_script_doc_cache.res-folding-a7de57390d6e786984ca20c70a831128.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/enemy.gd-folding-330a1fc7dbbe1bf2c9ebea044ae04277.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/enemy.gd-folding-c2b91af855b245b7be2f6c516102bfa0.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/enemy_bt.tres-folding-f61e8f0af8641addd4f48055837a141b.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/health_component.gd-folding-ba322cbcf0235eacd9510545dee3eeed.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/health_component.gd.gd-folding-fd593691962c9808ef94d6bc1be6619d.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/hitbox_component.gd-folding-076c6a6ce040d17aa5ecd5d6fc9720d2.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/hurtbox_component.gd-folding-f7a994ae4b3a396d7c465d2ee6f0c6df.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/junction_bold.otf-4db2200a8b1a6423bafe2a4e7c7abbde.fontdata-folding-79b209da806865ee79fdeb830379d83a.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/knewave_regular.ttf-955953b059f713782c7b07e66ab341ec.fontdata-folding-c14df330dbe0e3999dd0a8c114722fb5.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/player.gd-folding-cc2eaac76e686d02696a581348609283.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/player_state.gd-folding-140ce63fa85e2d802470c87d96795871.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/project_metadata.cfg =====
-[game_view]
-
-select_mode=0
-
-[editor_metadata]
-
-executable_path="C:/Users/ignac/OneDrive/Escritorio/apps de proyecto/Godot_v4.6.3-stable_win64.exe/Godot_v4.6.3-stable_win64.exe"
-
-[dialog_bounds]
-
-create_new_node=Rect2(233, 77, 900, 614)
-project_settings=Rect2(137, 77, 1092, 614)
-editor_settings=Rect2(233, 77, 900, 614)
-
-[recent_files]
-
-scenes=["res://world.tscn", "res://world/world_camera_world.tscn"]
-scripts=["@GlobalScope", "Sprite2D", "GDScript", "CompressedTexture2D", "BTSequence", "res://actors/enemy/enemy.gd", "res://ai/tasks/bt_patrol.gd", "res://ai/tasks/bt_chase_player.gd", "res://ai/bt_attack_player.gd", "res://ai/bt_is_player_in_detection_range.gd"]
-
-[script_setup]
-
-last_selected_language="GDScript"
-create_built_in_script=false
-
-[quick_open_dialog]
-
-last_mode=1
-
-[project_settings]
-
-show_builtin_actions=true
-
-[color_picker]
-
-picker_shape=3
-===== ./.godot/editor/quick_open_dialog_cache.cfg =====
-[selected_history]
-
-PackedScene=PackedStringArray("uid://cw5xjm18x47gc")
-BehaviorTree=PackedStringArray("uid://bmndwsqukjyf5")
-Texture2D=PackedStringArray("uid://d2wh2iuvncv3q")
-Script=PackedStringArray("uid://dxj6i1lnitkd1")
-===== ./.godot/editor/script_editor_cache.cfg =====
-[res://actors/player/player.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 40,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 46,
-"scroll_position": 31.705882352941174,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://actors/player/states/player_state.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 6,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 17,
-"scroll_position": 0.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://actors/player/states/state_idle.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 29,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 12,
-"scroll_position": 1.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://actors/player/states/state_walk.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 25,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 13,
-"scroll_position": 2.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://actors/player/states/state_attack.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 29,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 19,
-"scroll_position": 10.176470588235293,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://actors/player/states/state_hurt.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 28,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 18,
-"scroll_position": 7.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://components/hitbox_component.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 19,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 8,
-"scroll_position": 0.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://components/health_component.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 14,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 20,
-"scroll_position": 5.705882352941176,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://components/hurtbox_component.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 44,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 150,
-"row": 12,
-"scroll_position": 0.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://ai/tasks/bt_is_player_in_attack_range.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 105,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 290,
-"row": 10,
-"scroll_position": 0.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://ai/tasks/bt_attack_player.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 15,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 16,
-"scroll_position": 0.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://ai/tasks/bt_is_player_in_detection_range.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 108,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 10,
-"scroll_position": 0.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://ai/tasks/bt_chase_player.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 15,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 16,
-"scroll_position": 1.7058823529411757,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://ai/tasks/bt_patrol.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 5,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 0,
-"scroll_position": 0.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://actors/enemy/enemy.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 10,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 70,
-"scroll_position": 56.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://actors/player/states/dead.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 34,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 6,
-"scroll_position": 0.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-===== ./.godot/editor/state_attack.gd-folding-6f0d5a18f6d4bdfe45e5b5e4f028d7ac.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/state_dead.gd-folding-ae29045062280b98a843078f008ada30.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/state_hurt.gd-folding-b3b786bcdedf6384287182c3f1a6f700.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/state_idle.gd-folding-40be20ce23a54bd0565d47e96f6f72ce.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/state_walk.gd-folding-1c4f34ed66cd0506d52bc933082bb0df.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/world.tscn-editstate-76e0adcbc83681695885bae615f516ae.cfg =====
-[editor_states]
-
-2D={
-"grid_offset": Vector2(0, 0),
-"grid_snap_active": false,
-"grid_step": Vector2(8, 8),
-"grid_visibility": 1,
-"ofs": Vector2(-1327.0455, -447.53607),
-"primary_grid_step": Vector2i(8, 8),
-"show_group_gizmos": true,
-"show_guides": true,
-"show_helpers": false,
-"show_lock_gizmos": true,
-"show_origin": true,
-"show_position_gizmos": true,
-"show_rulers": true,
-"show_transformation_gizmos": true,
-"show_viewport": true,
-"show_zoom_control": true,
-"smart_snap_active": false,
-"snap_guides": true,
-"snap_node_anchors": true,
-"snap_node_center": true,
-"snap_node_parent": true,
-"snap_node_sides": true,
-"snap_other_nodes": true,
-"snap_pixel": true,
-"snap_relative": false,
-"snap_rotation": false,
-"snap_rotation_offset": 0.0,
-"snap_rotation_step": 0.2617994,
-"snap_scale": false,
-"snap_scale_step": 0.1,
-"zoom": 0.513158
-}
-3D={
-"fov": 70.01,
-"gizmos_status": {
-"AudioListener3D": 0,
-"AudioStreamPlayer3D": 0,
-"CPUParticles3D": 0,
-"CSGShape3D": 0,
-"Camera3D": 0,
-"ChainIK3D": 0,
-"CollisionObject3D": 0,
-"CollisionPolygon3D": 0,
-"CollisionShape3D": 0,
-"Decal": 0,
-"FogVolume": 0,
-"GPUParticles3D": 0,
-"GPUParticlesCollision3D": 0,
-"Joint3D": 0,
-"Light3D": 0,
-"LightmapGI": 0,
-"LightmapProbe": 0,
-"Marker3D": 0,
-"MeshInstance3DCustomAABB": 0,
-"NavigationLink3D": 0,
-"NavigationObstacle3D": 0,
-"NavigationRegion3D": 0,
-"OccluderInstance3D": 0,
-"Particles3DEmissionShape": 0,
-"Path3D": 0,
-"PhysicalBone3D": 0,
-"RayCast3D": 0,
-"ReflectionProbe": 0,
-"ShapeCast3D": 0,
-"Skeleton3D": 0,
-"SoftBody3D": 0,
-"SpringArm3D": 0,
-"SpringBoneCollision3D": 0,
-"SpringBoneSimulator3D": 0,
-"TwoBoneIK3D": 0,
-"VehicleWheel3D": 0,
-"VisibleOnScreenNotifier3D": 0,
-"VoxelGI": 0
-},
-"local_coords": false,
-"preview_sun_env": {
-"environ_ao_enabled": false,
-"environ_enabled": true,
-"environ_energy": 1.0,
-"environ_gi_enabled": false,
-"environ_glow_enabled": true,
-"environ_ground_color": Color(0.2, 0.169, 0.133, 1),
-"environ_sky_color": Color(0.385, 0.454, 0.55, 1),
-"environ_tonemap_enabled": true,
-"sun_color": Color(1, 1, 1, 1),
-"sun_enabled": true,
-"sun_energy": 1.0,
-"sun_rotation": Vector2(-1.0471976, 2.6179938),
-"sun_shadow_max_distance": 100.0
-},
-"rotate_snap": 15.0,
-"scale_snap": 10.0,
-"show_grid": true,
-"show_origin": true,
-"snap_enabled": false,
-"translate_snap": 1.0,
-"viewport_mode": 1,
-"viewports": [{
-"auto_orthogonal": false,
-"auto_orthogonal_enabled": true,
-"cinematic_preview": false,
-"display_mode": 22,
-"distance": 4.0,
-"doppler": false,
-"frame_time": false,
-"gizmos": true,
-"grid": true,
-"half_res": false,
-"information": false,
-"listener": true,
-"lock_rotation": false,
-"orthogonal": false,
-"position": Vector3(0, 0, 0),
-"transform_gizmo": true,
-"use_environment": false,
-"view_type": 0,
-"x_rotation": 0.5,
-"y_rotation": -0.5
-}, {
-"auto_orthogonal": false,
-"auto_orthogonal_enabled": true,
-"cinematic_preview": false,
-"display_mode": 22,
-"distance": 4.0,
-"doppler": false,
-"frame_time": false,
-"gizmos": true,
-"grid": true,
-"half_res": false,
-"information": false,
-"listener": false,
-"lock_rotation": false,
-"orthogonal": false,
-"position": Vector3(0, 0, 0),
-"transform_gizmo": true,
-"use_environment": false,
-"view_type": 0,
-"x_rotation": 0.5,
-"y_rotation": -0.5
-}, {
-"auto_orthogonal": false,
-"auto_orthogonal_enabled": true,
-"cinematic_preview": false,
-"display_mode": 22,
-"distance": 4.0,
-"doppler": false,
-"frame_time": false,
-"gizmos": true,
-"grid": true,
-"half_res": false,
-"information": false,
-"listener": false,
-"lock_rotation": false,
-"orthogonal": false,
-"position": Vector3(0, 0, 0),
-"transform_gizmo": true,
-"use_environment": false,
-"view_type": 0,
-"x_rotation": 0.5,
-"y_rotation": -0.5
-}, {
-"auto_orthogonal": false,
-"auto_orthogonal_enabled": true,
-"cinematic_preview": false,
-"display_mode": 22,
-"distance": 4.0,
-"doppler": false,
-"frame_time": false,
-"gizmos": true,
-"grid": true,
-"half_res": false,
-"information": false,
-"listener": false,
-"lock_rotation": false,
-"orthogonal": false,
-"position": Vector3(0, 0, 0),
-"transform_gizmo": true,
-"use_environment": false,
-"view_type": 0,
-"x_rotation": 0.5,
-"y_rotation": -0.5
-}],
-"zfar": 4000.01,
-"znear": 0.05
-}
-Anim={
-"visible": false
-}
-selected_nodes=Array[NodePath]([NodePath("/root/@EditorNode@18724/@Panel@14/@VBoxContainer@15/DockHSplitMain/@VBoxContainer@28/DockVSplitCenter/@VSplitContainer@70/@VBoxContainer@71/@EditorMainScreen@125/MainScreen/@CanvasItemEditor@9322/@VSplitContainer@9105/@HSplitContainer@9107/@HSplitContainer@9109/@Control@9110/@SubViewportContainer@9111/@SubViewport@9112/world/player/States/dead")])
-===== ./.godot/editor/world.tscn-folding-76e0adcbc83681695885bae615f516ae.cfg =====
-[folding]
-
-node_unfolds=[NodePath("map/suelo"), PackedStringArray("tile_set", "Transform"), NodePath("map/cesped_suelo"), PackedStringArray("Transform"), NodePath("player"), PackedStringArray("Transform"), NodePath("player/AnimatedSprite2D"), PackedStringArray("Transform", "Offset"), NodePath("player/HitboxComponent"), PackedStringArray("Collision"), NodePath("Enemy"), PackedStringArray("Transform"), NodePath("Enemy/HurtboxComponent"), PackedStringArray("Collision"), NodePath("Enemy/HurtboxComponent/CollisionShape2D"), PackedStringArray("Transform"), NodePath("Enemy/HitboxComponent"), PackedStringArray("Gravity"), NodePath("Enemy/AnimatedSprite2D"), PackedStringArray("Offset", "Transform"), NodePath("Enemy/DetectionArea"), PackedStringArray("Collision"), NodePath("Colisiones"), PackedStringArray("Navigation", "tile_set")]
-resource_unfolds=["res://world.tscn::TileSet_bc84e", PackedStringArray(), "res://world.tscn::TileSet_cbp6q", PackedStringArray(), "res://world.tscn::TileSet_wukud", PackedStringArray(), "res://world.tscn::TileSet_wjb0r", PackedStringArray(), "res://world.tscn::TileSet_il2jm", PackedStringArray(), "res://world.tscn::SpriteFrames_ioo17", PackedStringArray("Resource"), "res://world.tscn::RectangleShape2D_ioo17", PackedStringArray(), "res://world.tscn::RectangleShape2D_wukud", PackedStringArray(), "res://world.tscn::RectangleShape2D_il2jm", PackedStringArray(), "res://world.tscn::RectangleShape2D_cbp6q", PackedStringArray(), "res://world.tscn::RectangleShape2D_26xuy", PackedStringArray(), "res://world.tscn::SpriteFrames_e77ka", PackedStringArray(), "res://world.tscn::BlackboardPlan_udxuc", PackedStringArray(), "res://world.tscn::RectangleShape2D_bc84e", PackedStringArray(), "res://world.tscn::CircleShape2D_cbp6q", PackedStringArray(), "res://world.tscn::TileSet_26xuy", PackedStringArray("Rendering")]
-nodes_folded=[NodePath("map"), NodePath("player/HitboxComponent"), NodePath("Enemy/HurtboxComponent"), NodePath("Enemy/HitboxComponent"), NodePath("Enemy/DetectionArea")]
-===== ./.godot/editor/world_camera_world.tscn-editstate-e311380c96155eb91e3d6080f207d969.cfg =====
-[editor_states]
-
-2D={
-"grid_offset": Vector2(0, 0),
-"grid_snap_active": false,
-"grid_step": Vector2(8, 8),
-"grid_visibility": 1,
-"ofs": Vector2(-745.96234, -235.19824),
-"primary_grid_step": Vector2i(8, 8),
-"show_group_gizmos": true,
-"show_guides": true,
-"show_helpers": false,
-"show_lock_gizmos": true,
-"show_origin": true,
-"show_position_gizmos": true,
-"show_rulers": true,
-"show_transformation_gizmos": true,
-"show_viewport": true,
-"show_zoom_control": true,
-"smart_snap_active": false,
-"snap_guides": true,
-"snap_node_anchors": true,
-"snap_node_center": true,
-"snap_node_parent": true,
-"snap_node_sides": true,
-"snap_other_nodes": true,
-"snap_pixel": true,
-"snap_relative": false,
-"snap_rotation": false,
-"snap_rotation_offset": 0.0,
-"snap_rotation_step": 0.2617994,
-"snap_scale": false,
-"snap_scale_step": 0.1,
-"zoom": 0.56447387
-}
-3D={
-"fov": 70.01,
-"gizmos_status": {
-"AudioListener3D": 0,
-"AudioStreamPlayer3D": 0,
-"CPUParticles3D": 0,
-"CSGShape3D": 0,
-"Camera3D": 0,
-"ChainIK3D": 0,
-"CollisionObject3D": 0,
-"CollisionPolygon3D": 0,
-"CollisionShape3D": 0,
-"Decal": 0,
-"FogVolume": 0,
-"GPUParticles3D": 0,
-"GPUParticlesCollision3D": 0,
-"Joint3D": 0,
-"Light3D": 0,
-"LightmapGI": 0,
-"LightmapProbe": 0,
-"Marker3D": 0,
-"MeshInstance3DCustomAABB": 0,
-"NavigationLink3D": 0,
-"NavigationObstacle3D": 0,
-"NavigationRegion3D": 0,
-"OccluderInstance3D": 0,
-"Particles3DEmissionShape": 0,
-"Path3D": 0,
-"PhysicalBone3D": 0,
-"RayCast3D": 0,
-"ReflectionProbe": 0,
-"ShapeCast3D": 0,
-"Skeleton3D": 0,
-"SoftBody3D": 0,
-"SpringArm3D": 0,
-"SpringBoneCollision3D": 0,
-"SpringBoneSimulator3D": 0,
-"TwoBoneIK3D": 0,
-"VehicleWheel3D": 0,
-"VisibleOnScreenNotifier3D": 0,
-"VoxelGI": 0
-},
-"local_coords": false,
-"preview_sun_env": {
-"environ_ao_enabled": false,
-"environ_enabled": true,
-"environ_energy": 1.0,
-"environ_gi_enabled": false,
-"environ_glow_enabled": true,
-"environ_ground_color": Color(0.2, 0.169, 0.133, 1),
-"environ_sky_color": Color(0.385, 0.454, 0.55, 1),
-"environ_tonemap_enabled": true,
-"sun_color": Color(1, 1, 1, 1),
-"sun_enabled": true,
-"sun_energy": 1.0,
-"sun_rotation": Vector2(-1.0471976, 2.6179938),
-"sun_shadow_max_distance": 100.0
-},
-"rotate_snap": 15.0,
-"scale_snap": 10.0,
-"show_grid": true,
-"show_origin": true,
-"snap_enabled": false,
-"translate_snap": 1.0,
-"viewport_mode": 1,
-"viewports": [{
-"auto_orthogonal": false,
-"auto_orthogonal_enabled": true,
-"cinematic_preview": false,
-"display_mode": 22,
-"distance": 4.0,
-"doppler": false,
-"frame_time": false,
-"gizmos": true,
-"grid": true,
-"half_res": false,
-"information": false,
-"listener": true,
-"lock_rotation": false,
-"orthogonal": false,
-"position": Vector3(0, 0, 0),
-"transform_gizmo": true,
-"use_environment": false,
-"view_type": 0,
-"x_rotation": 0.5,
-"y_rotation": -0.5
-}, {
-"auto_orthogonal": false,
-"auto_orthogonal_enabled": true,
-"cinematic_preview": false,
-"display_mode": 22,
-"distance": 4.0,
-"doppler": false,
-"frame_time": false,
-"gizmos": true,
-"grid": true,
-"half_res": false,
-"information": false,
-"listener": false,
-"lock_rotation": false,
-"orthogonal": false,
-"position": Vector3(0, 0, 0),
-"transform_gizmo": true,
-"use_environment": false,
-"view_type": 0,
-"x_rotation": 0.5,
-"y_rotation": -0.5
-}, {
-"auto_orthogonal": false,
-"auto_orthogonal_enabled": true,
-"cinematic_preview": false,
-"display_mode": 22,
-"distance": 4.0,
-"doppler": false,
-"frame_time": false,
-"gizmos": true,
-"grid": true,
-"half_res": false,
-"information": false,
-"listener": false,
-"lock_rotation": false,
-"orthogonal": false,
-"position": Vector3(0, 0, 0),
-"transform_gizmo": true,
-"use_environment": false,
-"view_type": 0,
-"x_rotation": 0.5,
-"y_rotation": -0.5
-}, {
-"auto_orthogonal": false,
-"auto_orthogonal_enabled": true,
-"cinematic_preview": false,
-"display_mode": 22,
-"distance": 4.0,
-"doppler": false,
-"frame_time": false,
-"gizmos": true,
-"grid": true,
-"half_res": false,
-"information": false,
-"listener": false,
-"lock_rotation": false,
-"orthogonal": false,
-"position": Vector3(0, 0, 0),
-"transform_gizmo": true,
-"use_environment": false,
-"view_type": 0,
-"x_rotation": 0.5,
-"y_rotation": -0.5
-}],
-"zfar": 4000.01,
-"znear": 0.05
-}
-Anim={
-"visible": false
-}
-selected_nodes=Array[NodePath]([NodePath("/root/@EditorNode@18069/@Panel@14/@VBoxContainer@15/DockHSplitMain/@VBoxContainer@28/DockVSplitCenter/@VSplitContainer@70/@VBoxContainer@71/@EditorMainScreen@125/MainScreen/@CanvasItemEditor@9322/@VSplitContainer@9105/@HSplitContainer@9107/@HSplitContainer@9109/@Control@9110/@SubViewportContainer@9111/@SubViewport@9112/world/player/CollisionShape2D")])
-===== ./.godot/editor/world_camera_world.tscn-folding-e311380c96155eb91e3d6080f207d969.cfg =====
-[folding]
-
-node_unfolds=[NodePath("suelo"), PackedStringArray("tile_set"), NodePath("player/AnimatedSprite2D"), PackedStringArray("Transform")]
-resource_unfolds=["res://world/world_camera_world.tscn::TileSet_ioo17", PackedStringArray(), "res://world/world_camera_world.tscn::SpriteFrames_ioo17", PackedStringArray("Resource"), "res://world/world_camera_world.tscn::RectangleShape2D_ioo17", PackedStringArray()]
-nodes_folded=[NodePath("player/States")]
-===== ./.godot/extension_list.cfg =====
-res://addons/limboai/bin/limboai.gdextension
-===== ./.godot/global_script_class_cache.cfg =====
-list=[{
-"base": &"BTAction",
-"class": &"BTAttackPlayer",
-"icon": "",
-"is_abstract": false,
-"is_tool": true,
-"language": &"GDScript",
-"path": "res://ai/tasks/bt_attack_player.gd"
-}, {
-"base": &"BTAction",
-"class": &"BTChasePlayer",
-"icon": "",
-"is_abstract": false,
-"is_tool": true,
-"language": &"GDScript",
-"path": "res://ai/tasks/bt_chase_player.gd"
-}, {
-"base": &"BTCondition",
-"class": &"BTIsPlayerInAttackRange",
-"icon": "",
-"is_abstract": false,
-"is_tool": true,
-"language": &"GDScript",
-"path": "res://ai/tasks/bt_is_player_in_attack_range.gd"
-}, {
-"base": &"BTCondition",
-"class": &"BTIsPlayerInDetectionRange",
-"icon": "",
-"is_abstract": false,
-"is_tool": true,
-"language": &"GDScript",
-"path": "res://ai/tasks/bt_is_player_in_detection_range.gd"
-}, {
-"base": &"BTAction",
-"class": &"BTPatrol",
-"icon": "",
-"is_abstract": false,
-"is_tool": true,
-"language": &"GDScript",
-"path": "res://ai/tasks/bt_patrol.gd"
-}, {
-"base": &"CharacterBody2D",
-"class": &"Enemy",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://actors/enemy/enemy.gd"
-}, {
-"base": &"Node",
-"class": &"Health",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://demo/agents/scripts/health.gd"
-}, {
-"base": &"Node",
-"class": &"HealthComponent",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://components/health_component.gd"
-}, {
-"base": &"Area2D",
-"class": &"Hitbox",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://demo/agents/scripts/hitbox.gd"
-}, {
-"base": &"Area2D",
-"class": &"HitboxComponent",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://components/hitbox_component.gd"
-}, {
-"base": &"Area2D",
-"class": &"Hurtbox",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://demo/agents/scripts/hurtbox.gd"
-}, {
-"base": &"Area2D",
-"class": &"HurtboxComponent",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://components/hurtbox_component.gd"
-}, {
-"base": &"CharacterBody2D",
-"class": &"Player",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://actors/player/player.gd"
-}, {
-"base": &"Node",
-"class": &"PlayerState",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://actors/player/states/player_state.gd"
-}, {
-"base": &"PlayerState",
-"class": &"StateAttack",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://actors/player/states/state_attack.gd"
-}, {
-"base": &"PlayerState",
-"class": &"StateDead",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://actors/player/states/dead.gd"
-}, {
-"base": &"PlayerState",
-"class": &"StateHurt",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://actors/player/states/state_hurt.gd"
-}, {
-"base": &"PlayerState",
-"class": &"StateIdle",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://actors/player/states/state_idle.gd"
-}, {
-"base": &"PlayerState",
-"class": &"StateWalk",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://actors/player/states/state_walk.gd"
-}]
-===== ./.godot/scene_groups_cache.cfg =====
-[res://demo/agents/player/player.tscn]
-
-groups=[&"player"]
-
-[res://demo/props/dummy.tscn]
-
-groups=[&"player"]
-
-[res://world.tscn]
-
-groups=[&"player"]
 ===== ./actors/enemy/enemy.gd =====
 extends CharacterBody2D
 class_name Enemy
@@ -1199,45 +129,60 @@ children = [SubResource("BTSequence_78x7y"), SubResource("BTSequence_8abap"), Su
 blackboard_plan = SubResource("BlackboardPlan_kfecl")
 root_task = SubResource("BTSelector_6adme")
 ===== ./actors/player/player.gd =====
-class_name Player
 extends CharacterBody2D
+class_name Player
 
+#region VARIABLES Y EXPORTS
 const SPEED: float = 150.0
+#endregion
 
+#region REFERENCIAS A NODOS
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var hitbox: HitboxComponent = $HitboxComponent
 
 var current_state: PlayerState
 var last_direction: Vector2 = Vector2.RIGHT
+#endregion
 
+#region CICLOS DE VIDA
 func _ready() -> void:
 	add_to_group("player")
-	# El hitbox solo se activa durante el ataque
-	hitbox.monitoring = false
+	
+	# Aseguramos que la espada empiece apagada para no hacer daño al chocar
+	if hitbox:
+		hitbox.monitoring = false
+	
+	# Inicializamos tu máquina de estados original
 	current_state = $States/Idle
 	current_state.player = self
 	current_state.enter()
 
+func _physics_process(delta: float) -> void:
+	# Le devolvemos el control a la máquina de estados para que puedas moverte
+	if current_state:
+		current_state.physics_update(delta)
+#endregion
+
+#region MÉTODOS DE CONTROL Y MÁQUINA DE ESTADOS
 func change_state(state_name: String) -> void:
-	current_state.exit()
+	if current_state:
+		current_state.exit()
 	current_state = $States.get_node(state_name)
 	current_state.player = self
 	current_state.enter()
-
-func _physics_process(delta: float) -> void:
-	current_state.physics_update(delta)
 
 func play_animation(anim_name: String, direction: Vector2) -> void:
 	if direction != Vector2.ZERO:
 		last_direction = direction
 	if sprite.animation != anim_name:
 		sprite.play(anim_name)
+	
 	if direction.x < 0:
 		sprite.flip_h = true
 	elif direction.x > 0:
 		sprite.flip_h = false
 
-# Elige la animación de ataque según la última dirección del jugador.
+# Elige la animación de ataque según la última dirección
 func ejecutar_ataque_direccional() -> void:
 	velocity = Vector2.ZERO
 	if last_direction.y < -0.1:
@@ -1246,6 +191,7 @@ func ejecutar_ataque_direccional() -> void:
 		play_animation("attack_down", Vector2.ZERO)
 	else:
 		play_animation("attack", Vector2.ZERO)
+#endregion
 ===== ./actors/player/states/dead.gd =====
 class_name StateDead
 extends PlayerState
@@ -1274,26 +220,36 @@ func update(_delta: float) -> void:
 func physics_update(_delta: float) -> void:
 	pass	
 ===== ./actors/player/states/state_attack.gd =====
-class_name StateAttack
-extends PlayerState
+extends PlayerState # O la clase que uses como base para tus estados
 
-const ATTACK_RANGE: float = 60.0
+#region REFERENCIAS
+# Asegurate de que player.hitbox apunte a tu nodo HitboxComponent
+#endregion
 
 func enter() -> void:
+	# 1. Ejecutamos la animación de ataque
 	player.ejecutar_ataque_direccional()
-	_deal_damage_to_nearby_enemies()
-
-func _deal_damage_to_nearby_enemies() -> void:
-	for e: Node in player.get_tree().get_nodes_in_group("enemy"):
-		var enemy: Enemy = e as Enemy
-		if not enemy:
-			continue
-		if player.global_position.distance_to(enemy.global_position) <= ATTACK_RANGE:
-			enemy.take_hit(10.0)
+	
+	# 2. ACTIVAMOS la Hitbox solo al empezar el ataque
+	if player.hitbox:
+		player.hitbox.monitoring = true
+		# Si usas collision shape, podrías necesitar: 
+		# player.hitbox.get_node("CollisionShape2D").disabled = false
 
 func physics_update(_delta: float) -> void:
+	# Mantenemos al jugador quieto mientras ataca
+	player.velocity = Vector2.ZERO
+	
+	# Cuando la animación termina, volvemos a Idle
 	if not player.sprite.is_playing():
 		player.change_state("Idle")
+
+func exit() -> void:
+	# 3. DESACTIVAMOS la Hitbox al terminar el ataque
+	if player.hitbox:
+		player.hitbox.monitoring = false
+		# Si usas collision shape, podrías necesitar:
+		# player.hitbox.get_node("CollisionShape2D").disabled = true
 ===== ./actors/player/states/state_hurt.gd =====
 class_name StateHurt
 extends PlayerState
@@ -1469,15 +425,12 @@ class_name HurtboxComponent
 @onready var health_component: HealthComponent = $"../HealthComponent"
 
 func _ready() -> void:
+	# Conectamos la señal para detectar cuando entra un ataque
 	area_entered.connect(_on_area_entered)
 
 func _on_area_entered(area: Area2D) -> void:
-	# 1. Validamos que lo que entró sea una HitboxComponent
+	# Si lo que entró es una Hitbox, le mandamos el daño al componente de vida
 	if area is HitboxComponent:
-		# 2. ¡Clave! Si la hitbox del jugador está desactivada o no está atacando, no hacemos nada
-		if area.monitoring == false or area.monitorable == false:
-			return
-			
 		if health_component:
 			health_component.take_damage(area.damage)
 ===== ./demo/agents/01_agent_melee_simple.tscn =====
@@ -22235,7 +21188,7 @@ script = ExtResource("1_f3sb7")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player" unique_id=407095699]
 scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_ioo17")
-animation = &"idle"
+animation = &"dead"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player" unique_id=2091782850]

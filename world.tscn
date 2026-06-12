@@ -3405,7 +3405,7 @@ script = ExtResource("1_f3sb7")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player" unique_id=407095699]
 scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_ioo17")
-animation = &"dead"
+animation = &"idle"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player" unique_id=2091782850]
@@ -3433,6 +3433,7 @@ script = ExtResource("7_k3n1d")
 zoom = Vector2(1.25, 1.25)
 
 [node name="HitboxComponent" type="Area2D" parent="player" unique_id=531925347]
+monitoring = false
 script = ExtResource("14_udxuc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player/HitboxComponent" unique_id=1214806749]
