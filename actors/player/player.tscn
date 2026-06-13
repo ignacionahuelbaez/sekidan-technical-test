@@ -3072,6 +3072,4 @@ script = ExtResource("16_yeioo")
 [node name="Dead" type="Node" parent="Player/States" unique_id=217689961]
 script = ExtResource("17_qct7d")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1373250225]
-zoom = Vector2(2.3, 2.3)
-position_smoothing_enabled = true
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=204525398]
