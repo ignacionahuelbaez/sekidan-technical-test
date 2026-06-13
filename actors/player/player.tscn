@@ -19,6 +19,11 @@
 [ext_resource type="Script" uid="uid://c0b34pnu30c5y" path="res://actors/player/dead.gd" id="17_qct7d"]
 [ext_resource type="Script" uid="uid://qeg4otmoduwu" path="res://actors/player/enemy.gd" id="18_dqf5y"]
 [ext_resource type="Texture2D" uid="uid://br3w4r2pueq3i" path="res://assets/Torch_Red.png" id="19_otn2r"]
+[ext_resource type="Script" uid="uid://buhug1vc0n5cw" path="res://actors/enemy/patrol.gd" id="20_otn2r"]
+[ext_resource type="Script" uid="uid://d2nirv6rme047" path="res://actors/enemy/chase.gd" id="21_nsxbo"]
+[ext_resource type="Script" uid="uid://bbg64r70s8rxk" path="res://actors/enemy/attack.gd" id="22_yeioo"]
+[ext_resource type="Script" uid="uid://djswqs56nsosi" path="res://actors/enemy/hurt.gd" id="23_qct7d"]
+[ext_resource type="Script" uid="uid://crjhnejlw4bia" path="res://actors/enemy/dead.gd" id="24_2vokq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cbp6q"]
 texture = ExtResource("2_6p1w3")
@@ -2957,7 +2962,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0wchr"]
-size = Vector2(65, 33)
+size = Vector2(44, 33)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mofx2"]
 size = Vector2(177, 20)
@@ -3208,7 +3213,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_a5dn5")
 }],
 "loop": true,
-"name": &"ilde",
+"name": &"idle",
 "speed": 10.0
 }, {
 "frames": [{
@@ -3278,11 +3283,11 @@ script = ExtResource("5_bop6h")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player" unique_id=1993059267]
 sprite_frames = SubResource("SpriteFrames_rswtf")
-animation = &"attack_1"
+animation = &"idle"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=262489929]
-position = Vector2(-0.5, 20.5)
+position = Vector2(-1, 20.5)
 shape = SubResource("RectangleShape2D_0wchr")
 
 [node name="HealthComponent" type="Node" parent="Player" unique_id=1319122371]
@@ -3341,8 +3346,8 @@ script = ExtResource("18_dqf5y")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Enemy" unique_id=1960957662]
 sprite_frames = SubResource("SpriteFrames_l5cr7")
-animation = &"ilde"
-autoplay = "ilde"
+animation = &"idle"
+autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy" unique_id=1520709525]
 
@@ -3369,11 +3374,16 @@ metadata/_custom_type_script = "uid://cyd2rrttw41nd"
 [node name="States" type="Node" parent="Enemy" unique_id=401241248]
 
 [node name="Patrol" type="Node" parent="Enemy/States" unique_id=348009819]
+script = ExtResource("20_otn2r")
 
 [node name="Chase" type="Node" parent="Enemy/States" unique_id=201240136]
+script = ExtResource("21_nsxbo")
 
 [node name="Attack" type="Node" parent="Enemy/States" unique_id=912886581]
+script = ExtResource("22_yeioo")
 
 [node name="Hurt" type="Node" parent="Enemy/States" unique_id=2121519207]
+script = ExtResource("23_qct7d")
 
 [node name="Dead" type="Node" parent="Enemy/States" unique_id=1071631022]
+script = ExtResource("24_2vokq")

@@ -41,7 +41,7 @@ func physics_update(_delta: float) -> void:
 func _on_frame_changed() -> void:
 	var current_frame: int = player.sprite.frame
 	var total_frames: int = player.sprite.sprite_frames.get_frame_count(player.sprite.animation)
-	var impact_frame: int = total_frames / 2
+	var impact_frame: int = int(total_frames / 2.0)
 
 	if current_frame == impact_frame:
 		player.hitbox_component.monitoring = true
