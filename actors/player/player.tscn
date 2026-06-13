@@ -3018,7 +3018,7 @@ script = ExtResource("5_bop6h")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player" unique_id=1993059267]
 sprite_frames = SubResource("SpriteFrames_rswtf")
-animation = &"attack_1"
+animation = &"idle"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=262489929]
@@ -3072,6 +3072,6 @@ script = ExtResource("16_yeioo")
 [node name="Dead" type="Node" parent="Player/States" unique_id=217689961]
 script = ExtResource("17_qct7d")
 
-[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1373250225]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1373250225]
 zoom = Vector2(2.3, 2.3)
 position_smoothing_enabled = true
