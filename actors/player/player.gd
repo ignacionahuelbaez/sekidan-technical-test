@@ -6,6 +6,7 @@ const SPEED: float = 150.0
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var hitbox: HitboxComponent = $HitboxComponent
 @onready var hitbox_shape: CollisionShape2D = $HitboxComponent/CollisionShape2D
+@onready var health_component: HealthComponent = $HealthComponent
 
 var current_state: PlayerState
 var last_direction: Vector2 = Vector2.RIGHT
@@ -21,6 +22,9 @@ func _ready() -> void:
 	current_state = $States/Idle
 	current_state.player = self
 	current_state.enter()
+
+	health_component.health_changed.connect(_on_health_changed)
+	health_component.health_depleted.connect(_on_death)
 
 func _physics_process(delta: float) -> void:
 	if current_state:
@@ -53,3 +57,13 @@ func ejecutar_ataque_direccional() -> void:
 		play_animation("attack_down", Vector2.ZERO)
 	else:
 		play_animation("attack", Vector2.ZERO)
+
+# Reacciona a daño no letal con el estado Hurt.
+# Si el golpe fue letal, _on_death se encarga de la transición a Dead.
+func _on_health_changed(current_health: int) -> void:
+	if current_health <= 0:
+		return
+	change_state("Hurt")
+
+func _on_death() -> void:
+	change_state("Dead")	

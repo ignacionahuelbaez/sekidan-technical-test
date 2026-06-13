@@ -21,13 +21,16 @@ var is_hurting: bool = false
 
 #region CICLOS DE VIDA
 func _ready() -> void:
-	# Conexión segura de las señales del HealthComponent
+	# El hitbox de ataque arranca apagado. Solo se activa durante
+	# la ventana de impacto definida en bt_attack_player.gd.
+	if hitbox_collision:
+		hitbox_collision.disabled = true
+
 	if health_component:
 		health_component.health_changed.connect(_on_health_changed)
-		health_component.death.connect(_on_death)
+		health_component.health_depleted.connect(_on_death)
 
 func _physics_process(_delta: float) -> void:
-	# Si está muerto, congelamos todo por completo y NO dejamos que la IA haga nada
 	if is_dead:
 		velocity = Vector2.ZERO
 		if animated_sprite and animated_sprite.animation != "dead":
@@ -49,14 +52,11 @@ func _on_health_changed(current_health: int) -> void:
 	is_hurting = true
 	
 	if animated_sprite:
-		# Pintamos el sprite de un color rojo intenso brillante
 		animated_sprite.modulate = Color(5.0, 0.3, 0.3, 1.0)
 		
-		# Hacemos un Tween rápido de 0.1 segundos para que regrese a su color original
 		var tween = create_tween()
 		tween.tween_property(animated_sprite, "modulate", Color.WHITE, 0.1)
 		
-		# Al finalizar el flash de daño, permitimos que el enemigo vuelva a moverse
 		tween.finished.connect(func(): is_hurting = false)
 #endregion
 
@@ -66,12 +66,9 @@ func _on_death() -> void:
 		return
 	is_dead = true
 	
-	# Desactivamos por completo el árbol de comportamiento de LimboAI
 	if bt_player:
 		bt_player.set_active(false)
 	
-	# Desactivamos de forma diferida todas las colisiones físicas y de combate
-	# Esto asegura que deje de interactuar con el jugador y sea transitable inmediatamente
 	if body_collision:
 		body_collision.set_deferred("disabled", true)
 	if hurtbox_collision:
@@ -79,7 +76,6 @@ func _on_death() -> void:
 	if hitbox_collision:
 		hitbox_collision.set_deferred("disabled", true)
 		
-	# Forzamos la reproducción inicial de la animación "dead"
 	if animated_sprite and animated_sprite.sprite_frames.has_animation("dead"):
 		animated_sprite.play("dead")
 #endregion

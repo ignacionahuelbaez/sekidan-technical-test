@@ -79,22 +79,22 @@ sections_unfolded=PackedStringArray()
 
 dock_floating={}
 dock_closed=[]
-dock_split_2=75
+dock_split_2=185
 dock_split_3=0
 dock_hsplit_1=0
-dock_hsplit_2=216
-dock_hsplit_3=-353
+dock_hsplit_2=349
+dock_hsplit_3=-220
 dock_hsplit_4=0
 dock_split_1=0
 dock_split_4=0
 dock_3_selected_tab_idx=0
 dock_4_selected_tab_idx=0
 dock_5_selected_tab_idx=0
-dock_9_selected_tab_idx=0
+dock_9_selected_tab_idx=6
 dock_3="Scene,Import"
 dock_4="FileSystem,History"
 dock_5="Inspector,Signals,Groups"
-dock_9="Output,Debugger,Audio,Animation,Shader Editor,Search Results,AnimationTree,ResourcePreloader,ShaderFile,SpriteFrames,Theme,Polygon,TileSet,TileMap,Replication,GridMap"
+dock_9="Output,Debugger,Audio,Animation,Shader Editor,TileSet,TileMap,Search Results,AnimationTree,ResourcePreloader,ShaderFile,SpriteFrames,Theme,Polygon,Replication,GridMap"
 
 [docks/FileSystem]
 
@@ -138,7 +138,7 @@ position=Vector2i(0, 23)
 [ScriptEditor]
 
 open_scripts=["res://attack_trail.gd", "res://ai/tasks/bt_attack_player.gd", "res://ai/tasks/bt_chase_player.gd", "res://ai/tasks/bt_is_player_in_attack_range.gd", "res://ai/tasks/bt_is_player_in_detection_range.gd", "res://ai/tasks/bt_patrol.gd", "res://camera_2d.gd", "res://actors/player/states/dead.gd", "res://actors/enemy/enemy.gd", "res://components/health_component.gd", "res://components/hitbox_component.gd", "res://components/hurtbox_component.gd", "res://actors/player/player.gd", "res://actors/player/states/player_state.gd", "res://actors/player/states/state_attack.gd", "res://actors/player/states/state_hurt.gd", "res://actors/player/states/state_idle.gd", "res://actors/player/states/state_walk.gd"]
-selected_script="res://camera_2d.gd"
+selected_script="res://ai/tasks/bt_attack_player.gd"
 open_help=["@GlobalScope", "BTSequence", "CompressedTexture2D", "float", "GDScript", "Sprite2D"]
 script_split_offset=366
 list_split_offset=172
@@ -425,10 +425,10 @@ state={
 state={
 "bookmarks": PackedInt32Array(),
 "breakpoints": PackedInt32Array(),
-"column": 15,
+"column": 37,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 16,
+"row": 10,
 "scroll_position": 0.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
@@ -456,8 +456,8 @@ state={
 "column": 15,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 16,
-"scroll_position": 2.0,
+"row": 19,
+"scroll_position": 5.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -467,11 +467,11 @@ state={
 state={
 "bookmarks": PackedInt32Array(),
 "breakpoints": PackedInt32Array(),
-"column": 5,
+"column": 15,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 0,
-"scroll_position": 0.0,
+"row": 20,
+"scroll_position": 5.705882352941176,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -526,8 +526,8 @@ state={
 "column": 17,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 44,
-"scroll_position": 29.0,
+"row": 22,
+"scroll_position": 4.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -1467,13 +1467,16 @@ const SPEED: float = 80.0
 func _tick(_delta: float) -> Status:
 	var player: Node2D = agent.get_tree().get_first_node_in_group("player") as Node2D
 	var animated_sprite: AnimatedSprite2D = agent.get_node("AnimatedSprite2D") as AnimatedSprite2D
+
 	if not is_instance_valid(player):
 		return FAILURE
+
 	var direction: Vector2 = (player.global_position - agent.global_position).normalized()
 	(agent as CharacterBody2D).velocity = direction * SPEED
-	(agent as CharacterBody2D).move_and_slide()
+
+	# NO move_and_slide() aquí — lo hace enemy.gd en _physics_process
 	animated_sprite.play("walk")
-	animated_sprite.flip_h = direction.x < 0
+	animated_sprite.flip_h = direction.x < 0.0
 	return RUNNING
 ===== ./ai/tasks/bt_is_player_in_attack_range.gd =====
 @tool
