@@ -1,1661 +1,7 @@
-===== ./.godot/editor/01_agent_melee_simple.tres-folding-e0ddfd3e9fd883f90209f481d84b6cf4.cfg =====
-[folding]
 
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/02_agent_charger.tres-folding-b4f5c218b21cce3875d1a64b63761e4e.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/03_agent_imp.tres-folding-374aafde95dd6540cdf807a28cea664c.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/04_agent_skirmisher.tres-folding-d25cb3c8d1ead02e9576853af2c751ac.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/05_agent_ranged.tres-folding-f4d7a67624824978bcdf9485db113761.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/06_agent_melee_combo.tres-folding-824d200cfaff07176f44b98c79e6c759.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/07_agent_melee_nuanced.tres-folding-032c9435cb4d3d5116f377205bb0d49c.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/08_agent_demon.tres-folding-99b5b1af6a5208c13fd1cb5bd27e11ad.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/09_agent_summoner.tres-folding-22d16967927a59b03c295e33f67151ca.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/attack_trail.gd-folding-39a72662a2b0986951f941a0e4dc433b.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/bt_attack_player.gd-folding-5685199b8ec36d33cdd63ee7650c6e65.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/bt_attack_player.gd-folding-ee43f5ccc7ae57c4c7fe348f193e7f0d.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/bt_chase_player.gd-folding-a05338eaba6a86d5d81c27482eda63ad.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/bt_is_player_in_attack_range.gd-folding-3e196f7350dda9fb985df3e0ac348aff.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/bt_is_player_in_detection_range.gd-folding-1c2b7b0caf48fce547a1cb962f92c9aa.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/bt_is_player_in_detection_range.gd-folding-3d173b0ceded8ab70bbacf310f45d37f.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/bt_patrol.gd-folding-b4c9d08ff594e3d1ca7ff8feadaed7a6.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/camera_2d.gd-folding-39052f56b5c90500d7d6e1c68a418bbc.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/dead.gd-folding-468e536b1df7e7d95456e1333e192bb0.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/editor_layout.cfg =====
-[docks]
-
-dock_floating={}
-dock_closed=[]
-dock_split_2=185
-dock_split_3=0
-dock_hsplit_1=0
-dock_hsplit_2=349
-dock_hsplit_3=-220
-dock_hsplit_4=0
-dock_split_1=0
-dock_split_4=0
-dock_3_selected_tab_idx=0
-dock_4_selected_tab_idx=0
-dock_5_selected_tab_idx=0
-dock_9_selected_tab_idx=6
-dock_3="Scene,Import"
-dock_4="FileSystem,History"
-dock_5="Inspector,Signals,Groups"
-dock_9="Output,Debugger,Audio,Animation,Shader Editor,TileSet,TileMap,Search Results,AnimationTree,ResourcePreloader,ShaderFile,SpriteFrames,Theme,Polygon,Replication,GridMap"
-
-[docks/FileSystem]
-
-h_split_offset=240
-v_split_offset=0
-display_mode=0
-file_sort=0
-file_list_display_mode=1
-selected_paths=PackedStringArray()
-uncollapsed_paths=PackedStringArray("Favorites", "res://", "res://assets/", "res://actors/", "res://actors/player/")
-
-[docks/History]
-
-include_scene=true
-include_global=true
-
-[EditorNode]
-
-open_scenes=PackedStringArray("res://world.tscn")
-current_scene="res://world.tscn"
-bottom_panel_offsets={
-"Animation": 0,
-"Audio": -450,
-"Debugger": -286,
-"FileSystem": 0,
-"Output": -270,
-"Shader Editor": 0,
-"SpriteFrames": -346,
-"TileMap": -246,
-"TileSet": -246
-}
-selected_default_debugger_tab_idx=0
-selected_main_editor_idx=2
-
-[EditorWindow]
-
-screen=0
-mode="maximized"
-position=Vector2i(0, 23)
-
-[ScriptEditor]
-
-open_scripts=["res://attack_trail.gd", "res://ai/tasks/bt_attack_player.gd", "res://ai/tasks/bt_chase_player.gd", "res://ai/tasks/bt_is_player_in_attack_range.gd", "res://ai/tasks/bt_is_player_in_detection_range.gd", "res://ai/tasks/bt_patrol.gd", "res://camera_2d.gd", "res://actors/player/states/dead.gd", "res://actors/enemy/enemy.gd", "res://components/health_component.gd", "res://components/hitbox_component.gd", "res://components/hurtbox_component.gd", "res://actors/player/player.gd", "res://actors/player/states/player_state.gd", "res://actors/player/states/state_attack.gd", "res://actors/player/states/state_hurt.gd", "res://actors/player/states/state_idle.gd", "res://actors/player/states/state_walk.gd"]
-selected_script="res://ai/tasks/bt_attack_player.gd"
-open_help=["@GlobalScope", "BTSequence", "CompressedTexture2D", "float", "GDScript", "Sprite2D"]
-script_split_offset=366
-list_split_offset=172
-zoom_factor=0.61637574
-
-[GameView]
-
-floating_window_rect=Rect2i(0, 0, 0, 0)
-floating_window_screen=-1
-
-[ShaderEditor]
-
-open_shaders=[]
-split_offset=200
-selected_shader=""
-text_shader_zoom_factor=1.0
-
-[editor_log]
-
-log_filter_0=false
-log_filter_2=false
-log_filter_1=true
-log_filter_3=true
-log_filter_4=true
-collapse=false
-show_search=true
-
-[LimboAI]
-
-bteditor_open_bts=["res://actors/enemy/enemy_bt.tres"]
-bteditor_hsplit=320
-debugger_update_interval_msec=0.0
-task_palette_collapsed_sections=[]
-task_palette_type_filter=0
-task_palette_category_filter=0
-task_palette_excluded_categories=[]
-===== ./.godot/editor/editor_script_doc_cache.res-folding-a7de57390d6e786984ca20c70a831128.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/enemy.gd-folding-330a1fc7dbbe1bf2c9ebea044ae04277.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/enemy.gd-folding-c2b91af855b245b7be2f6c516102bfa0.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/enemy_bt.tres-folding-f61e8f0af8641addd4f48055837a141b.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/health_component.gd-folding-ba322cbcf0235eacd9510545dee3eeed.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/health_component.gd.gd-folding-fd593691962c9808ef94d6bc1be6619d.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/hitbox_component.gd-folding-076c6a6ce040d17aa5ecd5d6fc9720d2.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/hurtbox_component.gd-folding-f7a994ae4b3a396d7c465d2ee6f0c6df.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/junction_bold.otf-4db2200a8b1a6423bafe2a4e7c7abbde.fontdata-folding-79b209da806865ee79fdeb830379d83a.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/knewave_regular.ttf-955953b059f713782c7b07e66ab341ec.fontdata-folding-c14df330dbe0e3999dd0a8c114722fb5.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/player.gd-folding-cc2eaac76e686d02696a581348609283.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/player_state.gd-folding-140ce63fa85e2d802470c87d96795871.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/project_metadata.cfg =====
-[game_view]
-
-select_mode=0
-
-[editor_metadata]
-
-executable_path="C:/Users/ignac/OneDrive/Escritorio/apps de proyecto/Godot_v4.6.3-stable_win64.exe/Godot_v4.6.3-stable_win64.exe"
-
-[dialog_bounds]
-
-create_new_node=Rect2(233, 77, 900, 614)
-project_settings=Rect2(137, 77, 1092, 614)
-editor_settings=Rect2(233, 77, 900, 614)
-
-[recent_files]
-
-scenes=["res://world.tscn", "res://world/world_camera_world.tscn"]
-scripts=["res://attack_trail.gd", "res://camera_2d.gd", "float", "Sprite2D", "GDScript", "CompressedTexture2D", "BTSequence", "@GlobalScope", "res://actors/enemy/enemy.gd", "res://ai/tasks/bt_patrol.gd"]
-
-[script_setup]
-
-last_selected_language="GDScript"
-create_built_in_script=false
-
-[quick_open_dialog]
-
-last_mode=1
-
-[project_settings]
-
-show_builtin_actions=true
-
-[color_picker]
-
-picker_shape=3
-recent_presets=PackedColorArray(1, 1, 0.34509805, 1, 1, 0.8784314, 0.4, 1)
-
-[debug_options]
-
-run_debug_collisions=true
-
-[files_panel]
-
-show_files_panel=true
-===== ./.godot/editor/quick_open_dialog_cache.cfg =====
-[selected_history]
-
-PackedScene=PackedStringArray("uid://cw5xjm18x47gc")
-BehaviorTree=PackedStringArray("uid://bmndwsqukjyf5")
-Texture2D=PackedStringArray("uid://d2wh2iuvncv3q")
-Script=PackedStringArray("uid://dxj6i1lnitkd1")
-===== ./.godot/editor/script_editor_cache.cfg =====
-[res://actors/player/player.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 40,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 54,
-"scroll_position": 26.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://actors/player/states/player_state.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 6,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 17,
-"scroll_position": 3.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://actors/player/states/state_idle.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 29,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 12,
-"scroll_position": 1.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://actors/player/states/state_walk.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 25,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 13,
-"scroll_position": 0.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://actors/player/states/state_attack.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 52,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 42,
-"scroll_position": 28.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://actors/player/states/state_hurt.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 28,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 18,
-"scroll_position": 0.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://components/hitbox_component.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 19,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 8,
-"scroll_position": 0.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://components/health_component.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 14,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 25,
-"scroll_position": 10.705882352941176,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://components/hurtbox_component.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 44,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 13,
-"scroll_position": 0.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://ai/tasks/bt_is_player_in_attack_range.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 0,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 11,
-"scroll_position": 0.0,
-"selection": true,
-"selection_from_column": 0,
-"selection_from_line": 0,
-"selection_to_column": 0,
-"selection_to_line": 11,
-"syntax_highlighter": "GDScript"
-}
-
-[res://ai/tasks/bt_attack_player.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 37,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 10,
-"scroll_position": 0.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://ai/tasks/bt_is_player_in_detection_range.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 108,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 291,
-"row": 10,
-"scroll_position": 0.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://ai/tasks/bt_chase_player.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 15,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 19,
-"scroll_position": 5.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://ai/tasks/bt_patrol.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 15,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 20,
-"scroll_position": 5.705882352941176,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://actors/enemy/enemy.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 10,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 84,
-"scroll_position": 56.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://actors/player/states/dead.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 34,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 6,
-"scroll_position": 0.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://camera_2d.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 91,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 198,
-"row": 53,
-"scroll_position": 38.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-
-[res://attack_trail.gd]
-
-state={
-"bookmarks": PackedInt32Array(),
-"breakpoints": PackedInt32Array(),
-"column": 17,
-"folded_lines": PackedInt32Array(),
-"h_scroll_position": 0,
-"row": 22,
-"scroll_position": 4.0,
-"selection": false,
-"syntax_highlighter": "GDScript"
-}
-===== ./.godot/editor/state_attack.gd-folding-6f0d5a18f6d4bdfe45e5b5e4f028d7ac.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/state_dead.gd-folding-ae29045062280b98a843078f008ada30.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/state_hurt.gd-folding-b3b786bcdedf6384287182c3f1a6f700.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/state_idle.gd-folding-40be20ce23a54bd0565d47e96f6f72ce.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/state_walk.gd-folding-1c4f34ed66cd0506d52bc933082bb0df.cfg =====
-[folding]
-
-sections_unfolded=PackedStringArray()
-===== ./.godot/editor/world.tscn-editstate-76e0adcbc83681695885bae615f516ae.cfg =====
-[editor_states]
-
-2D={
-"grid_offset": Vector2(0, 0),
-"grid_snap_active": false,
-"grid_step": Vector2(8, 8),
-"grid_visibility": 1,
-"ofs": Vector2(-678.62213, -101.88816),
-"primary_grid_step": Vector2i(8, 8),
-"show_group_gizmos": true,
-"show_guides": true,
-"show_helpers": false,
-"show_lock_gizmos": true,
-"show_origin": true,
-"show_position_gizmos": true,
-"show_rulers": true,
-"show_transformation_gizmos": true,
-"show_viewport": true,
-"show_zoom_control": true,
-"smart_snap_active": false,
-"snap_guides": true,
-"snap_node_anchors": true,
-"snap_node_center": true,
-"snap_node_parent": true,
-"snap_node_sides": true,
-"snap_other_nodes": true,
-"snap_pixel": true,
-"snap_relative": false,
-"snap_rotation": false,
-"snap_rotation_offset": 0.0,
-"snap_rotation_step": 0.2617994,
-"snap_scale": false,
-"snap_scale_step": 0.1,
-"zoom": 5.5599194
-}
-3D={
-"fov": 70.01,
-"gizmos_status": {
-"AudioListener3D": 0,
-"AudioStreamPlayer3D": 0,
-"CPUParticles3D": 0,
-"CSGShape3D": 0,
-"Camera3D": 0,
-"ChainIK3D": 0,
-"CollisionObject3D": 0,
-"CollisionPolygon3D": 0,
-"CollisionShape3D": 0,
-"Decal": 0,
-"FogVolume": 0,
-"GPUParticles3D": 0,
-"GPUParticlesCollision3D": 0,
-"Joint3D": 0,
-"Light3D": 0,
-"LightmapGI": 0,
-"LightmapProbe": 0,
-"Marker3D": 0,
-"MeshInstance3DCustomAABB": 0,
-"NavigationLink3D": 0,
-"NavigationObstacle3D": 0,
-"NavigationRegion3D": 0,
-"OccluderInstance3D": 0,
-"Particles3DEmissionShape": 0,
-"Path3D": 0,
-"PhysicalBone3D": 0,
-"RayCast3D": 0,
-"ReflectionProbe": 0,
-"ShapeCast3D": 0,
-"Skeleton3D": 0,
-"SoftBody3D": 0,
-"SpringArm3D": 0,
-"SpringBoneCollision3D": 0,
-"SpringBoneSimulator3D": 0,
-"TwoBoneIK3D": 0,
-"VehicleWheel3D": 0,
-"VisibleOnScreenNotifier3D": 0,
-"VoxelGI": 0
-},
-"local_coords": false,
-"preview_sun_env": {
-"environ_ao_enabled": false,
-"environ_enabled": true,
-"environ_energy": 1.0,
-"environ_gi_enabled": false,
-"environ_glow_enabled": true,
-"environ_ground_color": Color(0.2, 0.169, 0.133, 1),
-"environ_sky_color": Color(0.385, 0.454, 0.55, 1),
-"environ_tonemap_enabled": true,
-"sun_color": Color(1, 1, 1, 1),
-"sun_enabled": true,
-"sun_energy": 1.0,
-"sun_rotation": Vector2(-1.0471976, 2.6179938),
-"sun_shadow_max_distance": 100.0
-},
-"rotate_snap": 15.0,
-"scale_snap": 10.0,
-"show_grid": true,
-"show_origin": true,
-"snap_enabled": false,
-"translate_snap": 1.0,
-"viewport_mode": 1,
-"viewports": [{
-"auto_orthogonal": false,
-"auto_orthogonal_enabled": true,
-"cinematic_preview": false,
-"display_mode": 22,
-"distance": 4.0,
-"doppler": false,
-"frame_time": false,
-"gizmos": true,
-"grid": true,
-"half_res": false,
-"information": false,
-"listener": true,
-"lock_rotation": false,
-"orthogonal": false,
-"position": Vector3(0, 0, 0),
-"transform_gizmo": true,
-"use_environment": false,
-"view_type": 0,
-"x_rotation": 0.5,
-"y_rotation": -0.5
-}, {
-"auto_orthogonal": false,
-"auto_orthogonal_enabled": true,
-"cinematic_preview": false,
-"display_mode": 22,
-"distance": 4.0,
-"doppler": false,
-"frame_time": false,
-"gizmos": true,
-"grid": true,
-"half_res": false,
-"information": false,
-"listener": false,
-"lock_rotation": false,
-"orthogonal": false,
-"position": Vector3(0, 0, 0),
-"transform_gizmo": true,
-"use_environment": false,
-"view_type": 0,
-"x_rotation": 0.5,
-"y_rotation": -0.5
-}, {
-"auto_orthogonal": false,
-"auto_orthogonal_enabled": true,
-"cinematic_preview": false,
-"display_mode": 22,
-"distance": 4.0,
-"doppler": false,
-"frame_time": false,
-"gizmos": true,
-"grid": true,
-"half_res": false,
-"information": false,
-"listener": false,
-"lock_rotation": false,
-"orthogonal": false,
-"position": Vector3(0, 0, 0),
-"transform_gizmo": true,
-"use_environment": false,
-"view_type": 0,
-"x_rotation": 0.5,
-"y_rotation": -0.5
-}, {
-"auto_orthogonal": false,
-"auto_orthogonal_enabled": true,
-"cinematic_preview": false,
-"display_mode": 22,
-"distance": 4.0,
-"doppler": false,
-"frame_time": false,
-"gizmos": true,
-"grid": true,
-"half_res": false,
-"information": false,
-"listener": false,
-"lock_rotation": false,
-"orthogonal": false,
-"position": Vector3(0, 0, 0),
-"transform_gizmo": true,
-"use_environment": false,
-"view_type": 0,
-"x_rotation": 0.5,
-"y_rotation": -0.5
-}],
-"zfar": 4000.01,
-"znear": 0.05
-}
-Anim={
-"visible": false
-}
-selected_nodes=Array[NodePath]([NodePath("/root/@EditorNode@18724/@Panel@14/@VBoxContainer@15/DockHSplitMain/@VBoxContainer@28/DockVSplitCenter/@VSplitContainer@70/@VBoxContainer@71/@EditorMainScreen@125/MainScreen/@CanvasItemEditor@9322/@VSplitContainer@9105/@HSplitContainer@9107/@HSplitContainer@9109/@Control@9110/@SubViewportContainer@9111/@SubViewport@9112/world/player/HitboxComponent/AttackTrail")])
-===== ./.godot/editor/world.tscn-folding-76e0adcbc83681695885bae615f516ae.cfg =====
-[folding]
-
-node_unfolds=[NodePath("map/suelo"), PackedStringArray("tile_set", "Transform"), NodePath("map/cesped_suelo"), PackedStringArray("Transform"), NodePath("player"), PackedStringArray("Transform"), NodePath("player/AnimatedSprite2D"), PackedStringArray("Transform", "Offset"), NodePath("player/CollisionShape2D"), PackedStringArray("Visibility"), NodePath("player/HitboxComponent"), PackedStringArray("Collision"), NodePath("player/HitboxComponent/CollisionShape2D"), PackedStringArray("Visibility"), NodePath("player/HitboxComponent/AttackTrail"), PackedStringArray("Process Material", "process_material", "Trails", "Time", "Drawing"), NodePath("Enemy"), PackedStringArray("Transform"), NodePath("Enemy/DetectionArea"), PackedStringArray("Collision"), NodePath("Enemy/HitboxComponent"), PackedStringArray("Gravity"), NodePath("Enemy/AnimatedSprite2D"), PackedStringArray("Offset", "Transform"), NodePath("Enemy/HurtboxComponent"), PackedStringArray("Collision"), NodePath("Enemy/HurtboxComponent/CollisionShape2D"), PackedStringArray("Transform"), NodePath("Colisiones_map"), PackedStringArray("Navigation", "tile_set", "Physics")]
-resource_unfolds=["res://world.tscn::TileSet_bc84e", PackedStringArray(), "res://world.tscn::TileSet_cbp6q", PackedStringArray(), "res://world.tscn::TileSet_wukud", PackedStringArray(), "res://world.tscn::TileSet_wjb0r", PackedStringArray(), "res://world.tscn::TileSet_il2jm", PackedStringArray(), "res://world.tscn::SpriteFrames_ioo17", PackedStringArray("Resource"), "res://world.tscn::RectangleShape2D_ioo17", PackedStringArray(), "res://world.tscn::RectangleShape2D_il2jm", PackedStringArray(), "res://world.tscn::RectangleShape2D_wukud", PackedStringArray(), "res://world.tscn::ParticleProcessMaterial_bc84e", PackedStringArray("Animated Velocity", "Accelerations/Gravity", "Spawn"), "res://world.tscn::CircleShape2D_cbp6q", PackedStringArray(), "res://world.tscn::RectangleShape2D_26xuy", PackedStringArray(), "res://world.tscn::SpriteFrames_e77ka", PackedStringArray(), "res://world.tscn::BlackboardPlan_udxuc", PackedStringArray(), "res://world.tscn::RectangleShape2D_bc84e", PackedStringArray(), "res://world.tscn::RectangleShape2D_cbp6q", PackedStringArray(), "res://world.tscn::TileSet_mc2jv", PackedStringArray("physics_layer__array")]
-nodes_folded=[NodePath("map"), NodePath("player/HurtboxComponent"), NodePath("player/States"), NodePath("Enemy"), NodePath("Enemy/DetectionArea"), NodePath("Enemy/HitboxComponent")]
-===== ./.godot/editor/world_camera_world.tscn-editstate-e311380c96155eb91e3d6080f207d969.cfg =====
-[editor_states]
-
-2D={
-"grid_offset": Vector2(0, 0),
-"grid_snap_active": false,
-"grid_step": Vector2(8, 8),
-"grid_visibility": 1,
-"ofs": Vector2(-745.96234, -235.19824),
-"primary_grid_step": Vector2i(8, 8),
-"show_group_gizmos": true,
-"show_guides": true,
-"show_helpers": false,
-"show_lock_gizmos": true,
-"show_origin": true,
-"show_position_gizmos": true,
-"show_rulers": true,
-"show_transformation_gizmos": true,
-"show_viewport": true,
-"show_zoom_control": true,
-"smart_snap_active": false,
-"snap_guides": true,
-"snap_node_anchors": true,
-"snap_node_center": true,
-"snap_node_parent": true,
-"snap_node_sides": true,
-"snap_other_nodes": true,
-"snap_pixel": true,
-"snap_relative": false,
-"snap_rotation": false,
-"snap_rotation_offset": 0.0,
-"snap_rotation_step": 0.2617994,
-"snap_scale": false,
-"snap_scale_step": 0.1,
-"zoom": 0.56447387
-}
-3D={
-"fov": 70.01,
-"gizmos_status": {
-"AudioListener3D": 0,
-"AudioStreamPlayer3D": 0,
-"CPUParticles3D": 0,
-"CSGShape3D": 0,
-"Camera3D": 0,
-"ChainIK3D": 0,
-"CollisionObject3D": 0,
-"CollisionPolygon3D": 0,
-"CollisionShape3D": 0,
-"Decal": 0,
-"FogVolume": 0,
-"GPUParticles3D": 0,
-"GPUParticlesCollision3D": 0,
-"Joint3D": 0,
-"Light3D": 0,
-"LightmapGI": 0,
-"LightmapProbe": 0,
-"Marker3D": 0,
-"MeshInstance3DCustomAABB": 0,
-"NavigationLink3D": 0,
-"NavigationObstacle3D": 0,
-"NavigationRegion3D": 0,
-"OccluderInstance3D": 0,
-"Particles3DEmissionShape": 0,
-"Path3D": 0,
-"PhysicalBone3D": 0,
-"RayCast3D": 0,
-"ReflectionProbe": 0,
-"ShapeCast3D": 0,
-"Skeleton3D": 0,
-"SoftBody3D": 0,
-"SpringArm3D": 0,
-"SpringBoneCollision3D": 0,
-"SpringBoneSimulator3D": 0,
-"TwoBoneIK3D": 0,
-"VehicleWheel3D": 0,
-"VisibleOnScreenNotifier3D": 0,
-"VoxelGI": 0
-},
-"local_coords": false,
-"preview_sun_env": {
-"environ_ao_enabled": false,
-"environ_enabled": true,
-"environ_energy": 1.0,
-"environ_gi_enabled": false,
-"environ_glow_enabled": true,
-"environ_ground_color": Color(0.2, 0.169, 0.133, 1),
-"environ_sky_color": Color(0.385, 0.454, 0.55, 1),
-"environ_tonemap_enabled": true,
-"sun_color": Color(1, 1, 1, 1),
-"sun_enabled": true,
-"sun_energy": 1.0,
-"sun_rotation": Vector2(-1.0471976, 2.6179938),
-"sun_shadow_max_distance": 100.0
-},
-"rotate_snap": 15.0,
-"scale_snap": 10.0,
-"show_grid": true,
-"show_origin": true,
-"snap_enabled": false,
-"translate_snap": 1.0,
-"viewport_mode": 1,
-"viewports": [{
-"auto_orthogonal": false,
-"auto_orthogonal_enabled": true,
-"cinematic_preview": false,
-"display_mode": 22,
-"distance": 4.0,
-"doppler": false,
-"frame_time": false,
-"gizmos": true,
-"grid": true,
-"half_res": false,
-"information": false,
-"listener": true,
-"lock_rotation": false,
-"orthogonal": false,
-"position": Vector3(0, 0, 0),
-"transform_gizmo": true,
-"use_environment": false,
-"view_type": 0,
-"x_rotation": 0.5,
-"y_rotation": -0.5
-}, {
-"auto_orthogonal": false,
-"auto_orthogonal_enabled": true,
-"cinematic_preview": false,
-"display_mode": 22,
-"distance": 4.0,
-"doppler": false,
-"frame_time": false,
-"gizmos": true,
-"grid": true,
-"half_res": false,
-"information": false,
-"listener": false,
-"lock_rotation": false,
-"orthogonal": false,
-"position": Vector3(0, 0, 0),
-"transform_gizmo": true,
-"use_environment": false,
-"view_type": 0,
-"x_rotation": 0.5,
-"y_rotation": -0.5
-}, {
-"auto_orthogonal": false,
-"auto_orthogonal_enabled": true,
-"cinematic_preview": false,
-"display_mode": 22,
-"distance": 4.0,
-"doppler": false,
-"frame_time": false,
-"gizmos": true,
-"grid": true,
-"half_res": false,
-"information": false,
-"listener": false,
-"lock_rotation": false,
-"orthogonal": false,
-"position": Vector3(0, 0, 0),
-"transform_gizmo": true,
-"use_environment": false,
-"view_type": 0,
-"x_rotation": 0.5,
-"y_rotation": -0.5
-}, {
-"auto_orthogonal": false,
-"auto_orthogonal_enabled": true,
-"cinematic_preview": false,
-"display_mode": 22,
-"distance": 4.0,
-"doppler": false,
-"frame_time": false,
-"gizmos": true,
-"grid": true,
-"half_res": false,
-"information": false,
-"listener": false,
-"lock_rotation": false,
-"orthogonal": false,
-"position": Vector3(0, 0, 0),
-"transform_gizmo": true,
-"use_environment": false,
-"view_type": 0,
-"x_rotation": 0.5,
-"y_rotation": -0.5
-}],
-"zfar": 4000.01,
-"znear": 0.05
-}
-Anim={
-"visible": false
-}
-selected_nodes=Array[NodePath]([NodePath("/root/@EditorNode@18069/@Panel@14/@VBoxContainer@15/DockHSplitMain/@VBoxContainer@28/DockVSplitCenter/@VSplitContainer@70/@VBoxContainer@71/@EditorMainScreen@125/MainScreen/@CanvasItemEditor@9322/@VSplitContainer@9105/@HSplitContainer@9107/@HSplitContainer@9109/@Control@9110/@SubViewportContainer@9111/@SubViewport@9112/world/player/CollisionShape2D")])
-===== ./.godot/editor/world_camera_world.tscn-folding-e311380c96155eb91e3d6080f207d969.cfg =====
-[folding]
-
-node_unfolds=[NodePath("suelo"), PackedStringArray("tile_set"), NodePath("player/AnimatedSprite2D"), PackedStringArray("Transform")]
-resource_unfolds=["res://world/world_camera_world.tscn::TileSet_ioo17", PackedStringArray(), "res://world/world_camera_world.tscn::SpriteFrames_ioo17", PackedStringArray("Resource"), "res://world/world_camera_world.tscn::RectangleShape2D_ioo17", PackedStringArray()]
-nodes_folded=[NodePath("player/States")]
-===== ./.godot/extension_list.cfg =====
-res://addons/limboai/bin/limboai.gdextension
-===== ./.godot/global_script_class_cache.cfg =====
-list=[{
-"base": &"GPUParticles2D",
-"class": &"AttackTrail",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://attack_trail.gd"
-}, {
-"base": &"BTAction",
-"class": &"BTAttackPlayer",
-"icon": "",
-"is_abstract": false,
-"is_tool": true,
-"language": &"GDScript",
-"path": "res://ai/tasks/bt_attack_player.gd"
-}, {
-"base": &"BTAction",
-"class": &"BTChasePlayer",
-"icon": "",
-"is_abstract": false,
-"is_tool": true,
-"language": &"GDScript",
-"path": "res://ai/tasks/bt_chase_player.gd"
-}, {
-"base": &"BTCondition",
-"class": &"BTIsPlayerInAttackRange",
-"icon": "",
-"is_abstract": false,
-"is_tool": true,
-"language": &"GDScript",
-"path": "res://ai/tasks/bt_is_player_in_attack_range.gd"
-}, {
-"base": &"BTCondition",
-"class": &"BTIsPlayerInDetectionRange",
-"icon": "",
-"is_abstract": false,
-"is_tool": true,
-"language": &"GDScript",
-"path": "res://ai/tasks/bt_is_player_in_detection_range.gd"
-}, {
-"base": &"BTAction",
-"class": &"BTPatrol",
-"icon": "",
-"is_abstract": false,
-"is_tool": true,
-"language": &"GDScript",
-"path": "res://ai/tasks/bt_patrol.gd"
-}, {
-"base": &"Camera2D",
-"class": &"CameraShake",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://camera_2d.gd"
-}, {
-"base": &"CharacterBody2D",
-"class": &"Enemy",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://actors/enemy/enemy.gd"
-}, {
-"base": &"Node",
-"class": &"Health",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://demo/agents/scripts/health.gd"
-}, {
-"base": &"Node",
-"class": &"HealthComponent",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://components/health_component.gd"
-}, {
-"base": &"Area2D",
-"class": &"Hitbox",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://demo/agents/scripts/hitbox.gd"
-}, {
-"base": &"Area2D",
-"class": &"HitboxComponent",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://components/hitbox_component.gd"
-}, {
-"base": &"Area2D",
-"class": &"Hurtbox",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://demo/agents/scripts/hurtbox.gd"
-}, {
-"base": &"Area2D",
-"class": &"HurtboxComponent",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://components/hurtbox_component.gd"
-}, {
-"base": &"CharacterBody2D",
-"class": &"Player",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://actors/player/player.gd"
-}, {
-"base": &"Node",
-"class": &"PlayerState",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://actors/player/states/player_state.gd"
-}, {
-"base": &"PlayerState",
-"class": &"StateAttack",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://actors/player/states/state_attack.gd"
-}, {
-"base": &"PlayerState",
-"class": &"StateDead",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://actors/player/states/dead.gd"
-}, {
-"base": &"PlayerState",
-"class": &"StateHurt",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://actors/player/states/state_hurt.gd"
-}, {
-"base": &"PlayerState",
-"class": &"StateIdle",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://actors/player/states/state_idle.gd"
-}, {
-"base": &"PlayerState",
-"class": &"StateWalk",
-"icon": "",
-"is_abstract": false,
-"is_tool": false,
-"language": &"GDScript",
-"path": "res://actors/player/states/state_walk.gd"
-}]
-===== ./.godot/scene_groups_cache.cfg =====
-[res://demo/agents/player/player.tscn]
-
-groups=[&"player"]
-
-[res://demo/props/dummy.tscn]
-
-groups=[&"player"]
-
-[res://world.tscn]
-
-groups=[&"player"]
-===== ./actors/enemy/enemy.gd =====
-extends CharacterBody2D
-class_name Enemy
-
-#region VARIABLES Y CONFIGURACIÓN
-@export var speed: float = 100.0
-
-var is_dead: bool = false
-var is_hurting: bool = false
-#endregion
-
-#region REFERENCIAS A NODOS (Árbol de Godot)
-@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
-@onready var health_component: HealthComponent = $HealthComponent
-@onready var bt_player: BTPlayer = $BTPlayer # Nodo de IA LimboAI
-
-# Colisiones que se desactivan al morir para liberar el camino
-@onready var body_collision: CollisionShape2D = $CollisionShape2D
-@onready var hurtbox_collision: CollisionShape2D = $HurtboxComponent/CollisionShape2D
-@onready var hitbox_collision: CollisionShape2D = $HitboxComponent/CollisionShape2D
-#endregion
-
-#region CICLOS DE VIDA
-func _ready() -> void:
-	# Conexión segura de las señales del HealthComponent
-	if health_component:
-		health_component.health_changed.connect(_on_health_changed)
-		health_component.death.connect(_on_death)
-
-func _physics_process(_delta: float) -> void:
-	# Si está muerto, congelamos todo por completo y NO dejamos que la IA haga nada
-	if is_dead:
-		velocity = Vector2.ZERO
-		if animated_sprite and animated_sprite.animation != "dead":
-			animated_sprite.play("dead")
-		return
-
-	if is_hurting:
-		velocity = Vector2.ZERO
-		return
-		
-	move_and_slide()
-#endregion
-
-#region REACCIÓN A DAÑO (Flash de Color por Código)
-func _on_health_changed(current_health: int) -> void:
-	if is_dead or current_health <= 0:
-		return
-		
-	is_hurting = true
-	
-	if animated_sprite:
-		# Pintamos el sprite de un color rojo intenso brillante
-		animated_sprite.modulate = Color(5.0, 0.3, 0.3, 1.0)
-		
-		# Hacemos un Tween rápido de 0.1 segundos para que regrese a su color original
-		var tween = create_tween()
-		tween.tween_property(animated_sprite, "modulate", Color.WHITE, 0.1)
-		
-		# Al finalizar el flash de daño, permitimos que el enemigo vuelva a moverse
-		tween.finished.connect(func(): is_hurting = false)
-#endregion
-
-#region SISTEMA DE MUERTE (Desactivar Cráneo Obstáculo)
-func _on_death() -> void:
-	if is_dead:
-		return
-	is_dead = true
-	
-	# Desactivamos por completo el árbol de comportamiento de LimboAI
-	if bt_player:
-		bt_player.set_active(false)
-	
-	# Desactivamos de forma diferida todas las colisiones físicas y de combate
-	# Esto asegura que deje de interactuar con el jugador y sea transitable inmediatamente
-	if body_collision:
-		body_collision.set_deferred("disabled", true)
-	if hurtbox_collision:
-		hurtbox_collision.set_deferred("disabled", true)
-	if hitbox_collision:
-		hitbox_collision.set_deferred("disabled", true)
-		
-	# Forzamos la reproducción inicial de la animación "dead"
-	if animated_sprite and animated_sprite.sprite_frames.has_animation("dead"):
-		animated_sprite.play("dead")
-#endregion
-===== ./actors/enemy/enemy_bt.tres =====
-[gd_resource type="BehaviorTree" format=3 uid="uid://bmndwsqukjyf5"]
-
-[ext_resource type="Script" uid="uid://38a1hfcgu7ra" path="res://ai/tasks/bt_is_player_in_attack_range.gd" id="1_n7e10"]
-[ext_resource type="Script" uid="uid://dpsjhwqqygtmw" path="res://ai/tasks/bt_attack_player.gd" id="2_qluyy"]
-[ext_resource type="Script" uid="uid://3jdh6vg3yo8e" path="res://ai/tasks/bt_is_player_in_detection_range.gd" id="3_5ek5j"]
-[ext_resource type="Script" uid="uid://cj3ramqs3sxcd" path="res://ai/tasks/bt_chase_player.gd" id="4_o4i6e"]
-[ext_resource type="Script" uid="uid://ct3l476b5y1y6" path="res://ai/tasks/bt_patrol.gd" id="5_xahx2"]
-
-[sub_resource type="BlackboardPlan" id="BlackboardPlan_kfecl"]
-
-[sub_resource type="BTCondition" id="BTCondition_a4iud"]
-script = ExtResource("1_n7e10")
-
-[sub_resource type="BTAction" id="BTAction_umkmd"]
-script = ExtResource("2_qluyy")
-
-[sub_resource type="BTSequence" id="BTSequence_78x7y"]
-custom_name = "Atacar"
-children = [SubResource("BTCondition_a4iud"), SubResource("BTAction_umkmd")]
-
-[sub_resource type="BTCondition" id="BTCondition_2o110"]
-script = ExtResource("3_5ek5j")
-
-[sub_resource type="BTAction" id="BTAction_6dv2v"]
-script = ExtResource("4_o4i6e")
-
-[sub_resource type="BTSequence" id="BTSequence_8abap"]
-custom_name = "Perseguir"
-children = [SubResource("BTCondition_2o110"), SubResource("BTAction_6dv2v")]
-
-[sub_resource type="BTAction" id="BTAction_wt0mv"]
-script = ExtResource("5_xahx2")
-
-[sub_resource type="BTSequence" id="BTSequence_v2u1e"]
-custom_name = "Patrullar"
-children = [SubResource("BTAction_wt0mv")]
-
-[sub_resource type="BTSelector" id="BTSelector_6adme"]
-children = [SubResource("BTSequence_78x7y"), SubResource("BTSequence_8abap"), SubResource("BTSequence_v2u1e")]
-
-[resource]
-blackboard_plan = SubResource("BlackboardPlan_kfecl")
-root_task = SubResource("BTSelector_6adme")
-===== ./actors/player/player.gd =====
-extends CharacterBody2D
-class_name Player
-
-const SPEED: float = 150.0
-
-@onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
-@onready var hitbox: HitboxComponent = $HitboxComponent
-@onready var hitbox_shape: CollisionShape2D = $HitboxComponent/CollisionShape2D
-
-var current_state: PlayerState
-var last_direction: Vector2 = Vector2.RIGHT
-
-func _ready() -> void:
-	add_to_group("player")
-
-	# La forma de colisión del hitbox arranca apagada.
-	# Esto evita que inflija daño solo por estar cerca de un enemigo.
-	if hitbox_shape:
-		hitbox_shape.disabled = true
-
-	current_state = $States/Idle
-	current_state.player = self
-	current_state.enter()
-
-func _physics_process(delta: float) -> void:
-	if current_state:
-		current_state.physics_update(delta)
-
-func change_state(state_name: String) -> void:
-	if current_state:
-		current_state.exit()
-	current_state = $States.get_node(state_name)
-	current_state.player = self
-	current_state.enter()
-
-func play_animation(anim_name: String, direction: Vector2) -> void:
-	if direction != Vector2.ZERO:
-		last_direction = direction
-	if sprite.animation != anim_name:
-		sprite.play(anim_name)
-
-	if direction.x < 0:
-		sprite.flip_h = true
-	elif direction.x > 0:
-		sprite.flip_h = false
-
-# Elige la animación de ataque según la última dirección
-func ejecutar_ataque_direccional() -> void:
-	velocity = Vector2.ZERO
-	if last_direction.y < -0.1:
-		play_animation("attack_up", Vector2.ZERO)
-	elif last_direction.y > 0.1:
-		play_animation("attack_down", Vector2.ZERO)
-	else:
-		play_animation("attack", Vector2.ZERO)
-===== ./actors/player/states/dead.gd =====
-class_name StateDead
-extends PlayerState
-
-func enter() -> void:
-	player.velocity = Vector2.ZERO
-	player.play_animation("dead", Vector2.ZERO)
-	player.set_physics_process(false)
-===== ./actors/player/states/player_state.gd =====
-# Clase base para todos los estados del jugador.
-# Cada estado hereda de esta clase e implementa los métodos que necesita.
-class_name PlayerState
-extends Node
-
-var player: Player
-
-func enter() -> void:
-	pass
-
-func exit() -> void:
-	pass
-
-func update(_delta: float) -> void:
-	pass
-
-func physics_update(_delta: float) -> void:
-	pass	
-===== ./actors/player/states/state_attack.gd =====
-class_name StateAttack
-extends PlayerState
-
-# Porcentaje de la animación de ataque en el que el golpe conecta.
-const IMPACT_FRAME_RATIO: float = 0.5
-
-# Cantidad de fotogramas que la hitbox permanece activa una vez que conecta el golpe.
-const ATTACK_WINDOW_FRAMES: int = 2
-
-var _impact_frame: int = 0
-var _window_end_frame: int = 0
-
-func enter() -> void:
-	player.ejecutar_ataque_direccional()
-
-	var total_frames: int = player.sprite.sprite_frames.get_frame_count(player.sprite.animation)
-	_impact_frame = int(total_frames * IMPACT_FRAME_RATIO)
-	_window_end_frame = _impact_frame + ATTACK_WINDOW_FRAMES
-
-	player.sprite.frame_changed.connect(_on_frame_changed)
-
-func physics_update(_delta: float) -> void:
-	player.velocity = Vector2.ZERO
-
-	if not player.sprite.is_playing():
-		player.change_state("Idle")
-
-func exit() -> void:
-	if player.hitbox_shape:
-		player.hitbox_shape.set_deferred("disabled", true)
-
-	if player.sprite.frame_changed.is_connected(_on_frame_changed):
-		player.sprite.frame_changed.disconnect(_on_frame_changed)
-
-# Activa la hitbox cuando la animación llega al frame de impacto,
-# y la desactiva al terminar la ventana de ataque.
-func _on_frame_changed() -> void:
-	var current_frame: int = player.sprite.frame
-
-	if current_frame >= _impact_frame and player.hitbox_shape.disabled:
-		player.hitbox_shape.set_deferred("disabled", false)
-	elif current_frame >= _window_end_frame and not player.hitbox_shape.disabled:
-		player.hitbox_shape.set_deferred("disabled", true)
-===== ./actors/player/states/state_hurt.gd =====
-class_name StateHurt
-extends PlayerState
-
-const HURT_DURATION: float = 0.3
-const HURT_COLOR: Color = Color(2.0, 0.5, 0.5, 1.0)
-const NORMAL_COLOR: Color = Color(1.0, 1.0, 1.0, 1.0)
-
-func enter() -> void:
-	player.velocity = Vector2.ZERO
-	player.play_animation("idle", Vector2.ZERO)
-	player.sprite.modulate = HURT_COLOR
-	get_tree().create_timer(HURT_DURATION).timeout.connect(_on_hurt_finished)
-
-func physics_update(_delta: float) -> void:
-	pass
-
-func _on_hurt_finished() -> void:
-	player.sprite.modulate = NORMAL_COLOR
-	player.change_state("Idle")
-===== ./actors/player/states/state_idle.gd =====
-class_name StateIdle
-extends PlayerState
-
-func enter() -> void:
-	player.play_animation("idle", Vector2.ZERO)
-
-func physics_update(_delta: float) -> void:
-	if Input.is_action_just_pressed("atacar"):
-		player.change_state("Attack")
-		return
-	var direction: Vector2 = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
-	if direction != Vector2.ZERO:
-		player.change_state("Walk")
-===== ./actors/player/states/state_walk.gd =====
-class_name StateWalk
-extends PlayerState
-
-func physics_update(_delta: float) -> void:
-	if Input.is_action_just_pressed("atacar"):
-		player.change_state("Attack")
-		return
-	var direction: Vector2 = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
-	if direction == Vector2.ZERO:
-		player.change_state("Idle")
-	else:
-		player.velocity = direction * player.SPEED
-		player.play_animation("walk", direction)
-		player.move_and_slide()
-===== ./ai/tasks/bt_attack_player.gd =====
-# Detiene al enemigo y ejecuta la animación de ataque completa.
-@tool
-class_name BTAttackPlayer
-extends BTAction
-
-func _tick(_delta: float) -> Status:
-	var enemy: CharacterBody2D = agent as CharacterBody2D
-	var animated_sprite: AnimatedSprite2D = enemy.get_node("AnimatedSprite2D") as AnimatedSprite2D
-	enemy.velocity = Vector2.ZERO
-	enemy.move_and_slide()
-	# Reproduce ataque solo si no está ya reproduciéndose
-	if animated_sprite.animation != "attack":
-		animated_sprite.play("attack")
-	# Espera a que termine la animación antes de retornar SUCCESS
-	if not animated_sprite.is_playing():
-		return SUCCESS
-	return RUNNING
-===== ./ai/tasks/bt_chase_player.gd =====
-@tool
-class_name BTChasePlayer
-extends BTAction
-
-const SPEED: float = 80.0
-
-func _tick(_delta: float) -> Status:
-	var player: Node2D = agent.get_tree().get_first_node_in_group("player") as Node2D
-	var animated_sprite: AnimatedSprite2D = agent.get_node("AnimatedSprite2D") as AnimatedSprite2D
-
-	if not is_instance_valid(player):
-		return FAILURE
-
-	var direction: Vector2 = (player.global_position - agent.global_position).normalized()
-	(agent as CharacterBody2D).velocity = direction * SPEED
-
-	# NO move_and_slide() aquí — lo hace enemy.gd en _physics_process
-	animated_sprite.play("walk")
-	animated_sprite.flip_h = direction.x < 0.0
-	return RUNNING
-===== ./ai/tasks/bt_is_player_in_attack_range.gd =====
-@tool
-class_name BTIsPlayerInAttackRange
-extends BTCondition
-
-const ATTACK_RANGE: float = 40.0
-
-func _tick(_delta: float) -> Status:
-	var player: Node2D = agent.get_tree().get_first_node_in_group("player") as Node2D
-	if not is_instance_valid(player):
-		return FAILURE
-	return SUCCESS if agent.global_position.distance_to(player.global_position) <= ATTACK_RANGE else FAILURE
-===== ./ai/tasks/bt_is_player_in_detection_range.gd =====
-@tool
-class_name BTIsPlayerInDetectionRange
-extends BTCondition
-
-const DETECTION_RANGE: float = 200.0
-
-func _tick(_delta: float) -> Status:
-	var player: Node2D = agent.get_tree().get_first_node_in_group("player") as Node2D
-	if not is_instance_valid(player):
-		return FAILURE
-	return SUCCESS if agent.global_position.distance_to(player.global_position) <= DETECTION_RANGE else FAILURE
-===== ./ai/tasks/bt_patrol.gd =====
-@tool
-class_name BTPatrol
-extends BTAction
-
-const SPEED: float = 50.0
-const PATROL_DISTANCE: float = 100.0
-
-var _direction: Vector2 = Vector2.RIGHT
-var _distance_traveled: float = 0.0
-
-func _tick(delta: float) -> Status:
-	var animated_sprite: AnimatedSprite2D = agent.get_node("AnimatedSprite2D") as AnimatedSprite2D
-	(agent as CharacterBody2D).velocity = _direction * SPEED
-	(agent as CharacterBody2D).move_and_slide()
-	animated_sprite.play("walk")
-	animated_sprite.flip_h = _direction.x < 0
-	_distance_traveled += SPEED * delta
-	if _distance_traveled >= PATROL_DISTANCE:
-		_direction = -_direction
-		_distance_traveled = 0.0
-	return RUNNING
-===== ./attack_trail.gd =====
-extends GPUParticles2D
-class_name AttackTrail
-
-var _active: bool = false
-
-
-func _ready() -> void:
-	emitting = false
-	one_shot = true
-	local_coords = false
-
-
-func activate() -> void:
-	if _active:
-		return
-	_active = true
-	restart()
-	emitting = true
-
-
-func deactivate() -> void:
-	_active = false
-	emitting = false
-===== ./camera_2d.gd =====
-## CameraShake.gd
-## Adjuntar este script a la Camera2D principal (res://world/camera_2d.gd o equivalente).
-## Sistema de trauma: el trauma decae exponencialmente y el shake es proporcional a trauma².
-## Llamar add_trauma(amount) desde cualquier nodo para activar el temblor.
-## 
-## Uso desde cualquier nodo:
-##   var cam := get_viewport().get_camera_2d() as CameraShake
-##   cam.add_trauma(0.5)
-extends Camera2D
-class_name CameraShake
-
-## Velocidad a la que decae el trauma por segundo.
-const TRAUMA_DECAY_SPEED: float = 1.5
-## Desplazamiento máximo en píxeles durante el shake máximo.
-const MAX_OFFSET: float = 12.0
-## Rotación máxima en radianes durante el shake máximo.
-const MAX_ROTATION_RAD: float = 0.05
-## Multiplicador de la frecuencia del ruido Perlin.
-const NOISE_SPEED: float = 90.0
-
-var _trauma: float = 0.0
-var _noise_time: float = 0.0
-
-@onready var _noise: FastNoiseLite = FastNoiseLite.new()
-
-
-func _ready() -> void:
-	_noise.noise_type = FastNoiseLite.TYPE_PERLIN
-	_noise.seed = randi()
-	_noise.frequency = 0.5
-
-
-## Añade trauma al sistema. Clamp entre 0 y 1.
-## amount: valor entre 0.0 (nada) y 1.0 (máximo temblor).
-func add_trauma(amount: float) -> void:
-	_trauma = clampf(_trauma + amount, 0.0, 1.0)
-
-
-func _process(delta: float) -> void:
-	if _trauma <= 0.0:
-		offset = Vector2.ZERO
-		rotation = 0.0
-		return
-
-	_trauma = maxf(_trauma - TRAUMA_DECAY_SPEED * delta, 0.0)
-	_noise_time += delta * NOISE_SPEED
-
-	var shake_amount: float = _trauma * _trauma  # Cuadrático = más control
-
-	offset = Vector2(
-		MAX_OFFSET * shake_amount * _noise.get_noise_2d(_noise_time, 0.0),
-		MAX_OFFSET * shake_amount * _noise.get_noise_2d(0.0, _noise_time)
-	)
-	rotation = MAX_ROTATION_RAD * shake_amount * _noise.get_noise_2d(_noise_time, _noise_time)
-===== ./components/health_component.gd =====
-extends Node
-class_name HealthComponent
-
-signal health_changed(current_health: int)
-signal death
-
-@export var max_health: int = 100
-var current_health: int
-
-func _ready() -> void:
-	current_health = max_health
-
-func take_damage(amount: int) -> void:
-	if current_health <= 0:
-		return
-		
-	# CORRECCIÓN: Restamos el daño a la vida actual para que vaya bajando progresivamente
-	current_health -= amount
-	
-	# Emitimos cuánta vida le queda (para el flash rojo)
-	health_changed.emit(current_health)
-	
-	# Si llegó a cero o menos, se muere
-	if current_health <= 0:
-		current_health = 0
-		death.emit()
-===== ./components/hitbox_component.gd =====
-# Área que inflige daño al entrar en contacto con un HurtboxComponent.
-class_name HitboxComponent
-extends Area2D
-
-@export var damage: float = 10.0
-
-func _ready() -> void:
-	monitoring = true
-	monitorable = true
-===== ./components/hurtbox_component.gd =====
-extends Area2D
-class_name HurtboxComponent
-
-@onready var health_component: HealthComponent = $"../HealthComponent"
-
-func _ready() -> void:
-	# Conectamos la señal para detectar cuando entra un ataque
-	area_entered.connect(_on_area_entered)
-
-func _on_area_entered(area: Area2D) -> void:
-	# Si lo que entró es una Hitbox, le mandamos el daño al componente de vida
-	if area is HitboxComponent:
-		if health_component:
-			health_component.take_damage(area.damage)
-===== ./demo/agents/01_agent_melee_simple.tscn =====
+==================================================
+FILE: ./demo/agents/01_agent_melee_simple.tscn
+==================================================
 [gd_scene format=3 uid="uid://1dnm7tuik8xo"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_l180o"]
@@ -1700,7 +46,10 @@ max_health = 3.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=1399725832]
 behavior_tree = ExtResource("3_tb7cx")
 blackboard_plan = SubResource("BlackboardPlan_s08ac")
-===== ./demo/agents/02_agent_charger.tscn =====
+
+==================================================
+FILE: ./demo/agents/02_agent_charger.tscn
+==================================================
 [gd_scene format=3 uid="uid://g1pnvanyxcpa"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_n83hi"]
@@ -1738,7 +87,10 @@ max_health = 8.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="4" unique_id=1733921525]
 behavior_tree = ExtResource("3_nacc3")
 blackboard_plan = SubResource("BlackboardPlan_pmyhf")
-===== ./demo/agents/03_agent_imp.tscn =====
+
+==================================================
+FILE: ./demo/agents/03_agent_imp.tscn
+==================================================
 [gd_scene format=3 uid="uid://730bthc0ywhd"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_13xup"]
@@ -1773,7 +125,10 @@ max_health = 4.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=137535558]
 behavior_tree = ExtResource("3_furh3")
 blackboard_plan = SubResource("BlackboardPlan_aog23")
-===== ./demo/agents/04_agent_skirmisher.tscn =====
+
+==================================================
+FILE: ./demo/agents/04_agent_skirmisher.tscn
+==================================================
 [gd_scene format=3 uid="uid://co6yeafaljbq0"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_2ir76"]
@@ -1808,7 +163,10 @@ max_health = 7.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="4" unique_id=1268324578]
 behavior_tree = ExtResource("3_bhfkv")
 blackboard_plan = SubResource("BlackboardPlan_vjbry")
-===== ./demo/agents/05_agent_ranged.tscn =====
+
+==================================================
+FILE: ./demo/agents/05_agent_ranged.tscn
+==================================================
 [gd_scene format=3 uid="uid://ci3x5esepbu5v"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_oa4xm"]
@@ -1843,7 +201,10 @@ max_health = 6.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="4" unique_id=1201627788]
 behavior_tree = ExtResource("3_f7r5w")
 blackboard_plan = SubResource("BlackboardPlan_2kwy7")
-===== ./demo/agents/06_agent_melee_combo.tscn =====
+
+==================================================
+FILE: ./demo/agents/06_agent_melee_combo.tscn
+==================================================
 [gd_scene format=3 uid="uid://blxmw2w1h2s0s"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_dny3b"]
@@ -1878,7 +239,10 @@ max_health = 6.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="4" unique_id=1594372294]
 behavior_tree = ExtResource("3_l805q")
 blackboard_plan = SubResource("BlackboardPlan_67ric")
-===== ./demo/agents/07_agent_melee_nuanced.tscn =====
+
+==================================================
+FILE: ./demo/agents/07_agent_melee_nuanced.tscn
+==================================================
 [gd_scene format=3 uid="uid://2e4ohaqjaawb"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_afx5l"]
@@ -1913,7 +277,10 @@ max_health = 6.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="4" unique_id=1879939663]
 behavior_tree = ExtResource("3_b8kcf")
 blackboard_plan = SubResource("BlackboardPlan_tnf02")
-===== ./demo/agents/08_agent_demon.tscn =====
+
+==================================================
+FILE: ./demo/agents/08_agent_demon.tscn
+==================================================
 [gd_scene format=3 uid="uid://dbmcufef0cc4b"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_115kp"]
@@ -1948,7 +315,10 @@ max_health = 8.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=394684464]
 behavior_tree = ExtResource("3_ebd57")
 blackboard_plan = SubResource("BlackboardPlan_5sr4g")
-===== ./demo/agents/09_agent_summoner.tscn =====
+
+==================================================
+FILE: ./demo/agents/09_agent_summoner.tscn
+==================================================
 [gd_scene format=3 uid="uid://bycvi2fb0f7ue"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_neifu"]
@@ -1983,7 +353,10 @@ max_health = 8.0
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=1626195106]
 behavior_tree = ExtResource("3_bunpq")
 blackboard_plan = SubResource("BlackboardPlan_bqv3d")
-===== ./demo/agents/agent_base.tscn =====
+
+==================================================
+FILE: ./demo/agents/agent_base.tscn
+==================================================
 [gd_scene format=3 uid="uid://ooigbfhfy4wa"]
 
 [ext_resource type="Texture2D" uid="uid://dlo1ine6p5di4" path="res://demo/assets/agent_bobby.png" id="1_1u51b"]
@@ -6511,7 +4884,10 @@ script = ExtResource("4_qwtrf")
 callback_mode_method = 1
 libraries/ = SubResource("AnimationLibrary_ws2ti")
 autoplay = &"idle"
-===== ./demo/agents/fireball/fireball.gd =====
+
+==================================================
+FILE: ./demo/agents/fireball/fireball.gd
+==================================================
 #*
 #* fireball.gd
 #* =============================================================================
@@ -6568,7 +4944,10 @@ func _die() -> void:
 
 func _on_hitbox_area_entered(_area: Area2D) -> void:
 	_die()
-===== ./demo/agents/fireball/fireball.tscn =====
+
+==================================================
+FILE: ./demo/agents/fireball/fireball.tscn
+==================================================
 [gd_scene format=3 uid="uid://wdauoepicegb"]
 
 [ext_resource type="Script" uid="uid://cw0jj6rj3e4dp" path="res://demo/agents/fireball/fireball.gd" id="1_ituf4"]
@@ -6736,7 +5115,10 @@ libraries/ = SubResource("AnimationLibrary_cphpk")
 autoplay = &"default"
 
 [connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]
-===== ./demo/agents/ninja_star/ninja_star.gd =====
+
+==================================================
+FILE: ./demo/agents/ninja_star/ninja_star.gd
+==================================================
 #*
 #* ninja_star.gd
 #* =============================================================================
@@ -6790,7 +5172,10 @@ func _die() -> void:
 
 func _on_hitbox_area_entered(_area: Area2D) -> void:
 	_die()
-===== ./demo/agents/ninja_star/ninja_star.tscn =====
+
+==================================================
+FILE: ./demo/agents/ninja_star/ninja_star.tscn
+==================================================
 [gd_scene format=3 uid="uid://bj5n72nomeaci"]
 
 [ext_resource type="Script" uid="uid://ea3wq7unbfaw" path="res://demo/agents/ninja_star/ninja_star.gd" id="1_pja57"]
@@ -6871,7 +5256,10 @@ local_coords = true
 process_material = SubResource("ParticleProcessMaterial_gilhy")
 
 [connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]
-===== ./demo/agents/player/player.gd =====
+
+==================================================
+FILE: ./demo/agents/player/player.gd
+==================================================
 #*
 #* player.gd
 #* =============================================================================
@@ -6975,7 +5363,10 @@ func _can_dodge() -> bool:
 		get_tree().create_timer(dodge_cooldown).timeout.connect(func(): can_dodge = true)
 		return true
 	return false
-===== ./demo/agents/player/player.tscn =====
+
+==================================================
+FILE: ./demo/agents/player/player.tscn
+==================================================
 [gd_scene format=3 uid="uid://d07ag5dcje13i"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_mswd4"]
@@ -7029,7 +5420,10 @@ script = ExtResource("6_7o4a6")
 animation_player = NodePath("../../AnimationPlayer")
 animation = &"dodge"
 hurtbox_collision = NodePath("../../Root/Hurtbox/HurtboxCollisionShape2D")
-===== ./demo/agents/player/states/attack_state.gd =====
+
+==================================================
+FILE: ./demo/agents/player/states/attack_state.gd
+==================================================
 #*
 #* attack_state.gd
 #* =============================================================================
@@ -7090,7 +5484,10 @@ func _exit() -> void:
 		_can_enter = false
 		await get_tree().create_timer(combo_cooldown).timeout
 		_can_enter = true
-===== ./demo/agents/player/states/dodge_state.gd =====
+
+==================================================
+FILE: ./demo/agents/player/states/dodge_state.gd
+==================================================
 #*
 #* dodge_state.gd
 #* =============================================================================
@@ -7139,7 +5536,10 @@ func _update(p_delta: float) -> void:
 	agent.move(desired_velocity)
 	if elapsed_time > duration:
 		get_root().dispatch(EVENT_FINISHED)
-===== ./demo/agents/player/states/idle_state.gd =====
+
+==================================================
+FILE: ./demo/agents/player/states/idle_state.gd
+==================================================
 #*
 #* idle_state.gd
 #* =============================================================================
@@ -7167,7 +5567,10 @@ func _update(_delta: float) -> void:
 	var vertical_move: float = Input.get_axis(&"move_up", &"move_down")
 	if horizontal_move != 0.0 or vertical_move != 0.0:
 		get_root().dispatch(EVENT_FINISHED)
-===== ./demo/agents/player/states/move_state.gd =====
+
+==================================================
+FILE: ./demo/agents/player/states/move_state.gd
+==================================================
 #*
 #* move_state.gd
 #* =============================================================================
@@ -7205,7 +5608,10 @@ func _update(_delta: float) -> void:
 
 	if horizontal_move == 0.0 and vertical_move == 0.0:
 		get_root().dispatch(EVENT_FINISHED)
-===== ./demo/agents/scripts/agent_base.gd =====
+
+==================================================
+FILE: ./demo/agents/scripts/agent_base.gd
+==================================================
 #*
 #* agent_base.gd
 #* =============================================================================
@@ -7367,7 +5773,10 @@ func die() -> void:
 
 func get_health() -> Health:
 	return health
-===== ./demo/agents/scripts/health.gd =====
+
+==================================================
+FILE: ./demo/agents/scripts/health.gd
+==================================================
 #*
 #* health.gd
 #* =============================================================================
@@ -7414,7 +5823,10 @@ func take_damage(amount: float, knockback: Vector2) -> void:
 ## Returns current health.
 func get_current() -> float:
 	return _current
-===== ./demo/agents/scripts/hitbox.gd =====
+
+==================================================
+FILE: ./demo/agents/scripts/hitbox.gd
+==================================================
 #*
 #* hitbox.gd
 #* =============================================================================
@@ -7454,7 +5866,10 @@ func get_knockback() -> Vector2:
 	if knockback_enabled:
 		knockback = Vector2.RIGHT.rotated(global_rotation) * knockback_strength
 	return knockback
-===== ./demo/agents/scripts/hurtbox.gd =====
+
+==================================================
+FILE: ./demo/agents/scripts/hurtbox.gd
+==================================================
 #*
 #* hurtbox.gd
 #* =============================================================================
@@ -7477,7 +5892,10 @@ var last_attack_vector: Vector2
 func take_damage(amount: float, knockback: Vector2, source: Hitbox) -> void:
 	last_attack_vector = owner.global_position - source.owner.global_position
 	health.take_damage(amount, knockback)
-===== ./demo/agents/tutorial/tutorial_01_welcome.tscn =====
+
+==================================================
+FILE: ./demo/agents/tutorial/tutorial_01_welcome.tscn
+==================================================
 [gd_scene format=3 uid="uid://dk67yawiu33jv"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_2vrmp"]
@@ -7509,7 +5927,10 @@ texture = ExtResource("2_3h4dj")
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=1816968691]
 behavior_tree = ExtResource("3_ilmgw")
 blackboard_plan = SubResource("BlackboardPlan_52mdk")
-===== ./demo/agents/tutorial/tutorial_02_introduction.tscn =====
+
+==================================================
+FILE: ./demo/agents/tutorial/tutorial_02_introduction.tscn
+==================================================
 [gd_scene format=3 uid="uid://cw3yth564nhrw"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_lia2k"]
@@ -7541,7 +5962,10 @@ texture = ExtResource("2_4x2l4")
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=1228007443]
 behavior_tree = ExtResource("3_3esuy")
 blackboard_plan = SubResource("BlackboardPlan_52mdk")
-===== ./demo/agents/tutorial/tutorial_03_types.tscn =====
+
+==================================================
+FILE: ./demo/agents/tutorial/tutorial_03_types.tscn
+==================================================
 [gd_scene format=3 uid="uid://bx4iabilsv3rs"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_p8nwq"]
@@ -7573,7 +5997,10 @@ texture = ExtResource("2_hnwhw")
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=2103835125]
 behavior_tree = ExtResource("3_a31ka")
 blackboard_plan = SubResource("BlackboardPlan_52mdk")
-===== ./demo/agents/tutorial/tutorial_04_sequence.tscn =====
+
+==================================================
+FILE: ./demo/agents/tutorial/tutorial_04_sequence.tscn
+==================================================
 [gd_scene format=3 uid="uid://bhtm8gnk5hsus"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_oibr1"]
@@ -7605,7 +6032,10 @@ texture = ExtResource("2_j52yc")
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=176951390]
 behavior_tree = ExtResource("3_feewj")
 blackboard_plan = SubResource("BlackboardPlan_52mdk")
-===== ./demo/agents/tutorial/tutorial_05_selector.tscn =====
+
+==================================================
+FILE: ./demo/agents/tutorial/tutorial_05_selector.tscn
+==================================================
 [gd_scene format=3 uid="uid://5nqbasyipupf"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_62fs7"]
@@ -7637,7 +6067,10 @@ texture = ExtResource("2_gdg2c")
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=989842198]
 behavior_tree = ExtResource("3_pm5ep")
 blackboard_plan = SubResource("BlackboardPlan_52mdk")
-===== ./demo/agents/tutorial/tutorial_06_decorators.tscn =====
+
+==================================================
+FILE: ./demo/agents/tutorial/tutorial_06_decorators.tscn
+==================================================
 [gd_scene format=3 uid="uid://ehc00upu3co"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_mbrnd"]
@@ -7669,7 +6102,10 @@ texture = ExtResource("2_ttkri")
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=1652167388]
 behavior_tree = ExtResource("3_tpgll")
 blackboard_plan = SubResource("BlackboardPlan_52mdk")
-===== ./demo/agents/tutorial/tutorial_07_more_decorators.tscn =====
+
+==================================================
+FILE: ./demo/agents/tutorial/tutorial_07_more_decorators.tscn
+==================================================
 [gd_scene format=3 uid="uid://brq6c843j1eeo"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_k4qfc"]
@@ -7701,7 +6137,10 @@ texture = ExtResource("2_q4r1n")
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=1128113897]
 behavior_tree = ExtResource("3_ta3g6")
 blackboard_plan = SubResource("BlackboardPlan_52mdk")
-===== ./demo/agents/tutorial/tutorial_08_final_touch.tscn =====
+
+==================================================
+FILE: ./demo/agents/tutorial/tutorial_08_final_touch.tscn
+==================================================
 [gd_scene format=3 uid="uid://b8yj40s43bw8h"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://demo/agents/agent_base.tscn" id="1_bjdsc"]
@@ -7733,7 +6172,10 @@ texture = ExtResource("2_onjfd")
 [node name="BTPlayer" type="BTPlayer" parent="." index="5" unique_id=1465699266]
 behavior_tree = ExtResource("3_c5qx4")
 blackboard_plan = SubResource("BlackboardPlan_52mdk")
-===== ./demo/ai/tasks/arrive_pos.gd =====
+
+==================================================
+FILE: ./demo/ai/tasks/arrive_pos.gd
+==================================================
 #*
 #* arrive_pos.gd
 #* =============================================================================
@@ -7803,7 +6245,10 @@ func _tick(_delta: float) -> Status:
 	agent.move(desired_velocity)
 	agent.update_facing()
 	return RUNNING
-===== ./demo/ai/tasks/back_away.gd =====
+
+==================================================
+FILE: ./demo/ai/tasks/back_away.gd
+==================================================
 #*
 #* back_away.gd
 #* =============================================================================
@@ -7843,7 +6288,10 @@ func _tick(_delta: float) -> Status:
 	agent.move(_desired_velocity)
 	agent.face_dir(-signf(_dir.x))
 	return RUNNING
-===== ./demo/ai/tasks/face_target.gd =====
+
+==================================================
+FILE: ./demo/ai/tasks/face_target.gd
+==================================================
 #*
 #* face_target.gd
 #* =============================================================================
@@ -7876,7 +6324,10 @@ func _tick(_delta: float) -> Status:
 	agent.velocity = Vector2.ZERO
 	agent.face_dir(dir)
 	return SUCCESS
-===== ./demo/ai/tasks/get_first_in_group.gd =====
+
+==================================================
+FILE: ./demo/ai/tasks/get_first_in_group.gd
+==================================================
 #*
 #* get_first_in_group.gd
 #* =============================================================================
@@ -7911,7 +6362,10 @@ func _tick(_delta: float) -> Status:
 		return FAILURE
 	blackboard.set_var(output_var, nodes[0])
 	return SUCCESS
-===== ./demo/ai/tasks/in_range.gd =====
+
+==================================================
+FILE: ./demo/ai/tasks/in_range.gd
+==================================================
 #*
 #* in_range.gd
 #* =============================================================================
@@ -7966,7 +6420,10 @@ func _tick(_delta: float) -> Status:
 		return SUCCESS
 	else:
 		return FAILURE
-===== ./demo/ai/tasks/is_aligned_with_target.gd =====
+
+==================================================
+FILE: ./demo/ai/tasks/is_aligned_with_target.gd
+==================================================
 #*
 #* is_aligned_with_target.gd
 #* =============================================================================
@@ -8002,7 +6459,10 @@ func _tick(_delta: float) -> Status:
 	if y_diff < tolerance:
 		return SUCCESS
 	return FAILURE
-===== ./demo/ai/tasks/move_forward.gd =====
+
+==================================================
+FILE: ./demo/ai/tasks/move_forward.gd
+==================================================
 #*
 #* move_forward.gd
 #* =============================================================================
@@ -8042,7 +6502,10 @@ func _tick(_delta: float) -> Status:
 	if elapsed_time > duration:
 		return SUCCESS
 	return RUNNING
-===== ./demo/ai/tasks/pursue.gd =====
+
+==================================================
+FILE: ./demo/ai/tasks/pursue.gd
+==================================================
 #*
 #* pursue.gd
 #* =============================================================================
@@ -8122,7 +6585,10 @@ func _select_new_waypoint(desired_position: Vector2) -> void:
 	var distance_vector: Vector2 = desired_position - agent.global_position
 	var angle_variation: float = randf_range(-0.2, 0.2)
 	_waypoint = agent.global_position + distance_vector.limit_length(150.0).rotated(angle_variation)
-===== ./demo/ai/tasks/select_flanking_pos.gd =====
+
+==================================================
+FILE: ./demo/ai/tasks/select_flanking_pos.gd
+==================================================
 #*
 #* select_flanking_pos.gd
 #* =============================================================================
@@ -8197,7 +6663,10 @@ func _tick(_delta: float) -> Status:
 		flank_pos = target.global_position - offset
 	blackboard.set_var(position_var, flank_pos)
 	return SUCCESS
-===== ./demo/ai/tasks/select_random_nearby_pos.gd =====
+
+==================================================
+FILE: ./demo/ai/tasks/select_random_nearby_pos.gd
+==================================================
 @tool
 extends BTAction
 ## Selects a random position nearby within the specified range and stores it on the blackboard. [br]
@@ -8232,7 +6701,10 @@ func _tick(_delta: float) -> Status:
 		is_good_position = agent.is_good_position(pos)
 	blackboard.set_var(position_var, pos)
 	return SUCCESS
-===== ./demo/ai/trees/01_agent_melee_simple.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/01_agent_melee_simple.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://bpdm5jnegi38"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_2jpsu"]
@@ -8341,7 +6813,10 @@ description = "Welcome to the [b]LimboAI[/b] demo project! This demo project con
 - On this screen, you can inspect the AI behavior tree in action for each agent in the game."
 blackboard_plan = SubResource("BlackboardPlan_46tbn")
 root_task = SubResource("BTSequence_pxl2k")
-===== ./demo/ai/trees/02_agent_charger.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/02_agent_charger.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://ylife72ym5et"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_657p6"]
@@ -8455,7 +6930,10 @@ children = [SubResource("BTSequence_l3v31"), SubResource("BTSequence_p6pgg"), Su
 description = "A [dec]Decorator[/dec] is a type of task that typically has only one child. Decorators are commonly used to alter the behavior or status of their child task. In this behavior tree, the [dec]TimeLimit[/dec] decorator sets a maximum time for the [act]Arrive[/act] action to complete its work. If the child task exceeds this time limit without finishing, it will be aborted, and the TimeLimit decorator will return [FAILURE]."
 blackboard_plan = SubResource("BlackboardPlan_qd806")
 root_task = SubResource("BTSequence_pjuov")
-===== ./demo/ai/trees/03_agent_imp.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/03_agent_imp.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://c2bxoo68ywb27"]
 
 [ext_resource type="Script" uid="uid://bicxffqmm7ek" path="res://demo/ai/tasks/select_random_nearby_pos.gd" id="1_cdtqu"]
@@ -8565,7 +7043,10 @@ children = [SubResource("BTProbability_ifsry"), SubResource("BTSequence_pxl2k")]
 description = "Here, the [dec]Probability[/dec] decorator allows the execution of its branch in 50% of cases. This introduces a slight variation to the behavior each time the [comp]Chaotic walk[/comp] sequence is considered by the [comp]Selector[/comp]. This sequence can be selected several times in a row as long as the Probability decorator permits it. The [comp]Engage player[/comp] sequence is only executed if Probability returns [FAILURE]."
 blackboard_plan = SubResource("BlackboardPlan_46tbn")
 root_task = SubResource("BTSelector_y3llm")
-===== ./demo/ai/trees/04_agent_skirmisher.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/04_agent_skirmisher.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://qqmjvbeibatn"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_2883n"]
@@ -8744,7 +7225,10 @@ In our example, if the target is not within the specified range, the [con]InRang
 "
 blackboard_plan = SubResource("BlackboardPlan_46tbn")
 root_task = SubResource("BTSelector_2jnau")
-===== ./demo/ai/trees/05_agent_ranged.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/05_agent_ranged.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://cqluon1y1hnn5"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_4xk1i"]
@@ -8914,7 +7398,10 @@ description = "Here, the [dec]Probability[/dec] decorator permits the execution 
 The [dec]Repeat[/dec] decorator is handy for doing something multiple times within a behavior tree. In our example, it's used to make the [comp]Throw ninja star[/comp] sequence perform three times in a row."
 blackboard_plan = SubResource("BlackboardPlan_46tbn")
 root_task = SubResource("BTSequence_pxl2k")
-===== ./demo/ai/trees/06_agent_melee_combo.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/06_agent_melee_combo.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://cpncl1db8j12f"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_sf4l8"]
@@ -9064,7 +7551,10 @@ children = [SubResource("BTSequence_yhjh1"), SubResource("BTSequence_1xfnq"), Su
 description = "In some scenarios, you might need to execute multiple tasks at the same time until specific conditions are fulfilled. To achieve this, the [comp]Parallel[/comp] composite is an invaluable tool. This composite task allows its children to be executed simultaneously during each tick until a specified number of successes or failures is reached. In this example, it will execute both the [act]PlayAnimation[/act] and [act]MoveForward[/act] actions each tick until both actions have finished with a [SUCCESS] status."
 blackboard_plan = SubResource("BlackboardPlan_46tbn")
 root_task = SubResource("BTSequence_pxl2k")
-===== ./demo/ai/trees/07_agent_melee_nuanced.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/07_agent_melee_nuanced.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://c2u6sljqkim0n"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_08fik"]
@@ -9268,7 +7758,10 @@ description = "[comp]ProbabilitySelector[/comp] chooses a child task to execute 
 "
 blackboard_plan = SubResource("BlackboardPlan_46tbn")
 root_task = SubResource("BTSequence_pxl2k")
-===== ./demo/ai/trees/08_agent_demon.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/08_agent_demon.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://cpcnbi81jqge4"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_ce4la"]
@@ -9451,7 +7944,10 @@ children = [SubResource("BTCooldown_oms7a"), SubResource("BTSequence_eikr4"), Su
 description = "Here, we use the [con]InRange[/con] condition task together with [comp]Sequence[/comp] and [comp]Selector[/comp] to create a reactive behavior for this agent. When the player comes close, this agent will attempt to hit them with a melee attack and move away afterward for a better ranged position."
 blackboard_plan = SubResource("BlackboardPlan_8ay3j")
 root_task = SubResource("BTSelector_feba6")
-===== ./demo/ai/trees/09_agent_summoner.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/09_agent_summoner.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://cpxk7jnqpwwlc"]
 
 [ext_resource type="Script" uid="uid://bicxffqmm7ek" path="res://demo/ai/tasks/select_random_nearby_pos.gd" id="1_sgn0p"]
@@ -9599,7 +8095,10 @@ description = "[con]CheckAgentProperty[/con] examines the agent’s property val
 You can also check or share a [dec]Cooldown[/dec] in different parts of the behavior tree if you provide a blackboard variable for the [dec]Cooldown[/dec] decorator to use. [con]CheckVar[/con] is responsible here for examining the cooldown variable named \"summon_cooldown\"."
 blackboard_plan = SubResource("BlackboardPlan_58oq1")
 root_task = SubResource("BTSelector_gp6q5")
-===== ./demo/ai/trees/tutorial/tutorial_01_welcome.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/tutorial/tutorial_01_welcome.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://b1mfh8yad7rmw"]
 
 [sub_resource type="BlackboardPlan" id="BlackboardPlan_ewfwq"]
@@ -9629,7 +8128,10 @@ Press ➡ button in the top-right corner to proceed.
 Press ⬅ button any time you want to go back to a previous chapter."
 blackboard_plan = SubResource("BlackboardPlan_ewfwq")
 root_task = SubResource("BTSequence_4bq32")
-===== ./demo/ai/trees/tutorial/tutorial_02_introduction.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/tutorial/tutorial_02_introduction.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://b1i0xo0o676va"]
 
 [sub_resource type="BlackboardPlan" id="BlackboardPlan_ewfwq"]
@@ -9675,7 +8177,10 @@ description = "Behavior trees are designed to simplify the creation of responsiv
 A behavior tree is usually processed each frame (physics frame by default). It is traversed from top to bottom, with the control tasks determining the control flow. Each task has a [color=cyan]_tick[/color] method, which performs the task's work and returns a status indicating its progress: [SUCCESS], [FAILURE], or [RUNNING]. [SUCCESS] and [FAILURE] indicate the outcome of finished work, while [RUNNING] status is returned when a task requires more than one tick to complete its job. These statuses determine how the tree progresses, with the [RUNNING] status usually meaning that the tree will continue execution during the next frame."
 blackboard_plan = SubResource("BlackboardPlan_ewfwq")
 root_task = SubResource("BTSequence_rbfdh")
-===== ./demo/ai/trees/tutorial/tutorial_03_types.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/tutorial/tutorial_03_types.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://cb0ybf24ahnc3"]
 
 [ext_resource type="Script" uid="uid://bicxffqmm7ek" path="res://demo/ai/tasks/select_random_nearby_pos.gd" id="1_as4cg"]
@@ -9762,7 +8267,10 @@ Let's take a look into actions first. [act]Actions[/act] are responsible for mos
 Next, we'll explore the core composite tasks, such as [comp]Sequence[/comp] and [comp]Selector[/comp]. These are among the most crucial composites that you should know about."
 blackboard_plan = SubResource("BlackboardPlan_ewfwq")
 root_task = SubResource("BTSelector_tdpek")
-===== ./demo/ai/trees/tutorial/tutorial_04_sequence.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/tutorial/tutorial_04_sequence.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://dln8ywvtqedt7"]
 
 [ext_resource type="Script" uid="uid://bicxffqmm7ek" path="res://demo/ai/tasks/select_random_nearby_pos.gd" id="1_gk66j"]
@@ -9818,7 +8326,10 @@ In our example, you can observe a simple [comp]Sequence[/comp] in action. Notice
 "
 blackboard_plan = SubResource("BlackboardPlan_ewfwq")
 root_task = SubResource("BTSequence_vx4uy")
-===== ./demo/ai/trees/tutorial/tutorial_05_selector.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/tutorial/tutorial_05_selector.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://bf4r652fv5kwi"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_3ed74"]
@@ -9915,7 +8426,10 @@ To understand the [comp]Selector[/comp], it helps to see it as the opposite of t
 In our example, the [con]InRange[/con] condition checks how far Junior is from the target. When Junior is farther than 200 pixels from the target, he'll attempt to approach it. If he is closer than 200 pixels from the target, he would try to walk away. Thanks to the Selector, only one of these behaviors will be performed at a time, based on the result of the [con]InRange[/con] check. Junior seems to have a dilemma — unable to decide whether to stay or go."
 blackboard_plan = SubResource("BlackboardPlan_ewfwq")
 root_task = SubResource("BTSelector_ddhoo")
-===== ./demo/ai/trees/tutorial/tutorial_06_decorators.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/tutorial/tutorial_06_decorators.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://beiki511huxb8"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_3xoj7"]
@@ -10037,7 +8551,10 @@ In our example, we utilize the [dec]RunLimit[/dec] decorator to restrict its chi
 Now, let's examine another decorator we use here - the [dec]Cooldown[/dec]. This decorator executes its child task only if the specified duration time has passed since the previous execution of the child task. The first time the attack sequence results in [SUCCESS], it triggers the cooldown, preventing the [comp]Sequence[/comp] from being executed for the next 5 seconds. During this period, the Cooldown returns [FAILURE] until the specified duration time elapses. It's important to note that it only counts executions that finished with [SUCCESS]. This means that [con]InRange[/con] can be utilized here without triggering the Cooldown!"
 blackboard_plan = SubResource("BlackboardPlan_ewfwq")
 root_task = SubResource("BTSelector_ddhoo")
-===== ./demo/ai/trees/tutorial/tutorial_07_more_decorators.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/tutorial/tutorial_07_more_decorators.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://tep50j4d6kgp"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_f605f"]
@@ -10169,7 +8686,10 @@ Another useful decorator is [dec]AlwaysSucceed[/dec], which converts any [FAILUR
 We also add a second attack, so that Junior feels more badass now. We've got a little hit-and-run behavior going on here!"
 blackboard_plan = SubResource("BlackboardPlan_ewfwq")
 root_task = SubResource("BTSelector_ddhoo")
-===== ./demo/ai/trees/tutorial/tutorial_08_final_touch.tres =====
+
+==================================================
+FILE: ./demo/ai/trees/tutorial/tutorial_08_final_touch.tres
+==================================================
 [gd_resource type="BehaviorTree" format=3 uid="uid://dp0cglcytwcj5"]
 
 [ext_resource type="Script" uid="uid://ccr43pgd4488l" path="res://demo/ai/tasks/get_first_in_group.gd" id="1_o5ahw"]
@@ -10354,7 +8874,10 @@ description = "And for the final touch, we've added throwing ninja stars to our 
 This concludes our tutorial. Hopefully, this little endeavor has been useful to you. You can learn more by reading the [b]Online Documentation[/b], which covers topics like creating your own tasks. Also, check out the [b]Showcase[/b], which presents behaviors of agents made for this little demo. Simply click \"End Tutorial\" to return to the [b]Showcase[/b]."
 blackboard_plan = SubResource("BlackboardPlan_ewfwq")
 root_task = SubResource("BTSelector_ddhoo")
-===== ./demo/props/dummy.gd =====
+
+==================================================
+FILE: ./demo/props/dummy.gd
+==================================================
 extends CharacterBody2D
 
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
@@ -10370,7 +8893,10 @@ func _on_health_damaged(_amount: float, _knockback: Vector2) -> void:
 
 func get_facing() -> float:
 	return signf(root.scale.x)
-===== ./demo/props/dummy.tscn =====
+
+==================================================
+FILE: ./demo/props/dummy.tscn
+==================================================
 [gd_scene format=3 uid="uid://c5fhe3tulhlco"]
 
 [ext_resource type="Script" uid="uid://mapy7metn1kt" path="res://demo/props/dummy.gd" id="1_kqftw"]
@@ -10774,7 +9300,10 @@ script = ExtResource("5_8qcls")
 max_health = 10000000.0
 
 [connection signal="damaged" from="Health" to="." method="_on_health_damaged"]
-===== ./demo/props/gong.gd =====
+
+==================================================
+FILE: ./demo/props/gong.gd
+==================================================
 extends StaticBody2D
 
 signal gong_struck
@@ -10790,7 +9319,10 @@ func _on_health_damaged(_amount: float, _knockback: Vector2) -> void:
 	animation_player.play(&"struck")
 	gong_struck.emit()
 	enabled = false
-===== ./demo/props/gong.tscn =====
+
+==================================================
+FILE: ./demo/props/gong.tscn
+==================================================
 [gd_scene format=3 uid="uid://bpd1wmw2f7bvg"]
 
 [ext_resource type="Script" uid="uid://d3cmj6skb7k07" path="res://demo/props/gong.gd" id="1_77c1i"]
@@ -11719,7 +10251,10 @@ script = ExtResource("6_6a3q1")
 max_health = 100000000000.0
 
 [connection signal="damaged" from="Health" to="." method="_on_health_damaged"]
-===== ./demo/scenes/base/arena.tscn =====
+
+==================================================
+FILE: ./demo/scenes/base/arena.tscn
+==================================================
 [gd_scene format=3 uid="uid://bsig1usigbbuy"]
 
 [ext_resource type="Texture2D" uid="uid://65b6yuobhxf8" path="res://demo/assets/env_clouds.png" id="1_1blat"]
@@ -16860,7 +15395,10 @@ texture = ExtResource("2_kesm7")
 offset = Vector2(0, -42)
 region_enabled = true
 region_rect = Rect2(996.053, 4.65938, 177.044, 92.8809)
-===== ./demo/scenes/base/clouds.tscn =====
+
+==================================================
+FILE: ./demo/scenes/base/clouds.tscn
+==================================================
 [gd_scene format=3 uid="uid://dt2jlrqffpyw"]
 
 [ext_resource type="Texture2D" uid="uid://65b6yuobhxf8" path="res://demo/assets/env_clouds.png" id="1_eigiy"]
@@ -17117,7 +15655,10 @@ position = Vector2(3270.25, 2207)
 texture = ExtResource("1_eigiy")
 region_enabled = true
 region_rect = Rect2(10, 189, 644, 165)
-===== ./demo/scenes/base/code_edit.gd =====
+
+==================================================
+FILE: ./demo/scenes/base/code_edit.gd
+==================================================
 #*
 #* code_edit.gd
 #* =============================================================================
@@ -17258,7 +15799,10 @@ func set_source_code(source_code: String) -> void:
 
 	text = "" # Workaround
 	text = source_code
-===== ./demo/scenes/base/toggle_fullscreen.gd =====
+
+==================================================
+FILE: ./demo/scenes/base/toggle_fullscreen.gd
+==================================================
 extends Button
 
 
@@ -17277,7 +15821,10 @@ func _toggle_fullscreen() -> void:
 		get_window().mode = Window.MODE_FULLSCREEN
 	else:
 		get_window().mode = Window.MODE_MAXIMIZED
-===== ./demo/scenes/game.gd =====
+
+==================================================
+FILE: ./demo/scenes/game.gd
+==================================================
 extends Node2D
 
 const Simple := preload("res://demo/agents/01_agent_melee_simple.tscn")
@@ -17362,7 +15909,10 @@ func _on_player_death() -> void:
 
 func _on_switch_to_showcase_pressed() -> void:
 	get_tree().change_scene_to_file("res://demo/scenes/showcase.tscn")
-===== ./demo/scenes/game.tscn =====
+
+==================================================
+FILE: ./demo/scenes/game.tscn
+==================================================
 [gd_scene format=3 uid="uid://clyhgbpfpmtw7"]
 
 [ext_resource type="Script" uid="uid://bwhv180m71qs4" path="res://demo/scenes/game.gd" id="1_qw71e"]
@@ -17559,7 +16109,10 @@ position = Vector2(1859, 3)
 
 [connection signal="pressed" from="UI Layer/Control/Toolbar/HBoxContainer/Switch to Showcase" to="." method="_on_switch_to_showcase_pressed"]
 [connection signal="gong_struck" from="Gong" to="." method="_on_gong_gong_struck"]
-===== ./demo/scenes/showcase.gd =====
+
+==================================================
+FILE: ./demo/scenes/showcase.gd
+==================================================
 #*
 #* showcase.gd
 #* =============================================================================
@@ -17716,7 +16269,10 @@ func _on_behavior_tree_view_task_selected(_type_name: String, p_script_path: Str
 		var sc: Script = load(p_script_path)
 		code_edit.set_source_code(sc.source_code)
 		code_popup.popup.call_deferred()
-===== ./demo/scenes/showcase.tscn =====
+
+==================================================
+FILE: ./demo/scenes/showcase.tscn
+==================================================
 [gd_scene format=3 uid="uid://b3ae14mc2ty3y"]
 
 [ext_resource type="Script" uid="uid://qpj1dk7ugnja" path="res://demo/scenes/showcase.gd" id="1_l12ql"]
@@ -18006,7 +16562,10 @@ position = Vector2(1106, 423)
 [connection signal="pressed" from="UI Layer/Control/Toolbar/HBoxContainer/BeginTutorial" to="." method="_on_tutorial_pressed"]
 [connection signal="task_selected" from="UI Layer/Control/BehaviorInspector/VBoxContainer/BehaviorTreeView" to="." method="_on_behavior_tree_view_task_selected"]
 [connection signal="button_down" from="UI Layer/Control/PanelContainer/Control/Header/MinimizeDescription" to="." method="_on_minimize_description_button_down"]
-===== ./project.godot =====
+
+==================================================
+FILE: ./project.godot
+==================================================
 ; Engine configuration file.
 ; It's best edited using the editor UI and not directly,
 ; since the parameters that go here are not all obvious.
@@ -18072,960 +16631,16 @@ atacar={
 
 textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
-===== ./world/world_camera_world.tscn =====
-[gd_scene format=4 uid="uid://4p3cjrp0cgr8"]
 
-[ext_resource type="Script" path="res://camera_2d.gd" id="1_wr4rf"]
-[ext_resource type="Texture2D" uid="uid://dfflfst3xa1n2" path="res://assets/Tilemap_Flat.png" id="2_pi774"]
-[ext_resource type="Script" uid="uid://ckujj764mji4t" path="res://actors/player/player.gd" id="3_5ckl1"]
-[ext_resource type="Texture2D" uid="uid://edeaft2r3ios" path="res://assets/Warrior_Blue.png" id="4_xepvh"]
-[ext_resource type="Texture2D" uid="uid://cv5t6efyjrh8x" path="res://assets/Dead.png" id="5_jlmer"]
-[ext_resource type="Script" uid="uid://bcvt0c5nfew7c" path="res://actors/player/states/player_state.gd" id="6_86o8e"]
-[ext_resource type="Script" uid="uid://cc3lyq1bexwta" path="res://actors/player/states/state_idle.gd" id="7_hjj1n"]
-[ext_resource type="Script" uid="uid://xkbmhs1kyakl" path="res://actors/player/states/state_walk.gd" id="8_64k4g"]
-[ext_resource type="Script" uid="uid://br50u3awe1tj3" path="res://actors/player/states/state_attack.gd" id="9_4j6cr"]
-[ext_resource type="Script" uid="uid://c0ddkmu85xeqb" path="res://actors/player/states/state_hurt.gd" id="10_7shyn"]
-[ext_resource type="Script" uid="uid://ch2tnx4730hoo" path="res://actors/player/states/dead.gd" id="11_0l2tg"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ic0uy"]
-texture = ExtResource("2_pi774")
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-3:0/0 = 0
-4:0/0 = 0
-5:0/0 = 0
-6:0/0 = 0
-7:0/0 = 0
-8:0/0 = 0
-9:0/0 = 0
-10:0/0 = 0
-11:0/0 = 0
-12:0/0 = 0
-13:0/0 = 0
-14:0/0 = 0
-15:0/0 = 0
-20:0/0 = 0
-21:0/0 = 0
-22:0/0 = 0
-23:0/0 = 0
-24:0/0 = 0
-25:0/0 = 0
-26:0/0 = 0
-27:0/0 = 0
-28:0/0 = 0
-29:0/0 = 0
-30:0/0 = 0
-31:0/0 = 0
-32:0/0 = 0
-33:0/0 = 0
-34:0/0 = 0
-35:0/0 = 0
-0:1/0 = 0
-1:1/0 = 0
-2:1/0 = 0
-3:1/0 = 0
-4:1/0 = 0
-5:1/0 = 0
-6:1/0 = 0
-7:1/0 = 0
-8:1/0 = 0
-9:1/0 = 0
-10:1/0 = 0
-11:1/0 = 0
-12:1/0 = 0
-13:1/0 = 0
-14:1/0 = 0
-15:1/0 = 0
-20:1/0 = 0
-21:1/0 = 0
-22:1/0 = 0
-23:1/0 = 0
-24:1/0 = 0
-25:1/0 = 0
-26:1/0 = 0
-27:1/0 = 0
-28:1/0 = 0
-29:1/0 = 0
-30:1/0 = 0
-31:1/0 = 0
-32:1/0 = 0
-33:1/0 = 0
-34:1/0 = 0
-35:1/0 = 0
-0:2/0 = 0
-1:2/0 = 0
-2:2/0 = 0
-3:2/0 = 0
-4:2/0 = 0
-5:2/0 = 0
-6:2/0 = 0
-7:2/0 = 0
-8:2/0 = 0
-9:2/0 = 0
-10:2/0 = 0
-11:2/0 = 0
-12:2/0 = 0
-13:2/0 = 0
-14:2/0 = 0
-15:2/0 = 0
-18:2/0 = 0
-20:2/0 = 0
-21:2/0 = 0
-22:2/0 = 0
-23:2/0 = 0
-24:2/0 = 0
-25:2/0 = 0
-26:2/0 = 0
-27:2/0 = 0
-28:2/0 = 0
-29:2/0 = 0
-30:2/0 = 0
-31:2/0 = 0
-32:2/0 = 0
-33:2/0 = 0
-34:2/0 = 0
-35:2/0 = 0
-0:3/0 = 0
-1:3/0 = 0
-2:3/0 = 0
-3:3/0 = 0
-4:3/0 = 0
-5:3/0 = 0
-6:3/0 = 0
-7:3/0 = 0
-8:3/0 = 0
-9:3/0 = 0
-10:3/0 = 0
-11:3/0 = 0
-12:3/0 = 0
-13:3/0 = 0
-14:3/0 = 0
-15:3/0 = 0
-16:3/0 = 0
-17:3/0 = 0
-18:3/0 = 0
-19:3/0 = 0
-20:3/0 = 0
-21:3/0 = 0
-22:3/0 = 0
-23:3/0 = 0
-24:3/0 = 0
-25:3/0 = 0
-26:3/0 = 0
-27:3/0 = 0
-28:3/0 = 0
-29:3/0 = 0
-30:3/0 = 0
-31:3/0 = 0
-32:3/0 = 0
-33:3/0 = 0
-34:3/0 = 0
-35:3/0 = 0
-36:3/0 = 0
-37:3/0 = 0
-38:3/0 = 0
-39:3/0 = 0
-0:4/0 = 0
-1:4/0 = 0
-2:4/0 = 0
-3:4/0 = 0
-4:4/0 = 0
-5:4/0 = 0
-6:4/0 = 0
-7:4/0 = 0
-8:4/0 = 0
-9:4/0 = 0
-10:4/0 = 0
-11:4/0 = 0
-12:4/0 = 0
-13:4/0 = 0
-14:4/0 = 0
-15:4/0 = 0
-20:4/0 = 0
-21:4/0 = 0
-22:4/0 = 0
-23:4/0 = 0
-24:4/0 = 0
-25:4/0 = 0
-26:4/0 = 0
-27:4/0 = 0
-28:4/0 = 0
-29:4/0 = 0
-30:4/0 = 0
-31:4/0 = 0
-32:4/0 = 0
-33:4/0 = 0
-34:4/0 = 0
-35:4/0 = 0
-0:5/0 = 0
-1:5/0 = 0
-2:5/0 = 0
-3:5/0 = 0
-4:5/0 = 0
-5:5/0 = 0
-6:5/0 = 0
-7:5/0 = 0
-8:5/0 = 0
-9:5/0 = 0
-10:5/0 = 0
-11:5/0 = 0
-12:5/0 = 0
-13:5/0 = 0
-14:5/0 = 0
-15:5/0 = 0
-20:5/0 = 0
-21:5/0 = 0
-22:5/0 = 0
-23:5/0 = 0
-24:5/0 = 0
-25:5/0 = 0
-26:5/0 = 0
-27:5/0 = 0
-28:5/0 = 0
-29:5/0 = 0
-30:5/0 = 0
-31:5/0 = 0
-32:5/0 = 0
-33:5/0 = 0
-34:5/0 = 0
-35:5/0 = 0
-0:6/0 = 0
-1:6/0 = 0
-2:6/0 = 0
-3:6/0 = 0
-4:6/0 = 0
-5:6/0 = 0
-6:6/0 = 0
-7:6/0 = 0
-8:6/0 = 0
-9:6/0 = 0
-10:6/0 = 0
-11:6/0 = 0
-12:6/0 = 0
-13:6/0 = 0
-14:6/0 = 0
-15:6/0 = 0
-20:6/0 = 0
-21:6/0 = 0
-22:6/0 = 0
-23:6/0 = 0
-24:6/0 = 0
-25:6/0 = 0
-26:6/0 = 0
-27:6/0 = 0
-28:6/0 = 0
-29:6/0 = 0
-30:6/0 = 0
-31:6/0 = 0
-32:6/0 = 0
-33:6/0 = 0
-34:6/0 = 0
-35:6/0 = 0
-0:7/0 = 0
-1:7/0 = 0
-2:7/0 = 0
-3:7/0 = 0
-4:7/0 = 0
-5:7/0 = 0
-6:7/0 = 0
-7:7/0 = 0
-8:7/0 = 0
-9:7/0 = 0
-10:7/0 = 0
-11:7/0 = 0
-12:7/0 = 0
-13:7/0 = 0
-14:7/0 = 0
-15:7/0 = 0
-20:7/0 = 0
-21:7/0 = 0
-22:7/0 = 0
-23:7/0 = 0
-24:7/0 = 0
-25:7/0 = 0
-26:7/0 = 0
-27:7/0 = 0
-28:7/0 = 0
-29:7/0 = 0
-30:7/0 = 0
-31:7/0 = 0
-32:7/0 = 0
-33:7/0 = 0
-34:7/0 = 0
-35:7/0 = 0
-0:8/0 = 0
-1:8/0 = 0
-2:8/0 = 0
-3:8/0 = 0
-4:8/0 = 0
-5:8/0 = 0
-6:8/0 = 0
-7:8/0 = 0
-8:8/0 = 0
-9:8/0 = 0
-10:8/0 = 0
-11:8/0 = 0
-12:8/0 = 0
-13:8/0 = 0
-14:8/0 = 0
-15:8/0 = 0
-20:8/0 = 0
-21:8/0 = 0
-22:8/0 = 0
-23:8/0 = 0
-24:8/0 = 0
-25:8/0 = 0
-26:8/0 = 0
-27:8/0 = 0
-28:8/0 = 0
-29:8/0 = 0
-30:8/0 = 0
-31:8/0 = 0
-32:8/0 = 0
-33:8/0 = 0
-34:8/0 = 0
-35:8/0 = 0
-0:9/0 = 0
-1:9/0 = 0
-2:9/0 = 0
-3:9/0 = 0
-4:9/0 = 0
-5:9/0 = 0
-6:9/0 = 0
-7:9/0 = 0
-8:9/0 = 0
-9:9/0 = 0
-10:9/0 = 0
-11:9/0 = 0
-12:9/0 = 0
-13:9/0 = 0
-14:9/0 = 0
-15:9/0 = 0
-20:9/0 = 0
-21:9/0 = 0
-22:9/0 = 0
-23:9/0 = 0
-24:9/0 = 0
-25:9/0 = 0
-26:9/0 = 0
-27:9/0 = 0
-28:9/0 = 0
-29:9/0 = 0
-30:9/0 = 0
-31:9/0 = 0
-32:9/0 = 0
-33:9/0 = 0
-34:9/0 = 0
-35:9/0 = 0
-0:10/0 = 0
-1:10/0 = 0
-2:10/0 = 0
-3:10/0 = 0
-4:10/0 = 0
-5:10/0 = 0
-6:10/0 = 0
-7:10/0 = 0
-8:10/0 = 0
-9:10/0 = 0
-10:10/0 = 0
-11:10/0 = 0
-12:10/0 = 0
-13:10/0 = 0
-14:10/0 = 0
-15:10/0 = 0
-20:10/0 = 0
-21:10/0 = 0
-22:10/0 = 0
-23:10/0 = 0
-24:10/0 = 0
-25:10/0 = 0
-26:10/0 = 0
-27:10/0 = 0
-28:10/0 = 0
-29:10/0 = 0
-30:10/0 = 0
-31:10/0 = 0
-32:10/0 = 0
-33:10/0 = 0
-34:10/0 = 0
-35:10/0 = 0
-0:11/0 = 0
-1:11/0 = 0
-2:11/0 = 0
-3:11/0 = 0
-4:11/0 = 0
-5:11/0 = 0
-6:11/0 = 0
-7:11/0 = 0
-8:11/0 = 0
-9:11/0 = 0
-10:11/0 = 0
-11:11/0 = 0
-12:11/0 = 0
-13:11/0 = 0
-14:11/0 = 0
-15:11/0 = 0
-20:11/0 = 0
-21:11/0 = 0
-22:11/0 = 0
-23:11/0 = 0
-24:11/0 = 0
-25:11/0 = 0
-26:11/0 = 0
-27:11/0 = 0
-28:11/0 = 0
-29:11/0 = 0
-30:11/0 = 0
-31:11/0 = 0
-32:11/0 = 0
-33:11/0 = 0
-34:11/0 = 0
-35:11/0 = 0
-0:12/0 = 0
-1:12/0 = 0
-2:12/0 = 0
-3:12/0 = 0
-4:12/0 = 0
-5:12/0 = 0
-6:12/0 = 0
-7:12/0 = 0
-8:12/0 = 0
-9:12/0 = 0
-10:12/0 = 0
-11:12/0 = 0
-12:12/0 = 0
-13:12/0 = 0
-14:12/0 = 0
-15:12/0 = 0
-20:12/0 = 0
-21:12/0 = 0
-22:12/0 = 0
-23:12/0 = 0
-24:12/0 = 0
-25:12/0 = 0
-26:12/0 = 0
-27:12/0 = 0
-28:12/0 = 0
-29:12/0 = 0
-30:12/0 = 0
-31:12/0 = 0
-32:12/0 = 0
-33:12/0 = 0
-34:12/0 = 0
-35:12/0 = 0
-0:13/0 = 0
-1:13/0 = 0
-2:13/0 = 0
-3:13/0 = 0
-4:13/0 = 0
-5:13/0 = 0
-6:13/0 = 0
-7:13/0 = 0
-8:13/0 = 0
-9:13/0 = 0
-10:13/0 = 0
-11:13/0 = 0
-12:13/0 = 0
-13:13/0 = 0
-14:13/0 = 0
-15:13/0 = 0
-20:13/0 = 0
-21:13/0 = 0
-22:13/0 = 0
-23:13/0 = 0
-24:13/0 = 0
-25:13/0 = 0
-26:13/0 = 0
-27:13/0 = 0
-28:13/0 = 0
-29:13/0 = 0
-30:13/0 = 0
-31:13/0 = 0
-32:13/0 = 0
-33:13/0 = 0
-34:13/0 = 0
-35:13/0 = 0
-0:14/0 = 0
-1:14/0 = 0
-2:14/0 = 0
-3:14/0 = 0
-4:14/0 = 0
-5:14/0 = 0
-6:14/0 = 0
-7:14/0 = 0
-8:14/0 = 0
-9:14/0 = 0
-10:14/0 = 0
-11:14/0 = 0
-12:14/0 = 0
-13:14/0 = 0
-14:14/0 = 0
-15:14/0 = 0
-20:14/0 = 0
-21:14/0 = 0
-22:14/0 = 0
-23:14/0 = 0
-24:14/0 = 0
-25:14/0 = 0
-26:14/0 = 0
-27:14/0 = 0
-28:14/0 = 0
-29:14/0 = 0
-30:14/0 = 0
-31:14/0 = 0
-32:14/0 = 0
-33:14/0 = 0
-34:14/0 = 0
-35:14/0 = 0
-0:15/0 = 0
-1:15/0 = 0
-2:15/0 = 0
-3:15/0 = 0
-4:15/0 = 0
-5:15/0 = 0
-6:15/0 = 0
-7:15/0 = 0
-8:15/0 = 0
-9:15/0 = 0
-10:15/0 = 0
-11:15/0 = 0
-12:15/0 = 0
-13:15/0 = 0
-14:15/0 = 0
-15:15/0 = 0
-20:15/0 = 0
-21:15/0 = 0
-22:15/0 = 0
-23:15/0 = 0
-24:15/0 = 0
-25:15/0 = 0
-26:15/0 = 0
-27:15/0 = 0
-28:15/0 = 0
-29:15/0 = 0
-30:15/0 = 0
-31:15/0 = 0
-32:15/0 = 0
-33:15/0 = 0
-34:15/0 = 0
-35:15/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_ioo17"]
-sources/0 = SubResource("TileSetAtlasSource_ic0uy")
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_26xuy"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(0, 384, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bc84e"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(192, 384, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wukud"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(384, 384, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_il2jm"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(576, 384, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wjb0r"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(768, 384, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mc2jv"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(960, 384, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bo7i5"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(0, 960, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4h6ng"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(192, 960, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_o3ebs"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(384, 960, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_k83mh"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(576, 960, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qktwf"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(768, 960, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bh8nc"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(960, 960, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jjr1n"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(0, 1152, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gggvi"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(192, 1152, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_w44yn"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(384, 1152, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6ah6f"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(576, 1152, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_g1i3r"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(768, 1152, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_my276"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(960, 1152, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_yx0jh"]
-atlas = ExtResource("5_jlmer")
-region = Rect2(0, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1ew0l"]
-atlas = ExtResource("5_jlmer")
-region = Rect2(128, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ryup7"]
-atlas = ExtResource("5_jlmer")
-region = Rect2(256, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ytpkv"]
-atlas = ExtResource("5_jlmer")
-region = Rect2(384, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jas3d"]
-atlas = ExtResource("5_jlmer")
-region = Rect2(512, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7htu6"]
-atlas = ExtResource("5_jlmer")
-region = Rect2(640, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7qk3m"]
-atlas = ExtResource("5_jlmer")
-region = Rect2(768, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xpnt2"]
-atlas = ExtResource("5_jlmer")
-region = Rect2(0, 128, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ruyqm"]
-atlas = ExtResource("5_jlmer")
-region = Rect2(128, 128, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_fnoqa"]
-atlas = ExtResource("5_jlmer")
-region = Rect2(256, 128, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_nx736"]
-atlas = ExtResource("5_jlmer")
-region = Rect2(384, 128, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_55kwu"]
-atlas = ExtResource("5_jlmer")
-region = Rect2(512, 128, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_f3o6s"]
-atlas = ExtResource("5_jlmer")
-region = Rect2(640, 128, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_w4lh7"]
-atlas = ExtResource("5_jlmer")
-region = Rect2(768, 128, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gbfbk"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(0, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ioo17"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(192, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wse8f"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(384, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ic0uy"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(576, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_k3n1d"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(768, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2o6r5"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(960, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_70uel"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(0, 192, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hiqwa"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(192, 192, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2u3nc"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(384, 192, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_udxuc"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(576, 192, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ikiii"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(768, 192, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cbp6q"]
-atlas = ExtResource("4_xepvh")
-region = Rect2(960, 192, 192, 192)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_ioo17"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_26xuy")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bc84e")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wukud")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_il2jm")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wjb0r")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mc2jv")
-}],
-"loop": false,
-"name": &"attack",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bo7i5")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4h6ng")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_o3ebs")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_k83mh")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qktwf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bh8nc")
-}],
-"loop": false,
-"name": &"attack_down",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jjr1n")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gggvi")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_w44yn")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_6ah6f")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_g1i3r")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_my276")
-}],
-"loop": false,
-"name": &"attack_up",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_yx0jh")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1ew0l")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ryup7")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ytpkv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jas3d")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7htu6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7qk3m")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xpnt2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ruyqm")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_fnoqa")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nx736")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_55kwu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_f3o6s")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_w4lh7")
-}],
-"loop": false,
-"name": &"dead",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gbfbk")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ioo17")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wse8f")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ic0uy")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_k3n1d")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2o6r5")
-}],
-"loop": true,
-"name": &"idle",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_70uel")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hiqwa")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2u3nc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_udxuc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ikiii")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cbp6q")
-}],
-"loop": true,
-"name": &"walk",
-"speed": 10.0
-}]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ioo17"]
-size = Vector2(12, 16)
-
-[node name="world" type="Node2D" unique_id=655083946]
-
-[node name="suelo" type="TileMapLayer" parent="." unique_id=361008697]
-tile_map_data = PackedByteArray("AADz//j/AAADAAMAAADz//n/AAADAAQAAADz//r/AAADAAUAAADz//v/AAADAAYAAADz//z/AAADAAcAAADz//3/AAAGAAMAAAD0//j/AAAEAAMAAAD0//n/AAAEAAQAAAD0//r/AAAEAAUAAAD0//v/AAAEAAYAAAD0//z/AAAEAAcAAAD0//3/AAAHAAMAAAD1//j/AAAFAAMAAAD1//n/AAAFAAQAAAD1//r/AAAFAAUAAAD1//v/AAAFAAYAAAD1//z/AAAFAAcAAAD1//3/AAAIAAMAAAD2//j/AAAGAAMAAAD2//n/AAAGAAQAAAD2//r/AAAGAAUAAAD2//v/AAAGAAYAAAD2//z/AAAGAAcAAAD2//3/AAAGAAgAAAD3//j/AAAHAAMAAAD3//n/AAAHAAQAAAD3//r/AAAHAAUAAAD3//v/AAAHAAYAAAD3//z/AAAHAAcAAAD3//3/AAAHAAgAAAD4//j/AAAIAAMAAAD4//n/AAAIAAQAAAD4//r/AAAIAAUAAAD4//v/AAAIAAYAAAD4//z/AAAIAAcAAAD4//3/AAAIAAgAAAD5//j/AAADAAMAAAD5//n/AAADAAQAAAD5//r/AAADAAUAAAD5//v/AAADAAYAAAD5//z/AAADAAcAAAD5//3/AAADAAgAAAD6//j/AAAEAAMAAAD6//n/AAAEAAQAAAD6//r/AAAEAAUAAAD6//v/AAAEAAYAAAD6//z/AAAEAAcAAAD6//3/AAAEAAgAAAD7//j/AAAFAAMAAAD7//n/AAAFAAQAAAD7//r/AAAFAAUAAAD7//v/AAAFAAYAAAD7//z/AAAFAAcAAAD7//3/AAAFAAgAAAD8//j/AAAGAAMAAAD8//n/AAAGAAQAAAD8//r/AAAGAAUAAAD8//v/AAAGAAYAAAD8//z/AAAGAAcAAAD8//3/AAAGAAgAAAD9//j/AAAHAAMAAAD9//n/AAAHAAQAAAD9//r/AAAHAAUAAAD9//v/AAAHAAYAAAD9//z/AAAHAAcAAAD9//3/AAAHAAgAAAD+//j/AAAIAAMAAAD+//n/AAAIAAQAAAD+//r/AAAIAAUAAAD+//v/AAAIAAYAAAD+//z/AAAIAAcAAAD+//3/AAAIAAgAAAD5//7/AAADAAMAAAD5////AAADAAQAAAD5/wAAAAAGAAMAAAD5/wEAAAAGAAQAAAD6//7/AAAEAAMAAAD6////AAAEAAQAAAD6/wAAAAAHAAMAAAD6/wEAAAAHAAQAAAD6/wMAAAAHAAYAAAD7//7/AAAFAAMAAAD7////AAAFAAQAAAD7/wAAAAAIAAMAAAD7/wEAAAAIAAQAAAD7/wIAAAAIAAUAAAD7/wMAAAAIAAYAAAD8//7/AAAGAAMAAAD8////AAAGAAQAAAD8/wAAAAAGAAUAAAD8/wEAAAAGAAYAAAD8/wIAAAAGAAcAAAD8/wMAAAAGAAgAAAD9//7/AAAHAAMAAAD9////AAAHAAQAAAD9/wAAAAAHAAUAAAD9/wEAAAAHAAYAAAD9/wIAAAAHAAcAAAD9/wMAAAAHAAgAAAD+//7/AAAIAAMAAAD+////AAAIAAQAAAD+/wAAAAAIAAUAAAD+/wEAAAAIAAYAAAD+/wIAAAAIAAcAAAD+/wMAAAAIAAgAAAD5/wQAAAAGAAcAAAD5/wUAAAAGAAgAAAD5/wYAAAADAAUAAAD5/wcAAAADAAYAAAD5/wgAAAADAAcAAAD5/wkAAAADAAgAAAD6/wQAAAAHAAcAAAD6/wUAAAAHAAgAAAD6/wYAAAAEAAUAAAD6/wcAAAAEAAYAAAD6/wgAAAAEAAcAAAD6/wkAAAAEAAgAAAD7/wQAAAAIAAcAAAD7/wUAAAAIAAgAAAD7/wYAAAAFAAUAAAD7/wcAAAAFAAYAAAD7/wgAAAAFAAcAAAD7/wkAAAAFAAgAAAD8/wQAAAAGAAMAAAD8/wUAAAAGAAQAAAD8/wYAAAAGAAUAAAD8/wcAAAAGAAYAAAD8/wgAAAAGAAcAAAD8/wkAAAAGAAgAAAD9/wQAAAAHAAMAAAD9/wUAAAAHAAQAAAD9/wYAAAAHAAUAAAD9/wcAAAAHAAYAAAD9/wgAAAAHAAcAAAD9/wkAAAAHAAgAAAD+/wQAAAAIAAMAAAD+/wUAAAAIAAQAAAD+/wYAAAAIAAUAAAD+/wcAAAAIAAYAAAD+/wgAAAAIAAcAAAD+/wkAAAAIAAgAAADz//7/AAAGAAQAAADz////AAAGAAUAAADz/wAAAAAGAAYAAADz/wEAAAAGAAcAAADz/wIAAAAGAAgAAADz/wMAAAAGAAMAAAD0//7/AAAHAAQAAAD0////AAAHAAUAAAD0/wAAAAAHAAYAAAD0/wEAAAAHAAcAAAD0/wIAAAAHAAgAAAD0/wMAAAAHAAMAAAD1//7/AAAIAAQAAAD1////AAAIAAUAAAD1/wAAAAAIAAYAAAD1/wEAAAAIAAcAAAD1/wIAAAAIAAgAAAD1/wMAAAAIAAMAAAD2//7/AAAGAAMAAAD2////AAAGAAQAAAD2/wAAAAADAAMAAAD2/wEAAAADAAQAAAD2/wIAAAADAAUAAAD2/wMAAAADAAYAAAD3//7/AAAHAAMAAAD3////AAAHAAQAAAD3/wAAAAAEAAMAAAD3/wEAAAAEAAQAAAD3/wIAAAAEAAUAAAD3/wMAAAAEAAYAAAD4//7/AAAIAAMAAAD4////AAAIAAQAAAD4/wAAAAAFAAMAAAD4/wEAAAAFAAQAAAD4/wIAAAAFAAUAAAD4/wMAAAAFAAYAAAD///7/AAADAAMAAAD/////AAADAAQAAAD//wAAAAADAAUAAAD//wEAAAADAAYAAAD//wIAAAADAAcAAAD//wMAAAADAAgAAAAAAP7/AAAEAAMAAAAAAP//AAAEAAQAAAAAAAAAAAAEAAUAAAAAAAEAAAAEAAYAAAAAAAIAAAAEAAcAAAAAAAMAAAAEAAgAAAABAP7/AAAFAAMAAAABAP//AAAFAAQAAAABAAAAAAAFAAUAAAABAAEAAAAFAAYAAAABAAIAAAAFAAcAAAABAAMAAAAFAAgAAAACAP7/AAAGAAMAAAACAP//AAAGAAQAAAACAAAAAAAGAAUAAAACAAEAAAAGAAYAAAACAAIAAAAGAAcAAAACAAMAAAAGAAgAAAADAP7/AAAHAAMAAAADAP//AAAHAAQAAAADAAAAAAAHAAUAAAADAAEAAAAHAAYAAAADAAIAAAAHAAcAAAADAAMAAAAHAAgAAAAEAP7/AAAIAAMAAAAEAP//AAAIAAQAAAAEAAAAAAAIAAUAAAAEAAEAAAAIAAYAAAAEAAIAAAAIAAcAAAAEAAMAAAAIAAgAAAAFAP7/AAADAAMAAAAFAP//AAADAAQAAAAFAAAAAAADAAUAAAAFAAEAAAADAAYAAAAFAAIAAAADAAcAAAAFAAMAAAADAAgAAAAGAP7/AAAEAAMAAAAGAP//AAAEAAQAAAAGAAAAAAAEAAUAAAAGAAEAAAAEAAYAAAAGAAIAAAAEAAcAAAAGAAMAAAAEAAgAAAAHAP7/AAAFAAMAAAAHAP//AAAFAAQAAAAHAAAAAAAFAAUAAAAHAAEAAAAFAAYAAAAHAAIAAAAFAAcAAAAHAAMAAAAFAAgAAAAIAP7/AAAGAAMAAAAIAP//AAAGAAQAAAAIAAAAAAAGAAUAAAAIAAEAAAAGAAYAAAAIAAIAAAAGAAcAAAAIAAMAAAAGAAgAAAAJAP7/AAADAAYAAAAJAP//AAADAAcAAAAJAAAAAAADAAgAAAAJAAEAAAAHAAYAAAAJAAIAAAADAAMAAAAJAAMAAAADAAQAAAAKAP7/AAAEAAYAAAAKAP//AAAEAAcAAAAKAAAAAAAEAAgAAAAKAAEAAAADAAYAAAAKAAIAAAAEAAMAAAAKAAMAAAAEAAQAAAAFAAQAAAADAAMAAAAFAAUAAAADAAQAAAAFAAYAAAADAAUAAAAFAAcAAAADAAYAAAAFAAgAAAADAAcAAAAFAAkAAAADAAgAAAAGAAQAAAAEAAMAAAAGAAUAAAAEAAQAAAAGAAYAAAAEAAUAAAAGAAcAAAAEAAYAAAAGAAgAAAAEAAcAAAAGAAkAAAAEAAgAAAAHAAQAAAAFAAMAAAAHAAUAAAAFAAQAAAAHAAYAAAAFAAUAAAAHAAcAAAAFAAYAAAAHAAgAAAAFAAcAAAAHAAkAAAAFAAgAAAAIAAQAAAAGAAMAAAAIAAUAAAAGAAQAAAAIAAYAAAAGAAUAAAAIAAcAAAAGAAYAAAAIAAgAAAAGAAcAAAAIAAkAAAAGAAgAAAAJAAQAAAADAAUAAAAJAAUAAAADAAYAAAAJAAYAAAADAAcAAAAJAAcAAAADAAgAAAAJAAgAAAAHAAcAAAAJAAkAAAAHAAgAAAAKAAQAAAAEAAUAAAAKAAUAAAAEAAYAAAAKAAYAAAAEAAcAAAAKAAcAAAAEAAgAAAAKAAgAAAAIAAcAAAAKAAkAAAAIAAgAAAD//wQAAAADAAMAAAD//wUAAAADAAQAAAD//wYAAAADAAUAAAD//wcAAAADAAYAAAD//wgAAAADAAcAAAD//wkAAAADAAgAAAAAAAQAAAAEAAMAAAAAAAUAAAAEAAQAAAAAAAYAAAAEAAUAAAAAAAcAAAAEAAYAAAAAAAgAAAAEAAcAAAAAAAkAAAAEAAgAAAABAAQAAAAFAAMAAAABAAUAAAAFAAQAAAABAAYAAAAFAAUAAAABAAcAAAAFAAYAAAABAAgAAAAFAAcAAAABAAkAAAAFAAgAAAACAAQAAAAGAAMAAAACAAUAAAAGAAQAAAACAAYAAAAGAAUAAAACAAcAAAAGAAYAAAACAAgAAAAGAAcAAAACAAkAAAAGAAgAAAADAAQAAAAHAAMAAAADAAUAAAAHAAQAAAADAAYAAAAHAAUAAAADAAcAAAAHAAYAAAADAAgAAAAHAAcAAAADAAkAAAAHAAgAAAAEAAQAAAAIAAMAAAAEAAUAAAAIAAQAAAAEAAYAAAAIAAUAAAAEAAcAAAAIAAYAAAAEAAgAAAAIAAcAAAAEAAkAAAAIAAgAAAD///j/AAADAAMAAAD///n/AAADAAQAAAD///r/AAADAAUAAAD///v/AAADAAYAAAD///z/AAADAAcAAAD///3/AAADAAgAAAAAAPj/AAAEAAMAAAAAAPn/AAAEAAQAAAAAAPr/AAAEAAUAAAAAAPv/AAAEAAYAAAAAAPz/AAAEAAcAAAAAAP3/AAAEAAgAAAABAPj/AAAFAAMAAAABAPn/AAAFAAQAAAABAPr/AAAFAAUAAAABAPv/AAAFAAYAAAABAPz/AAAFAAcAAAABAP3/AAAFAAgAAAACAPj/AAAGAAMAAAACAPn/AAAGAAQAAAACAPr/AAAGAAUAAAACAPv/AAAGAAYAAAACAPz/AAAGAAcAAAACAP3/AAAGAAgAAAADAPj/AAAHAAMAAAADAPn/AAAHAAQAAAADAPr/AAAHAAUAAAADAPv/AAAHAAYAAAADAPz/AAAHAAcAAAADAP3/AAAHAAgAAAAEAPj/AAAIAAMAAAAEAPn/AAAIAAQAAAAEAPr/AAAIAAUAAAAEAPv/AAAIAAYAAAAEAPz/AAAIAAcAAAAEAP3/AAAIAAgAAAAFAPj/AAADAAMAAAAFAPn/AAADAAQAAAAFAPr/AAADAAUAAAAFAPv/AAADAAYAAAAFAPz/AAADAAcAAAAFAP3/AAADAAgAAAAGAPj/AAAEAAMAAAAGAPn/AAAEAAQAAAAGAPr/AAAEAAUAAAAGAPv/AAAEAAYAAAAGAPz/AAAEAAcAAAAGAP3/AAAEAAgAAAAHAPj/AAAFAAMAAAAHAPn/AAAFAAQAAAAHAPr/AAAFAAUAAAAHAPv/AAAFAAYAAAAHAPz/AAAFAAcAAAAHAP3/AAAFAAgAAAAIAPj/AAAGAAMAAAAIAPn/AAAGAAQAAAAIAPr/AAAGAAUAAAAIAPv/AAAGAAYAAAAIAPz/AAAGAAcAAAAIAP3/AAAGAAgAAAAJAPj/AAAHAAMAAAAJAPn/AAAHAAQAAAAJAPr/AAAHAAUAAAAJAPv/AAADAAMAAAAJAPz/AAADAAQAAAAJAP3/AAADAAUAAAAKAPj/AAAIAAMAAAAKAPn/AAAIAAQAAAAKAPr/AAAIAAUAAAAKAPv/AAAEAAMAAAAKAPz/AAAEAAQAAAAKAP3/AAAEAAUAAADz/wQAAAAGAAQAAADz/wUAAAAGAAUAAADz/wYAAAAGAAYAAADz/wcAAAAGAAcAAADz/wgAAAAGAAgAAADz/wkAAAADAAgAAAD0/wQAAAAHAAQAAAD0/wUAAAAHAAUAAAD0/wYAAAAHAAYAAAD0/wcAAAAHAAcAAAD0/wgAAAAHAAgAAAD0/wkAAAAEAAgAAAD1/wQAAAAIAAQAAAD1/wUAAAAIAAUAAAD1/wYAAAAIAAYAAAD1/wcAAAAIAAcAAAD1/wgAAAAIAAgAAAD1/wkAAAAFAAgAAAD2/wQAAAADAAcAAAD2/wUAAAADAAgAAAD2/wYAAAAGAAUAAAD2/wcAAAAGAAYAAAD2/wgAAAAGAAcAAAD2/wkAAAAGAAgAAAD3/wQAAAAEAAcAAAD3/wUAAAAEAAgAAAD3/wYAAAAHAAUAAAD3/wcAAAAHAAYAAAD3/wgAAAAHAAcAAAD3/wkAAAAHAAgAAAD4/wQAAAAFAAcAAAD4/wUAAAAFAAgAAAD4/wYAAAAIAAUAAAD4/wcAAAAIAAYAAAD4/wgAAAAIAAcAAAD4/wkAAAAIAAgAAAALAP7/AAAFAAYAAAALAP//AAAFAAcAAAALAAAAAAAFAAgAAAALAAEAAAAEAAYAAAALAAIAAAAFAAMAAAALAAMAAAAFAAQAAAAMAP7/AAAGAAYAAAAMAP//AAAGAAcAAAAMAAAAAAAGAAgAAAAMAAEAAAAFAAYAAAAMAAIAAAAGAAMAAAAMAAMAAAAGAAQAAAANAP7/AAAHAAYAAAANAP//AAAHAAcAAAANAAAAAAAHAAgAAAANAAEAAAAGAAYAAAANAAIAAAAHAAMAAAANAAMAAAAHAAQAAAAOAP7/AAAIAAYAAAAOAP//AAAIAAcAAAAOAAAAAAAIAAgAAAAOAAEAAAAHAAYAAAAOAAIAAAAIAAMAAAAOAAMAAAAIAAQAAAAPAP7/AAAIAAMAAAAPAP//AAAIAAQAAAAPAAAAAAAIAAUAAAAPAAEAAAAIAAYAAAAPAAIAAAAIAAcAAAAPAAMAAAAIAAgAAAALAPv/AAAFAAMAAAALAPz/AAAFAAQAAAALAP3/AAAFAAUAAAAMAPv/AAAGAAMAAAAMAPz/AAAGAAQAAAAMAP3/AAAGAAUAAAANAPv/AAAHAAMAAAANAPz/AAAHAAQAAAANAP3/AAAHAAUAAAAOAPv/AAAIAAMAAAAOAPz/AAAIAAQAAAAOAP3/AAAIAAUAAAALAAQAAAAFAAUAAAALAAUAAAAFAAYAAAALAAYAAAAFAAcAAAALAAcAAAAFAAgAAAAMAAQAAAAGAAUAAAAMAAUAAAAGAAYAAAAMAAYAAAAGAAcAAAAMAAcAAAAGAAgAAAANAAQAAAAHAAUAAAANAAUAAAAHAAYAAAANAAYAAAAHAAcAAAANAAcAAAAHAAgAAAAOAAQAAAAIAAUAAAAOAAUAAAAIAAYAAAAOAAYAAAAIAAcAAAAOAAcAAAAIAAgAAADw/wMAAAADAAMAAADw/wQAAAADAAQAAADw/wUAAAADAAUAAADw/wYAAAADAAYAAADw/wcAAAADAAcAAADw/wgAAAADAAgAAADx/wMAAAAEAAMAAADx/wQAAAAEAAQAAADx/wUAAAAEAAUAAADx/wYAAAAEAAYAAADx/wcAAAAEAAcAAADx/wgAAAAEAAgAAADy/wMAAAAFAAMAAADy/wQAAAAFAAQAAADy/wUAAAAFAAUAAADy/wYAAAAFAAYAAADy/wcAAAAFAAcAAADy/wgAAAAFAAgAAADw//3/AAAGAAYAAADw//7/AAAGAAcAAADw////AAAGAAgAAADw/wAAAAADAAYAAADw/wEAAAADAAcAAADw/wIAAAADAAgAAADx//3/AAAHAAYAAADx//7/AAAHAAcAAADx////AAAHAAgAAADx/wAAAAAEAAYAAADx/wEAAAAEAAcAAADx/wIAAAAEAAgAAADy//3/AAAIAAYAAADy//7/AAAIAAcAAADy////AAAIAAgAAADy/wAAAAAFAAYAAADy/wEAAAAFAAcAAADy/wIAAAAFAAgAAADt//r/AAADAAMAAADt//v/AAADAAQAAADt//z/AAADAAUAAADt//3/AAADAAYAAADt//7/AAADAAcAAADt////AAADAAgAAADu//r/AAAEAAMAAADu//v/AAAEAAQAAADu//z/AAAEAAUAAADu//3/AAAEAAYAAADu//7/AAAEAAcAAADu////AAAEAAgAAADv//r/AAAFAAMAAADv//v/AAAFAAQAAADv//z/AAAFAAUAAADv//3/AAAFAAYAAADv//7/AAAFAAcAAADv////AAAFAAgAAADw//r/AAAGAAMAAADw//v/AAAGAAQAAADw//z/AAAGAAUAAADx//r/AAAHAAMAAADx//v/AAAHAAQAAADx//z/AAAHAAUAAADy//r/AAAIAAMAAADy//v/AAAIAAQAAADy//z/AAAIAAUAAAD5/wIAAAAGAAUAAAD5/wMAAAAGAAYAAAD6/wIAAAAHAAUAAAA=")
-tile_set = SubResource("TileSet_ioo17")
-
-[node name="Colisiones" type="TileMapLayer" parent="." unique_id=819055872]
-
-[node name="player" type="CharacterBody2D" parent="." unique_id=1909192518]
-motion_mode = 1
-script = ExtResource("3_5ckl1")
-
-[node name="Camera2D" type="Camera2D" parent="player" unique_id=2117130770]
-zoom = Vector2(4, 4)
-script = ExtResource("1_wr4rf")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player" unique_id=407095699]
-scale = Vector2(0.25, 0.25)
-sprite_frames = SubResource("SpriteFrames_ioo17")
-animation = &"dead"
-autoplay = "idle"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="player" unique_id=2091782850]
-shape = SubResource("RectangleShape2D_ioo17")
-
-[node name="States" type="Node" parent="player" unique_id=927391369]
-script = ExtResource("6_86o8e")
-
-[node name="Idle" type="Node" parent="player/States" unique_id=75861493]
-script = ExtResource("7_hjj1n")
-
-[node name="Walk" type="Node" parent="player/States" unique_id=245619021]
-script = ExtResource("8_64k4g")
-
-[node name="Attack" type="Node" parent="player/States" unique_id=1129017273]
-script = ExtResource("9_4j6cr")
-
-[node name="Hurt" type="Node" parent="player/States" unique_id=2134117001]
-script = ExtResource("10_7shyn")
-
-[node name="Dead" type="Node" parent="player/States" unique_id=142321445]
-script = ExtResource("11_0l2tg")
-
-[node name="Decoracion" type="TileMapLayer" parent="." unique_id=752125295]
-===== ./world.tscn =====
+==================================================
+FILE: ./world.tscn
+==================================================
 [gd_scene format=4 uid="uid://cw5xjm18x47gc"]
 
-[ext_resource type="Script" uid="uid://ckujj764mji4t" path="res://actors/player/player.gd" id="1_f3sb7"]
 [ext_resource type="Texture2D" uid="uid://bdvl58ffw4w82" path="res://assets/Water.png" id="1_udxuc"]
 [ext_resource type="Texture2D" uid="uid://dfflfst3xa1n2" path="res://assets/Tilemap_Flat.png" id="1_wse8f"]
-[ext_resource type="Texture2D" uid="uid://edeaft2r3ios" path="res://assets/Warrior_Blue.png" id="2_gbfbk"]
 [ext_resource type="Texture2D" uid="uid://ckhcc03v1acyd" path="res://assets/Tilemap_Elevation.png" id="2_ikiii"]
-[ext_resource type="Script" uid="uid://bcvt0c5nfew7c" path="res://actors/player/states/player_state.gd" id="2_pkg7o"]
-[ext_resource type="Script" uid="uid://cc3lyq1bexwta" path="res://actors/player/states/state_idle.gd" id="3_gbfbk"]
-[ext_resource type="Texture2D" uid="uid://cv5t6efyjrh8x" path="res://assets/Dead.png" id="3_ioo17"]
 [ext_resource type="Texture2D" uid="uid://co4gcqy5dgupi" path="res://assets/Bridge_All.png" id="4_cbp6q"]
-[ext_resource type="Script" uid="uid://xkbmhs1kyakl" path="res://actors/player/states/state_walk.gd" id="4_ioo17"]
-[ext_resource type="Script" uid="uid://br50u3awe1tj3" path="res://actors/player/states/state_attack.gd" id="5_wse8f"]
-[ext_resource type="Script" uid="uid://c0ddkmu85xeqb" path="res://actors/player/states/state_hurt.gd" id="6_ic0uy"]
-[ext_resource type="Script" uid="uid://ch2tnx4730hoo" path="res://actors/player/states/dead.gd" id="7_k3n1d"]
-[ext_resource type="Script" uid="uid://sf0s5e3nvh4q" path="res://actors/enemy/enemy.gd" id="11_2u3nc"]
-[ext_resource type="Script" uid="uid://dsrtbia3ah72d" path="res://attack_trail.gd" id="11_bc84e"]
-[ext_resource type="Script" uid="uid://cw3mb10bic1xa" path="res://components/health_component.gd" id="12_hiqwa"]
-[ext_resource type="Script" uid="uid://bfmpkiv6433ni" path="res://components/hurtbox_component.gd" id="13_2u3nc"]
-[ext_resource type="Script" uid="uid://ubo1gw0ch7e7" path="res://camera_2d.gd" id="14_26xuy"]
-[ext_resource type="Script" uid="uid://dxj6i1lnitkd1" path="res://components/hitbox_component.gd" id="14_udxuc"]
-[ext_resource type="Texture2D" uid="uid://br3w4r2pueq3i" path="res://assets/Torch_Red.png" id="15_hiqwa"]
-[ext_resource type="BehaviorTree" uid="uid://bmndwsqukjyf5" path="res://actors/enemy/enemy_bt.tres" id="16_2u3nc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cbp6q"]
 texture = ExtResource("2_ikiii")
@@ -21655,734 +19270,6 @@ texture = ExtResource("4_cbp6q")
 [sub_resource type="TileSet" id="TileSet_il2jm"]
 sources/0 = SubResource("TileSetAtlasSource_wukud")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_26xuy"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(0, 384, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bc84e"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(192, 384, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wukud"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(384, 384, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_il2jm"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(576, 384, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wjb0r"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(768, 384, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mc2jv"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(960, 384, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bo7i5"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(0, 960, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4h6ng"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(192, 960, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_o3ebs"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(384, 960, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_k83mh"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(576, 960, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qktwf"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(768, 960, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bh8nc"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(960, 960, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jjr1n"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(0, 1152, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gggvi"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(192, 1152, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_w44yn"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(384, 1152, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6ah6f"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(576, 1152, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_g1i3r"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(768, 1152, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_my276"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(960, 1152, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_yx0jh"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(0, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1ew0l"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(128, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ryup7"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(256, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ytpkv"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(384, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jas3d"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(512, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7htu6"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(640, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7qk3m"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(768, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xpnt2"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(0, 128, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ruyqm"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(128, 128, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_fnoqa"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(256, 128, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_nx736"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(384, 128, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_55kwu"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(512, 128, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_f3o6s"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(640, 128, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_w4lh7"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(768, 128, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gbfbk"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(0, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ioo17"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(192, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wse8f"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(384, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ic0uy"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(576, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_k3n1d"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(768, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2o6r5"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(960, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_70uel"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(0, 192, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hiqwa"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(192, 192, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2u3nc"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(384, 192, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_udxuc"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(576, 192, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ikiii"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(768, 192, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cbp6q"]
-atlas = ExtResource("2_gbfbk")
-region = Rect2(960, 192, 192, 192)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_ioo17"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_26xuy")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bc84e")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wukud")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_il2jm")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wjb0r")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mc2jv")
-}],
-"loop": false,
-"name": &"attack",
-"speed": 12.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bo7i5")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4h6ng")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_o3ebs")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_k83mh")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qktwf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bh8nc")
-}],
-"loop": false,
-"name": &"attack_down",
-"speed": 12.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jjr1n")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gggvi")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_w44yn")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_6ah6f")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_g1i3r")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_my276")
-}],
-"loop": false,
-"name": &"attack_up",
-"speed": 12.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_yx0jh")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1ew0l")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ryup7")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ytpkv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jas3d")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7htu6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7qk3m")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xpnt2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ruyqm")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_fnoqa")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nx736")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_55kwu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_f3o6s")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_w4lh7")
-}],
-"loop": false,
-"name": &"dead",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gbfbk")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ioo17")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wse8f")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ic0uy")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_k3n1d")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2o6r5")
-}],
-"loop": true,
-"name": &"idle",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_70uel")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hiqwa")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2u3nc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_udxuc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ikiii")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cbp6q")
-}],
-"loop": true,
-"name": &"walk",
-"speed": 10.0
-}]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ioo17"]
-size = Vector2(11.768738, 33.19052)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_il2jm"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wukud"]
-size = Vector2(139, 20)
-
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_bc84e"]
-lifetime_randomness = 0.15
-particle_flag_disable_z = true
-emission_shape = 3
-emission_box_extents = Vector3(10, 5, 1)
-direction = Vector3(1, -1, 0)
-initial_velocity_min = 20.0
-initial_velocity_max = 60.0
-gravity = Vector3(0, 98, 0)
-scale_min = 0.29999998
-scale_max = 0.79999995
-color = Color(1, 0.8784314, 0.4, 1)
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_cbp6q"]
-radius = 235.0206
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_26xuy"]
-size = Vector2(76.99997, 20)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_e77ka"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(0, 384, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_c0wax"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(192, 384, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_sedwk"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(384, 384, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_37ykd"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(576, 384, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1hvhf"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(768, 384, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_75cpn"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(960, 384, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ct3wn"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(0, 576, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ynm8w"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(192, 576, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_rakx2"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(384, 576, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3fh52"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(576, 576, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8f1f8"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(768, 576, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lxwtw"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(960, 576, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ir1d4"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(0, 768, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tj74d"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(192, 768, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_yy5nj"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(384, 768, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_p5g01"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(576, 768, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_fl6gn"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(768, 768, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gjwlp"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(960, 768, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_71tr8"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(0, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ngeen"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(128, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_t55hq"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(256, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jtjyu"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(384, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vv6ac"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(512, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_v27xk"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(640, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vf1x1"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(768, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vsnf8"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(0, 128, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_afx2c"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(128, 128, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xkj61"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(256, 128, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ednsc"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(384, 128, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_su0yx"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(512, 128, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3o3pd"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(640, 128, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1hr04"]
-atlas = ExtResource("3_ioo17")
-region = Rect2(768, 128, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_k3lar"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(0, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_olr1q"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(192, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_q42o5"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(384, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_b7btk"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(576, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_kkgr2"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(768, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_iett8"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(960, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_r5m4j"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(1152, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_yfwfa"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(0, 192, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qm10a"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(192, 192, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7fs00"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(384, 192, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_e0aah"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(576, 192, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_415my"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(768, 192, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_eewsi"]
-atlas = ExtResource("15_hiqwa")
-region = Rect2(960, 192, 192, 192)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_e77ka"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_e77ka")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_c0wax")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_sedwk")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_37ykd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1hvhf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_75cpn")
-}],
-"loop": false,
-"name": &"attack",
-"speed": 12.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ct3wn")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ynm8w")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_rakx2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3fh52")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8f1f8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_lxwtw")
-}],
-"loop": false,
-"name": &"attack_down",
-"speed": 12.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ir1d4")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tj74d")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_yy5nj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_p5g01")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_fl6gn")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gjwlp")
-}],
-"loop": false,
-"name": &"attack_up",
-"speed": 12.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_71tr8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ngeen")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_t55hq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jtjyu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vv6ac")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_v27xk")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vf1x1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vsnf8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_afx2c")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xkj61")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ednsc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_su0yx")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3o3pd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1hr04")
-}],
-"loop": false,
-"name": &"dead",
-"speed": 10.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"hurt",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_k3lar")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_olr1q")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_q42o5")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_b7btk")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_kkgr2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_iett8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_r5m4j")
-}],
-"loop": true,
-"name": &"idle",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_yfwfa")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qm10a")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7fs00")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_e0aah")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_415my")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_eewsi")
-}],
-"loop": true,
-"name": &"walk",
-"speed": 10.0
-}]
-
-[sub_resource type="BlackboardPlan" id="BlackboardPlan_udxuc"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_bc84e"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_cbp6q"]
-size = Vector2(46.000004, 57)
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wjb0r"]
 texture = ExtResource("1_wse8f")
 23:1/0 = 0
@@ -22426,120 +19313,6 @@ tile_set = SubResource("TileSet_wjb0r")
 tile_map_data = PackedByteArray("AAAwAOv/AAABAAAAAAAwAOz/AAABAAEAAAAwAO3/AAABAAIAAAAwAO7/AAABAAMAAAAxAOv/AAACAAAAAAAxAOz/AAACAAEAAAAxAO3/AAACAAIAAAAxAO7/AAACAAMAAAAyAOv/AAADAAAAAAAyAOz/AAADAAEAAAAyAO3/AAADAAIAAAAyAO7/AAADAAMAAAAzAOv/AAAEAAAAAAAzAOz/AAAEAAEAAAAzAO3/AAAEAAIAAAAzAO7/AAAEAAMAAAA0AOv/AAAFAAAAAAA0AOz/AAAFAAEAAAA0AO3/AAAFAAIAAAA0AO7/AAAFAAMAAAA1AOv/AAAGAAAAAAA1AOz/AAAGAAEAAAA1AO3/AAAGAAIAAAA1AO7/AAAGAAMAAAA2AOv/AAADAAAAAAA2AOz/AAADAAEAAAA2AO3/AAADAAIAAAA2AO7/AAADAAMAAAA3AOv/AAAEAAAAAAA3AOz/AAAEAAEAAAA3AO3/AAAEAAIAAAA3AO7/AAAEAAMAAAA4AOv/AAAFAAAAAAA4AOz/AAAFAAEAAAA4AO3/AAAFAAIAAAA4AO7/AAAFAAMAAAA5AOv/AAAGAAAAAAA5AOz/AAAGAAEAAAA5AO3/AAAGAAIAAAA5AO7/AAAGAAMAAAA6AOv/AAAHAAAAAAA6AOz/AAAHAAEAAAA6AO3/AAAHAAIAAAA6AO7/AAAHAAMAAAA7AOv/AAAIAAAAAAA7AOz/AAAIAAEAAAA7AO3/AAAIAAIAAAA7AO7/AAAIAAMAAAA8AOv/AAAJAAAAAAA8AOz/AAAJAAEAAAA8AO3/AAAJAAIAAAA8AO7/AAAJAAMAAAA9AOv/AAAKAAAAAAA9AOz/AAAKAAEAAAA9AO3/AAAKAAIAAAA9AO7/AAAKAAMAAAA/AOv/AAAAAA4AAABAAOv/AAABAA4AAABBAOn/AAACAAwAAABBAOr/AAACAA0AAABBAOv/AAACAA4AAABCAOn/AAADAAwAAABCAOr/AAADAA0AAABCAOv/AAADAA4AAAA/AOX/AAAAAAUAAAA/AOb/AAAAAAYAAAA/AOf/AAAAAAYAAAA/AOj/AAAAAAcAAABAAOX/AAABAAUAAABAAOb/AAABAAYAAABAAOf/AAABAAYAAABAAOj/AAABAAcAAABBAOX/AAACAAUAAABBAOb/AAACAAYAAABBAOf/AAACAAYAAABBAOj/AAACAAcAAABCAOX/AAADAAUAAABCAOb/AAADAAYAAABCAOf/AAADAAYAAABCAOj/AAADAAcAAAAWAA0AAAAAAAUAAAAWAA4AAAAAAAYAAAAWAA8AAAAAAAcAAAAWABAAAAAAAAgAAAAWABEAAAAAAAkAAAAWABIAAAAAAAoAAAAWABMAAAAAAAsAAAAWABQAAAAAAAwAAAAWABUAAAAAAAcAAAAXAA0AAAABAAUAAAAXAA4AAAABAAYAAAAXAA8AAAABAAcAAAAXABAAAAABAAgAAAAXABEAAAABAAkAAAAXABIAAAABAAoAAAAXABMAAAABAAsAAAAXABQAAAABAAwAAAAXABUAAAABAAcAAAAYAA0AAAACAAUAAAAYAA4AAAACAAYAAAAYAA8AAAACAAcAAAAYABAAAAACAAgAAAAYABEAAAACAAkAAAAYABIAAAACAAoAAAAYABMAAAACAAsAAAAYABQAAAACAAwAAAAYABUAAAACAAcAAAAZAA0AAAADAAUAAAAZAA4AAAADAAYAAAAZAA8AAAADAAcAAAAZABAAAAADAAgAAAAZABEAAAADAAkAAAAZABIAAAADAAoAAAAZABMAAAADAAsAAAAZABQAAAADAAwAAAAZABUAAAADAAcAAAAWABYAAAAAAAgAAAAWABcAAAAAAAkAAAAWABgAAAAAAAcAAAAWABkAAAAAAAgAAAAWABoAAAAAAAkAAAAXABYAAAABAAgAAAAXABcAAAABAAkAAAAXABgAAAABAAcAAAAXABkAAAABAAgAAAAXABoAAAABAAkAAAAYABYAAAACAAgAAAAYABcAAAACAAkAAAAYABgAAAACAAcAAAAYABkAAAACAAgAAAAYABoAAAACAAkAAAAZABYAAAADAAgAAAAZABcAAAADAAkAAAAZABgAAAADAAcAAAAZABkAAAADAAgAAAAZABoAAAADAAkAAAAWABsAAAAAAAoAAAAWABwAAAAAAA0AAAAWAB0AAAAAAA4AAAAXABsAAAABAAoAAAAXABwAAAABAA0AAAAXAB0AAAABAA4AAAAYABsAAAACAAoAAAAYABwAAAACAA0AAAAYAB0AAAACAA4AAAAZABsAAAADAAoAAAAZABwAAAADAA0AAAAZAB0AAAADAA4AAADh/yEAAAAGAAAAAADh/yIAAAAGAAEAAADh/yMAAAAGAAIAAADh/yQAAAAGAAMAAADi/yEAAAAHAAAAAADi/yIAAAAHAAEAAADi/yMAAAAHAAIAAADi/yQAAAAHAAMAAADj/yEAAAAIAAAAAADj/yIAAAAIAAEAAADj/yMAAAAIAAIAAADj/yQAAAAIAAMAAADk/yEAAAAEAAAAAADk/yIAAAAEAAEAAADk/yMAAAAEAAIAAADk/yQAAAAEAAMAAADl/yEAAAAFAAAAAADl/yIAAAAFAAEAAADl/yMAAAAFAAIAAADl/yQAAAAFAAMAAADm/yEAAAAFAAAAAADm/yIAAAAFAAEAAADm/yMAAAAFAAIAAADm/yQAAAAFAAMAAADn/yIAAAAGAAEAAADn/yMAAAAGAAIAAADn/yQAAAAGAAMAAADo/yIAAAAHAAEAAADo/yMAAAAHAAIAAADo/yQAAAAHAAMAAADp/yEAAAAJAAAAAADp/yIAAAAJAAEAAADp/yMAAAAJAAIAAADp/yQAAAAJAAMAAADq/yEAAAAKAAAAAADq/yIAAAAKAAEAAADq/yMAAAAKAAIAAADq/yQAAAAKAAMAAADc/yEAAAABAAAAAADc/yIAAAABAAEAAADc/yMAAAABAAIAAADc/yQAAAABAAMAAADd/yEAAAACAAAAAADd/yIAAAACAAEAAADd/yMAAAACAAIAAADd/yQAAAACAAMAAADe/yEAAAADAAAAAADe/yIAAAADAAEAAADe/yMAAAADAAIAAADe/yQAAAADAAMAAADf/yEAAAAEAAAAAADf/yIAAAAEAAEAAADf/yMAAAAEAAIAAADf/yQAAAAEAAMAAADg/yEAAAAFAAAAAADg/yIAAAAFAAEAAADg/yMAAAAFAAIAAADg/yQAAAAFAAMAAADH//v/AAABAAAAAADH//z/AAABAAEAAADH//3/AAABAAIAAADH//7/AAABAAMAAADI//v/AAACAAAAAADI//z/AAACAAEAAADI//3/AAACAAIAAADI//7/AAACAAMAAADJ//v/AAADAAAAAADJ//z/AAADAAEAAADJ//3/AAADAAIAAADJ//7/AAADAAMAAADK//v/AAAEAAAAAADK//z/AAAEAAEAAADK//3/AAAEAAIAAADK//7/AAAEAAMAAADL//v/AAAFAAAAAADL//z/AAAFAAEAAADL//3/AAAFAAIAAADL//7/AAAFAAMAAADM//v/AAAGAAAAAADM//z/AAAGAAEAAADM//3/AAAGAAIAAADM//7/AAAGAAMAAADN//v/AAAHAAAAAADN//z/AAAHAAEAAADN//3/AAAHAAIAAADN//7/AAAHAAMAAADO//v/AAADAAAAAADO//z/AAADAAEAAADO//3/AAADAAIAAADO//7/AAADAAMAAADn//z/AAAHAAEAAADn//3/AAAHAAIAAADn//7/AAAHAAMAAADo//v/AAAIAAAAAADo//z/AAAIAAEAAADo//3/AAAIAAIAAADo//7/AAAIAAMAAADp//v/AAAIAAAAAADp//z/AAAIAAEAAADp//3/AAAIAAIAAADp//7/AAAIAAMAAADq//v/AAAJAAAAAADq//z/AAAJAAEAAADq//3/AAAJAAIAAADq//7/AAAJAAMAAADr//v/AAAKAAAAAADr//z/AAAKAAEAAADr//3/AAAKAAIAAADr//7/AAAKAAMAAADP//v/AAAEAAAAAADP//z/AAAEAAEAAADP//3/AAAEAAIAAADP//7/AAAEAAMAAADQ//v/AAAFAAAAAADQ//z/AAAFAAEAAADQ//3/AAAFAAIAAADQ//7/AAAFAAMAAADR//v/AAAGAAAAAADR//z/AAAGAAEAAADR//3/AAAGAAIAAADR//7/AAAGAAMAAADS//v/AAAHAAAAAADS//z/AAAHAAEAAADS//3/AAAHAAIAAADS//7/AAAHAAMAAADT//v/AAAIAAAAAADT//z/AAAIAAEAAADT//3/AAAIAAIAAADT//7/AAAIAAMAAADU//v/AAADAAAAAADU//z/AAADAAEAAADU//3/AAADAAIAAADU//7/AAADAAMAAADV//v/AAAEAAAAAADV//z/AAAEAAEAAADV//3/AAAEAAIAAADV//7/AAAEAAMAAADW//v/AAAFAAAAAADW//z/AAAFAAEAAADW//3/AAAFAAIAAADW//7/AAAFAAMAAADX//v/AAAGAAAAAADX//z/AAAGAAEAAADX//3/AAAGAAIAAADX//7/AAAGAAMAAADY//v/AAAEAAAAAADY//z/AAAEAAEAAADY//3/AAAEAAIAAADY//7/AAABAAMAAADZ//v/AAACAAAAAADZ//z/AAACAAEAAADZ//3/AAACAAIAAADZ//7/AAACAAMAAADa//v/AAADAAAAAADa//z/AAADAAEAAADa//3/AAADAAIAAADa//7/AAADAAMAAADb//v/AAAEAAAAAADb//z/AAAEAAEAAADb//3/AAAEAAIAAADb//7/AAAEAAMAAADc//v/AAAFAAAAAADc//z/AAAFAAEAAADc//3/AAAFAAIAAADc//7/AAAFAAMAAADd//v/AAAGAAAAAADd//z/AAAGAAEAAADd//3/AAAGAAIAAADd//7/AAAGAAMAAADe//v/AAAHAAAAAADe//z/AAAHAAEAAADe//3/AAAHAAIAAADe//7/AAAHAAMAAADf//v/AAAIAAAAAADf//z/AAAIAAEAAADf//3/AAAIAAIAAADf//7/AAAIAAMAAADg//v/AAADAAAAAADg//z/AAADAAEAAADg//3/AAADAAIAAADg//7/AAADAAMAAADh//v/AAAEAAAAAADh//z/AAAEAAEAAADh//3/AAAEAAIAAADh//7/AAAEAAMAAADi//v/AAAFAAAAAADi//z/AAAFAAEAAADi//3/AAAFAAIAAADi//7/AAAFAAMAAADj//v/AAADAAAAAADj//z/AAADAAEAAADj//3/AAADAAIAAADj//7/AAADAAMAAADk//v/AAAEAAAAAADk//z/AAAEAAEAAADk//3/AAAEAAIAAADk//7/AAAEAAMAAADl//v/AAAFAAAAAADl//z/AAAFAAEAAADl//3/AAAFAAIAAADl//7/AAAFAAMAAADm//z/AAAGAAEAAADm//3/AAAGAAIAAADm//7/AAAGAAMAAAAJANb/AAAAAAgAAAAJANf/AAAAAAkAAAAJANj/AAAAAAoAAAAJANn/AAAAAAsAAAAJANr/AAAAAAkAAAAJANv/AAAAAAoAAAAJANz/AAAAAAsAAAAJAN3/AAAAAAwAAAAJAN7/AAAAAA0AAAAJAN//AAAAAA4AAAAKANb/AAABAAgAAAAKANf/AAABAAkAAAAKANj/AAABAAoAAAAKANn/AAABAAsAAAAKANr/AAABAAkAAAAKANv/AAABAAoAAAAKANz/AAABAAsAAAAKAN3/AAABAAwAAAAKAN7/AAABAA0AAAAKAN//AAABAA4AAAALANb/AAACAAgAAAALANf/AAACAAkAAAALANj/AAACAAoAAAALANn/AAACAAsAAAALANr/AAACAAkAAAALANv/AAACAAoAAAALANz/AAACAAsAAAALAN3/AAACAAwAAAALAN7/AAACAA0AAAALAN//AAACAA4AAAAMANb/AAADAAgAAAAMANf/AAADAAkAAAAMANj/AAADAAoAAAAMANn/AAADAAsAAAAMANr/AAADAAkAAAAMANv/AAADAAoAAAAMANz/AAADAAsAAAAMAN3/AAADAAwAAAAMAN7/AAADAA0AAAAMAN//AAADAA4AAAAJAM//AAAAAAUAAAAJAND/AAAAAAYAAAAJANH/AAAAAAcAAAAJANL/AAAAAAgAAAAJANP/AAAAAAkAAAAJANT/AAAAAAoAAAAJANX/AAAAAAsAAAAKAM//AAABAAUAAAAKAND/AAABAAYAAAAKANH/AAABAAcAAAAKANL/AAABAAgAAAAKANP/AAABAAkAAAAKANT/AAABAAoAAAAKANX/AAABAAsAAAALAM//AAACAAUAAAALAND/AAACAAYAAAALANH/AAACAAcAAAALANL/AAACAAgAAAALANP/AAACAAkAAAALANT/AAACAAoAAAALANX/AAACAAsAAAAMAM//AAADAAUAAAAMAND/AAADAAYAAAAMANH/AAADAAcAAAAMANL/AAADAAgAAAAMANP/AAADAAkAAAAMANT/AAADAAoAAAAMANX/AAADAAsAAAD9/8v/AAAHAAAAAAD9/8z/AAAHAAEAAAD9/83/AAAHAAIAAAD9/87/AAAHAAMAAAD+/8v/AAAIAAAAAAD+/8z/AAAIAAEAAAD+/83/AAAIAAIAAAD+/87/AAAIAAMAAAD//8v/AAADAAAAAAD//8z/AAADAAEAAAD//83/AAADAAIAAAD//87/AAADAAMAAAAAAMv/AAAEAAAAAAAAAMz/AAAEAAEAAAAAAM3/AAAEAAIAAAAAAM7/AAAEAAMAAAABAMv/AAAFAAAAAAABAMz/AAAFAAEAAAABAM3/AAAFAAIAAAABAM7/AAAFAAMAAAACAMv/AAAGAAAAAAACAMz/AAAGAAEAAAACAM3/AAAGAAIAAAACAM7/AAAGAAMAAAADAMv/AAAHAAAAAAADAMz/AAAHAAEAAAADAM3/AAAHAAIAAAADAM7/AAAHAAMAAAAEAMv/AAAIAAAAAAAEAMz/AAAIAAEAAAAEAM3/AAAIAAIAAAAEAM7/AAAIAAMAAAAFAMv/AAAJAAAAAAAFAMz/AAAJAAEAAAAFAM3/AAAJAAIAAAAFAM7/AAAJAAMAAAAGAMv/AAAKAAAAAAAGAMz/AAAKAAEAAAAGAM3/AAAKAAIAAAAGAM7/AAAKAAMAAADw/8v/AAABAAAAAADw/8z/AAABAAEAAADw/83/AAABAAIAAADw/87/AAABAAMAAADx/8v/AAACAAAAAADx/8z/AAACAAEAAADx/83/AAACAAIAAADx/87/AAACAAMAAADy/8v/AAADAAAAAADy/8z/AAADAAEAAADy/83/AAADAAIAAADy/87/AAADAAMAAADz/8v/AAAEAAAAAADz/8z/AAAEAAEAAADz/83/AAAEAAIAAADz/87/AAAEAAMAAAD0/8v/AAAFAAAAAAD0/8z/AAAFAAEAAAD0/83/AAAFAAIAAAD0/87/AAAFAAMAAAD1/8v/AAAGAAAAAAD1/8z/AAAGAAEAAAD1/83/AAAGAAIAAAD1/87/AAAGAAMAAAD2/8v/AAAHAAAAAAD2/8z/AAAHAAEAAAD2/83/AAAHAAIAAAD2/87/AAAHAAMAAAD3/8v/AAADAAAAAAD3/8z/AAADAAEAAAD3/83/AAADAAIAAAD3/87/AAADAAMAAAD4/8v/AAAEAAAAAAD4/8z/AAAEAAEAAAD4/83/AAAEAAIAAAD4/87/AAAEAAMAAAD5/8v/AAAFAAAAAAD5/8z/AAAFAAEAAAD5/83/AAAFAAIAAAD5/87/AAAFAAMAAAD6/8v/AAAGAAAAAAD6/8z/AAAGAAEAAAD6/83/AAAGAAIAAAD6/87/AAAGAAMAAAD7/8v/AAAHAAAAAAD7/8z/AAAHAAEAAAD7/83/AAAHAAIAAAD7/87/AAAHAAMAAAD8/8v/AAAIAAAAAAD8/8z/AAAIAAEAAAD8/83/AAAIAAIAAAD8/87/AAAIAAMAAAAUABwAAAALAA4AAFAUABsAAAAKAA4AAFAUABoAAAAJAA4AAFAUABkAAAAIAA4AAFAVABwAAAALAA0AAFAVABsAAAAKAA0AAFAVABoAAAAJAA0AAFAVABkAAAAIAA0AAFAUABgAAAALAA4AAFAUABcAAAAKAA4AAFAUABYAAAAJAA4AAFAUABUAAAAIAA4AAFAVABgAAAALAA0AAFAVABcAAAAKAA0AAFAVABYAAAAJAA0AAFAVABUAAAAIAA0AAFAUABQAAAALAA4AAFAUABMAAAAKAA4AAFAVABQAAAALAA0AAFAVABMAAAAKAA0AAFD//xwAAAALAA4AAAD//xsAAAALAA0AAAAAABwAAAAJAA4AAAAAABsAAAAJAA0AAAABABwAAAAKAA4AAAABABsAAAAKAA0AAAACABwAAAALAA4AAAACABsAAAALAA0AAAD8/xwAAAAIAA4AAAD8/xsAAAAIAA0AAAD9/xwAAAAJAA4AAAD9/xsAAAAJAA0AAAD+/xwAAAAKAA4AAAD+/xsAAAAKAA0AAAAgACoAAAALAA4AAFAgACkAAAALAA4AAFAgACgAAAAKAA4AAFAgACcAAAAJAA4AAFAhACoAAAALAA0AAFAhACkAAAALAA0AAFAhACgAAAAKAA0AAFAhACcAAAAJAA0AAFAgACYAAAAKAA4AAAAhACYAAAALAA4AAAAeACYAAAAIAA4AAAAeACUAAAAJAA0AADAfACYAAAAJAA4AAAAfACUAAAAIAA0AADAgACUAAAAKAA0AAAAhACUAAAALAA0AAAAdACQAAAAKAA4AADAeACQAAAAJAA4AADAfACQAAAAIAA4AADAUACMAAAAKAA4AAFAUACIAAAAJAA4AAFAUACEAAAAIAA4AAFAlAAEAAAAKAA4AAAAlAAAAAAAKAA0AAAAmAAEAAAALAA4AAAAmAAAAAAALAA0AAAAnAAEAAAAKAA4AAAAnAAAAAAAKAA0AAAAoAAEAAAALAA4AAAAoAAAAAAALAA0AAAAjAAEAAAAIAA4AAAAjAAAAAAAIAA0AAAAkAAEAAAAJAA4AAAAkAAAAAAAJAA0AAADn/yAAAAAJAA0AAGDn/x8AAAAKAA0AAGDn/x4AAAALAA0AAGDo/yAAAAAJAA4AAGDo/x8AAAAKAA4AAGDo/x4AAAALAA4AAGDn/x0AAAAIAA0AAGDn/xwAAAAJAA0AAGDn/xsAAAAKAA0AAGDn/xoAAAALAA0AAGDo/x0AAAAIAA4AAGDo/xwAAAAJAA4AAGDo/xsAAAAKAA4AAGDo/xoAAAALAA4AAGDn/xkAAAAIAA0AAGDn/xgAAAAJAA0AAGDn/xcAAAAKAA0AAGDn/xYAAAALAA0AAGDo/xkAAAAIAA4AAGDo/xgAAAAJAA4AAGDo/xcAAAAKAA4AAGDo/xYAAAALAA4AAGDn/xUAAAAIAA0AAGDn/xQAAAAJAA0AAGDn/xMAAAAKAA0AAGDn/xIAAAALAA0AAGDo/xUAAAAIAA4AAGDo/xQAAAAJAA4AAGDo/xMAAAAKAA4AAGDo/xIAAAALAA4AAGDn/xEAAAAIAA0AAGDn/xAAAAAJAA0AAGDn/w8AAAAKAA0AAGDn/w4AAAALAA0AAGDo/xEAAAAIAA4AAGDo/xAAAAAJAA4AAGDo/w8AAAAKAA4AAGDo/w4AAAALAA4AAGDn/w0AAAAIAA0AAGDn/wwAAAAJAA0AAGDn/wsAAAAKAA0AAGDn/woAAAALAA0AAGDo/w0AAAAIAA4AAGDo/wwAAAAJAA4AAGDo/wsAAAAKAA4AAGDo/woAAAALAA4AAGDn/wkAAAAIAA0AAGDn/wgAAAAJAA0AAGDn/wcAAAAKAA0AAGDo/wkAAAAIAA4AAGDo/wgAAAAJAA4AAGDo/wcAAAAKAA4AAGDd/wwAAAAJAA0AADDd/wsAAAAJAA4AADDe/wwAAAALAA0AADDe/wsAAAALAA4AADDf/wwAAAAKAA0AADDf/wsAAAAKAA4AADDg/wwAAAAJAA0AADDg/wsAAAAJAA4AADDb/wwAAAALAA0AADDb/wsAAAALAA4AADDc/wwAAAAKAA0AADDc/wsAAAAKAA4AADDh/wwAAAAIAA0AADDh/wsAAAAIAA4AADDe/yYAAAALAA0AADDe/yUAAAALAA4AADDf/yYAAAAKAA0AADDf/yUAAAAKAA4AADDg/yYAAAAJAA0AADDg/yUAAAAJAA4AADDh/yYAAAAIAA0AADDh/yUAAAAIAA4AADDi/yYAAAALAA0AADDi/yUAAAALAA4AADDj/yYAAAAKAA0AADDj/yUAAAAKAA4AADDk/yYAAAAJAA0AADDk/yUAAAAJAA4AADDl/yYAAAALAA0AADDl/yUAAAALAA4AADDm/yYAAAAKAA0AADDm/yUAAAAKAA4AADDn/yYAAAAJAA0AADDn/yUAAAAJAA4AADDo/yYAAAAIAA0AADDo/yUAAAAIAA4AADDQ/y4AAAALAA4AAFDQ/y0AAAAKAA4AAFDQ/ywAAAALAA4AAFDQ/ysAAAAKAA4AAFDR/y4AAAALAA0AAFDR/y0AAAAKAA0AAFDR/ywAAAALAA0AAFDR/ysAAAAKAA0AAFDQ/yoAAAAJAA4AAFDQ/ykAAAALAA4AAFDR/yoAAAAJAA0AAFDR/ykAAAALAA0AAFDQ/ygAAAAKAA4AAFDQ/ycAAAALAA4AAFDQ/yYAAAALAA4AAFDR/ygAAAAKAA0AAFDR/ycAAAALAA0AAFDR/yYAAAALAA0AAFDQ/yUAAAAKAA4AAFDQ/yQAAAAJAA4AAFDR/yUAAAAKAA0AAFDR/yQAAAAJAA0AAFDQ/yMAAAAIAA4AAFDR/yMAAAAIAA0AAFDQ/yIAAAALAA4AAFDQ/yEAAAAKAA4AAFDQ/yAAAAAJAA4AAADR/yIAAAALAA0AAFDR/yEAAAAKAA0AAFDR/yAAAAAKAA4AAADp/wUAAAAIAA0AAGDp/wQAAAAJAA0AAGDp/wMAAAAKAA0AAGDq/wUAAAAIAA4AAGDq/wQAAAAJAA4AAGDq/wMAAAAKAA4AAGDq/wIAAAALAA4AAGDn/wIAAAAJAA4AAADn/wEAAAAJAA0AAADn/wAAAAAKAA0AAGDn////AAALAA0AAGDo/wEAAAAKAA0AAADo/wAAAAAKAA4AAGDo////AAALAA4AAGDm//r/AAAJAA0AAGDm//n/AAAKAA0AAGDm//j/AAALAA0AAGDn//r/AAAJAA4AAGDn//n/AAAKAA4AAGDn//j/AAALAA4AAGDW/wEAAAALAA0AAADW/wIAAAALAA4AAADV/wEAAAAKAA0AAADV/wIAAAAKAA4AAADU/wEAAAAJAA0AAADU/wIAAAAJAA4AAADT/wEAAAAIAA0AAADT/wIAAAAIAA4AAADS/wEAAAALAA0AAADS/wIAAAALAA4AAADR/wEAAAAKAA0AAADR/wIAAAAKAA4AAADQ/wEAAAAJAA0AAADQ/wIAAAAJAA4AAADP/wEAAAAIAA0AAADP/wIAAAAIAA4AAADO/wEAAAALAA0AAADO/wIAAAALAA4AAADN/wEAAAAKAA0AAADN/wIAAAAKAA4AAADM/wEAAAAJAA0AAADM/wIAAAAJAA4AAADL/wEAAAAIAA0AAADL/wIAAAAIAA4AAADK/wEAAAALAA0AAADK/wIAAAALAA4AAADJ/wEAAAAKAA0AAADJ/wIAAAAKAA4AAADe/wEAAAALAA0AAADe/wIAAAALAA4AAADd/wEAAAAKAA0AAADd/wIAAAAKAA4AAADc/wEAAAAJAA0AAADc/wIAAAAJAA4AAADb/wEAAAAIAA0AAADb/wIAAAAIAA4AAADi/wEAAAALAA0AAADi/wIAAAALAA4AAADh/wEAAAAKAA0AAADh/wIAAAAKAA4AAADg/wEAAAAJAA0AAADg/wIAAAAJAA4AAADf/wEAAAAIAA0AAADf/wIAAAAIAA4AAADm/wEAAAAIAA0AAADm/wIAAAAIAA4AAADl/wEAAAAKAA0AAADl/wIAAAAKAA4AAADk/wEAAAAJAA0AAADk/wIAAAAJAA4AAADj/wEAAAAIAA0AAADj/wIAAAAIAA4AAADO//f/AAALAA0AAADO//j/AAALAA4AAADN//f/AAAKAA0AAADN//j/AAAKAA4AAADM//f/AAALAA0AAADM//j/AAALAA4AAADL//f/AAAKAA0AAADL//j/AAAKAA4AAADK//f/AAAJAA0AAADK//j/AAAJAA4AAADJ//f/AAAIAA0AAADJ//j/AAAIAA4AAADl//j/AAALAA0AAADl//n/AAALAA4AAADk//j/AAAKAA0AAADj//j/AAAIAA4AAGDi//j/AAAIAA0AAGDi//f/AAAJAA0AAGDi//b/AAAKAA0AAGDi//X/AAALAA0AAGDj//f/AAAJAA4AAGDj//b/AAAKAA4AAGDj//X/AAALAA4AAGDi//T/AAAIAA0AAGDi//P/AAAJAA0AAGDj//T/AAAIAA4AAGDj//P/AAAJAA4AAGDj//L/AAAKAA4AAGDj//H/AAALAA4AAGDX//D/AAAKAA4AAFDX/+//AAALAA4AAFDX/+7/AAAKAA4AAFDY//D/AAAKAA0AAFDY/+//AAALAA0AAFDY/+7/AAAKAA0AAFDo/wIAAAAKAA4AAADp/wIAAAALAA4AAADp/wEAAAALAA0AAAAAABEAAAAJAA4AAAABABEAAAAIAA4AAAACABEAAAAJAA4AAAADABEAAAAKAA4AAAADABAAAAAKAA0AAAAEABEAAAALAA4AAAAEABAAAAALAA0AAAAQABIAAAAJAA4AAAAQABEAAAAJAA0AAAARABIAAAAKAA4AAAASABIAAAALAA4AAAASABEAAAALAA0AAAA5APH/AAAIAA4AAAA5APD/AAAIAA0AAAA6APH/AAAJAA4AAAA6APD/AAAJAA0AAAA7APH/AAAKAA4AAAA7APD/AAAKAA0AAAA8APH/AAALAA4AAAA8APD/AAALAA0AAAA1APH/AAAKAA4AAAA1APD/AAAKAA0AAAA2APD/AAALAA0AAAA3APD/AAAKAA0AAAA4APD/AAALAA0AAAAzAPH/AAAIAA4AAAAzAPD/AAAIAA0AAAA0APH/AAAJAA4AAAA0APD/AAAJAA0AAAA5AOn/AAAIAA0AAGA5AOj/AAAJAA0AAGA5AOf/AAAKAA0AAGA5AOb/AAALAA0AAGA6AOn/AAAIAA4AAGA6AOj/AAAJAA4AAGA6AOf/AAAKAA4AAGA6AOb/AAALAA4AAGA5AOX/AAAIAA0AAGA5AOT/AAAJAA0AAGA5AOP/AAAKAA0AAGA5AOL/AAAIAA0AAGA6AOX/AAAIAA4AAGA6AOT/AAAJAA4AAGA6AOP/AAAKAA4AAGA6AOL/AAAIAA4AAGA5AOH/AAAJAA0AAGA5AOD/AAAKAA0AAGA5AN//AAAIAA0AAGA6AOH/AAAJAA4AAGA6AOD/AAAKAA4AAGA6AN//AAAIAA4AAGA5AN7/AAAJAA0AAGA5AN3/AAAKAA0AAGA5ANz/AAALAA0AAGA6AN7/AAAJAA4AAGA6AN3/AAAKAA4AAGA6ANz/AAALAA4AAGAEANj/AAAIAA0AAGAEANf/AAAJAA0AAGAEANb/AAAKAA0AAGAEANX/AAALAA0AAGAFANj/AAAIAA4AAGAFANf/AAAJAA4AAGAFANb/AAAKAA4AAGAFANX/AAALAA4AAGAEANz/AAAIAA0AAGAEANv/AAAJAA0AAGAEANr/AAAKAA0AAGAEANn/AAALAA0AAGAFANz/AAAIAA4AAGAFANv/AAAJAA4AAGAFANr/AAAKAA4AAGAFANn/AAALAA4AAGAAANP/AAALAA0AADAAANL/AAALAA4AADABANP/AAAKAA0AADABANL/AAAKAA4AADACANP/AAAJAA0AADACANL/AAAJAA4AADADANP/AAAIAA0AADADANL/AAAIAA4AADD8/9P/AAALAA0AADD8/9L/AAALAA4AADD9/9P/AAAKAA0AADD9/9L/AAAKAA4AADD+/9P/AAAJAA0AADD+/9L/AAAJAA4AADD//9P/AAAIAA0AADD//9L/AAAIAA4AADD4/9P/AAALAA0AADD4/9L/AAALAA4AADD5/9P/AAAKAA0AADD5/9L/AAAKAA4AADD6/9P/AAAJAA0AADD6/9L/AAAJAA4AADD7/9P/AAAIAA0AADD7/9L/AAAIAA4AADD0/9P/AAAJAA0AADD0/9L/AAAJAA4AADD1/9P/AAAIAA0AADD1/9L/AAAIAA4AADD2/9P/AAAJAA0AADD2/9L/AAAJAA4AADD3/9P/AAAIAA0AADD3/9L/AAAIAA4AADDy/9P/AAALAA0AADDy/9L/AAALAA4AADDz/9P/AAAKAA0AADDz/9L/AAAKAA4AADD0/+P/AAAIAA0AADD0/+L/AAAIAA4AADD1/+P/AAAKAA0AADD1/+L/AAAKAA4AADD2/+P/AAAJAA0AADD2/+L/AAAJAA4AADD3/+P/AAAIAA0AADD3/+L/AAAIAA4AADDx/+P/AAAIAA0AADDx/+L/AAAIAA4AADDy/+P/AAAKAA0AADDy/+L/AAAKAA4AADDz/+P/AAAJAA0AADDz/+L/AAAJAA4AADDu/+P/AAALAA0AADDu/+L/AAALAA4AADDv/+P/AAAKAA0AADDv/+L/AAAKAA4AADDw/+P/AAAJAA0AADDw/+L/AAAJAA4AADDX/+3/AAAJAA4AAFDX/+z/AAAIAA4AAFDY/+3/AAAJAA0AAFDm/9z/AAAIAA4AAADm/9v/AAAIAA0AAADn/9z/AAAJAA4AAADn/9v/AAAJAA0AAADi/9v/AAAIAA4AAADi/9r/AAAIAA0AAADj/9v/AAAJAA4AAADj/9r/AAAJAA0AAADk/9v/AAAKAA4AAADk/9r/AAAKAA0AAADl/9v/AAALAA4AAADl/9r/AAALAA0AAADi/9n/AAAIAA4AAADi/9j/AAAIAA0AAADj/9n/AAAJAA4AAADj/9j/AAAJAA0AAADk/9n/AAAKAA4AAADk/9j/AAAKAA0AAADl/9n/AAALAA4AAADl/9j/AAALAA0AAADi/9f/AAAIAA4AAADi/9b/AAAIAA4AAADj/9f/AAAIAA4AAADj/9b/AAAJAA4AAADk/9f/AAAJAA4AAADk/9b/AAAKAA4AAADl/9f/AAAKAA4AAADl/9b/AAALAA4AAADm/9f/AAALAA4AAADi/9X/AAAIAA0AAADj/9X/AAAJAA0AAADk/9X/AAAKAA0AAADl/9X/AAALAA0AAADi/9T/AAAIAA4AAADi/9P/AAAIAA0AAADj/9T/AAAJAA4AAADj/9P/AAAJAA0AAADk/9T/AAAKAA4AAADk/9P/AAAKAA0AAADl/9T/AAALAA4AAADl/9P/AAALAA0AAADi/9L/AAAIAA4AAADi/9H/AAAIAA0AAADj/9L/AAAJAA4AAADj/9H/AAAJAA0AAADk/9L/AAAKAA4AAADk/9H/AAAKAA0AAADl/9L/AAALAA4AAADl/9H/AAALAA0AAADi/9D/AAAIAA4AAADi/8//AAAIAA0AAADj/9D/AAAJAA4AAADj/8//AAAJAA0AAADk/9D/AAAKAA4AAADk/8//AAAKAA0AAADl/9D/AAALAA4AAADl/8//AAALAA0AAADi/87/AAAIAA4AAADi/83/AAAIAA0AAADj/87/AAAJAA4AAADj/83/AAAJAA0AAADk/87/AAAKAA4AAADk/83/AAAKAA0AAADl/87/AAALAA4AAADl/83/AAALAA0AAADi/8z/AAAIAA4AAADi/8v/AAAIAA0AAADj/8z/AAAJAA4AAADj/8v/AAAJAA0AAADk/8z/AAAKAA4AAADk/8v/AAAKAA0AAADl/8z/AAALAA4AAADl/8v/AAALAA0AAADg/xYAAAALAAQAADDg/xUAAAALAAUAADDg/xQAAAALAAYAADDg/xMAAAALAAcAADDh/xYAAAAKAAQAADDh/xUAAAAKAAUAADDh/xQAAAAKAAYAADDh/xMAAAAKAAcAADDi/xYAAAAJAAQAADDi/xUAAAAJAAUAADDi/xQAAAAJAAYAADDi/xMAAAAJAAcAADDd//r/AAALAAQAADDd//n/AAALAAUAADDd//j/AAALAAYAADDd//f/AAALAAcAADDe//r/AAAKAAQAADDe//n/AAAKAAUAADDe//j/AAAKAAYAADDe//f/AAAKAAcAADDf//r/AAAJAAQAADDf//n/AAAJAAUAADDf//j/AAAJAAYAADDf//f/AAAJAAcAADD8//H/AAAIAA0AAGD8//D/AAAJAA0AAGD8/+//AAAIAA0AAGD8/+7/AAAJAA0AAGD9//H/AAAIAA0AAGD9//D/AAAJAA0AAGD9/+//AAAKAA0AAGD9/+7/AAALAA0AAGD+//H/AAAIAA4AAGD+//D/AAAJAA4AAGD+/+//AAAKAA4AAGD+/+7/AAALAA4AAGAaAPn/AAAFAAQAAAAaAPr/AAAFAAUAAAAaAPv/AAAFAAYAAAAaAPz/AAAFAAcAAAAbAPn/AAAGAAQAAAAbAPr/AAAGAAUAAAAbAPv/AAAGAAYAAAAbAPz/AAAGAAcAAAAcAPr/AAAHAAUAAAAcAPv/AAAHAAYAAAAcAPz/AAAHAAcAAAAmAAUAAAAFAAQAAAAmAAYAAAAFAAUAAAAmAAcAAAAFAAYAAAAmAAgAAAAFAAcAAAAnAAUAAAAGAAQAAAAnAAYAAAAGAAUAAAAnAAcAAAAGAAYAAAAnAAgAAAAGAAcAAAAoAAYAAAAHAAUAAAAoAAcAAAAHAAYAAAAoAAgAAAAHAAcAAAAcAOD/AAAFAAQAAAAcAOH/AAAFAAUAAAAcAOL/AAAFAAYAAAAcAOP/AAAFAAcAAAAdAOD/AAAGAAQAAAAdAOH/AAAGAAUAAAAdAOL/AAAGAAYAAAAdAOP/AAAGAAcAAAAeAOH/AAAHAAUAAAAeAOL/AAAHAAYAAAAeAOP/AAAHAAcAAADk/yoAAAAFAAQAAADk/ysAAAAFAAUAAADk/ywAAAAFAAYAAADk/y0AAAAFAAcAAADl/yoAAAAGAAQAAADl/ysAAAAGAAUAAADl/ywAAAAGAAYAAADl/y0AAAAGAAcAAADm/ysAAAAHAAUAAADm/ywAAAAHAAYAAADm/y0AAAAHAAcAAAAlAPj/AAAEAAgAAAAlAPn/AAAEAAkAAAAlAPr/AAAEAAoAAAAlAPv/AAAEAAsAAAAmAPj/AAAFAAgAAAAmAPn/AAAFAAkAAAAmAPr/AAAFAAoAAAAmAPv/AAAFAAsAAAAnAPj/AAAGAAgAAAAnAPn/AAAGAAkAAAAnAPr/AAAGAAoAAAAnAPv/AAAGAAsAAAAoAPj/AAAHAAgAAAAoAPn/AAAHAAkAAADy/9n/AAAEAAgAAADy/9r/AAAEAAkAAADy/9v/AAAEAAoAAADy/9z/AAAEAAsAAADz/9n/AAAFAAgAAADz/9r/AAAFAAkAAADz/9v/AAAFAAoAAADz/9z/AAAFAAsAAAD0/9n/AAAGAAgAAAD0/9r/AAAGAAkAAAD0/9v/AAAGAAoAAAD0/9z/AAAGAAsAAAD1/9n/AAAHAAgAAAD1/9r/AAAHAAkAAADn/yEAAAAGAAAAAADo/yEAAAAHAAAAAADm//v/AAAGAAAAAADn//v/AAAHAAAAAAA2APH/AAAJAA4AAAA3APH/AAAJAA4AAAA4APH/AAAKAA4AAAA7APT/AAAJAAQAAAA7APX/AAAJAAUAAAA7APb/AAAJAAYAAAA7APf/AAAJAAcAAAA8APT/AAAKAAQAAAA8APX/AAAKAAUAAAA8APb/AAAKAAYAAAA8APf/AAAKAAcAAAA9APT/AAALAAQAAAA9APX/AAALAAUAAAA9APb/AAALAAYAAAA9APf/AAALAAcAAAA/AOn/AAAAAAwAAAA/AOr/AAAAAA0AAABAAOn/AAABAAwAAABAAOr/AAABAA0AAAC6/wYAAAAIAA0AAGC6/wUAAAAJAA0AAGC6/wQAAAAKAA0AAGC6/wMAAAAIAA0AAGC7/wYAAAAIAA4AAGC7/wUAAAAJAA4AAGC7/wQAAAAKAA4AAGC7/wMAAAAIAA4AAGC8/wYAAAAIAA8AAGC8/wUAAAAJAA8AAGC8/wQAAAAKAA8AAGC8/wMAAAAIAA8AAGC6/wIAAAAJAA0AAGC6/wEAAAAKAA0AAGC6/wAAAAAIAA0AAGC7/wIAAAAJAA4AAGC7/wEAAAAKAA4AAGC7/wAAAAAIAA4AAGC8/wIAAAAJAA8AAGC8/wEAAAAKAA8AAGC8/wAAAAAIAA8AAGC6////AAAJAA0AAGC6//7/AAAKAA0AAGC6//3/AAAIAA0AAGC7////AAAJAA4AAGC7//7/AAAKAA4AAGC7//3/AAAIAA4AAGC8////AAAJAA8AAGC8//7/AAAKAA8AAGC8//3/AAAIAA8AAGC6//z/AAAJAA0AAGC6//v/AAAKAA0AAGC6//r/AAALAA0AAGC7//z/AAAJAA4AAGC7//v/AAAKAA4AAGC7//r/AAALAA4AAGC8//z/AAAJAA8AAGC8//v/AAAKAA8AAGC8//r/AAALAA8AAGAOAPH/AAAIAA0AAGAOAPD/AAAJAA0AAGAOAO//AAAKAA0AAGAOAO7/AAALAA0AAGAPAPH/AAAIAA0AAGAPAPD/AAAJAA0AAGAPAO//AAAIAA0AAGAPAO7/AAAJAA0AAGAQAPH/AAAIAA4AAGAQAPD/AAAJAA4AAGAQAO//AAAIAA4AAGAQAO7/AAAJAA4AAGAMAPH/AAAIAA0AAGAMAPD/AAAJAA0AAGAMAO//AAAKAA0AAGAMAO7/AAAIAA0AAGANAPH/AAAIAA4AAGANAPD/AAAJAA4AAGANAO//AAAKAA4AAGANAO7/AAAIAA4AAGAMAO3/AAAJAA0AAGAMAOz/AAAKAA0AAGAMAOv/AAALAA0AAGANAO3/AAAJAA4AAGANAOz/AAAKAA4AAGANAOv/AAALAA4AAGAOAO3/AAALAA0AAGAOAOz/AAAKAA0AAGAOAOv/AAALAA0AAGAPAO3/AAAKAA0AAGAPAOz/AAALAA0AAGAPAOv/AAALAA4AAGAQAO3/AAAKAA4AAGAQAOz/AAALAA4AAGAQAOv/AAALAA8AAGARAPH/AAAIAA8AAGARAPD/AAAJAA8AAGARAO//AAAIAA8AAGARAO7/AAAJAA8AAGARAO3/AAAKAA8AAGARAOz/AAALAA8AAGD///H/AAAIAA8AAGD///D/AAAJAA8AAGD//+//AAAKAA8AAGD//+7/AAALAA8AAGD7//H/AAAIAA0AAGD7//D/AAAJAA0AAGD7/+//AAAIAA0AAGD7/+7/AAAJAA0AAGD8/+3/AAAIAA0AAGD9/+3/AAAIAA0AAGD+/+3/AAAIAA4AAGD7/+3/AAAIAA0AAGD7/+z/AAAJAA0AAGD8/+z/AAAJAA0AAGD9/+z/AAAJAA0AAGD+/+z/AAAJAA4AAGD8/+v/AAAKAA0AAGD8/+r/AAAIAA0AAGD9/+v/AAAKAA0AAGD9/+r/AAALAA0AAGD+/+v/AAAKAA4AAGD+/+r/AAALAA4AAGD7/+v/AAAIAA0AAGD7/+r/AAAJAA0AAGD7/+n/AAAIAA0AAGD7/+j/AAAJAA0AAGD8/+n/AAAIAA0AAGD8/+j/AAAIAA0AAGD9/+n/AAAIAA0AAGD9/+j/AAAJAA0AAGD+/+n/AAAIAA4AAGD+/+j/AAAJAA4AAGD8/+f/AAAJAA0AAGD9/+f/AAAKAA0AAGD+/+f/AAAKAA4AAGD7/+f/AAAKAA0AAGD7/+b/AAALAA0AAGD8/+b/AAAKAA0AAGD9/+b/AAALAA0AAGD+/+b/AAALAA4AAGD8/+X/AAALAA0AAGD9/+X/AAALAA4AAGD+/+X/AAALAA8AAGD//+n/AAAIAA8AAGD//+j/AAAJAA8AAGD//+f/AAAKAA8AAGD//+b/AAALAA8AAGD//+3/AAAIAA8AAGD//+z/AAAJAA8AAGD//+v/AAAKAA8AAGD//+r/AAALAA8AAGDY/+j/AAAJAAQAAADY/+n/AAAJAAUAAADY/+r/AAAJAAYAAADY/+v/AAAJAAcAAADZ/+j/AAAKAAQAAADZ/+n/AAAKAAUAAADZ/+r/AAAKAAYAAADZ/+v/AAAKAAcAAADa/+j/AAALAAQAAADa/+n/AAALAAUAAADa/+r/AAALAAYAAADa/+v/AAALAAcAAAABAPT/AAAJAAQAAGABAPP/AAAKAAQAAGABAPL/AAALAAQAAGACAPT/AAAJAAUAAGACAPP/AAAKAAUAAGACAPL/AAALAAUAAGADAPT/AAAJAAYAAGADAPP/AAAKAAYAAGADAPL/AAALAAYAAGAEAPT/AAAJAAcAAGAEAPP/AAAKAAcAAGAEAPL/AAALAAcAAGA=")
 tile_set = SubResource("TileSet_il2jm")
 
-[node name="player" type="CharacterBody2D" parent="." unique_id=1909192518 groups=["player"]]
-position = Vector2(-110.76874, -66.19052)
-motion_mode = 1
-script = ExtResource("1_f3sb7")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player" unique_id=407095699]
-scale = Vector2(0.75, 0.75)
-sprite_frames = SubResource("SpriteFrames_ioo17")
-animation = &"idle"
-autoplay = "idle"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="player" unique_id=2091782850]
-position = Vector2(-0.1156311, 8.595261)
-shape = SubResource("RectangleShape2D_ioo17")
-
-[node name="HealthComponent" type="Node" parent="player" unique_id=1957515972]
-script = ExtResource("12_hiqwa")
-metadata/_custom_type_script = "uid://cw3mb10bic1xa"
-
-[node name="HurtboxComponent" type="Area2D" parent="player" unique_id=1539671520]
-script = ExtResource("13_2u3nc")
-metadata/_custom_type_script = "uid://bfmpkiv6433ni"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="player/HurtboxComponent" unique_id=2012760740]
-shape = SubResource("RectangleShape2D_il2jm")
-
-[node name="HitboxComponent" type="Area2D" parent="player" unique_id=531925347]
-script = ExtResource("14_udxuc")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="player/HitboxComponent" unique_id=1214806749]
-position = Vector2(0.2687378, 0)
-shape = SubResource("RectangleShape2D_wukud")
-
-[node name="AttackTrail" type="GPUParticles2D" parent="player/HitboxComponent" unique_id=852543012]
-emitting = false
-amount = 16
-lifetime = 0.15000000000000002
-one_shot = true
-explosiveness = 0.8
-trail_lifetime = 0.15000000000000002
-process_material = SubResource("ParticleProcessMaterial_bc84e")
-script = ExtResource("11_bc84e")
-
-[node name="States" type="Node" parent="player" unique_id=927391369]
-script = ExtResource("2_pkg7o")
-
-[node name="Idle" type="Node" parent="player/States" unique_id=75861493]
-script = ExtResource("3_gbfbk")
-
-[node name="Walk" type="Node" parent="player/States" unique_id=245619021]
-script = ExtResource("4_ioo17")
-
-[node name="Attack" type="Node" parent="player/States" unique_id=1129017273]
-script = ExtResource("5_wse8f")
-
-[node name="Hurt" type="Node" parent="player/States" unique_id=2134117001]
-script = ExtResource("6_ic0uy")
-
-[node name="Dead" type="Node" parent="player/States" unique_id=142321445]
-script = ExtResource("7_k3n1d")
-
-[node name="Camera2D" type="Camera2D" parent="player" unique_id=79617]
-zoom = Vector2(1.25, 1.25)
-script = ExtResource("14_26xuy")
-
-[node name="Enemy" type="CharacterBody2D" parent="." unique_id=1617173726]
-position = Vector2(-616.40643, -68.057846)
-script = ExtResource("11_2u3nc")
-
-[node name="DetectionArea" type="Area2D" parent="Enemy" unique_id=247554717]
-collision_layer = 0
-collision_mask = 0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/DetectionArea" unique_id=1943790608]
-position = Vector2(0.4064331, 0.05784607)
-shape = SubResource("CircleShape2D_cbp6q")
-
-[node name="HitboxComponent" type="Area2D" parent="Enemy" unique_id=1161580501]
-script = ExtResource("14_udxuc")
-damage = 15.0
-metadata/_custom_type_script = "uid://dxj6i1lnitkd1"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/HitboxComponent" unique_id=2086793877]
-position = Vector2(-0.093566895, 0)
-shape = SubResource("RectangleShape2D_26xuy")
-
-[node name="HealthComponent" type="Node" parent="Enemy" unique_id=161641452]
-script = ExtResource("12_hiqwa")
-metadata/_custom_type_script = "uid://cw3mb10bic1xa"
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Enemy" unique_id=235760624]
-scale = Vector2(0.75, 0.75)
-sprite_frames = SubResource("SpriteFrames_e77ka")
-animation = &"idle"
-autoplay = "idle"
-
-[node name="Timer" type="Timer" parent="Enemy" unique_id=351836041]
-
-[node name="BTPlayer" type="BTPlayer" parent="Enemy" unique_id=810953631]
-behavior_tree = ExtResource("16_2u3nc")
-blackboard_plan = SubResource("BlackboardPlan_udxuc")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy" unique_id=1025036745]
-shape = SubResource("RectangleShape2D_bc84e")
-
-[node name="HurtboxComponent" type="Area2D" parent="Enemy" unique_id=1524883653]
-script = ExtResource("13_2u3nc")
-metadata/_custom_type_script = "uid://bfmpkiv6433ni"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/HurtboxComponent" unique_id=667732663]
-position = Vector2(0.4064331, 0.55784607)
-shape = SubResource("RectangleShape2D_cbp6q")
-
 [node name="Colisiones_map" type="TileMapLayer" parent="." unique_id=819055872]
-visible = false
-tile_map_data = PackedByteArray("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AAANANn/AAAXAAEAAADp/yQAAAAXAAEAAADq/yQAAAAXAAEAAADr/yQAAAAXAAEAAADs/yQAAAAXAAEAAADt/yQAAAAXAAEAAADu/yQAAAAXAAEAAADv/yQAAAAXAAEAAADw/yQAAAAXAAEAAAAOANz/AAAXAAEAAAAPANz/AAAXAAEAAAAQANz/AAAXAAEAAAARANz/AAAXAAEAAAASANz/AAAXAAEAAAATANz/AAAXAAEAAAAAAO//AAAXAAEAAAABAO//AAAXAAEAAAACAO//AAAXAAEAAAADAO//AAAXAAEAAAAEAO//AAAXAAEAAAAFAO//AAAXAAEAAAAGAO//AAAXAAEAAAAHAO//AAAXAAEAAAAIAO//AAAXAAEAAAAJAO//AAAXAAEAAAAKAO//AAAXAAEAAAC8//b/AAAXAAEAAAC9//X/AAAXAAEAAAC+//X/AAAXAAEAAAC///X/AAAXAAEAAADA//X/AAAXAAEAAADB//X/AAAXAAEAAADC//X/AAAXAAEAAADD//X/AAAXAAEAAADE//X/AAAXAAEAAADF//X/AAAXAAEAAADG//X/AAAXAAEAAADH//X/AAAXAAEAAADI//X/AAAXAAEAAADJ//b/AAAXAAEAAADK//n/AAAXAAEAAADm//n/AAAXAAEAAADl//n/AAAXAAEAAADk//n/AAAXAAEAAADj//n/AAAXAAEAAADi//n/AAAXAAEAAADh//n/AAAXAAEAAADg//n/AAAXAAEAAADf//n/AAAXAAEAAADe//n/AAAXAAEAAADd//n/AAAXAAEAAADc//n/AAAXAAEAAADb//n/AAAXAAEAAADa//n/AAAXAAEAAADZ//n/AAAXAAEAAADY//n/AAAXAAEAAADX//n/AAAXAAEAAADW//n/AAAXAAEAAADV//n/AAAXAAEAAADU//n/AAAXAAEAAADT//n/AAAXAAEAAADS//n/AAAXAAEAAADR//n/AAAXAAEAAADQ//n/AAAXAAEAAADP//n/AAAXAAEAAADO//n/AAAXAAEAAADN//n/AAAXAAEAAADM//n/AAAXAAEAAADL//n/AAAXAAEAAADI/wMAAAAXAAEAAADH/wMAAAAXAAEAAADG/wMAAAAXAAEAAADF/wMAAAAXAAEAAADE/wMAAAAXAAEAAADD/wMAAAAXAAEA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AAAZACAAAAAXAAEAAAAaACAAAAAXAAEAAAAbACAAAAAXAAEAAAAcACAAAAAXAAEAAAAdACAAAAAXAAEAAAAeACAAAAAXAAEAAAAfACAAAAAXAAEAAAAaABsAAAAXAAEAAAAaABoAAAAXAAEAAAAaABkAAAAXAAEAAAAaABgAAAAXAAEAAAAaABcAAAAXAAEAAAAaABYAAAAXAAEAAAAaABUAAAAXAAEAAAAaABQAAAAXAAEAAAAaABMAAAAXAAEAAAAaABIAAAAXAAEAAAAaABEAAAAXAAEAAAAaABAAAAAXAAEAAAAaAA8AAAAXAAEAAAAbAA8AAAAXAAEAAAAcAA8AAAAXAAEAAAAdAA8AAAAXAAEAAAAeAA4AAAAXAAEAAAAeAA0AAAAXAAEAAAAeAAwAAAAXAAEAAAAfAAwAAAAXAAEAAAAgAAwAAAAXAAEAAAAhAAsAAAAXAAEAAAAhAAoAAAAXAAEAAAAhAAkAAAAXAAEAAAAhAAgAAAAXAAEAAAAiAAgAAAAXAAEAAAAjAAgAAAAXAAEAAAAjAAcAAAAXAAEAAAAjAAYAAAAXAAEAAAAjAAUAAAAXAAEAAAAjAAQAAAAXAAEAAAAjAAMAAAAXAAEAAAAjAAIAAAAXAAEAAAAbABsAAAAXAAEAAAAcABsAAAAXAAEAAAAdABsAAAAXAAEAAAAeABsAAAAXAAEAAAAfABsAAAAXAAEAAAAgABsAAAAXAAEAAAAuABsAAAAXAAEAAAAuABwAAAAXAAEAAAAuAB0AAAAXAAEAAAAuAB4AAAAXAAEAAAAuAB8AAAAXAAEAAAAuACAAAAAXAAEAAAAuACEAAAAXAAEAAAAuACIAAAAXAAEAAAAuACMAAAAXAAEAAAAuACQAAAAXAAEAAAAuACUAAAAXAAEAAAAuACYAAAAXAAEAAAAuACcAAAAXAAEAAAAtACcAAAAXAAEAAAAsACcAAAAXAAEAAAArACcAAAAXAAEAAAAqACcAAAAXAAEAAAApACcAAAAXAAEAAAAoACcAAAAXAAEAAAAnACcAAAAXAAEAAAAmACcAAAAXAAEAAAAlACcAAAAXAAEAAAAkACcAAAAXAAEAAAAjACcAAAAXAAEAAAAiACcAAAAXAAEAAAAhACcAAAAXAAEAAAAhACYAAAAXAAEAAAAhACUAAAAXAAEAAAAhACQAAAAXAAEAAAAhACMAAAAXAAEAAAAhACIAAAAXAAEAAAAgACIAAAAXAAEAAAAfACEAAAAXAAEAAAAuABoAAAAXAAEAAAAtABkAAAAXAAEAAAAsABkAAAAXAAEAAAArABkAAAAXAAEAAAAqABkAAAAXAAEAAAApABkAAAAXAAEAAAAoABkAAAAXAAEAAAAnABkAAAAXAAEAAAAmABkAAAAXAAEAAAAlABkAAAAXAAEAAAAkABkAAAAXAAEAAAAjABkAAAAXAAEAAAAiABkAAAAXAAEAAAAhABkAAAAXAAEAAAAhABoAAAAXAAEAAAAiAAAAAAAXAAEAAAAhAAAAAAAXAAEAAAAgAAAAAAAXAAEAAAAjAAEAAAAXAAEAAAAgAP//AAAXAAEAAAAgAP7/AAAXAAEAAAAgAP3/AAAXAAEAAAAeAPz/AAAXAAEAAAAfAPz/AAAXAAEAAAAdAPz/AAAXAAEAAAAdAPv/AAAXAAEAAAAdAPr/AAAXAAEAAAAeAPr/AAAXAAEAAAAfAPr/AAAXAAEAAAAfAPn/AAAXAAEAAAAfAPj/AAAXAAEAAAAfAPf/AAAXAAEAAAAgAPb/AAAXAAEAAAAiAPT/AAAXAAEAAAAkAPP/AAAXAAEAAAAjAPP/AAAXAAEAAAAhAPX/AAAXAAEAAAAlAPP/AAAXAAEAAAAmAPT/AAAXAAEAAAAnAPT/AAAXAAEAAAAoAPT/AAAXAAEAAAApAPT/AAAXAAEAAAAqAPT/AAAXAAEAAAArAPT/AAAXAAEAAAAsAPT/AAAXAAEAAAAtAPT/AAAXAAEAAAAuAPP/AAAXAAEAAAAuAPL/AAAXAAEAAAAxAPL/AAAXAAEAAAAyAPL/AAAXAAEAAAAvAPL/AAAXAAEAAAAwAPL/AAAXAAEAAAAzAPL/AAAXAAEAAAAzAPH/AAAXAAEAAAAzAPD/AAAXAAEAAAAzAO//AAAXAAEAAAAzAO7/AAAXAAEAAAA0AO7/AAAXAAEAAAA1AO7/AAAXAAEAAAA2AO7/AAAXAAEAAAA3AO7/AAAXAAEAAAA4AO7/AAAXAAEAAAA5AO7/AAAXAAEAAAA6AO7/AAAXAAEAAAA7AO7/AAAXAAEAAAA8AO7/AAAXAAEAAAA9AO//AAAXAAEAAAA+AO//AAAXAAEAAAA/AO//AAAXAAEAAABAAO//AAAXAAEAAABBAO//AAAXAAEAAABCAO//AAAXAAEAAABDAO//AAAXAAEAAABEAO7/AAAXAAEAAABEAO3/AAAXAAEAAABEAOz/AAAXAAEAAABEAOv/AAAXAAEAAABEAOr/AAAXAAEAAABDAOn/AAAXAAEAAABDAOf/AAAXAAEAAABDAOj/AAAXAAEAAAA+AOf/AAAXAAEAAAA8AOn/AAAXAAEAAAA7AOn/AAAXAAEAAAA6AOn/AAAXAAEAAAA5AOn/AAAXAAEAAAA4AOn/AAAXAAEAAAA3AOn/AAAXAAEAAAA2AOn/AAAXAAEAAAA1AOn/AAAXAAEAAAA0AOn/AAAXAAEAAAAzAOn/AAAXAAEAAAA+AOj/AAAXAAEAAAA+AOn/AAAXAAEAAAA9AOn/AAAXAAEAAAA9AOf/AAAXAAEAAAA8AOf/AAAXAAEAAAA7AOf/AAAXAAEAAAA6AOb/AAAXAAEAAAA6AOX/AAAXAAEAAAA6AOT/AAAXAAEAAAA6AOP/AAAXAAEAAAA6AOL/AAAXAAEAAAA6AOH/AAAXAAEAAAA6AOD/AAAXAAEAAAA6AN//AAAXAAEAAAA6AN7/AAAXAAEAAAA6AN3/AAAXAAEAAAA6ANz/AAAXAAEAAAA6ANv/AAAXAAEAAAA6ANr/AAAXAAEAAAA7ANj/AAAXAAEAAAA8ANj/AAAXAAEAAAA9ANj/AAAXAAEAAAA+ANj/AAAXAAEAAAA/ANj/AAAXAAEAAABAANj/AAAXAAEAAABBANj/AAAXAAEAAABCANj/AAAXAAEAAABDANj/AAAXAAEAAABEANj/AAAXAAEAAABFANj/AAAXAAEAAAA6ANn/AAAXAAEAAABGANj/AAAXAAEAAABHANr/AAAXAAEAAABHANn/AAAXAAEAAABHANv/AAAXAAEAAABHANz/AAAXAAEAAABHAN3/AAAXAAEAAABHAN7/AAAXAAEAAABHAN//AAAXAAEAAABHAOH/AAAXAAEAAABHAOL/AAAXAAEAAABHAOP/AAAXAAEAAABHAOD/AAAXAAEAAABHAOT/AAAXAAEAAABHAOX/AAAXAAEAAABHAOb/AAAXAAEAAABEAOf/AAAXAAEAAABFAOf/AAAXAAEAAABGAOf/AAAXAAEAAAAzAOj/AAAXAAEAAAAzAOf/AAAXAAEAAAAxAOb/AAAXAAEAAAAyAOb/AAAXAAEAAAAwAOX/AAAXAAEA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")
+tile_map_data = PackedByteArray("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AADu/yQAAAAXAAEAAADv/yQAAAAXAAEAAADw/yQAAAAXAAEAAAAOANz/AAAXAAEAAAAPANz/AAAXAAEAAAAQANz/AAAXAAEAAAARANz/AAAXAAEAAAASANz/AAAXAAEAAAATANz/AAAXAAEAAAAAAO//AAAXAAEAAAABAO//AAAXAAEAAAACAO//AAAXAAEAAAADAO//AAAXAAEAAAAEAO//AAAXAAEAAAAFAO//AAAXAAEAAAAGAO//AAAXAAEAAAAHAO//AAAXAAEAAAAIAO//AAAXAAEAAAAJAO//AAAXAAEAAAAKAO//AAAXAAEAAAC8//b/AAAXAAEAAAC9//X/AAAXAAEAAAC+//X/AAAXAAEAAAC///X/AAAXAAEAAADA//X/AAAXAAEAAADB//X/AAAXAAEAAADC//X/AAAXAAEAAADD//X/AAAXAAEAAADE//X/AAAXAAEAAADF//X/AAAXAAEAAADG//X/AAAXAAEAAADH//X/AAAXAAEAAADI//X/AAAXAAEAAADJ//b/AAAXAAEAAADK//n/AAAXAAEAAADm//n/AAAXAAEAAADl//n/AAAXAAEAAADk//n/AAAXAAEAAADj//n/AAAXAAEAAADi//n/AAAXAAEAAADh//n/AAAXAAEAAADg//n/AAAXAAEAAADf//n/AAAXAAEAAADe//n/AAAXAAEAAADd//n/AAAXAAEAAADc//n/AAAXAAEAAADb//n/AAAXAAEAAADa//n/AAAXAAEAAADZ//n/AAAXAAEAAADY//n/AAAXAAEAAADX//n/AAAXAAEAAADW//n/AAAXAAEAAADV//n/AAAXAAEAAADU//n/AAAXAAEAAADT//n/AAAXAAEAAADS//n/AAAXAAEAAADR//n/AAAXAAEAAADQ//n/AAAXAAEAAADP//n/AAAXAAEAAADO//n/AAAXAAEAAADN//n/AAAXAAEAAADM//n/AAAXAAEAAADL//n/AAAXAAEAAADI/wMAAAAXAAEAAADH/wMAAAAXAAEAAADG/wMAAAAXAAEAAADF/wMAAAAXAAEAAADE/wMAAAAXAAEAAADD/wMAAAAXAAEAAADC/wMAAAAXAAEAAADB/wMAAAAXAAEAAADA/wMAAAAXAAEAAAC//wMAAAAXAAEAAAC+/wMAAAAXAAEAAAC9/wMAAAAXAAEA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AAAfACAAAAAXAAEAAAAaABsAAAAXAAEAAAAaABoAAAAXAAEAAAAaABkAAAAXAAEAAAAaABgAAAAXAAEAAAAaABcAAAAXAAEAAAAaABYAAAAXAAEAAAAaABUAAAAXAAEAAAAaABQAAAAXAAEAAAAaABMAAAAXAAEAAAAaABIAAAAXAAEAAAAaABEAAAAXAAEAAAAaABAAAAAXAAEAAAAaAA8AAAAXAAEAAAAbAA8AAAAXAAEAAAAcAA8AAAAXAAEAAAAdAA8AAAAXAAEAAAAeAA4AAAAXAAEAAAAeAA0AAAAXAAEAAAAeAAwAAAAXAAEAAAAfAAwAAAAXAAEAAAAgAAwAAAAXAAEAAAAhAAsAAAAXAAEAAAAhAAoAAAAXAAEAAAAhAAkAAAAXAAEAAAAhAAgAAAAXAAEAAAAiAAgAAAAXAAEAAAAjAAgAAAAXAAEAAAAjAAcAAAAXAAEAAAAjAAYAAAAXAAEAAAAjAAUAAAAXAAEAAAAjAAQAAAAXAAEAAAAjAAMAAAAXAAEAAAAjAAIAAAAXAAEAAAAbABsAAAAXAAEAAAAcABsAAAAXAAEAAAAdABsAAAAXAAEAAAAeABsAAAAXAAEAAAAfABsAAAAXAAEAAAAgABsAAAAXAAEAAAAuABsAAAAXAAEAAAAuABwAAAAXAAEAAAAuAB0AAAAXAAEAAAAuAB4AAAAXAAEAAAAuAB8AAAAXAAEAAAAuACAAAAAXAAEAAAAuACEAAAAXAAEAAAAuACIAAAAXAAEAAAAuACMAAAAXAAEAAAAuACQAAAAXAAEAAAAuACUAAAAXAAEAAAAuACYAAAAXAAEAAAAuACcAAAAXAAEAAAAtACcAAAAXAAEAAAAsACcAAAAXAAEAAAArACcAAAAXAAEAAAAqACcAAAAXAAEAAAApACcAAAAXAAEAAAAoACcAAAAXAAEAAAAnACcAAAAXAAEAAAAmACcAAAAXAAEAAAAlACcAAAAXAAEAAAAkACcAAAAXAAEAAAAjACcAAAAXAAEAAAAiACcAAAAXAAEAAAAhACcAAAAXAAEAAAAhACYAAAAXAAEAAAAhACUAAAAXAAEAAAAhACQAAAAXAAEAAAAhACMAAAAXAAEAAAAhACIAAAAXAAEAAAAgACIAAAAXAAEAAAAfACEAAAAXAAEAAAAuABoAAAAXAAEAAAAtABkAAAAXAAEA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")
 tile_set = SubResource("TileSet_mc2jv")
