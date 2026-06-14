@@ -3003,6 +3003,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_wjb0r")
 
 [node name="world" type="Node2D" unique_id=655083946]
+y_sort_enabled = true
 
 [node name="map" type="Node2D" parent="." unique_id=2009367028]
 
