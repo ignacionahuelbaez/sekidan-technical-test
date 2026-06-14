@@ -5,6 +5,8 @@ signal damage_received(amount: float, direction: Vector2)
 
 var is_active: bool = true
 
+@onready var audio_hurt: AudioStreamPlayer2D = $AudioHurt
+
 
 func _ready() -> void:
 	area_entered.connect(_on_area_entered)
@@ -21,6 +23,7 @@ func _on_area_entered(area: Area2D) -> void:
 	var direction: Vector2 = (global_position - hitbox.global_position).normalized()
 	damage_received.emit(hitbox.damage, direction)
 	hitbox.notify_hit()
+	audio_hurt.play()
 
 
 func disable() -> void:

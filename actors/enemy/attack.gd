@@ -12,6 +12,7 @@ func enter() -> void:
 	_update_hitbox_position()
 	enemy.sprite.frame_changed.connect(_on_frame_changed)
 	enemy.sprite.animation_finished.connect(_on_animation_finished)
+	enemy.hitbox_component.hit_landed.connect(_on_hit_landed)
 
 
 func exit() -> void:
@@ -22,6 +23,9 @@ func exit() -> void:
 
 	if enemy.sprite.animation_finished.is_connected(_on_animation_finished):
 		enemy.sprite.animation_finished.disconnect(_on_animation_finished)
+
+	if enemy.hitbox_component.hit_landed.is_connected(_on_hit_landed):
+		enemy.hitbox_component.hit_landed.disconnect(_on_hit_landed)
 
 
 func physics_update(_delta: float) -> void:
@@ -38,6 +42,11 @@ func _on_frame_changed() -> void:
 		enemy.hitbox_component.set_active(true)
 	else:
 		enemy.hitbox_component.set_active(false)
+
+
+func _on_hit_landed() -> void:
+	var audio: AudioStreamPlayer2D = enemy.get_node("AudioPlayer") as AudioStreamPlayer2D
+	audio.play()
 
 
 func _on_animation_finished() -> void:

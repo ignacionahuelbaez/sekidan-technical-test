@@ -75,6 +75,8 @@ func _on_animation_finished() -> void:
 
 func _on_hit_landed() -> void:
 	player.shake_camera()
+	var audio: AudioStreamPlayer2D = player.get_node("AudioPlayer") as AudioStreamPlayer2D
+	audio.play()
 
 
 func _apply_hit_stop() -> void:

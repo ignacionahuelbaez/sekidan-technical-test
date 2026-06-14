@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://cv5t6efyjrh8x" path="res://assets/Dead.png" id="3_tg7y0"]
 [ext_resource type="Script" uid="uid://bo0w7dbubffvl" path="res://actors/player/health_component.gd" id="4_a76yq"]
 [ext_resource type="Script" uid="uid://dn4uxhca44ypl" path="res://actors/player/hurtbox_component.gd" id="5_618dg"]
+[ext_resource type="AudioStream" uid="uid://dfb1j4b4an145" path="res://assets/audio/impactSoft_medium_001.ogg" id="6_12xki"]
 [ext_resource type="Script" uid="uid://cyd2rrttw41nd" path="res://actors/player/hitbox_component.gd" id="6_44cr4"]
 [ext_resource type="Script" uid="uid://swe7imkd5ogt" path="res://actors/player/attack_trail.gd" id="7_2ssef"]
 [ext_resource type="Script" uid="uid://clmhoda40kkld" path="res://actors/player/states.gd" id="8_vdwty"]
@@ -13,6 +14,7 @@
 [ext_resource type="Script" uid="uid://cv6613gjkv8yh" path="res://actors/player/attack.gd" id="11_5qa7g"]
 [ext_resource type="Script" uid="uid://by00oaviolxab" path="res://actors/player/hurt.gd" id="12_sdb8q"]
 [ext_resource type="Script" uid="uid://c0b34pnu30c5y" path="res://actors/player/dead.gd" id="13_75hho"]
+[ext_resource type="AudioStream" uid="uid://dk3pbslosgl0d" path="res://assets/audio/impactSoft_heavy_004.ogg" id="15_rt46e"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7aotg"]
 atlas = ExtResource("2_icbm6")
@@ -527,7 +529,7 @@ script = ExtResource("1_35bsb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=71646466]
 sprite_frames = SubResource("SpriteFrames_rswtf")
-animation = &"attack_1"
+animation = &"idle"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=497853807]
@@ -545,6 +547,9 @@ script = ExtResource("5_618dg")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtboxComponent" unique_id=1938128]
 position = Vector2(1, -7)
 shape = SubResource("RectangleShape2D_mofx2")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="HurtboxComponent" unique_id=2120791274]
+stream = ExtResource("6_12xki")
 
 [node name="HitboxComponent" type="Area2D" parent="." unique_id=1225902340]
 collision_layer = 2
@@ -586,3 +591,6 @@ script = ExtResource("12_sdb8q")
 script = ExtResource("13_75hho")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1652936112]
+
+[node name="AudioPlayer" type="AudioStreamPlayer2D" parent="." unique_id=749905904]
+stream = ExtResource("15_rt46e")

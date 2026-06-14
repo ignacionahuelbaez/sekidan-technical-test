@@ -4,7 +4,7 @@ extends EnemyState
 func enter() -> void:
 	enemy.velocity = Vector2.ZERO
 	enemy.set_physics_process(false)
-	enemy.hitbox_component.monitoring = false
+	enemy.hitbox_component.set_active(false)
 	enemy.sprite.play("dead")
 
 	var hurtbox: HurtboxComponent = enemy.get_node("HurtboxComponent") as HurtboxComponent
@@ -12,3 +12,6 @@ func enter() -> void:
 
 	var collision: CollisionShape2D = enemy.get_node("CollisionShape2D") as CollisionShape2D
 	collision.set_deferred("disabled", true)
+
+	var audio: AudioStreamPlayer2D = enemy.get_node("AudioDeath") as AudioStreamPlayer2D
+	audio.play()
