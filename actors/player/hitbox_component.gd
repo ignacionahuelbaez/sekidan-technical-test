@@ -5,5 +5,9 @@ extends Area2D
 
 
 func _ready() -> void:
-	monitoring = false
-	monitorable = false
+	set_active(false)
+
+
+func set_active(active: bool) -> void:
+	monitoring = active
+	set_deferred("monitorable", active)

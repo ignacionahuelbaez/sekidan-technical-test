@@ -6,12 +6,18 @@ func enter() -> void:
 
 
 func physics_update(_delta: float) -> void:
-	if enemy.get_player_distance() > enemy.DETECTION_RANGE:
+	if not enemy.player_detected:
 		enemy.change_state("Patrol")
 		return
 
-	if enemy.get_player_distance() <= enemy.ATTACK_RANGE:
+	if enemy.get_player_distance() <= enemy.ATTACK_RANGE and enemy.attack_timer <= 0.0:
 		enemy.change_state("Attack")
+		return
+
+	if enemy.get_player_distance() <= enemy.ATTACK_RANGE:
+		enemy.velocity = Vector2.ZERO
+		enemy.face_player()
+		enemy.sprite.play("idle")
 		return
 
 	var direction: Vector2 = (enemy.player.global_position - enemy.global_position).normalized()

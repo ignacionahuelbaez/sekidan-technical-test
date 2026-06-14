@@ -3,11 +3,11 @@ extends EnemyState
 const FLASH_COLOR: Color = Color(5.0, 0.3, 0.3, 1.0)
 const NORMAL_COLOR: Color = Color.WHITE
 const HURT_DURATION: float = 0.3
+const KNOCKBACK_DECAY: float = 10.0
 
 
 func enter() -> void:
-	enemy.velocity = Vector2.ZERO
-	enemy.hitbox_component.monitoring = false
+	enemy.hitbox_component.set_active(false)
 
 	var tween: Tween = enemy.create_tween()
 	enemy.sprite.modulate = FLASH_COLOR
@@ -19,10 +19,12 @@ func enter() -> void:
 
 func exit() -> void:
 	enemy.sprite.modulate = NORMAL_COLOR
+	enemy.velocity = Vector2.ZERO
 
 
-func physics_update(_delta: float) -> void:
-	pass
+func physics_update(delta: float) -> void:
+	enemy.velocity = enemy.velocity.move_toward(Vector2.ZERO, KNOCKBACK_DECAY * 60.0 * delta)
+	enemy.move_and_slide()
 
 
 func _on_hurt_finished() -> void:

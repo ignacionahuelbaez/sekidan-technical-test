@@ -13,7 +13,7 @@ func enter() -> void:
 
 
 func physics_update(_delta: float) -> void:
-	if enemy.get_player_distance() <= enemy.DETECTION_RANGE:
+	if enemy.player_detected:
 		enemy.change_state("Chase")
 		return
 

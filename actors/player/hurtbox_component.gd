@@ -1,7 +1,7 @@
 class_name HurtboxComponent
 extends Area2D
 
-signal damage_received(amount: float)
+signal damage_received(amount: float, direction: Vector2)
 
 var is_active: bool = true
 
@@ -18,7 +18,8 @@ func _on_area_entered(area: Area2D) -> void:
 	var hitbox: HitboxComponent = area as HitboxComponent
 	if hitbox.owner == owner:
 		return
-	damage_received.emit(hitbox.damage)
+	var direction: Vector2 = (global_position - hitbox.global_position).normalized()
+	damage_received.emit(hitbox.damage, direction)
 
 
 func disable() -> void:

@@ -2,17 +2,19 @@ class_name Enemy
 extends CharacterBody2D
 
 const SPEED: float = 80.0
-const DETECTION_RANGE: float = 200.0
 const ATTACK_RANGE: float = 40.0
 const ATTACK_COOLDOWN: float = 1.5
+const KNOCKBACK_FORCE: float = 200.0
 
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var health_component: HealthComponent = $HealthComponent
 @onready var hitbox_component: HitboxComponent = $HitboxComponent
+@onready var detection_range: Area2D = $DetectionRange
 
 var current_state: EnemyState
 var player: Player
 var attack_timer: float = 0.0
+var player_detected: bool = false
 
 
 func _ready() -> void:
@@ -20,6 +22,8 @@ func _ready() -> void:
 	health_component.health_depleted.connect(_on_health_depleted)
 	var hurtbox: HurtboxComponent = $HurtboxComponent as HurtboxComponent
 	hurtbox.damage_received.connect(_on_damage_received)
+	detection_range.body_entered.connect(_on_detection_range_body_entered)
+	detection_range.body_exited.connect(_on_detection_range_body_exited)
 	current_state = $States/Patrol
 	current_state.enemy = self
 	current_state.enter()
@@ -50,8 +54,19 @@ func face_player() -> void:
 	sprite.flip_h = player.global_position.x < global_position.x
 
 
-func _on_damage_received(amount: float) -> void:
+func _on_detection_range_body_entered(body: Node2D) -> void:
+	if body == player:
+		player_detected = true
+
+
+func _on_detection_range_body_exited(body: Node2D) -> void:
+	if body == player:
+		player_detected = false
+
+
+func _on_damage_received(amount: float, direction: Vector2) -> void:
 	health_component.take_damage(amount)
+	velocity = direction * KNOCKBACK_FORCE
 	if current_state != $States/Dead:
 		change_state("Hurt")
 
