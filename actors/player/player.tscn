@@ -548,7 +548,7 @@ script = ExtResource("5_618dg")
 position = Vector2(1, -7)
 shape = SubResource("RectangleShape2D_mofx2")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="HurtboxComponent" unique_id=2120791274]
+[node name="AudioHurt" type="AudioStreamPlayer2D" parent="HurtboxComponent" unique_id=2120791274]
 stream = ExtResource("6_12xki")
 
 [node name="HitboxComponent" type="Area2D" parent="." unique_id=1225902340]

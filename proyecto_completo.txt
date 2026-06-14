@@ -16,6 +16,7 @@ func enter() -> void:
 	_update_hitbox_position()
 	enemy.sprite.frame_changed.connect(_on_frame_changed)
 	enemy.sprite.animation_finished.connect(_on_animation_finished)
+	enemy.hitbox_component.hit_landed.connect(_on_hit_landed)
 
 
 func exit() -> void:
@@ -26,6 +27,9 @@ func exit() -> void:
 
 	if enemy.sprite.animation_finished.is_connected(_on_animation_finished):
 		enemy.sprite.animation_finished.disconnect(_on_animation_finished)
+
+	if enemy.hitbox_component.hit_landed.is_connected(_on_hit_landed):
+		enemy.hitbox_component.hit_landed.disconnect(_on_hit_landed)
 
 
 func physics_update(_delta: float) -> void:
@@ -42,6 +46,11 @@ func _on_frame_changed() -> void:
 		enemy.hitbox_component.set_active(true)
 	else:
 		enemy.hitbox_component.set_active(false)
+
+
+func _on_hit_landed() -> void:
+	var audio: AudioStreamPlayer2D = enemy.get_node("AudioPlayer") as AudioStreamPlayer2D
+	audio.play()
 
 
 func _on_animation_finished() -> void:
@@ -91,7 +100,7 @@ extends EnemyState
 func enter() -> void:
 	enemy.velocity = Vector2.ZERO
 	enemy.set_physics_process(false)
-	enemy.hitbox_component.monitoring = false
+	enemy.hitbox_component.set_active(false)
 	enemy.sprite.play("dead")
 
 	var hurtbox: HurtboxComponent = enemy.get_node("HurtboxComponent") as HurtboxComponent
@@ -99,6 +108,9 @@ func enter() -> void:
 
 	var collision: CollisionShape2D = enemy.get_node("CollisionShape2D") as CollisionShape2D
 	collision.set_deferred("disabled", true)
+
+	var audio: AudioStreamPlayer2D = enemy.get_node("AudioDeath") as AudioStreamPlayer2D
+	audio.play()
 
 ==================================================
 FILE: ./actors/enemy/enemy.gd
@@ -189,12 +201,14 @@ FILE: ./actors/enemy/enemy.tscn
 [ext_resource type="Texture2D" uid="uid://cv5t6efyjrh8x" path="res://assets/Dead.png" id="3_8b4pl"]
 [ext_resource type="Script" uid="uid://bo0w7dbubffvl" path="res://actors/player/health_component.gd" id="4_t63fk"]
 [ext_resource type="Script" uid="uid://dn4uxhca44ypl" path="res://actors/player/hurtbox_component.gd" id="5_abodv"]
+[ext_resource type="AudioStream" uid="uid://y3ioh0ouu4av" path="res://assets/audio/impactSoft_medium_003.ogg" id="6_8b4pl"]
 [ext_resource type="Script" uid="uid://cyd2rrttw41nd" path="res://actors/player/hitbox_component.gd" id="6_dbkfi"]
 [ext_resource type="Script" uid="uid://buhug1vc0n5cw" path="res://actors/enemy/patrol.gd" id="7_aflmq"]
 [ext_resource type="Script" uid="uid://d2nirv6rme047" path="res://actors/enemy/chase.gd" id="8_6hawx"]
 [ext_resource type="Script" uid="uid://bbg64r70s8rxk" path="res://actors/enemy/attack.gd" id="9_3gk7n"]
 [ext_resource type="Script" uid="uid://djswqs56nsosi" path="res://actors/enemy/hurt.gd" id="10_eotu8"]
 [ext_resource type="Script" uid="uid://crjhnejlw4bia" path="res://actors/enemy/dead.gd" id="11_xpq47"]
+[ext_resource type="AudioStream" uid="uid://b7s725w4vuw0a" path="res://assets/audio/impactWood_heavy_002.ogg" id="13_t63fk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t1yj6"]
 atlas = ExtResource("2_bwibc")
@@ -473,7 +487,7 @@ script = ExtResource("1_t1yj6")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1843416371]
 sprite_frames = SubResource("SpriteFrames_l5cr7")
-animation = &"attack"
+animation = &"idle"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1345686164]
@@ -493,6 +507,9 @@ metadata/_custom_type_script = "uid://dn4uxhca44ypl"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtboxComponent" unique_id=1114084222]
 position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_bwibc")
+
+[node name="AudioHurt" type="AudioStreamPlayer2D" parent="HurtboxComponent" unique_id=611916886]
+stream = ExtResource("6_8b4pl")
 
 [node name="HitboxComponent" type="Area2D" parent="." unique_id=1579840516]
 collision_layer = 16
@@ -526,6 +543,12 @@ script = ExtResource("10_eotu8")
 
 [node name="Dead" type="Node" parent="States" unique_id=1890314754]
 script = ExtResource("11_xpq47")
+
+[node name="AudioPlayer" type="AudioStreamPlayer2D" parent="." unique_id=438013842]
+stream = ExtResource("13_t63fk")
+
+[node name="AudioDeath" type="AudioStreamPlayer2D" parent="." unique_id=586270323]
+stream = ExtResource("13_t63fk")
 
 ==================================================
 FILE: ./actors/enemy/enemy_state.gd
@@ -699,6 +722,8 @@ func _on_animation_finished() -> void:
 
 func _on_hit_landed() -> void:
 	player.shake_camera()
+	var audio: AudioStreamPlayer2D = player.get_node("AudioPlayer") as AudioStreamPlayer2D
+	audio.play()
 
 
 func _apply_hit_stop() -> void:
@@ -847,6 +872,8 @@ signal damage_received(amount: float, direction: Vector2)
 
 var is_active: bool = true
 
+@onready var audio_hurt: AudioStreamPlayer2D = $AudioHurt
+
 
 func _ready() -> void:
 	area_entered.connect(_on_area_entered)
@@ -863,6 +890,7 @@ func _on_area_entered(area: Area2D) -> void:
 	var direction: Vector2 = (global_position - hitbox.global_position).normalized()
 	damage_received.emit(hitbox.damage, direction)
 	hitbox.notify_hit()
+	audio_hurt.play()
 
 
 func disable() -> void:
@@ -1001,6 +1029,7 @@ FILE: ./actors/player/player.tscn
 [ext_resource type="Texture2D" uid="uid://cv5t6efyjrh8x" path="res://assets/Dead.png" id="3_tg7y0"]
 [ext_resource type="Script" uid="uid://bo0w7dbubffvl" path="res://actors/player/health_component.gd" id="4_a76yq"]
 [ext_resource type="Script" uid="uid://dn4uxhca44ypl" path="res://actors/player/hurtbox_component.gd" id="5_618dg"]
+[ext_resource type="AudioStream" uid="uid://dfb1j4b4an145" path="res://assets/audio/impactSoft_medium_001.ogg" id="6_12xki"]
 [ext_resource type="Script" uid="uid://cyd2rrttw41nd" path="res://actors/player/hitbox_component.gd" id="6_44cr4"]
 [ext_resource type="Script" uid="uid://swe7imkd5ogt" path="res://actors/player/attack_trail.gd" id="7_2ssef"]
 [ext_resource type="Script" uid="uid://clmhoda40kkld" path="res://actors/player/states.gd" id="8_vdwty"]
@@ -1009,6 +1038,7 @@ FILE: ./actors/player/player.tscn
 [ext_resource type="Script" uid="uid://cv6613gjkv8yh" path="res://actors/player/attack.gd" id="11_5qa7g"]
 [ext_resource type="Script" uid="uid://by00oaviolxab" path="res://actors/player/hurt.gd" id="12_sdb8q"]
 [ext_resource type="Script" uid="uid://c0b34pnu30c5y" path="res://actors/player/dead.gd" id="13_75hho"]
+[ext_resource type="AudioStream" uid="uid://dk3pbslosgl0d" path="res://assets/audio/impactSoft_heavy_004.ogg" id="15_rt46e"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7aotg"]
 atlas = ExtResource("2_icbm6")
@@ -1523,7 +1553,7 @@ script = ExtResource("1_35bsb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=71646466]
 sprite_frames = SubResource("SpriteFrames_rswtf")
-animation = &"attack_1"
+animation = &"idle"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=497853807]
@@ -1541,6 +1571,9 @@ script = ExtResource("5_618dg")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtboxComponent" unique_id=1938128]
 position = Vector2(1, -7)
 shape = SubResource("RectangleShape2D_mofx2")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="HurtboxComponent" unique_id=2120791274]
+stream = ExtResource("6_12xki")
 
 [node name="HitboxComponent" type="Area2D" parent="." unique_id=1225902340]
 collision_layer = 2
@@ -1582,6 +1615,9 @@ script = ExtResource("12_sdb8q")
 script = ExtResource("13_75hho")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1652936112]
+
+[node name="AudioPlayer" type="AudioStreamPlayer2D" parent="." unique_id=749905904]
+stream = ExtResource("15_rt46e")
 
 ==================================================
 FILE: ./actors/player/states.gd
@@ -1627,25 +1663,6 @@ func physics_update(_delta: float) -> void:
 	player.velocity = input * Player.SPEED
 	player.move_and_slide()
 	player.play_animation("walk", input)
-
-==================================================
-FILE: ./actors/tree.tscn
-==================================================
-[gd_scene format=3 uid="uid://cqmkbckcvsljp"]
-
-[ext_resource type="Texture2D" uid="uid://c007twhe6tp7t" path="res://assets/Tree.png" id="1_hlsb6"]
-
-[node name="tree" type="Node2D" unique_id=178667210]
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1475594463]
-texture = ExtResource("1_hlsb6")
-offset = Vector2(0, -95)
-hframes = 4
-vframes = 3
-
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1402505169]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=810979904]
 
 ==================================================
 FILE: ./demo/agents/01_agent_melee_simple.tscn
