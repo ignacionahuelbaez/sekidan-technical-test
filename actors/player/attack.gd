@@ -17,6 +17,7 @@ func enter() -> void:
 
 	player.sprite.frame_changed.connect(_on_frame_changed)
 	player.sprite.animation_finished.connect(_on_animation_finished)
+	player.hitbox_component.hit_landed.connect(_on_hit_landed)
 
 
 func exit() -> void:
@@ -30,6 +31,9 @@ func exit() -> void:
 
 	if player.sprite.animation_finished.is_connected(_on_animation_finished):
 		player.sprite.animation_finished.disconnect(_on_animation_finished)
+
+	if player.hitbox_component.hit_landed.is_connected(_on_hit_landed):
+		player.hitbox_component.hit_landed.disconnect(_on_hit_landed)
 
 
 func physics_update(_delta: float) -> void:
@@ -67,6 +71,10 @@ func _on_frame_changed() -> void:
 
 func _on_animation_finished() -> void:
 	player.change_state("Idle")
+
+
+func _on_hit_landed() -> void:
+	player.shake_camera()
 
 
 func _apply_hit_stop() -> void:

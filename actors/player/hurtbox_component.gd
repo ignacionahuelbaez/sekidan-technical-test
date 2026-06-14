@@ -20,6 +20,7 @@ func _on_area_entered(area: Area2D) -> void:
 		return
 	var direction: Vector2 = (global_position - hitbox.global_position).normalized()
 	damage_received.emit(hitbox.damage, direction)
+	hitbox.notify_hit()
 
 
 func disable() -> void:

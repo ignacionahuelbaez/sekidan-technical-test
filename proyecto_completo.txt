@@ -109,6 +109,7 @@ extends CharacterBody2D
 const SPEED: float = 80.0
 const ATTACK_RANGE: float = 40.0
 const ATTACK_COOLDOWN: float = 1.5
+const KNOCKBACK_FORCE: float = 200.0
 
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var health_component: HealthComponent = $HealthComponent
@@ -168,8 +169,9 @@ func _on_detection_range_body_exited(body: Node2D) -> void:
 		player_detected = false
 
 
-func _on_damage_received(amount: float) -> void:
+func _on_damage_received(amount: float, direction: Vector2) -> void:
 	health_component.take_damage(amount)
+	velocity = direction * KNOCKBACK_FORCE
 	if current_state != $States/Dead:
 		change_state("Hurt")
 
@@ -553,11 +555,11 @@ extends EnemyState
 const FLASH_COLOR: Color = Color(5.0, 0.3, 0.3, 1.0)
 const NORMAL_COLOR: Color = Color.WHITE
 const HURT_DURATION: float = 0.3
+const KNOCKBACK_DECAY: float = 10.0
 
 
 func enter() -> void:
-	enemy.velocity = Vector2.ZERO
-	enemy.hitbox_component.monitoring = false
+	enemy.hitbox_component.set_active(false)
 
 	var tween: Tween = enemy.create_tween()
 	enemy.sprite.modulate = FLASH_COLOR
@@ -569,10 +571,12 @@ func enter() -> void:
 
 func exit() -> void:
 	enemy.sprite.modulate = NORMAL_COLOR
+	enemy.velocity = Vector2.ZERO
 
 
-func physics_update(_delta: float) -> void:
-	pass
+func physics_update(delta: float) -> void:
+	enemy.velocity = enemy.velocity.move_toward(Vector2.ZERO, KNOCKBACK_DECAY * 60.0 * delta)
+	enemy.move_and_slide()
 
 
 func _on_hurt_finished() -> void:
@@ -791,32 +795,31 @@ extends PlayerState
 const FLASH_COLOR: Color = Color(5.0, 0.3, 0.3, 1.0)
 const NORMAL_COLOR: Color = Color.WHITE
 const HURT_DURATION: float = 0.4
+const KNOCKBACK_DECAY: float = 10.0
 
 
 func enter() -> void:
-	player.velocity = Vector2.ZERO
 	player.play_animation("idle", Vector2.ZERO)
 
-	# Flash con Tween — seguro, no bloquea el estado
 	var tween: Tween = player.create_tween()
 	player.sprite.modulate = FLASH_COLOR
 	tween.tween_property(player.sprite, "modulate", NORMAL_COLOR, FLASH_COLOR.v * 0.05)
 
-	# Timer para salir del estado después de HURT_DURATION segundos
 	var timer: SceneTreeTimer = player.get_tree().create_timer(HURT_DURATION)
 	timer.timeout.connect(_on_hurt_finished)
 
 
 func exit() -> void:
 	player.sprite.modulate = NORMAL_COLOR
+	player.velocity = Vector2.ZERO
 
 
-func physics_update(_delta: float) -> void:
-	pass
+func physics_update(delta: float) -> void:
+	player.velocity = player.velocity.move_toward(Vector2.ZERO, KNOCKBACK_DECAY * 60.0 * delta)
+	player.move_and_slide()
 
 
 func _on_hurt_finished() -> void:
-	# Verificar que todavía estamos en Hurt antes de transicionar
 	if player.current_state == self:
 		player.change_state("Idle")
 
@@ -826,7 +829,7 @@ FILE: ./actors/player/hurtbox_component.gd
 class_name HurtboxComponent
 extends Area2D
 
-signal damage_received(amount: float)
+signal damage_received(amount: float, direction: Vector2)
 
 var is_active: bool = true
 
@@ -843,7 +846,8 @@ func _on_area_entered(area: Area2D) -> void:
 	var hitbox: HitboxComponent = area as HitboxComponent
 	if hitbox.owner == owner:
 		return
-	damage_received.emit(hitbox.damage)
+	var direction: Vector2 = (global_position - hitbox.global_position).normalized()
+	damage_received.emit(hitbox.damage, direction)
 
 
 func disable() -> void:
@@ -882,6 +886,9 @@ class_name Player
 extends CharacterBody2D
 
 const SPEED: float = 300.0
+const SHAKE_STRENGTH: float = 12.0
+const SHAKE_DURATION: float = 0.25
+const KNOCKBACK_FORCE: float = 250.0
 
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var health_component: HealthComponent = $HealthComponent
@@ -942,8 +949,26 @@ func ejecutar_ataque_direccional() -> void:
 	sprite.play(anim_name)
 
 
-func _on_damage_received(amount: float) -> void:
+func shake_camera() -> void:
+	var tween: Tween = create_tween()
+	var steps: int = 8
+	var step_duration: float = SHAKE_DURATION / steps
+
+	for i: int in range(steps):
+		var decay: float = 1.0 - (float(i) / steps)
+		var offset: Vector2 = Vector2(
+			randf_range(-SHAKE_STRENGTH, SHAKE_STRENGTH) * decay,
+			randf_range(-SHAKE_STRENGTH, SHAKE_STRENGTH) * decay
+		)
+		tween.tween_property(camera, "offset", offset, step_duration)
+
+	tween.tween_property(camera, "offset", Vector2.ZERO, step_duration)
+
+
+func _on_damage_received(amount: float, direction: Vector2) -> void:
 	health_component.take_damage(amount)
+	velocity = direction * KNOCKBACK_FORCE
+	shake_camera()
 	if current_state != $States/Dead:
 		change_state("Hurt")
 
