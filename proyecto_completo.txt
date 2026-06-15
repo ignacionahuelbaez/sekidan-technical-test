@@ -22020,10 +22020,37 @@ tile_map_data = PackedByteArray("AADq/wUAAAAXAAEAAADq/wQAAAAXAAEAAADq/wMAAAAXAAE
 tile_set = SubResource("TileSet_mc2jv")
 
 [node name="Player" parent="." unique_id=65903992 instance=ExtResource("5_dwbse")]
-position = Vector2(-208, 56)
+position = Vector2(-491, -375)
 
 [node name="Enemy" parent="." unique_id=1940921939 instance=ExtResource("6_pkg7o")]
-position = Vector2(249, 28)
+position = Vector2(285, 15)
+
+[node name="Enemy6" parent="." unique_id=1017427529 instance=ExtResource("6_pkg7o")]
+position = Vector2(1001, -535)
+
+[node name="Enemy5" parent="." unique_id=867684789 instance=ExtResource("6_pkg7o")]
+position = Vector2(306, -528)
+
+[node name="Enemy4" parent="." unique_id=443594912 instance=ExtResource("6_pkg7o")]
+position = Vector2(160, -828)
+
+[node name="Enemy3" parent="." unique_id=1567519558 instance=ExtResource("6_pkg7o")]
+position = Vector2(-692, 629)
+
+[node name="Enemy2" parent="." unique_id=1297123741 instance=ExtResource("6_pkg7o")]
+position = Vector2(633, 478)
 
 [node name="EnemyLimbo" parent="." unique_id=1169120346 instance=ExtResource("26_bo7i5")]
-position = Vector2(171, -431)
+position = Vector2(-16, -2)
+
+[node name="EnemyLimbo5" parent="." unique_id=1925478485 instance=ExtResource("26_bo7i5")]
+position = Vector2(839, -336)
+
+[node name="EnemyLimbo4" parent="." unique_id=1160928087 instance=ExtResource("26_bo7i5")]
+position = Vector2(25, -530)
+
+[node name="EnemyLimbo3" parent="." unique_id=1901589984 instance=ExtResource("26_bo7i5")]
+position = Vector2(-521, 533)
+
+[node name="EnemyLimbo2" parent="." unique_id=1730042114 instance=ExtResource("26_bo7i5")]
+position = Vector2(-785, -75)
