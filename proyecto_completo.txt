@@ -643,11 +643,666 @@ func physics_update(_delta: float) -> void:
 	enemy.sprite.flip_h = _direction < 0.0
 
 ==================================================
+FILE: ./actors/enemy_limbo/enemy_limbo.gd
+==================================================
+extends CharacterBody2D
+class_name EnemyLimbo
+
+const FLASH_COLOR: Color = Color(5.0, 0.3, 0.3, 1.0)
+const FLASH_DURATION: float = 0.1
+const LOW_HEALTH_THRESHOLD: float = 0.3  # 30% de vida restante
+
+@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+@onready var health_component: HealthComponent = $HealthComponent
+@onready var hurtbox_component: HurtboxComponent = $HurtboxComponent
+@onready var hitbox_component: HitboxComponent = $HitboxComponent
+@onready var detection_range: Area2D = $DetectionRange
+@onready var bt_player_node: BTPlayer = $BTPlayer
+@onready var body_collision: CollisionShape2D = $CollisionShape2D
+@onready var hurtbox_collision: CollisionShape2D = $HurtboxComponent/CollisionShape2D
+@onready var hitbox_collision: CollisionShape2D = $HitboxComponent/CollisionShape2D
+@onready var audio_player: AudioStreamPlayer2D = $AudioPlayer
+@onready var audio_hurt: AudioStreamPlayer2D = $HurtboxComponent/AudioHurt
+@onready var audio_death: AudioStreamPlayer2D = $AudioDeath
+
+# Expuesto para que las tareas del BT puedan leerlo
+var player_ref: CharacterBody2D = null
+var is_dead: bool = false
+var is_hurting: bool = false
+
+func _ready() -> void:
+	hitbox_component.set_active(false)
+	health_component.health_changed.connect(_on_health_changed)
+	health_component.health_depleted.connect(_on_death)
+	hurtbox_component.damage_received.connect(_on_damage_received)
+	detection_range.body_entered.connect(_on_detection_body_entered)
+	detection_range.body_exited.connect(_on_detection_body_exited)
+
+func _physics_process(_delta: float) -> void:
+	if is_dead:
+		return
+	if is_hurting:
+		velocity = Vector2.ZERO
+		return
+	move_and_slide()
+
+# Las tareas del BT llaman esto para saber si deben activar la huida
+func is_low_health() -> bool:
+	return health_component.current_health / health_component.max_health <= LOW_HEALTH_THRESHOLD
+
+func _on_detection_body_entered(body: Node2D) -> void:
+	if body.is_in_group("player"):
+		player_ref = body as CharacterBody2D
+
+func _on_detection_body_exited(body: Node2D) -> void:
+	if body == player_ref:
+		player_ref = null
+
+func _on_damage_received(amount: float, _direction: Vector2) -> void:
+	if is_dead:
+		return
+	health_component.take_damage(amount)
+
+func _on_health_changed(_new_health: float) -> void:
+	if is_dead:
+		return
+	is_hurting = true
+	animated_sprite.modulate = FLASH_COLOR
+	if audio_hurt.stream:
+		audio_hurt.play()
+	var tween: Tween = create_tween()
+	tween.tween_property(animated_sprite, "modulate", Color.WHITE, FLASH_DURATION)
+	tween.finished.connect(func() -> void: is_hurting = false)
+
+func _on_death() -> void:
+	if is_dead:
+		return
+	is_dead = true
+	velocity = Vector2.ZERO
+	bt_player_node.set_active(false)
+	hitbox_component.set_active(false)
+	body_collision.set_deferred("disabled", true)
+	hurtbox_collision.set_deferred("disabled", true)
+	hitbox_collision.set_deferred("disabled", true)
+	animated_sprite.play("dead")
+	if audio_death.stream:
+		audio_death.play()
+
+==================================================
 FILE: ./actors/enemy_limbo/enemy_limbo.tscn
 ==================================================
 [gd_scene format=3 uid="uid://clr7e1equtwlw"]
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1169120346]
+[ext_resource type="Script" uid="uid://cisyvf8awxfg1" path="res://actors/enemy_limbo/enemy_limbo.gd" id="1_hwor8"]
+[ext_resource type="Texture2D" uid="uid://cmqlwl0v2od2t" path="res://assets/Torch_Purple.png" id="1_pnprd"]
+[ext_resource type="Texture2D" uid="uid://cv5t6efyjrh8x" path="res://assets/Dead.png" id="2_hwor8"]
+[ext_resource type="Script" uid="uid://bo0w7dbubffvl" path="res://actors/player/health_component.gd" id="3_wh7tl"]
+[ext_resource type="Script" uid="uid://dn4uxhca44ypl" path="res://actors/player/hurtbox_component.gd" id="4_861su"]
+[ext_resource type="Script" uid="uid://cyd2rrttw41nd" path="res://actors/player/hitbox_component.gd" id="5_r4517"]
+[ext_resource type="Script" uid="uid://cbajgxt1t04bf" path="res://actors/enemy_limbo/tasks/bt_condition_low_health.gd" id="7_mhyqr"]
+[ext_resource type="Script" uid="uid://b580utpbw068f" path="res://actors/enemy_limbo/tasks/bt_action_flee.gd" id="8_pfoas"]
+[ext_resource type="Script" uid="uid://dgg6g72nk38oj" path="res://actors/enemy_limbo/tasks/bt_condition_player_in_attack_range.gd" id="9_ggu2o"]
+[ext_resource type="Script" uid="uid://hkxelysei2yv" path="res://actors/enemy_limbo/tasks/bt_action_attack.gd" id="10_mnu0m"]
+[ext_resource type="Script" uid="uid://ikpdpy20qnmu" path="res://actors/enemy_limbo/tasks/bt_condition_player_detected.gd" id="11_545f5"]
+[ext_resource type="Script" uid="uid://vv1xo8n1a378" path="res://actors/enemy_limbo/tasks/bt_action_chase.gd" id="12_vjcd5"]
+[ext_resource type="Script" uid="uid://dow46blkssx4u" path="res://actors/enemy_limbo/tasks/bt_action_patrol.gd" id="13_2rlpa"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y8cux"]
+atlas = ExtResource("1_pnprd")
+region = Rect2(0, 384, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jknf0"]
+atlas = ExtResource("1_pnprd")
+region = Rect2(192, 384, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ovvvl"]
+atlas = ExtResource("1_pnprd")
+region = Rect2(384, 384, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mhyqr"]
+atlas = ExtResource("1_pnprd")
+region = Rect2(576, 384, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pfoas"]
+atlas = ExtResource("1_pnprd")
+region = Rect2(768, 384, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ggu2o"]
+atlas = ExtResource("1_pnprd")
+region = Rect2(960, 384, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mnu0m"]
+atlas = ExtResource("2_hwor8")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_545f5"]
+atlas = ExtResource("2_hwor8")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vjcd5"]
+atlas = ExtResource("2_hwor8")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2rlpa"]
+atlas = ExtResource("2_hwor8")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oaxmb"]
+atlas = ExtResource("2_hwor8")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r1wfp"]
+atlas = ExtResource("2_hwor8")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xdvre"]
+atlas = ExtResource("2_hwor8")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dijsf"]
+atlas = ExtResource("2_hwor8")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xnrop"]
+atlas = ExtResource("2_hwor8")
+region = Rect2(128, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y2ycr"]
+atlas = ExtResource("2_hwor8")
+region = Rect2(256, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yiwxm"]
+atlas = ExtResource("2_hwor8")
+region = Rect2(384, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qrmba"]
+atlas = ExtResource("2_hwor8")
+region = Rect2(512, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k4414"]
+atlas = ExtResource("2_hwor8")
+region = Rect2(640, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0fkns"]
+atlas = ExtResource("2_hwor8")
+region = Rect2(768, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_er1m5"]
+atlas = ExtResource("1_pnprd")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3yr8l"]
+atlas = ExtResource("1_pnprd")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6fbg2"]
+atlas = ExtResource("1_pnprd")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jlgi1"]
+atlas = ExtResource("1_pnprd")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8po5g"]
+atlas = ExtResource("1_pnprd")
+region = Rect2(768, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aorcp"]
+atlas = ExtResource("1_pnprd")
+region = Rect2(960, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6hlqw"]
+atlas = ExtResource("1_pnprd")
+region = Rect2(1152, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_khrp7"]
+atlas = ExtResource("1_pnprd")
+region = Rect2(0, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mgifj"]
+atlas = ExtResource("1_pnprd")
+region = Rect2(192, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gsdkn"]
+atlas = ExtResource("1_pnprd")
+region = Rect2(384, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_77tp4"]
+atlas = ExtResource("1_pnprd")
+region = Rect2(576, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gc54c"]
+atlas = ExtResource("1_pnprd")
+region = Rect2(768, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6atv1"]
+atlas = ExtResource("1_pnprd")
+region = Rect2(960, 192, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v3i8u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y8cux")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jknf0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ovvvl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mhyqr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pfoas")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ggu2o")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mnu0m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_545f5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vjcd5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2rlpa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oaxmb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r1wfp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xdvre")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dijsf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xnrop")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y2ycr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yiwxm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qrmba")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k4414")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0fkns")
+}],
+"loop": false,
+"name": &"dead",
+"speed": 10.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"hurt",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_er1m5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3yr8l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6fbg2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jlgi1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8po5g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aorcp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6hlqw")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_khrp7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mgifj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gsdkn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_77tp4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gc54c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6atv1")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fqqrk"]
+size = Vector2(28, 36)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pnprd"]
+size = Vector2(44, 62)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hwor8"]
+size = Vector2(50, 60)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pnprd"]
+radius = 235.0
+
+[sub_resource type="BlackboardPlan" id="BlackboardPlan_oaxmb"]
+
+[sub_resource type="BTCondition" id="BTCondition_r1wfp"]
+script = ExtResource("7_mhyqr")
+
+[sub_resource type="BTAction" id="BTAction_xdvre"]
+script = ExtResource("8_pfoas")
+
+[sub_resource type="BTSequence" id="BTSequence_dijsf"]
+children = [SubResource("BTCondition_r1wfp"), SubResource("BTAction_xdvre")]
+
+[sub_resource type="BTCondition" id="BTCondition_xnrop"]
+script = ExtResource("9_ggu2o")
+
+[sub_resource type="BTAction" id="BTAction_y2ycr"]
+script = ExtResource("10_mnu0m")
+
+[sub_resource type="BTSequence" id="BTSequence_yiwxm"]
+children = [SubResource("BTCondition_xnrop"), SubResource("BTAction_y2ycr")]
+
+[sub_resource type="BTCondition" id="BTCondition_qrmba"]
+script = ExtResource("11_545f5")
+
+[sub_resource type="BTAction" id="BTAction_k4414"]
+script = ExtResource("12_vjcd5")
+
+[sub_resource type="BTSequence" id="BTSequence_0fkns"]
+children = [SubResource("BTCondition_qrmba"), SubResource("BTAction_k4414")]
+
+[sub_resource type="BTAction" id="BTAction_er1m5"]
+script = ExtResource("13_2rlpa")
+
+[sub_resource type="BTSelector" id="BTSelector_3yr8l"]
+children = [SubResource("BTSequence_dijsf"), SubResource("BTSequence_yiwxm"), SubResource("BTSequence_0fkns"), SubResource("BTAction_er1m5")]
+
+[sub_resource type="BehaviorTree" id="BehaviorTree_6fbg2"]
+blackboard_plan = SubResource("BlackboardPlan_oaxmb")
+root_task = SubResource("BTSelector_3yr8l")
+
+[sub_resource type="BlackboardPlan" id="BlackboardPlan_dya5t"]
+
+[node name="EnemyLimbo" type="CharacterBody2D" unique_id=1169120346]
+collision_layer = 8
+script = ExtResource("1_hwor8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=524162589]
+sprite_frames = SubResource("SpriteFrames_v3i8u")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1575344721]
+shape = SubResource("RectangleShape2D_fqqrk")
+
+[node name="HealthComponent" type="Node" parent="." unique_id=375355063]
+script = ExtResource("3_wh7tl")
+metadata/_custom_type_script = "uid://bo0w7dbubffvl"
+
+[node name="HurtboxComponent" type="Area2D" parent="." unique_id=1408074525]
+collision_layer = 32
+collision_mask = 2
+script = ExtResource("4_861su")
+metadata/_custom_type_script = "uid://dn4uxhca44ypl"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtboxComponent" unique_id=1319962645]
+shape = SubResource("RectangleShape2D_pnprd")
+
+[node name="AudioHurt" type="AudioStreamPlayer2D" parent="HurtboxComponent" unique_id=1569237100]
+
+[node name="HitboxComponent" type="Area2D" parent="." unique_id=304046527]
+collision_layer = 16
+collision_mask = 4
+script = ExtResource("5_r4517")
+metadata/_custom_type_script = "uid://cyd2rrttw41nd"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxComponent" unique_id=688233466]
+shape = SubResource("RectangleShape2D_hwor8")
+
+[node name="DetectionRange" type="Area2D" parent="." unique_id=2112942843]
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionRange" unique_id=595073321]
+shape = SubResource("CircleShape2D_pnprd")
+
+[node name="BTPlayer" type="BTPlayer" parent="." unique_id=1979922429]
+behavior_tree = SubResource("BehaviorTree_6fbg2")
+blackboard_plan = SubResource("BlackboardPlan_dya5t")
+
+[node name="AudioPlayer" type="AudioStreamPlayer2D" parent="." unique_id=1634274319]
+
+[node name="AudioDeath" type="AudioStreamPlayer2D" parent="." unique_id=1768726526]
+
+==================================================
+FILE: ./actors/enemy_limbo/tasks/bt_action_attack.gd
+==================================================
+@tool
+class_name BTActionAttack
+extends BTAction
+
+const ATTACK_COOLDOWN: float = 1.5
+const IMPACT_FRAME: int = 3
+const HITBOX_OFFSET_X: float = 35.0
+
+var _can_attack: bool = true
+var _hitbox_activated: bool = false
+
+func _enter() -> void:
+	if not _can_attack:
+		return
+	var enemy: EnemyLimbo = agent as EnemyLimbo
+	if enemy == null:
+		return
+	_hitbox_activated = false
+	enemy.velocity = Vector2.ZERO
+	enemy.animated_sprite.play("attack")
+	if not enemy.animated_sprite.frame_changed.is_connected(_on_frame_changed):
+		enemy.animated_sprite.frame_changed.connect(_on_frame_changed)
+
+func _exit() -> void:
+	var enemy: EnemyLimbo = agent as EnemyLimbo
+	if enemy == null:
+		return
+	enemy.hitbox_component.set_active(false)
+	_hitbox_activated = false
+	if enemy.animated_sprite.frame_changed.is_connected(_on_frame_changed):
+		enemy.animated_sprite.frame_changed.disconnect(_on_frame_changed)
+
+func _tick(_delta: float) -> Status:
+	if not _can_attack:
+		return FAILURE
+	var enemy: EnemyLimbo = agent as EnemyLimbo
+	if enemy == null:
+		return FAILURE
+	enemy.velocity = Vector2.ZERO
+	if not enemy.animated_sprite.is_playing():
+		_can_attack = false
+		enemy.get_tree().create_timer(ATTACK_COOLDOWN).timeout.connect(
+			func() -> void: _can_attack = true
+		)
+		return SUCCESS
+	return RUNNING
+
+func _on_frame_changed() -> void:
+	var enemy: EnemyLimbo = agent as EnemyLimbo
+	if enemy == null or _hitbox_activated:
+		return
+	if enemy.animated_sprite.frame == IMPACT_FRAME:
+		_hitbox_activated = true
+		var hitbox_col: CollisionShape2D = enemy.hitbox_component.get_node("CollisionShape2D") as CollisionShape2D
+		if hitbox_col:
+			hitbox_col.position.x = -HITBOX_OFFSET_X if enemy.animated_sprite.flip_h else HITBOX_OFFSET_X
+		enemy.hitbox_component.set_active(true)
+
+==================================================
+FILE: ./actors/enemy_limbo/tasks/bt_action_chase.gd
+==================================================
+@tool
+class_name BTActionChase
+extends BTAction
+
+const CHASE_SPEED: float = 80.0
+
+func _tick(_delta: float) -> Status:
+	var enemy: EnemyLimbo = agent as EnemyLimbo
+	if enemy == null or enemy.player_ref == null:
+		return FAILURE
+
+	var direction: Vector2 = (enemy.player_ref.global_position - enemy.global_position).normalized()
+	enemy.velocity = direction * CHASE_SPEED
+
+	enemy.animated_sprite.play("walk")
+	if direction.x < 0:
+		enemy.animated_sprite.flip_h = true
+	elif direction.x > 0:
+		enemy.animated_sprite.flip_h = false
+
+	return RUNNING
+
+==================================================
+FILE: ./actors/enemy_limbo/tasks/bt_action_flee.gd
+==================================================
+@tool
+class_name BTActionFlee
+extends BTAction
+
+const FLEE_SPEED: float = 120.0
+const SAFE_DISTANCE: float = 200.0
+
+func _tick(_delta: float) -> Status:
+	var enemy: EnemyLimbo = agent as EnemyLimbo
+	if enemy == null or enemy.player_ref == null:
+		return FAILURE
+
+	var distance: float = enemy.global_position.distance_to(enemy.player_ref.global_position)
+	if distance >= SAFE_DISTANCE:
+		enemy.velocity = Vector2.ZERO
+		return SUCCESS
+
+	var flee_direction: Vector2 = (enemy.global_position - enemy.player_ref.global_position).normalized()
+	enemy.velocity = flee_direction * FLEE_SPEED
+
+	enemy.animated_sprite.play("walk")
+	enemy.animated_sprite.flip_h = flee_direction.x < 0
+
+	return RUNNING
+
+==================================================
+FILE: ./actors/enemy_limbo/tasks/bt_action_patrol.gd
+==================================================
+@tool
+class_name BTActionPatrol
+extends BTAction
+
+const PATROL_SPEED: float = 40.0
+const PATROL_DISTANCE: float = 120.0
+
+var _origin: Vector2
+var _initialized: bool = false
+var _direction: int = 1
+
+func _enter() -> void:
+	var enemy: EnemyLimbo = agent as EnemyLimbo
+	if enemy == null:
+		return
+	if not _initialized:
+		_origin = enemy.global_position
+		_initialized = true
+
+func _tick(_delta: float) -> Status:
+	var enemy: EnemyLimbo = agent as EnemyLimbo
+	if enemy == null:
+		return FAILURE
+
+	var traveled: float = enemy.global_position.x - _origin.x
+	if traveled >= PATROL_DISTANCE:
+		_direction = -1
+	elif traveled <= -PATROL_DISTANCE:
+		_direction = 1
+
+	enemy.velocity = Vector2(float(_direction) * PATROL_SPEED, 0.0)
+	enemy.animated_sprite.play("walk")
+	enemy.animated_sprite.flip_h = _direction < 0
+
+	return RUNNING
+
+==================================================
+FILE: ./actors/enemy_limbo/tasks/bt_condition_low_health.gd
+==================================================
+@tool
+class_name BTConditionLowHealth
+extends BTCondition
+
+func _tick(_delta: float) -> Status:
+	var enemy: EnemyLimbo = agent as EnemyLimbo
+	if enemy == null:
+		return FAILURE
+	return SUCCESS if enemy.is_low_health() else FAILURE
+
+==================================================
+FILE: ./actors/enemy_limbo/tasks/bt_condition_player_detected.gd
+==================================================
+@tool
+class_name BTConditionPlayerDetected
+extends BTCondition
+
+func _tick(_delta: float) -> Status:
+	var enemy: EnemyLimbo = agent as EnemyLimbo
+	if enemy == null:
+		return FAILURE
+	return SUCCESS if enemy.player_ref != null else FAILURE
+
+==================================================
+FILE: ./actors/enemy_limbo/tasks/bt_condition_player_in_attack_range.gd
+==================================================
+@tool
+class_name BTConditionPlayerInAttackRange
+extends BTCondition
+
+const ATTACK_RANGE: float = 60.0
+
+func _tick(_delta: float) -> Status:
+	var enemy: EnemyLimbo = agent as EnemyLimbo
+	if enemy == null or enemy.player_ref == null:
+		return FAILURE
+	var distance: float = enemy.global_position.distance_to(enemy.player_ref.global_position)
+	return SUCCESS if distance <= ATTACK_RANGE else FAILURE
 
 ==================================================
 FILE: ./actors/player/attack.gd
@@ -18295,6 +18950,10 @@ atacar={
 ]
 }
 
+[limbo_ai]
+
+behavior_tree/user_task_dirs=PackedStringArray("res://actors/enemy_limbo/tasks")
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
@@ -18334,6 +18993,7 @@ FILE: ./world.tscn
 [ext_resource type="Texture2D" uid="uid://cxfyf667qigcl" path="res://assets/08.png" id="21_ytpkv"]
 [ext_resource type="Texture2D" uid="uid://vjjhqsbro14m" path="res://assets/09.png" id="22_jas3d"]
 [ext_resource type="Texture2D" uid="uid://d2xmn8q5abe2y" path="res://assets/10.png" id="23_7htu6"]
+[ext_resource type="PackedScene" uid="uid://clr7e1equtwlw" path="res://actors/enemy_limbo/enemy_limbo.tscn" id="26_bo7i5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cbp6q"]
 texture = ExtResource("2_ikiii")
@@ -21359,3 +22019,6 @@ position = Vector2(-208, 56)
 
 [node name="Enemy" parent="." unique_id=1940921939 instance=ExtResource("6_pkg7o")]
 position = Vector2(249, 28)
+
+[node name="EnemyLimbo" parent="." unique_id=1169120346 instance=ExtResource("26_bo7i5")]
+position = Vector2(171, -431)

@@ -524,7 +524,7 @@ scale_min = 0.19999999
 scale_max = 0.59999996
 color = Color(1, 1, 0.50980395, 1)
 
-[node name="Player" type="CharacterBody2D" unique_id=65903992]
+[node name="Player" type="CharacterBody2D" unique_id=65903992 groups=["player"]]
 script = ExtResource("1_35bsb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=71646466]
