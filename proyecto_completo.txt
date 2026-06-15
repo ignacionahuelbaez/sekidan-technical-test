@@ -1007,7 +1007,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fqqrk"]
-size = Vector2(28, 36)
+size = Vector2(38, 30)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pnprd"]
 size = Vector2(44, 62)
@@ -1069,6 +1069,7 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1575344721]
+position = Vector2(0, 20)
 shape = SubResource("RectangleShape2D_fqqrk")
 
 [node name="HealthComponent" type="Node" parent="." unique_id=375355063]
@@ -1096,7 +1097,7 @@ metadata/_custom_type_script = "uid://cyd2rrttw41nd"
 shape = SubResource("RectangleShape2D_hwor8")
 
 [node name="DetectionRange" type="Area2D" parent="." unique_id=2112942843]
-collision_layer = 0
+collision_layer = 64
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionRange" unique_id=595073321]
 shape = SubResource("CircleShape2D_pnprd")
@@ -2210,7 +2211,7 @@ scale_min = 0.19999999
 scale_max = 0.59999996
 color = Color(1, 1, 0.50980395, 1)
 
-[node name="Player" type="CharacterBody2D" unique_id=65903992]
+[node name="Player" type="CharacterBody2D" unique_id=65903992 groups=["player"]]
 script = ExtResource("1_35bsb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=71646466]

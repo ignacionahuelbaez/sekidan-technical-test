@@ -5,6 +5,7 @@ extends BTAction
 const FLEE_SPEED: float = 120.0
 const SAFE_DISTANCE: float = 200.0
 
+
 func _tick(_delta: float) -> Status:
 	var enemy: EnemyLimbo = agent as EnemyLimbo
 	if enemy == null or enemy.player_ref == null:
@@ -21,4 +22,4 @@ func _tick(_delta: float) -> Status:
 	enemy.animated_sprite.play("walk")
 	enemy.animated_sprite.flip_h = flee_direction.x < 0
 
-	return RUNNING
+	return SUCCESS
