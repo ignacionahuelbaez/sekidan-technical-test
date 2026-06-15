@@ -25,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://cxfyf667qigcl" path="res://assets/08.png" id="21_ytpkv"]
 [ext_resource type="Texture2D" uid="uid://vjjhqsbro14m" path="res://assets/09.png" id="22_jas3d"]
 [ext_resource type="Texture2D" uid="uid://d2xmn8q5abe2y" path="res://assets/10.png" id="23_7htu6"]
+[ext_resource type="PackedScene" uid="uid://clr7e1equtwlw" path="res://actors/enemy_limbo/enemy_limbo.tscn" id="26_bo7i5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cbp6q"]
 texture = ExtResource("2_ikiii")
@@ -3050,3 +3051,6 @@ position = Vector2(-208, 56)
 
 [node name="Enemy" parent="." unique_id=1940921939 instance=ExtResource("6_pkg7o")]
 position = Vector2(249, 28)
+
+[node name="EnemyLimbo" parent="." unique_id=1169120346 instance=ExtResource("26_bo7i5")]
+position = Vector2(171, -431)

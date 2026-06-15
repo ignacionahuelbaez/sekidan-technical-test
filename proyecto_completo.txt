@@ -643,6 +643,13 @@ func physics_update(_delta: float) -> void:
 	enemy.sprite.flip_h = _direction < 0.0
 
 ==================================================
+FILE: ./actors/enemy_limbo/enemy_limbo.tscn
+==================================================
+[gd_scene format=3 uid="uid://clr7e1equtwlw"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1169120346]
+
+==================================================
 FILE: ./actors/player/attack.gd
 ==================================================
 extends PlayerState
